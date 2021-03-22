@@ -9,9 +9,9 @@ doc-type: article
 activity: understand
 team: TM
 translation-type: tm+mt
-source-git-commit: 131e3f06ac8d593d4b67711ee3688ff895aa380c
+source-git-commit: ec0bb2f9ee514cc94c764744e0cc51e62e811c20
 workflow-type: tm+mt
-source-wordcount: '1580'
+source-wordcount: '1623'
 ht-degree: 0%
 
 ---
@@ -29,7 +29,7 @@ ht-degree: 0%
 
 * 확인되지 않은 이메일 주소에는 오타가 있거나 형식이 잘못되거나 잘못된 이메일 주소가 악의적으로 사용될 수 있습니다. 잘못된 입력 및 잘못된 형식의 주소는 높은 바운스 비율을 발생하며, 이는 ISP 또는 IP 인지도 손실에서 발생되는 블록을 발생시킬 수 있습니다.
 
-* 알려진 스팸 트랩을 악의적인 상태로 제출(&quot;목록 중독&quot;이라고도 함)하면 해당 트랩 소유자가 조치를 취하는 경우 전달 및 명성을 크게 손상시킬 수 있습니다. 수신자가 확인 없이 마케팅 목록에 추가되기를 원하는지 아는 것은 불가능하다. 따라서 수신자의 기대치를 설정할 수 없으며 스팸 불만 사항이 증가할 수 있으며 수집된 이메일이 스팸 트랩인 경우 블랙리스트가 발생할 수 있습니다.
+* 알려진 스팸 트랩을 악의적인 상태로 제출(&quot;목록 중독&quot;이라고도 함)하면 해당 트랩 소유자가 조치를 취하는 경우 전달 및 명성을 크게 손상시킬 수 있습니다. 수신자가 확인 없이 마케팅 목록에 추가되기를 원하는지 아는 것은 불가능하다. 따라서 수신자의 기대치를 설정할 수 없으며 스팸 불만 사항이 증가할 수 있으며 수집된 이메일이 스팸 트랩인 경우 차단 목록에 추가가 발생할 수도 있습니다.
 
 물리적 스토어와 단일 옵트인 모두에 표시되는 문제를 최소화하는 방법에 대한 지침은 이 안내서의 [데이터 품질 및 위생](#data-quality-and-hygiene) 섹션으로 이동하여 이중 옵팅의 세부 사항과 이점을 참조하십시오.
 
@@ -89,4 +89,16 @@ DOI는 동의를 확인하기 위해 클릭해야 하는 링크가 포함된 이
 수집부스나 다른 공식에서 주소를 수집하는 것은 분명하고 브랜드화된 방법이 유용할 수 있다. 이와 같은 많은 이벤트가 모든 주소를 수집하고 이벤트 추천 또는 호스트를 통해 배포한다는 위험이 있습니다. 즉, 이러한 이메일 주소의 소유자는 브랜드로부터 이메일을 받을 것을 요청하지 않았습니다. 이러한 가입자는 귀하의 메일을 스팸으로 표시하고 불평할 가능성이 있으며, 정확한 연락처 정보를 제공하지 않았을 수 있습니다.
 
 **경품 행사**
-는 많은 수의 이메일 주소를 빠르게 제공합니다. 하지만 이 구독자들은 당신의 이메일이 아니라 상을 원합니다. 그들에게 다가갈 사람의 이름조차 신경 쓰지 않았을 것이다. 그들은 불평하고 여러분의 메일을 스팸으로 표시할 가능성이 있으며, 그들은 어떠한 개입이나 구매를 하지 않을 수도 있습니다.
+
+경품 행사에 많은 수의 이메일 주소가 빠르게 제공됩니다. 하지만 이 구독자들은 당신의 이메일이 아니라 상을 원합니다. 그들에게 다가갈 사람의 이름조차 신경 쓰지 않았을 것이다. 그들은 불평하고 여러분의 메일을 스팸으로 표시할 가능성이 있으며, 그들은 어떠한 개입이나 구매를 하지 않을 수도 있습니다.
+
+## 제품별 리소스
+
+**Adobe Campaign Classic**
+
+* [이중 옵트인 구독 양식 만들기](https://experienceleague.adobe.com/docs/campaign-classic/using/designing-content/web-forms/use-cases--web-forms.html?lang=en#create-a-subscription--form-with-double-opt-in)
+
+**Adobe Campaign Standard**
+
+* [이중 옵트인 프로세스](https://experienceleague.adobe.com/docs/campaign-standard/using/communication-channels/landing-pages/setting-up-a-double-opt-in-process.html?lang=en#communication-channels)
+
