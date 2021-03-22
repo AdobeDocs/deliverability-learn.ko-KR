@@ -9,9 +9,9 @@ doc-type: article
 activity: understand
 team: ACS
 translation-type: tm+mt
-source-git-commit: d42a8c3b06308fca0cf3e9db8d634a767fc0cdc6
+source-git-commit: 283f1cb2bb40818e11daa1a3753e8428b47e08ee
 workflow-type: tm+mt
-source-wordcount: '315'
+source-wordcount: '322'
 ht-degree: 0%
 
 ---
@@ -33,4 +33,4 @@ ht-degree: 0%
 
 ## Journey Orchestration용
 
-* [차단 목록 데이터베이스](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/deliverability-management/block-list-databases.html?lang=en#sending-messages)
+* 스패머에서 사용할 수 있는 IP 주소 및 도메인의 데이터베이스를 유지 관리하는 [실시간 블랙홀 목록](/help/additional-resources/blocklist-databases.md)에 대해 자세히 알아보십시오.
