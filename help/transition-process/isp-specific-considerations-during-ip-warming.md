@@ -8,10 +8,10 @@ doc-type: article
 activity: understand
 team: ACS
 translation-type: tm+mt
-source-git-commit: d42a8c3b06308fca0cf3e9db8d634a767fc0cdc6
+source-git-commit: 283f1cb2bb40818e11daa1a3753e8428b47e08ee
 workflow-type: tm+mt
-source-wordcount: '117'
-ht-degree: 0%
+source-wordcount: '132'
+ht-degree: 1%
 
 ---
 
@@ -25,3 +25,7 @@ ISP는 트래픽을 보는 방법과 규칙이 다릅니다. 예를 들어 Gmail
 * [Gmail](/help/internet-service-provider-specifics/gmail.md)
 * [Microsoft(Hotmail, Outlook, Windows Live 등)](/help/internet-service-provider-specifics/microsoft.md)
 * [Verizon Media Group(Yahoo, AOL, Verizon 등)](/help/internet-service-provider-specifics/verizon-media-group.md)
+
+## Journey Orchestration용
+
+* [이 섹션](/help/additional-resources/increase-reputation-with-ip-warming.md)에서 IP 온난화를 통해 이메일 명성을 높이는 방법에 대해 자세히 알아보십시오.
