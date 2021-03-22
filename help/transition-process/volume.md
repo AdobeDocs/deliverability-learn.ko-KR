@@ -9,9 +9,9 @@ doc-type: article
 activity: understand
 team: ACS
 translation-type: tm+mt
-source-git-commit: d42a8c3b06308fca0cf3e9db8d634a767fc0cdc6
+source-git-commit: 283f1cb2bb40818e11daa1a3753e8428b47e08ee
 workflow-type: tm+mt
-source-wordcount: '453'
+source-wordcount: '575'
 ht-degree: 0%
 
 ---
@@ -42,3 +42,17 @@ ht-degree: 0%
 2. 장바구니 포기 - 중간 - 일반적으로 높은 참여
 3. 환영 이메일 — 참여도가 높지만 목록 수집 방법에 따라 잘못된 주소를 포함할 수 있습니다.
 4. 구독 취소 이메일 — 일반적으로 참여 감소
+
+## 제품별 리소스
+
+**Campaign**
+
+* [이 섹션](/help/putting-it-in-practice/ac-starting-new-platform.md)에서 Adobe Campaign으로 새 플랫폼을 시작할 때 전달 가능성을 관리하는 방법에 대해 자세히 알아보십시오.
+* [이 섹션](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-sending-the-delivery.html#sending-using-multiple-waves)에서 Adobe Campaign Classic을 사용하여 여러 파도를 사용하여 전송하는 방법을 알아봅니다.
+* [이 섹션](/help/putting-it-in-practice/ac-domain-name-setup.md)에서 하위 도메인을 Adobe Campaign Classic 또는 Standard에 완전히 위임하는 방법을 알아봅니다.
+* [Campaign 컨트롤 패널:전체 하위 도메인 위임(자습서)](https://experienceleague.corp.adobe.com/docs/campaign-classic-learn/control-panel/subdomains-and-certificates/subdomain-delegation.html) -  *하위 도메인을 Adobe Campaign Classic에 완전히 위임하는 방법을 알아봅니다.*
+* [Campaign 컨트롤 패널:전체 하위 도메인 위임(자습서)](https://experienceleague.corp.adobe.com/docs/campaign-standard-learn/control-panel/subdomains-and-certificates/subdomain-delegation.html) -  *하위 도메인을 Adobe Campaign Standard에 완전히 위임하는 방법을 알아봅니다.*
+
+## Journey Orchestration용
+
+* [이 섹션](/help/additional-resources/increase-reputation-with-ip-warming.md)에서 IP 온난화를 통해 이메일 명성을 높이는 방법에 대해 자세히 알아보십시오.
