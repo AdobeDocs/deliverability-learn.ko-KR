@@ -9,9 +9,9 @@ doc-type: article
 activity: understand
 team: ACS
 translation-type: tm+mt
-source-git-commit: d42a8c3b06308fca0cf3e9db8d634a767fc0cdc6
+source-git-commit: 550821608eb7049f739a156536dd31b6b2faa2fa
 workflow-type: tm+mt
-source-wordcount: '857'
+source-wordcount: '912'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 성공적으로 배달할 수 있으려면 강력한 기반이 필요합니다. 이메일 인프라가 핵심 요소입니다. 적절히 구성된 이메일 인프라에는 도메인 및 IP 주소 등 여러 구성 요소가 포함됩니다. 이러한 구성 요소는 사용자가 보내는 이메일의 뒤에 있는 기계와 비슷하며, 종종 명성을 보내는 것의 기준이 됩니다. 제공 컨설턴트는 구현 중에 이러한 요소가 올바르게 설정되도록 보장하지만, 평판 요소 때문에 이러한 기본적인 이해를 가지는 것이 중요합니다.
 
-## 도메인 설정 및 전략
+## 도메인 설정 및 전략 {#domain-setup-and-strategy}
 
 시간이 변경되었으며, 일부 ISP(예: Gmail 및 Yahoo)는 이제 발신자에게 이메일 명성을 첨부하는 것에 대해 도메인 명성을 추가한다. 도메인 명성은 IP 주소 대신 전송 도메인을 기반으로 합니다. 이는 ISP 필터링 결정에 있어서 브랜드가 우선함을 의미합니다.
 
@@ -32,7 +32,7 @@ Adobe 플랫폼에서 새 보낸 사람을 위한 온보딩 프로세스의 일�
 * 전송 도메인을 합법화하기 위해 부모 도메인의 하위 도메인을 사용하는 것이 좋습니다.
 * 거래 및 마케팅 메시지 카테고리에 대한 하위 도메인을 구분합니다. 이 방법은 ISP가 이 전송 방법을 찾는 것으로, 잘 알려진 이메일 모범 사례이며 권장하는 이메일 트래픽이 보다 안정적임을 입증하는 데 도움이 됩니다.
 
-## IP 전략
+## IP 전략 {#ip-strategy}
 
 긍정적인 명성을 확립하는 데 도움이 되도록 잘 짜여진 IP 전략을 세우는 것이 중요합니다. IP 및 설정 수는 비즈니스 모델 및 마케팅 목표에 따라 다릅니다. 전문가와 협력하여 적합한 전략을 수립합니다. 다음 사항을 고려해야 합니다.
 
@@ -41,11 +41,11 @@ Adobe 플랫폼에서 새 보낸 사람을 위한 온보딩 프로세스의 일�
 * 메시징 유형에 대한 트래픽 분리가 중요합니다. 별도의 IP 풀에 마케팅 및 트랜잭션 메일을 최소 단위로 구분하는 것이 중요합니다.
 * 메일 전략에 따라 명성과 크게 다른 경우 다른 제품 또는 마케팅 스트림을 다른 IP 풀에 따로 두는 것이 좋습니다. 일부 마케터는 지역별로 세그먼트화할 수도 있습니다. 낮은 평판이 있는 트래픽의 IP를 구분하면 평판 문제가 해결되지 않지만, &quot;정상적인&quot; 평판 이메일 전달과 관련된 문제가 발생하지 않습니다. 결국, 여러분은 더 위험 부담이 큰 사람들을 위해 좋은 청중을 희생하고 싶지 않습니다.
 
-## 피드백 루프
+## 피드백 루프 {#feedback-loops}
 
 백그라운드에서 Adobe 플랫폼은 바운스, 불만, 구독 취소 등과 관련된 데이터를 처리하고 있습니다. 이러한 피드백 루프의 설정은 전달하기에 중요한 측면입니다. 불만 사항은 명성을 손상시킬 수 있으므로 타겟 고객으로부터 불만 사항을 등록하는 이메일 주소를 입력해야 합니다. Gmail이 이 데이터를 다시 제공하지 않는다는 점에 주목해야 합니다. 목록 구독 취소 헤더 및 참여 필터링은 가입자 데이터베이스의 대부분을 구성하는 Gmail 가입자에게 특히 중요합니다.
 
-## 인증
+## 인증 {#authentication}
 
 인증은 ISP가 보낸 사람의 ID를 확인하는 데 사용하는 프로세스입니다. 가장 일반적인 두 개의 인증 프로토콜은 [!DNL Sender Policy Framework](SPF) 및 [!DNL DomainKeys Identified Mail](DKIM)입니다. 이러한 항목은 최종 사용자가 볼 수 없지만 ISP가 확인된 보낸 사람의 이메일을 필터링하는 데 도움이 됩니다. [!DNL Domain-based Message Authentication Reporting and Conformance] (DMARC)는 모든 ISP가 자사의 평판 시스템에 아직 통합하지 않았지만, 이러한 정책은 인기를 얻고 있다.
 
@@ -63,10 +63,14 @@ Adobe 플랫폼에서 새 보낸 사람을 위한 온보딩 프로세스의 일�
 
 ## 제품별 리소스
 
-**Campaign Standard**
+**Campaign**
 
-* [Campaign 컨트롤 패널:전체 하위 도메인 위임(자습서)](https://experienceleague.corp.adobe.com/docs/campaign-standard-learn/control-panel/subdomains-and-certificates/subdomain-delegation.html): *하위 도메인을 Adobe Campaign Standard에 완전히 위임하는 방법을 알아봅니다.*
+* [이 섹션](/help/putting-it-in-practice/ac-domain-name-setup.md)에서 하위 도메인을 Adobe Campaign Classic 또는 Standard에 완전히 위임하는 방법을 알아봅니다.
+* [Campaign 컨트롤 패널:전체 하위 도메인 위임(자습서)](https://experienceleague.corp.adobe.com/docs/campaign-classic-learn/control-panel/subdomains-and-certificates/subdomain-delegation.html) -  *하위 도메인을 Adobe Campaign Classic에 완전히 위임하는 방법을 알아봅니다.*
+* [Campaign 컨트롤 패널:전체 하위 도메인 위임(자습서)](https://experienceleague.corp.adobe.com/docs/campaign-standard-learn/control-panel/subdomains-and-certificates/subdomain-delegation.html) -  *하위 도메인을 Adobe Campaign Standard에 완전히 위임하는 방법을 알아봅니다.*
+* [이 섹션](/help/putting-it-in-practice/acc-technical-recommendations.md#feedback-loop-acc)에서 Campaign Classic 인스턴스에 대한 피드백 루프 구현에 대해 자세히 알아보십시오.
 
-**Campaign Classic**
+## Journey Orchestration용
 
-* [Campaign 컨트롤 패널:전체 하위 도메인 위임(자습서)](https://experienceleague.corp.adobe.com/docs/campaign-classic-learn/control-panel/subdomains-and-certificates/subdomain-delegation.html): *하위 도메인을 Adobe Campaign Classic에 완전히 위임하는 방법을 알아봅니다.*
+* [이 섹션](/help/additional-resources/authentication.md)에서 SPF, DKIM 및 DMARC 인증 방법에 대해 자세히 알아보십시오.
+* [이 섹션](/help/additional-resources/increase-reputation-with-ip-warming.md)에서 IP 온난화를 통해 이메일 명성을 높이는 방법에 대해 자세히 알아보십시오.
