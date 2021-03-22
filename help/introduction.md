@@ -8,7 +8,7 @@ doc-type: article
 activity: understand
 team: ACS
 translation-type: tm+mt
-source-git-commit: 7e9cc30c6d3fb69f557b17f452b43de08ae85a03
+source-git-commit: 6297a3331b458b88ce2141a6fa30bbc69190b524
 workflow-type: tm+mt
 source-wordcount: '430'
 ht-degree: 15%
@@ -39,7 +39,7 @@ ht-degree: 15%
 7. [보낸 사람 영구](/help/sender-permanence.md)
 8. [인터넷 서비스 제공업체 세부 정보](/help/internet-service-provider-specifics/overview.md)
 9. [진행 중인 모니터링](/help/ongoing-monitoring.md)
-10. [연습](/help/putting-it-in-practice/how-to-reach-success.md)
+10. [연습](/help/putting-it-in-practice/putting-it-in-practice.md)
 11. [추가 리소스](/help/additional-resources/general-resources.md)
 
 ## 소스
