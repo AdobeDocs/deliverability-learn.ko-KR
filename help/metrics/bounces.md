@@ -1,6 +1,6 @@
 ---
 title: 바운스 수
-description: 다양한 유형의 바운스에 대해 알아보기
+description: 다양한 유형의 바운스에 대해 알아보십시오.
 feature: 지표
 topics: Deliverability
 kt: 7047
@@ -9,10 +9,10 @@ doc-type: article
 activity: understand
 team: ACS
 translation-type: tm+mt
-source-git-commit: d42a8c3b06308fca0cf3e9db8d634a767fc0cdc6
+source-git-commit: 283f1cb2bb40818e11daa1a3753e8428b47e08ee
 workflow-type: tm+mt
-source-wordcount: '449'
-ht-degree: 2%
+source-wordcount: '478'
+ht-degree: 4%
 
 ---
 
@@ -51,11 +51,14 @@ ht-degree: 2%
 
 ## 제품별 리소스
 
-**Adobe Campaign Standard**
-
-* [보고서 목록 - 바운스 요약(제품 설명서)](https://experienceleague.adobe.com/docs/campaign-standard/using/reporting/list-of-reports/bounce-summary.html?lang=en#reporting)
-* [배달 오류 이해(제품 설명서)](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/monitoring-messages/understanding-delivery-failures.html?lang=en#about-delivery-failures)
-
 **Adobe Campaign Classic**
 
-* [배달 오류 이해(제품 설명서)](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/understanding-delivery-failures.html?lang=en#sending-messages)
+* [게재 실패 유형 및 이유](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/understanding-delivery-failures.html#delivery-failure-types-and-reasons)
+* [바운스 메일 관리](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/understanding-delivery-failures.html#bounce-mail-management)
+* [비결과물 및 바운스 보고서](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/reports-on-deliveries/global-reports.html#non-deliverables-and-bounces)
+
+**Adobe Campaign Standard**
+
+* [게재 실패 유형 및 이유](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/monitoring-messages/understanding-delivery-failures.html#delivery-failure-types-and-reasons)
+* [반송 메일 조건](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/monitoring-messages/understanding-delivery-failures.html#bounce-mail-qualification)
+* [바운스 요약 보고서](https://experienceleague.adobe.com/docs/campaign-standard/using/reporting/list-of-reports/bounce-summary.html?lang=en#reporting)
