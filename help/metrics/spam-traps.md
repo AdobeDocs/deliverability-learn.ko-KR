@@ -9,10 +9,10 @@ doc-type: article
 activity: understand
 team: ACS
 translation-type: tm+mt
-source-git-commit: d42a8c3b06308fca0cf3e9db8d634a767fc0cdc6
+source-git-commit: 550821608eb7049f739a156536dd31b6b2faa2fa
 workflow-type: tm+mt
-source-wordcount: '422'
-ht-degree: 3%
+source-wordcount: '454'
+ht-degree: 2%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 3%
 
 재활용 스팸 트랩은 한 번 유효했지만 더 이상 사용되지 않는 주소입니다. 목록을 최대한 깔끔하게 유지하는 가장 중요한 방법은 전체 목록에 이메일을 정기적으로 보내고 바운스된 이메일을 적절히 억제하는 것입니다. 이렇게 하면 중단된 이메일 주소를 격리하고 더 이상 사용하지 못하도록 할 수 있습니다.
 
-어떤 경우에는 주소를 30일 이내에 재활용할 수 있다. 정기적으로 비활동적인 사용자를 억제할 수 있을 뿐만 아니라, 규칙적으로 보내는 것은 좋은 목록 위생의 중요한 측면이다. **[재참여 ](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/deliverability-management/re-engagement-best-practices.html?lang=en#sending-messages)** 캠페인은 일반적으로 정교한 이메일 마케팅 프로그램의 일부입니다. 이 캠페인 스타일을 사용하면 발신자가 더 이상 이메일로 전송되지 않을 사용자를 다시 확보할 수 있습니다.
+어떤 경우에는 주소를 30일 이내에 재활용할 수 있다. 정기적으로 비활동적인 사용자를 억제할 수 있을 뿐만 아니라, 규칙적으로 보내는 것은 좋은 목록 위생의 중요한 측면이다. **재참여** 캠페인은 일반적으로 정교한 이메일 마케팅 프로그램의 일부입니다. 이 캠페인 스타일을 사용하면 발신자가 더 이상 이메일로 전송되지 않을 사용자를 다시 확보할 수 있습니다.
 
 ## 오타
 
@@ -35,11 +35,17 @@ ht-degree: 3%
 
 본래 스팸 트랩은 최종 사용자가 없고 최종 사용자가 없는 주소입니다. 스팸성 이메일을 식별하기 위해 만들어진 주소입니다. 이는 거의 식별할 수 없고 목록에서 정리하는 데 많은 노력이 필요하므로 가장 영향력 있는 유형의 스팸 트랩입니다. 대부분의 차단 목록은 본래 스팸 트랩을 사용하여 신뢰할 수 없는 전송자를 나열합니다. 광범위한 마케팅 이메일 목록을 감염시키지 않는 본래 스팸 트랩을 피하는 유일한 방법은 목록 수집을 위해 **이중 옵트인 프로세스**&#x200B;를 이용하는 것입니다.
 
+## Journey Orchestration용
+
+* [이 섹션](/help/additional-resources/all-about-spam-traps.md)에서 스팸 트랩을 식별하고 피하는 방법에 대해 자세히 알아보십시오.
+* [이 섹션](/help/additional-resources/re-engagement.md)에서 재참여 전략을 통해 제공 능력을 향상시키는 방법에 대해 자세히 알아보십시오.
+
 ## 제품별 리소스
 
 **Adobe Campaign Classic**
 
 * [SpamAssassin](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/deliverability-management/spamassassin.html?lang=en#using-spamassassin)
+* [이중 옵트인 구독 양식 만들기](https://experienceleague.adobe.com/docs/campaign-classic/using/designing-content/web-forms/use-cases--web-forms.html?lang=en#create-a-subscription--form-with-double-opt-in)
 
 **Adobe Campaign Standard**
 
