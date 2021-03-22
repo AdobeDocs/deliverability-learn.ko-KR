@@ -3,10 +3,10 @@ user-guide-title: 전달성 모범 사례 안내서
 user-guide-breadcrumb: Deliverability Best Practice Guide
 user-guide-description: 주요 전달성 용어, 개념 및 접근 방식을 학습하여 성공적인 마케팅 프로그램을 위한 역량을 확보하십시오.
 translation-type: tm+mt
-source-git-commit: 96ed84da391faaabd3001ddd6a411ddc1f46b033
+source-git-commit: a823349a7619595c6dc3e0d135c253bc5150046e
 workflow-type: tm+mt
-source-wordcount: '163'
-ht-degree: 22%
+source-wordcount: '160'
+ht-degree: 23%
 
 ---
 
@@ -41,7 +41,7 @@ ht-degree: 22%
    + [Verizon Media Group(Yahoo, AOL, Verizon 등)](/help/internet-service-provider-specifics/verizon-media-group.md)
 + [진행 중인 모니터링](/help/ongoing-monitoring.md)
 + 연습 시작 {#putting-it-in-practice}
-   + [성공적인 비즈니스를 실현하는 방법](/help/putting-it-in-practice/how-to-reach-success.md)
+   + [개요](/help/putting-it-in-practice/putting-it-in-practice.md)
    + 캠페인 {#campaign}
       + [도메인 이름 설정](/help/putting-it-in-practice/ac-domain-name-setup.md)
       + [SSL 인증서 요청 프로세스](/help/putting-it-in-practice/ac-ssl-certificate-request.md)
