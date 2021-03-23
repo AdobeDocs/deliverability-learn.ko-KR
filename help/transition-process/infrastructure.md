@@ -9,7 +9,7 @@ doc-type: article
 activity: understand
 team: ACS
 translation-type: tm+mt
-source-git-commit: 550821608eb7049f739a156536dd31b6b2faa2fa
+source-git-commit: 1e539b5df54250a5927701009e7a9c84e5d73fae
 workflow-type: tm+mt
 source-wordcount: '912'
 ht-degree: 0%
@@ -65,10 +65,10 @@ Adobe 플랫폼에서 새 보낸 사람을 위한 온보딩 프로세스의 일�
 
 **Campaign**
 
-* [이 섹션](/help/putting-it-in-practice/ac-domain-name-setup.md)에서 하위 도메인을 Adobe Campaign Classic 또는 Standard에 완전히 위임하는 방법을 알아봅니다.
+* [이 섹션](/help/additional-resources/ac-domain-name-setup.md)에서 하위 도메인을 Adobe Campaign Classic 또는 Standard에 완전히 위임하는 방법을 알아봅니다.
 * [Campaign 컨트롤 패널:전체 하위 도메인 위임(자습서)](https://experienceleague.corp.adobe.com/docs/campaign-classic-learn/control-panel/subdomains-and-certificates/subdomain-delegation.html) -  *하위 도메인을 Adobe Campaign Classic에 완전히 위임하는 방법을 알아봅니다.*
 * [Campaign 컨트롤 패널:전체 하위 도메인 위임(자습서)](https://experienceleague.corp.adobe.com/docs/campaign-standard-learn/control-panel/subdomains-and-certificates/subdomain-delegation.html) -  *하위 도메인을 Adobe Campaign Standard에 완전히 위임하는 방법을 알아봅니다.*
-* [이 섹션](/help/putting-it-in-practice/acc-technical-recommendations.md#feedback-loop-acc)에서 Campaign Classic 인스턴스에 대한 피드백 루프 구현에 대해 자세히 알아보십시오.
+* [이 섹션](/help/additional-resources/acc-technical-recommendations.md#feedback-loop-acc)에서 Campaign Classic 인스턴스에 대한 피드백 루프 구현에 대해 자세히 알아보십시오.
 
 ## Journey Orchestration용
 
