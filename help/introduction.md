@@ -8,9 +8,9 @@ doc-type: article
 activity: understand
 team: ACS
 translation-type: tm+mt
-source-git-commit: 6297a3331b458b88ce2141a6fa30bbc69190b524
+source-git-commit: 1e539b5df54250a5927701009e7a9c84e5d73fae
 workflow-type: tm+mt
-source-wordcount: '430'
+source-wordcount: '431'
 ht-degree: 15%
 
 ---
@@ -39,8 +39,11 @@ ht-degree: 15%
 7. [보낸 사람 영구](/help/sender-permanence.md)
 8. [인터넷 서비스 제공업체 세부 정보](/help/internet-service-provider-specifics/overview.md)
 9. [진행 중인 모니터링](/help/ongoing-monitoring.md)
-10. [연습](/help/putting-it-in-practice/putting-it-in-practice.md)
-11. [추가 리소스](/help/additional-resources/general-resources.md)
+10. [연습](/help/putting-it-in-practice.md)
+
+>[!NOTE]
+>
+>[adobe-deliverability-best-practice-guide.pdf](/help/assets/adobe-deliverability-best-practice-guide.pdf) 다운로드
 
 ## 소스
 
@@ -50,4 +53,4 @@ ht-degree: 15%
 
 ## Journey Orchestration용
 
-[adobe-deliverability-best-practice-guide.pdf](/help/assets/adobe-deliverability-best-practice-guide.pdf) 다운로드
+[부록:추가 리소스](/help/additional-resources/general-resources.md)
