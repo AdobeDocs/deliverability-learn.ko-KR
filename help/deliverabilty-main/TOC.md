@@ -3,10 +3,10 @@ user-guide-title: 전달성 모범 사례 안내서
 user-guide-breadcrumb: Deliverability Best Practice Guide
 user-guide-description: 주요 전달성 용어, 개념 및 접근 방식을 학습하여 성공적인 마케팅 프로그램을 위한 역량을 확보하십시오.
 translation-type: tm+mt
-source-git-commit: a823349a7619595c6dc3e0d135c253bc5150046e
+source-git-commit: 1e539b5df54250a5927701009e7a9c84e5d73fae
 workflow-type: tm+mt
-source-wordcount: '160'
-ht-degree: 23%
+source-wordcount: '165'
+ht-degree: 21%
 
 ---
 
@@ -40,19 +40,20 @@ ht-degree: 23%
    + [Microsoft(Hotmail, Outlook, Windows Live 등)](/help/internet-service-provider-specifics/microsoft.md)
    + [Verizon Media Group(Yahoo, AOL, Verizon 등)](/help/internet-service-provider-specifics/verizon-media-group.md)
 + [진행 중인 모니터링](/help/ongoing-monitoring.md)
-+ 연습 시작 {#putting-it-in-practice}
-   + [개요](/help/putting-it-in-practice/putting-it-in-practice.md)
-   + 캠페인 {#campaign}
-      + [도메인 이름 설정](/help/putting-it-in-practice/ac-domain-name-setup.md)
-      + [SSL 인증서 요청 프로세스](/help/putting-it-in-practice/ac-ssl-certificate-request.md)
-      + [새 플랫폼 시작](/help/putting-it-in-practice/ac-starting-new-platform.md)
-      + [Campaign Classic - 기술 추천](/help/putting-it-in-practice/acc-technical-recommendations.md)
-+ 추가 리소스 {#additional-resources}
++ [연습](/help/putting-it-in-practice.md)
++ Apendix:추가 리소스 {#additional-resources}
    + [개요](/help/additional-resources/general-resources.md)
-   + [스팸 트랩에 대한 모든 정보](/help/additional-resources/all-about-spam-traps.md)
-   + [IP 온난화로 이메일 명성 향상](/help/additional-resources/increase-reputation-with-ip-warming.md)
-   + [인증](/help/additional-resources/authentication.md)
-   + [중복 항목](/help/additional-resources/duplicates.md)
-   + [재참여 모범 사례](/help/additional-resources/re-engagement.md)
-   + [실시간 블랙홀 목록](/help/additional-resources/blocklist-databases.md)
-   + [문제 해결](/help/additional-resources/troubleshooting.md)
+   + 일반 리소스 {#generic-resources}
+      + [스팸 트랩에 대한 모든 정보](/help/additional-resources/all-about-spam-traps.md)
+      + [IP 온난화로 이메일 명성 향상](/help/additional-resources/increase-reputation-with-ip-warming.md)
+      + [인증](/help/additional-resources/authentication.md)
+      + [중복 항목](/help/additional-resources/duplicates.md)
+      + [재참여 모범 사례](/help/additional-resources/re-engagement.md)
+      + [실시간 블랙홀 목록](/help/additional-resources/blocklist-databases.md)
+      + [문제 해결](/help/additional-resources/troubleshooting.md)
+   + 제품별 리소스 {#product-specific-resources}
+      + 캠페인 {#campaign}
+         + [도메인 이름 설정](/help/additional-resources/ac-domain-name-setup.md)
+         + [SSL 인증서 요청 프로세스](/help/additional-resources/ac-ssl-certificate-request.md)
+         + [새 플랫폼 시작](/help/additional-resources/ac-starting-new-platform.md)
+         + [Campaign Classic - 기술 추천](/help/additional-resources/acc-technical-recommendations.md)
