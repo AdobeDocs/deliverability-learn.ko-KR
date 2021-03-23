@@ -9,7 +9,7 @@ doc-type: article
 activity: understand
 team: ACS
 translation-type: tm+mt
-source-git-commit: 96ed84da391faaabd3001ddd6a411ddc1f46b033
+source-git-commit: 1e539b5df54250a5927701009e7a9c84e5d73fae
 workflow-type: tm+mt
 source-wordcount: '764'
 ht-degree: 0%
@@ -56,7 +56,7 @@ DKIM을 사용하려면 몇 가지 전제 조건이 필요합니다.
 * **보안**:암호화는 DKIM의 핵심 요소입니다. DKIM의 보안 수준을 보장하기 위해 권장되는 최적의 암호화 크기는 1024b입니다. DKIM 키가 낮으면 대부분의 액세스 공급자가 유효한 것으로 간주하지 않습니다.
 * **평판**:명성은 IP 및/또는 도메인을 기반으로 하지만 덜 투명한 DKIM 선택기도 고려해야 할 핵심 요소입니다. 선택기를 선택하는 것은 중요합니다.누구나 사용할 수 있고 따라서 평판이 좋지 않은 &quot;기본값&quot;을 유지하지 마십시오. **유지 vs. 획득 통신** 및 인증에 대해 다른 선택기를 구현해야 합니다.
 
-[이 섹션](/help/putting-it-in-practice/acc-technical-recommendations.md#dkim-acc)에서 Campaign Classic을 사용할 때 DKIM 사전 요구 사항에 대해 자세히 알아보십시오.
+[이 섹션](/help/additional-resources/acc-technical-recommendations.md#dkim-acc)에서 Campaign Classic을 사용할 때 DKIM 사전 요구 사항에 대해 자세히 알아보십시오.
 
 ## DMARC {#dmarc}
 
