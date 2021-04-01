@@ -1,16 +1,16 @@
 ---
-cloud: experience-cloud
+cloud: Experience Cloud
 solution: Experience Cloud
 product: experience cloud
 type: 튜토리얼
 mini-toc-levels: 2
 git-repo: https://git.corp.adobe.com/AdobeDocs/deliverability-learn.ko-KR
 index: true
-translation-type: ht
-source-git-commit: 004ab7179c37e3ad8b318020a49f41e8a5a9b9fc
-workflow-type: ht
-source-wordcount: '66'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: 6039f6602ec27d32a3b4d5855856843a81a22fb6
+workflow-type: tm+mt
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
