@@ -2,11 +2,11 @@
 user-guide-title: 전달성 모범 사례 안내서
 user-guide-breadcrumb: Deliverability Best Practice Guide
 user-guide-description: 주요 전달성 용어, 개념 및 접근 방식을 학습하여 성공적인 마케팅 프로그램을 위한 역량을 확보하십시오.
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 5a7e8ef210941b79bd5eb31b27041ca329e301f2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '165'
-ht-degree: 80%
+ht-degree: 100%
 
 ---
 
@@ -41,11 +41,11 @@ ht-degree: 80%
    + [Verizon Media Group(Yahoo, AOL, Verizon 등)](/help/internet-service-provider-specifics/verizon-media-group.md)
 + [진행 중인 모니터링](/help/ongoing-monitoring.md)
 + [실제로 적용](/help/putting-it-in-practice.md)
-+ 부록:추가 리소스 {#additional-resources}
++ 부록: 추가 리소스 {#additional-resources}
    + [개요](/help/additional-resources/general-resources.md)
    + 일반 리소스 {#generic-resources}
       + [스팸 트랩에 대한 모든 정보](/help/additional-resources/all-about-spam-traps.md)
-      + [IP 온난화로 이메일 명성 향상](/help/additional-resources/increase-reputation-with-ip-warming.md)
+      + [IP warming으로 이메일 신뢰도 향상](/help/additional-resources/increase-reputation-with-ip-warming.md)
       + [인증](/help/additional-resources/authentication.md)
       + [중복 항목](/help/additional-resources/duplicates.md)
       + [재참여 모범 사례](/help/additional-resources/re-engagement.md)
