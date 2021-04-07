@@ -8,11 +8,11 @@ thumbnail: kt7051.jpg
 doc-type: article
 activity: understand
 team: ACS
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 283f1cb2bb40818e11daa1a3753e8428b47e08ee
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '322'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -33,4 +33,4 @@ ht-degree: 93%
 
 ## Journey Orchestration용
 
-* 스패머에서 사용할 수 있는 IP 주소 및 도메인의 데이터베이스를 유지 관리하는 [실시간 블랙홀 목록](/help/additional-resources/blocklist-databases.md)에 대해 자세히 알아보십시오.
+* 스패머가 사용할 수 있는 IP 주소 및 도메인의 데이터베이스를 유지 관리하는 [실시간 블랙홀 목록](/help/additional-resources/blocklist-databases.md)에 대해 자세히 알아보십시오.
