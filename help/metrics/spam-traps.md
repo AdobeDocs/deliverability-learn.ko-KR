@@ -8,14 +8,14 @@ thumbnail: kt7050.jpg
 doc-type: article
 activity: understand
 team: ACS
+exl-id: ffacc1b1-bf3f-466e-9a1d-63aad4d2ec45
 translation-type: ht
-source-git-commit: 550821608eb7049f739a156536dd31b6b2faa2fa
+source-git-commit: e433002423bd1ab2f4a89425198c16160dae0719
 workflow-type: ht
 source-wordcount: '454'
 ht-degree: 100%
 
 ---
-
 
 # 스팸 트랩
 
@@ -51,4 +51,3 @@ ht-degree: 100%
 
 * [이메일 및 스팸 방지 분석 미리 보기](https://experienceleague.adobe.com/docs/campaign-standard-learn/tutorials/designing-content/email-designer/preview-your-email.html?lang=ko#designing-content)
 * [이중 옵트인 프로세스](https://experienceleague.adobe.com/docs/campaign-standard/using/communication-channels/landing-pages/setting-up-a-double-opt-in-process.html?lang=ko#communication-channels)
-
