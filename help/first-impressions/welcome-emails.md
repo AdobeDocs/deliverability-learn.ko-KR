@@ -1,7 +1,7 @@
 ---
 title: 환영 이메일
 description: 환영 이메일을 작성할 때 고려해야 할 주요 요소를 파악할 수 있습니다.
-feature: 이메일
+feature: Email
 topics: Deliverability
 kt: 7064
 thumbnail: kt7064.jpg

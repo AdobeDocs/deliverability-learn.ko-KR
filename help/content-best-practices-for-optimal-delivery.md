@@ -1,7 +1,7 @@
 ---
 title: 최적의 전달을 위한 컨텐츠 모범 사례
 description: 컨텐츠가 중요합니다. 연관성에 대한 Adobe의 관점을 이미 살펴보셨지만 컨텐츠 측면에서 전달을 최적화할 수 있는 몇 가지 추가 팁을 소개합니다.
-feature: 컨텐츠
+feature: Content
 topics: Deliverability
 kt: 5260
 thumbnail: kt5260.jpg

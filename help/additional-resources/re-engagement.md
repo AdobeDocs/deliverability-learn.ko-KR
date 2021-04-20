@@ -1,7 +1,7 @@
 ---
 title: 재참여 모범 사례
 description: 재참여 전략을 통해 전달 능력을 향상시키는 방법을 살펴볼 수 있습니다.
-feature: Journey Orchestration용
+feature: Additional resources
 topics: Deliverability
 kt: null
 thumbnail: null

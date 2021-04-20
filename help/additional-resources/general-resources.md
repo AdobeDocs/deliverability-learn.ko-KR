@@ -1,7 +1,7 @@
 ---
 title: Journey Orchestration용
 description: 이 섹션에는 제공 가능성에 대한 다양한 추가 리소스가 나열됩니다.
-feature: Journey Orchestration용
+feature: Additional resources
 topics: Deliverability
 kt: null
 thumbnail: null

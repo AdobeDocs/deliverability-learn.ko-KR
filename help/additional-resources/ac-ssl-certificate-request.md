@@ -1,7 +1,7 @@
 ---
 title: SSL 인증서 요청 프로세스
 description: Adobe에 위임한 하위 도메인에 SSL 인증서를 설치하는 방법을 알아봅니다.
-feature: 연습
+feature: Putting it in practice
 topics: Deliverability
 kt: null
 thumbnail: null

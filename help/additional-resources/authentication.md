@@ -1,7 +1,7 @@
 ---
 title: 인증
 description: SPF, DKIM 및 DMARC 인증 방법에 대한 자세한 내용을 살펴보십시오.
-feature: Journey Orchestration용
+feature: Additional resources
 topics: Deliverability
 kt: null
 thumbnail: null

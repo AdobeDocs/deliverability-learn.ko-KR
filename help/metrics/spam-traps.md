@@ -1,7 +1,7 @@
 ---
 title: 스팸 트랩
 description: 다양한 유형의 스팸 트랩에 대해 자세히 알아봅니다.
-feature: 지표
+feature: Metrics
 topics: Deliverability
 kt: 7050
 thumbnail: kt7050.jpg

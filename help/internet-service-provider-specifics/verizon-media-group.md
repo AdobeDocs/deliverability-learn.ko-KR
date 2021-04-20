@@ -1,7 +1,7 @@
 ---
 title: Verizon Media Group(Yahoo, AOL, Verizon 등)
 description: '[!DNL Verizon Media Group] 은 일반적으로 대부분의 B2C 목록에 대한 상위 3개 도메인 중 하나입니다. 평판 문제가 발생할 경우 보통 메일이나 대량 메일을 조절하기 때문에 그들은 다소 고유하게 행동한다.'
-feature: ISP
+feature: ISPs
 topics: Deliverability
 kt: 5320
 doc-type: article

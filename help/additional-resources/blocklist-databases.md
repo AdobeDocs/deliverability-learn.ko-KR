@@ -1,7 +1,7 @@
 ---
 title: 실시간 블랙홀 목록
 description: 회원이 사용할 수 있는 IP 주소 및 도메인 목록을 유지 관리하는 조직에 대해 알아봅니다.
-feature: Journey Orchestration용
+feature: Additional resources
 topics: Deliverability
 kt: null
 thumbnail: null

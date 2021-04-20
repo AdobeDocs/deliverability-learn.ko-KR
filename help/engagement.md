@@ -1,7 +1,7 @@
 ---
 title: 참여
 description: 참여는 받은 편지함 배치 결정에 영향을 주는 가장 중요한 요소가 됩니다.
-feature: 참여
+feature: Engagement
 topics: Deliverability
 kt: 5257
 thumbnail: kt5257.jpg

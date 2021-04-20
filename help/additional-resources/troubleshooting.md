@@ -1,7 +1,7 @@
 ---
 title: 전달 가능성 문제 해결
 description: 전달 가능성 문제를 식별하고 해결하는 방법을 알아봅니다.
-feature: Journey Orchestration용
+feature: Additional resources
 topics: Deliverability
 kt: null
 thumbnail: null

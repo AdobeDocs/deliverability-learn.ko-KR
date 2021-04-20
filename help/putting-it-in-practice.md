@@ -1,7 +1,7 @@
 ---
 title: 연습
 description: 영구 전송은 ISP의 명성을 유지하기 위해 일관된 전송 볼륨 및 전략을 설정하는 프로세스입니다.
-feature: 게재 가능성
+feature: Deliverability
 topics: Deliverability
 kt: 5264
 thumbnail: kt5264.jpg

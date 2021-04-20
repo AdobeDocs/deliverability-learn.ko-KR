@@ -1,7 +1,7 @@
 ---
 title: 보낸 사람 영구
 description: 영구 전송은 ISP의 명성을 유지하기 위해 일관된 전송 볼륨 및 전략을 설정하는 프로세스입니다.
-feature: 보낸 사람 영구
+feature: Sender Permanence
 topics: Deliverability
 kt: 5261
 thumbnail: kt5261.jpg

@@ -1,7 +1,7 @@
 ---
 title: 인프라
 description: '이메일 인프라를 적절하게 구축하는 데 필요한 사항을 알아봅니다. '
-feature: 전환 프로세스
+feature: Transition Process
 topics: Deliverability
 kt: 7052
 thumbnail: kt7052.jpg

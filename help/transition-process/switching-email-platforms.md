@@ -1,7 +1,7 @@
 ---
 title: 이메일 플랫폼을 전환할 때 원활하게 전환하는 방법
 description: 'ESP(이메일 서비스 공급자)를 이동할 때 기존의 설정된 IP 주소도 전환할 수 없습니다. 새로 시작할 때 긍정적인 명성을 얻기 위해 모범 사례를 따르는 것이 중요합니다. '
-feature: 게재 가능성
+feature: Deliverability
 topics: Deliverability
 kt: 5259
 thumbnail: kt5259.jpg

@@ -1,7 +1,7 @@
 ---
 title: 전달성에 대한 지표
 description: 모니터링할 주요 전달성 지표 및 해당 지표를 사용하여 신뢰도 문제 식별하는 방법에 대해 알아봅니다.
-feature: 지표
+feature: Metrics
 topics: Deliverability
 kt: 5256
 thumbnail: kt5256.jpg

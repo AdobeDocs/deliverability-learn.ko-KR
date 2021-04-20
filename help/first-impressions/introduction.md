@@ -1,7 +1,7 @@
 ---
 title: 첫 노출 횟수—목록 컬렉션 및 환영 이메일
 description: '좋은 첫인상을 심어줌으로써 성공적인 이메일 프로그램을 제작할 수 있는 방법을 살펴보십시오. '
-feature: 대상, 이메일
+feature: Audiences, Email
 topics: Deliverability
 kt: 5258
 thumbnail: kt5258.jpg

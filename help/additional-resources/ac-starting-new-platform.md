@@ -1,7 +1,7 @@
 ---
 title: 새 플랫폼 시작
 description: Adobe Campaign으로 새로운 플랫폼을 시작할 때 제공되는 기능 관리에 대한 자세한 내용을 살펴보십시오.
-feature: 연습
+feature: Putting it in practice
 topics: Deliverability
 kt: null
 thumbnail: null

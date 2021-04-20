@@ -1,7 +1,7 @@
 ---
 title: 중복 항목
 description: 복제를 식별하고 제한하는 방법을 통해 제공 능력을 향상시키는 방법을 살펴볼 수 있습니다.
-feature: Journey Orchestration용
+feature: Additional resources
 topics: Deliverability
 kt: null
 thumbnail: null

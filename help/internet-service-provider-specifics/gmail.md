@@ -1,7 +1,7 @@
 ---
 title: Gmail
 description: 지메일은 대부분의 보낸 이메일 목록에서 가장 많은 부분을 차지한다. 또한 다른 모든 사람들과 이메일에 대해 조금 다르게 다루는 경향이 있습니다.
-feature: ISP
+feature: ISPs
 topics: Deliverability
 kt: 5262
 doc-type: article

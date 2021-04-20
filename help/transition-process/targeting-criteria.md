@@ -1,7 +1,7 @@
 ---
 title: 타깃팅 기준
 description: 참여도가 낮은 고객에게 다가가기 전에 효과적인 신뢰 구축을 위해 높은 신뢰도를 구축하는 방법을 살펴볼 수 있습니다.
-feature: 전환 프로세스
+feature: Transition Process
 topics: Deliverability
 kt: 7053
 thumbnail: kt7053.jpg

@@ -1,7 +1,7 @@
 ---
 title: Microsoft(Hotmail, Outlook, Windows Live 등)
 description: Microsoft는 일반적으로 목록의 구성에 따라 두 번째 또는 세 번째로 큰 제공업체이며 다른 ISP와 약간 다른 트래픽을 처리합니다.
-feature: ISP
+feature: ISPs
 topics: Deliverability
 kt: 5319
 doc-type: article

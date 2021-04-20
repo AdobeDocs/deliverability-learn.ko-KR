@@ -1,7 +1,7 @@
 ---
 title: 진행 중인 모니터링
 description: 어떤 문제를 주의해야 합니까?
-feature: 모니터링
+feature: Monitoring
 topics: Deliverability
 kt: 5263
 thumbnail: kt5263.jpg

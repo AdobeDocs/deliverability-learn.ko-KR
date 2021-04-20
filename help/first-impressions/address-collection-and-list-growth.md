@@ -1,7 +1,7 @@
 ---
 title: 주소 수집 및 목록 증가
 description: '새로운 이메일 주소의 가장 적합한 소스를 무엇인지, 고품질의 데이터를 제공하는 방법, 그리고 법적 지침과 잘 부합하는지 알아보십시오. '
-feature: 대상자
+feature: Audiences
 topics: Deliverability
 kt: 7063
 thumbnail: kt7063.jpg

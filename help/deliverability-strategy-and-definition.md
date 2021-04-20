@@ -1,7 +1,7 @@
 ---
 title: 전달성 전략이란 무엇이며 전달성을 정의하는 방법입니다.
 description: 전달성을 정의하는 방식, 중요한 이유 및 주요 전달성 지표를 파악합니다.
-feature: 전달성
+feature: Deliverability
 topics: Deliverability
 kt: 5255
 thumbnail: kt5255.jpg

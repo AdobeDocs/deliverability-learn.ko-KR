@@ -1,7 +1,7 @@
 ---
 title: 바운스 수
 description: 다양한 유형의 바운스에 대해 알아보기.
-feature: 지표
+feature: Metrics
 topics: Deliverability
 kt: 7047
 thumbnail: kt7047.jpg

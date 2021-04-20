@@ -1,7 +1,7 @@
 ---
 title: Campaign Classic - 기술 추천
 description: Adobe Campaign Classic을 통해 전달률을 향상시키는 데 사용할 수 있는 기법, 구성 및 툴을 살펴볼 수 있습니다.
-feature: 연습
+feature: Putting it in practice
 topics: Deliverability
 kt: null
 thumbnail: null

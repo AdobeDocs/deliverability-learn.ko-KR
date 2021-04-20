@@ -1,7 +1,7 @@
 ---
 title: 스팸 트랩에 대한 모든 정보
 description: 전달 능력을 관리할 때 스팸 패치를 이해, 식별 및 피하는 방법을 살펴볼 수 있습니다.
-feature: Journey Orchestration용
+feature: Additional resources
 topics: Deliverability
 kt: null
 thumbnail: null

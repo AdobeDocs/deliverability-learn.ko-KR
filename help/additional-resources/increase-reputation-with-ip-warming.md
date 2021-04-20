@@ -1,7 +1,7 @@
 ---
 title: IP 온난화로 이메일 명성 향상
 description: IP 온난화를 통해 이메일 명성을 향상시키는 것이 중요한 이유와 최적의 제공을 위해 진행하는 방법을 살펴볼 수 있습니다.
-feature: Journey Orchestration용
+feature: Additional resources
 topics: Deliverability
 kt: null
 thumbnail: null

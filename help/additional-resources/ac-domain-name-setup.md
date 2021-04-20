@@ -1,7 +1,7 @@
 ---
 title: 도메인 이름 설정
 description: 하위 도메인을 Adobe Campaign에 위임하는 방법을 알아봅니다.
-feature: 연습
+feature: Putting it in practice
 topics: Deliverability
 kt: null
 thumbnail: null

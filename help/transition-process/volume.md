@@ -1,7 +1,7 @@
 ---
 title: 볼륨 - 매끄럽게 전환하는 방법에 대한 팁
 description: 당신이 보내는 우편물 양은 긍정적인 명성을 확립하는 데 매우 중요하다. 원활한 전환을 위해 수행할 수 있는 작업을 알아봅니다.
-feature: 전환 프로세스
+feature: Transition Process
 topics: Deliverability
 kt: 7055
 thumbnail: kt7055.jpg
