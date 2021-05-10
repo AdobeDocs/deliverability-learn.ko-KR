@@ -1,21 +1,21 @@
 ---
 title: 인프라
-description: '이메일 인프라를 적절하게 구축하는 데 필요한 사항을 알아봅니다. '
-feature: Transition Process
+description: '이메일 인프라를 올바르게 구성하는 데 필요한 사항을 알아봅니다. '
+feature: 전환 프로세스
 topics: Deliverability
 kt: 7052
 thumbnail: kt7052.jpg
 doc-type: article
 activity: understand
 team: ACS
+exl-id: 4025d95c-cc77-4e0c-9904-aaf60019b18c
 translation-type: tm+mt
-source-git-commit: 1e539b5df54250a5927701009e7a9c84e5d73fae
+source-git-commit: 65eb1fd03e6a6617ef24661c371f850d1f8e6054
 workflow-type: tm+mt
 source-wordcount: '912'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
-
 
 # 인프라
 
@@ -66,11 +66,11 @@ Adobe 플랫폼에서 새 보낸 사람을 위한 온보딩 프로세스의 일�
 **Campaign**
 
 * [이 섹션](/help/additional-resources/ac-domain-name-setup.md)에서 하위 도메인을 Adobe Campaign Classic 또는 Standard에 완전히 위임하는 방법을 알아봅니다.
-* [Campaign 컨트롤 패널:전체 하위 도메인 위임(자습서)](https://experienceleague.corp.adobe.com/docs/campaign-classic-learn/control-panel/subdomains-and-certificates/subdomain-delegation.html) -  *하위 도메인을 Adobe Campaign Classic에 완전히 위임하는 방법을 알아봅니다.*
-* [Campaign 컨트롤 패널:전체 하위 도메인 위임(자습서)](https://experienceleague.corp.adobe.com/docs/campaign-standard-learn/control-panel/subdomains-and-certificates/subdomain-delegation.html) -  *하위 도메인을 Adobe Campaign Standard에 완전히 위임하는 방법을 알아봅니다.*
+* [Campaign 컨트롤 패널:전체 하위 도메인 위임(자습서)](https://experienceleague.adobe.com/docs/campaign-classic-learn/control-panel/subdomains-and-certificates/subdomain-delegation.html) -  *하위 도메인을 Adobe Campaign Classic에 완전히 위임하는 방법을 알아봅니다.*
+* [Campaign 컨트롤 패널:전체 하위 도메인 위임(자습서)](https://experienceleague.adobe.com/docs/campaign-standard-learn/control-panel/subdomains-and-certificates/subdomain-delegation.html) -  *하위 도메인을 Adobe Campaign Standard에 완전히 위임하는 방법을 알아봅니다.*
 * [이 섹션](/help/additional-resources/acc-technical-recommendations.md#feedback-loop-acc)에서 Campaign Classic 인스턴스에 대한 피드백 루프 구현에 대해 자세히 알아보십시오.
 
-## Journey Orchestration용
+## 추가 리소스
 
 * [이 섹션](/help/additional-resources/authentication.md)에서 SPF, DKIM 및 DMARC 인증 방법에 대해 자세히 알아보십시오.
 * [이 섹션](/help/additional-resources/increase-reputation-with-ip-warming.md)에서 IP 온난화를 통해 이메일 명성을 높이는 방법에 대해 자세히 알아보십시오.
