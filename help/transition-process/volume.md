@@ -1,21 +1,21 @@
 ---
 title: 볼륨 - 매끄럽게 전환하는 방법에 대한 팁
 description: 당신이 보내는 우편물 양은 긍정적인 명성을 확립하는 데 매우 중요하다. 원활한 전환을 위해 수행할 수 있는 작업을 알아봅니다.
-feature: Transition Process
+feature: 전환 프로세스
 topics: Deliverability
 kt: 7055
 thumbnail: kt7055.jpg
 doc-type: article
 activity: understand
 team: ACS
+exl-id: 1bc56061-0c64-4033-b49c-66618916bca6
 translation-type: tm+mt
-source-git-commit: 1e539b5df54250a5927701009e7a9c84e5d73fae
+source-git-commit: 65eb1fd03e6a6617ef24661c371f850d1f8e6054
 workflow-type: tm+mt
 source-wordcount: '575'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
-
 
 # 볼륨
 
@@ -50,9 +50,9 @@ ht-degree: 0%
 * [이 섹션](/help/additional-resources/ac-starting-new-platform.md)에서 Adobe Campaign으로 새 플랫폼을 시작할 때 전달 가능성을 관리하는 방법에 대해 자세히 알아보십시오.
 * [이 섹션](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-sending-the-delivery.html#sending-using-multiple-waves)에서 Adobe Campaign Classic을 사용하여 여러 파도를 사용하여 전송하는 방법을 알아봅니다.
 * [이 섹션](/help/additional-resources/ac-domain-name-setup.md)에서 하위 도메인을 Adobe Campaign Classic 또는 Standard에 완전히 위임하는 방법을 알아봅니다.
-* [Campaign 컨트롤 패널:전체 하위 도메인 위임(자습서)](https://experienceleague.corp.adobe.com/docs/campaign-classic-learn/control-panel/subdomains-and-certificates/subdomain-delegation.html) -  *하위 도메인을 Adobe Campaign Classic에 완전히 위임하는 방법을 알아봅니다.*
-* [Campaign 컨트롤 패널:전체 하위 도메인 위임(자습서)](https://experienceleague.corp.adobe.com/docs/campaign-standard-learn/control-panel/subdomains-and-certificates/subdomain-delegation.html) -  *하위 도메인을 Adobe Campaign Standard에 완전히 위임하는 방법을 알아봅니다.*
+* [Campaign 컨트롤 패널:전체 하위 도메인 위임(자습서)](https://experienceleague.adobe.com/docs/campaign-classic-learn/control-panel/subdomains-and-certificates/subdomain-delegation.html) -  *하위 도메인을 Adobe Campaign Classic에 완전히 위임하는 방법을 알아봅니다.*
+* [Campaign 컨트롤 패널:전체 하위 도메인 위임(자습서)](https://experienceleague.adobe.com/docs/campaign-standard-learn/control-panel/subdomains-and-certificates/subdomain-delegation.html) -  *하위 도메인을 Adobe Campaign Standard에 완전히 위임하는 방법을 알아봅니다.*
 
-## Journey Orchestration용
+## 추가 리소스
 
 * [이 섹션](/help/additional-resources/increase-reputation-with-ip-warming.md)에서 IP 온난화를 통해 이메일 명성을 높이는 방법에 대해 자세히 알아보십시오.
