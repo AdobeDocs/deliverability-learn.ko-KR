@@ -1,18 +1,18 @@
 ---
-title: Apple Mail 개인 정보 보호 FAQ 2021년 6월 23일
-description: Apple Mail 개인 정보 보호 FAQ 2021년 6월 23일
+title: Apple 메일 개인 정보 보호 FAQ
+description: Apple 메일 개인 정보 보호 FAQ
 feature: 전달성
 topics: Deliverability
 hide: true
 hidefromtoc: true
-source-git-commit: fe42e3a1edfb48192fd1bb3b811247fcd528ab05
+source-git-commit: cc0f8f4d8a5f4584d30b281492c2f948624ce1c1
 workflow-type: tm+mt
-source-wordcount: '1087'
+source-wordcount: '1084'
 ht-degree: 0%
 
 ---
 
-# Apple Mail 개인 정보 보호 FAQ 2021년 6월 23일
+# Apple 메일 개인 정보 보호 FAQ
 
 이 FAQ는 [메일 개인 정보 보호](https://www.apple.com/newsroom/2021/06/apple-advances-its-privacy-leadership-with-ios-15-ipados-15-macos-monterey-and-watchos-8/) 를 포함하여 iOS 15 릴리스에 대한 Apple의 발표에 대한 초기 지침을 제공합니다. 이러한 변경 사항은 9월에 제공될 예정이며 Adobe는 이 문서를 계속 업데이트하여 고객에게 지침을 제공할 것입니다.
 
