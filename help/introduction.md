@@ -1,16 +1,15 @@
 ---
 title: 전달성 모범 사례 소개
 description: 주요 전달성 용어, 개념 및 접근 방식을 학습하여 성공적인 마케팅 프로그램을 위한 역량을 확보하십시오.
-feature: Deliverability
+feature: 전달성
 kt: 5321
 thumbnail: kt5321.jpg
 doc-type: article
 activity: understand
 team: ACS
 exl-id: 929e325a-514d-49e3-91cf-c8383bb9465e
-translation-type: ht
 source-git-commit: e433002423bd1ab2f4a89425198c16160dae0719
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '431'
 ht-degree: 100%
 
@@ -31,7 +30,7 @@ ht-degree: 100%
 전달성 모범 사례 안내서에서는 다음 주제를 다룹니다.
 
 1. [전달성 전략 및 정의](/help/deliverability-strategy-and-definition.md)
-2. [전달성을 위한 지표](/help/metrics/metrics-overview.md)
+2. [전달성에 대한 지표](/help/metrics/metrics-overview.md)
 3. [참여](/help/engagement.md)
 4. [전환 프로세스 - 이메일 플랫폼 전환](/help/transition-process/switching-email-platforms.md)
 5. [첫 노출 수 - 목록 컬렉션 및 시작 이메일](/help/first-impressions/address-collection-and-list-growth.md)
@@ -51,6 +50,6 @@ ht-degree: 100%
 
 [!DNL Lori Lewis], [&quot;2019: 이것이 매순간 인터넷에서 일어나는 일입니다.”](https://www.allaccess.com/merge/archive/29580/2019-this-is-what-happens-in-an-internet-minute), Merge, 2019년 3월 5일
 
-## Journey Orchestration용
+## 추가 리소스
 
 [부록: 추가 리소스](/help/additional-resources/general-resources.md)
