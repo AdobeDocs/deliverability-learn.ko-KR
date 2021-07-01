@@ -1,7 +1,7 @@
 ---
 title: 이메일 벌킹 및 차단
 description: ISP가 이메일 메시지를 벌크 폴더로 이동하거나 차단하는 이유를 알아봅니다.
-feature: Metrics
+feature: 지표
 topics: Deliverability
 kt: 7051
 thumbnail: kt7051.jpg
@@ -9,9 +9,8 @@ doc-type: article
 activity: understand
 team: ACS
 exl-id: 4b280f90-73b9-4b88-adb8-57b6a46ddad7
-translation-type: ht
 source-git-commit: e433002423bd1ab2f4a89425198c16160dae0719
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '322'
 ht-degree: 100%
 
@@ -31,6 +30,6 @@ ht-degree: 100%
 
 차단 목록에 추가는 서드파티 차단 목록 관리자가 발신자와 연관된 스팸 메일 전송자와 유사한 행동을 등록할 때 발생합니다. 차단 목록에 추가되는 원인은 차단 주체에 의해 게재되기도 합니다. 목록은 일반적으로 IP 주소를 기반으로 하지만, 더 심각한 경우에는 IP 범위 또는 전송 도메인별로 할 수도 있습니다. 차단 목록에 추가를 해결하려면 Adobe 전달성 컨설턴트의 지원이 있어야 추가 목록을 완전히 확인하고 방지할 수 있습니다. 어떤 목록은 매우 심각하며, 해결하기가 어렵고 오래 지속되는 신뢰도 문제를 일으킬 수 있습니다. 차단 목록의 결과는 차단 목록에 따라 다르지만 모든 이메일 게재에 영향을 미칠 수 있습니다.
 
-## Journey Orchestration용
+## 추가 리소스
 
 * 스패머가 사용할 수 있는 IP 주소 및 도메인의 데이터베이스를 유지 관리하는 [실시간 블랙홀 목록](/help/additional-resources/blocklist-databases.md)에 대해 자세히 알아보십시오.
