@@ -1,7 +1,6 @@
 ---
 title: 전달성에 대한 지표
 description: 모니터링할 주요 전달성 지표 및 해당 지표를 사용하여 신뢰도 문제 식별하는 방법에 대해 알아봅니다.
-feature: Metrics
 topics: Deliverability
 kt: 5256
 thumbnail: kt5256.jpg
@@ -9,10 +8,9 @@ doc-type: article
 activity: understand
 team: ACS
 exl-id: d781a0b6-5670-4958-8649-f061e7e9a84f
-translation-type: ht
-source-git-commit: e433002423bd1ab2f4a89425198c16160dae0719
-workflow-type: ht
-source-wordcount: '142'
+source-git-commit: 68c403f915287e1a50cd276b67b3f48202f45446
+workflow-type: tm+mt
+source-wordcount: '141'
 ht-degree: 100%
 
 ---
