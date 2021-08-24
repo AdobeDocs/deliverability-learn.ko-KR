@@ -1,7 +1,6 @@
 ---
 title: 컴플레인
 description: '사용자가 이메일을 원하지 않거나 예상치 않은 경우 등록되는 컴플레인에 대해 알아봅니다. '
-feature: Metrics
 topics: Deliverability
 kt: 7048
 thumbnail: kt7048.jpg
@@ -9,10 +8,9 @@ doc-type: article
 activity: understand
 team: ACS
 exl-id: 0343820d-f5af-4b8a-bcab-dbb47ae7aecb
-translation-type: ht
-source-git-commit: e433002423bd1ab2f4a89425198c16160dae0719
-workflow-type: ht
-source-wordcount: '291'
+source-git-commit: 68c403f915287e1a50cd276b67b3f48202f45446
+workflow-type: tm+mt
+source-wordcount: '290'
 ht-degree: 100%
 
 ---
