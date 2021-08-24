@@ -1,7 +1,6 @@
 ---
 title: 이메일 벌킹 및 차단
 description: ISP가 이메일 메시지를 벌크 폴더로 이동하거나 차단하는 이유를 알아봅니다.
-feature: 지표
 topics: Deliverability
 kt: 7051
 thumbnail: kt7051.jpg
@@ -9,9 +8,9 @@ doc-type: article
 activity: understand
 team: ACS
 exl-id: 4b280f90-73b9-4b88-adb8-57b6a46ddad7
-source-git-commit: e433002423bd1ab2f4a89425198c16160dae0719
+source-git-commit: 68c403f915287e1a50cd276b67b3f48202f45446
 workflow-type: tm+mt
-source-wordcount: '322'
+source-wordcount: '321'
 ht-degree: 100%
 
 ---
