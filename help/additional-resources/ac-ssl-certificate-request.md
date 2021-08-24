@@ -1,7 +1,6 @@
 ---
 title: SSL 인증서 요청 프로세스
 description: Adobe에게 위임한 하위 도메인에 SSL 인증서를 설치하는 방법을 배웁니다.
-feature: 실제로 적용
 topics: Deliverability
 kt: null
 thumbnail: null
@@ -9,10 +8,10 @@ doc-type: article
 activity: understand
 team: ACS
 exl-id: 8a78abd3-afba-49a7-a2ae-8b2c75326749
-source-git-commit: e3caa0e9fae0df983c05c7027406f9874174a8ba
+source-git-commit: 68c403f915287e1a50cd276b67b3f48202f45446
 workflow-type: tm+mt
-source-wordcount: '2270'
-ht-degree: 2%
+source-wordcount: '2266'
+ht-degree: 1%
 
 ---
 
@@ -110,7 +109,7 @@ CSR(인증서 서명 요청) 파일을 가져오려면 아래 단계를 따르�
 
 | 제공할 정보 | 예제 값 | 참고 |
 |--- |--- |--- |
-| 국가 [C] | 미국 | 두 문자 코드여야 합니다. 전체 국가 목록 [여기](https://www.ssl.com/csrs/country_codes/)에 액세스합니다.</br>*참고:영국에서는 GB(영국 아님)를 사용합니다.* |
+| 국가 [C] | 미국 | 두 문자 코드여야 합니다. 전체 국가 목록 [여기](https://www.ssl.com/csrs/country_codes/)에 액세스합니다.</br>*참고: 영국에서는 GB(영국 아님)를 사용합니다.* |
 | 주(또는 도 이름) [ST] | 일리노이 | 해당되는 경우 값은 약식 이름이 아니라 전체 이름이어야 합니다. |
 | 구/군/시 이름 [L] | 시카고 |
 | 조직 이름 [O] | ACME |
@@ -159,7 +158,7 @@ SSL 인증서가 생성되면 Adobe으로 보내기 전에 유효성을 검사�
 1. 인증서 텍스트를 https://www.sslshopper.com/certificate-decoder.html 또는 https://www.entrust.net/ssl-technical/csr-viewer.cfm 등의 온라인 디코더에 복사합니다.
 또는 Linux 시스템에서 로컬로 *OpenSSL* 명령을 사용할 수 있습니다. 자세한 내용은 [이 외부 페이지](https://www.shellhacks.com/decode-ssl-certificate/)를 참조하십시오.
 1. 공통 이름, SAN, 발급자 및 유효 기간을 포함하여 인증서가 올바르게 확인되는지 확인하십시오.
-1. SSL 인증서 확인이 성공하면 인증서가 [이 웹 사이트](https://www.sslshopper.com/certificate-key-matcher.html)를 사용하여 CSR과 일치하는지 확인하십시오.**CSR과 인증서가 일치하는지 확인하고, 해당 필드에 인증서와 CSR을 입력합니다.** 그들은 일치해야 합니다.
+1. SSL 인증서 확인이 성공하면 인증서가 [이 웹 사이트](https://www.sslshopper.com/certificate-key-matcher.html)를 사용하여 CSR과 일치하는지 확인하십시오. **CSR과 인증서가 일치하는지 확인하고, 해당 필드에 인증서와 CSR을 입력합니다.** 그들은 일치해야 합니다.
 
 ### 5단계 - SSL 인증서 설치 요청
 
@@ -221,8 +220,8 @@ SSL 인증서가 제대로 설치되지 않으면 다음 경고가 표시됩니�
 
 **Campaign Classic**
 
-* [Campaign 컨트롤 패널:SSL 인증서 추가(자습서)](https://experienceleague.adobe.com/docs/campaign-classic-learn/control-panel/subdomains-and-certificates/adding-ssl-certificates.html)  - 하위 도메인 보안을 위해 SSL 인증서를 추가하는 방법을 알아봅니다.
+* [Campaign 컨트롤 패널: SSL 인증서 추가(자습서)](https://experienceleague.adobe.com/docs/campaign-classic-learn/control-panel/subdomains-and-certificates/adding-ssl-certificates.html)  - 하위 도메인 보안을 위해 SSL 인증서를 추가하는 방법을 알아봅니다.
 
 **Campaign Standard**
 
-* [Campaign 컨트롤 패널:SSL 인증서 추가(자습서)](https://experienceleague.adobe.com/docs/campaign-standard-learn/control-panel/subdomains-and-certificates/adding-ssl-certificates.html)  - 하위 도메인 보안을 위해 SSL 인증서를 추가하는 방법을 알아봅니다.
+* [Campaign 컨트롤 패널: SSL 인증서 추가(자습서)](https://experienceleague.adobe.com/docs/campaign-standard-learn/control-panel/subdomains-and-certificates/adding-ssl-certificates.html)  - 하위 도메인 보안을 위해 SSL 인증서를 추가하는 방법을 알아봅니다.
