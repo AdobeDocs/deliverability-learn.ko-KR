@@ -2,13 +2,11 @@
 title: 실시간 블랙홀 목록
 description: 관리자가 사용할 수 있는 IP 주소 및 도메인 목록을 관리하는 조직에 대해 알아봅니다.
 topics: Deliverability
-kt: null
-thumbnail: null
 doc-type: article
 activity: understand
 team: ACS
 exl-id: 4155b89f-a636-404c-8951-563c1b4d0289
-source-git-commit: 68c403f915287e1a50cd276b67b3f48202f45446
+source-git-commit: d6094cd2ef0a8a7741e7d8aa4db15499fad08f90
 workflow-type: tm+mt
 source-wordcount: '407'
 ht-degree: 6%
