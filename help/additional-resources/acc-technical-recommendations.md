@@ -2,13 +2,11 @@
 title: Campaign Classic - 기술 추천
 description: Adobe Campaign Classic을 통해 게재 능력을 향상시키는 데 사용할 수 있는 기법, 구성 및 도구를 살펴봅니다.
 topics: Deliverability
-kt: null
-thumbnail: null
 doc-type: article
 activity: understand
 team: ACS
 exl-id: 39ed3773-18bf-4653-93b6-ffc64546406b
-source-git-commit: 68c403f915287e1a50cd276b67b3f48202f45446
+source-git-commit: d6094cd2ef0a8a7741e7d8aa4db15499fad08f90
 workflow-type: tm+mt
 source-wordcount: '1575'
 ht-degree: 1%
