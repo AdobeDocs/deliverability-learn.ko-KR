@@ -2,15 +2,13 @@
 title: SSL 인증서 요청 프로세스
 description: Adobe에게 위임한 하위 도메인에 SSL 인증서를 설치하는 방법을 배웁니다.
 topics: Deliverability
-kt: null
-thumbnail: null
 doc-type: article
 activity: understand
 team: ACS
 exl-id: 8a78abd3-afba-49a7-a2ae-8b2c75326749
-source-git-commit: 68c403f915287e1a50cd276b67b3f48202f45446
+source-git-commit: d6094cd2ef0a8a7741e7d8aa4db15499fad08f90
 workflow-type: tm+mt
-source-wordcount: '2266'
+source-wordcount: '2265'
 ht-degree: 1%
 
 ---
@@ -209,7 +207,7 @@ SSL 인증서가 제대로 설치되지 않으면 다음 경고가 표시됩니�
 
 >[!NOTE]
 >
->Campaign Classic의 경우 업데이트할 URL은 주로 [배포 마법사](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/initial-configuration/deploying-an-instance.html#deployment-wizard) 및 [외부 계정](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/additional-configurations/external-accounts.html#installing-campaign-classic)(추적, 미러 페이지 및 공개 리소스 도메인)에 있습니다. Campaign Standard은 [브랜딩 구성](https://experienceleague.adobe.com/docs/campaign-standard/using/administrating/application-settings/branding.html#about-brand-identity)을 참조하십시오.
+>Campaign Classic의 경우 업데이트할 URL은 주로 [배포 마법사](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/initial-configuration/deploying-an-instance.html#deployment-wizard) 및 [외부 계정](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/accessing-external-database/external-accounts.html)(추적, 미러 페이지 및 공개 리소스 도메인)에 있습니다. Campaign Standard은 [브랜딩 구성](https://experienceleague.adobe.com/docs/campaign-standard/using/administrating/application-settings/branding.html#about-brand-identity)을 참조하십시오.
 
 구성이 업데이트되면 HTTP가 아닌 HTTPS URL을 사용하여 새 이메일이 전송됩니다. 이제 URL이 안전한지 확인하려면 다음 테스트를 신속하게 수행할 수 있습니다.
 
