@@ -2,13 +2,11 @@
 title: IP warming으로 이메일 신뢰도 향상
 description: IP 온난화를 통해 이메일 평판을 향상시키는 것이 중요한 이유와 최적의 게재 능력을 위해 어떻게 진행해야 하는지 알아봅니다.
 topics: Deliverability
-kt: null
-thumbnail: null
 doc-type: article
 activity: understand
 team: ACS
 exl-id: b553a13e-2055-4abc-b784-fd52792380d0
-source-git-commit: 68c403f915287e1a50cd276b67b3f48202f45446
+source-git-commit: d6094cd2ef0a8a7741e7d8aa4db15499fad08f90
 workflow-type: tm+mt
 source-wordcount: '1600'
 ht-degree: 2%
