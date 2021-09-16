@@ -2,10 +2,10 @@
 user-guide-title: 전달성 모범 사례 안내서
 user-guide-breadcrumb: Deliverability Best Practice Guide
 user-guide-description: 주요 전달성 용어, 개념 및 접근 방식을 학습하여 성공적인 마케팅 프로그램을 위한 역량을 확보하십시오.
-source-git-commit: fb66dc0e4efc61b6303b7857b9c56b2c478642c4
-workflow-type: ht
-source-wordcount: '169'
-ht-degree: 100%
+source-git-commit: ab1595bac7ef136eb001609b9017950a2d01cbb4
+workflow-type: tm+mt
+source-wordcount: '172'
+ht-degree: 98%
 
 ---
 
@@ -57,5 +57,5 @@ ht-degree: 100%
          + [새 플랫폼 시작](/help/additional-resources/ac-starting-new-platform.md)
          + [Campaign Classic - 기술 추천](/help/additional-resources/acc-technical-recommendations.md)
 + Technotes (hidden){#technotes}
-   + [Apple 개인 정보 보호](/help/technotes/apple-mail-privacy-faq.md)
-
+   + [Apple 개인 정보 보호 FAQ](/help/technotes/apple-mail-privacy-faq.md)
+   + [BIMI 구현](/help/technotes/implement-bimi.md)
