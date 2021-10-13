@@ -44,7 +44,7 @@ Seed accounts show filtered or non-delivered mailings.
 
 ### 컴플레인
 
-[](/help/metrics/complaints.md) 복잡성은 받은 편지함에서 해당 단추를 눌러 이메일을 스팸으로 보고하는 가입자에 의해 정의됩니다.
+[](/help/metrics/complaints.md) 컴플레인 은 받은 편지함에서 해당 단추를 눌러 이메일을 스팸으로 보고하는 가입자에 의해 정의됩니다.
 
 불만사항으로 인해 게재 문제가 발생한 경우:
 * 수신자가 불평하는 이유를 파악해야 합니다.

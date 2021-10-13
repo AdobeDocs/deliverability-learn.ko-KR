@@ -161,7 +161,7 @@ List-Unsubscribe: mailto: client@newsletter.example.com?subject=unsubscribe?body
 List-Unsubscribe: mailto: %=errorAddress%?subject=unsubscribe%=message.mimeMessageId%
 ```
 
-Gmail, Outlook.com 및 Microsoft Outlook에서 이 방법을 지원하며 인터페이스에서 바로 가입 해지 단추를 사용할 수 있습니다. 이 기법은 불만율을 낮춥니다.
+Gmail, Outlook.com 및 Microsoft Outlook은 이 방법을 지원하며 인터페이스에서 직접 구독 취소 단추를 사용할 수 있습니다. 이 기법은 불만율을 낮춥니다.
 
 다음 방법 중 하나를 사용하여 **List-Subscribe**&#x200B;를 구현할 수 있습니다.
 

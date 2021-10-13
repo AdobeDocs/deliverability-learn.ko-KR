@@ -6,14 +6,21 @@ doc-type: article
 activity: understand
 team: ACS
 exl-id: 75538ef8-8e4b-4940-8d11-42ebd7c65e93
-source-git-commit: d6094cd2ef0a8a7741e7d8aa4db15499fad08f90
+source-git-commit: f441fe45b5b7309082c8eea7423d40003b913b7b
 workflow-type: tm+mt
-source-wordcount: '99'
-ht-degree: 39%
+source-wordcount: '126'
+ht-degree: 31%
 
 ---
 
 # 추가 리소스 - 개요
+
+## 새로운 기능
+
+게재 능력에 대한 최근 업데이트에 대한 자세한 내용은 다음 기술 정보 를 참조하십시오.
+
+* [BIMI(메시지 식별)를 위한 Gmail 브랜드 지표 구현](../technotes/implement-bimi.md)
+* [Apple 메일 개인 정보 보호 FAQ](../technotes/apple-mail-privacy-faq.md)
 
 ## 일반 리소스
 
@@ -35,7 +42,7 @@ ht-degree: 39%
 
 또한 이 섹션에는 게재 능력을 구현하고 Adobe 솔루션을 사용하여 성공에 도달하는 데 도움이 되는 제품별 리소스가 많이 나열됩니다.
 
-**Campaign**
+**[!DNL Adobe Campaign]**
 
 * [도메인 이름 설정](../../help/additional-resources/ac-domain-name-setup.md)
 * [CSR 및 SSL 인증서 요청 프로세스](../../help/additional-resources/ac-ssl-certificate-request.md)

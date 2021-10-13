@@ -76,7 +76,7 @@ ht-degree: 1%
 
 CSR(인증서 서명 요청) 파일을 가져오려면 아래 단계를 따르십시오.
 
-* [Campaign 컨트롤 패널](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=ko)에 액세스할 수 있는 경우 [이 Campaign 컨트롤 패널](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/renewing-subdomain-certificate.html#subdomains-and-certificates)의 지침에 따라에서 CSR 파일을 생성하고 다운로드하십시오.
+* [Campaign 컨트롤 패널](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=ko-KR)에 액세스할 수 있는 경우 [이 Campaign 컨트롤 패널](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/renewing-subdomain-certificate.html#subdomains-and-certificates)의 지침에 따라에서 CSR 파일을 생성하고 다운로드하십시오.
 
 * 그렇지 않으면 https://adminconsole.adobe.com/ 를 통해 지원 티켓을 만들어 필요한 하위 도메인에 대한 Adobe 고객 지원 센터에서 CSR 파일을 받으십시오.
 
@@ -193,13 +193,13 @@ SSL 인증서가 제대로 설치되지 않으면 다음 경고가 표시됩니�
 
 ### 7단계 - 인증서 유효 기간 확인
 
-브라우저에서 인증서의 유효 기간을 확인할 수 있습니다. 예를 들어 Google Chrome에서 **보안** > **인증서**&#x200B;를 클릭합니다.
+브라우저에서 인증서의 유효 기간을 확인할 수 있습니다. 예를 들어 Google Chrome에서 **Secure** > **인증서**&#x200B;를 클릭합니다.
 
 유효기간을 확인하는 것은 귀하의 책임입니다. Adobe은 인증서 만료를 모니터링하는 프로세스를 구현하는 것이 좋습니다. [이 문서](https://www.thesslstore.com/blog/what-happens-when-your-ssl-certificate-expires/)에서 SSL 인증서가 만료되면 발생하는 사항에 대해 자세히 알아보십시오.
 
 * 인증서 만료 날짜 최소 2주 전에 업데이트된 인증서를 요청하려면 지원 티켓을 만듭니다. CSR 세부 사항이 변경되지 않는 한 추가 CSR을 요청할 필요가 없습니다.
 
-* [Campaign 컨트롤 패널](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html)에 액세스할 수 있고, 환경이 AWS 환경의 Adobe에 의해 호스팅되는 경우, Campaign 컨트롤 패널을 사용하여 인증서가 만료되기 전에 인증서를 갱신할 수 있습니다. 자세한 내용은 [이 섹션](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/monitoring-ssl-certificates.html#monitoring-certificates)을 참조하십시오.
+* [Campaign 컨트롤 패널](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html)에 액세스할 수 있고, 환경이 AWS 환경의 Adobe에 의해 호스팅되는 경우, Campaign 컨트롤 패널이 만료되기 전에 인증서를 갱신하는 데 이를 사용할 수 있습니다. 자세한 내용은 [이 섹션](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/monitoring-ssl-certificates.html#monitoring-certificates)을 참조하십시오.
 
 ### 8단계 - 특정 구성 업데이트 {#update-configuration}
 

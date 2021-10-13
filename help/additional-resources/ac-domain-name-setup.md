@@ -6,9 +6,9 @@ doc-type: article
 activity: understand
 team: ACS
 exl-id: 4d52d197-d20e-450c-bfcf-e4541c474be4
-source-git-commit: d6094cd2ef0a8a7741e7d8aa4db15499fad08f90
+source-git-commit: 82f7254a9027f79d2af59aece81f032105c192d5
 workflow-type: tm+mt
-source-wordcount: '2028'
+source-wordcount: '2061'
 ht-degree: 2%
 
 ---
@@ -54,10 +54,22 @@ Adobe Campaign에서 사용할 하위 도메인을 위임함으로써 클라이�
 | MX | 수신 메시지의 메일 서버 지정 | <i>email.example.com</i></br><i>10 inbound.email.example.com</i> |
 | SPF(TXT) | 보낸 사람 정책 프레임워크 | <i>email.example.com</i></br> &quot;v=spf1 redirect=__spf.campaign.adobe.com&quot; |
 | DKIM(TXT) | 식별된 메일 도메인 키 | <i>클라이언트._domainkey.email.example.com</i></br>&quot;v=DKIM1; k=rsa;&quot; &quot;DKIMPUBLICKEY HERE&quot; |
-| DMARC(TXT) | 도메인 기반 메시지 인증 | 보고 및 적합성 | _dmarc.email.example.com</br>&quot;v=DMARC1; p=없음; rua=mailto:mailauth-reports@myemail.com&quot; |
 | 호스트 레코드 (A) | 미러 페이지, 이미지 호스팅 및 추적 링크, 모든 전송 도메인 | m.email.example.com 123.111.100.99</br>t.email.example.com IN 123.111.100.98</br>email.example.com IN A 123.111.100.97 |
 | 역방향 DNS(PTR) | 클라이언트 IP 주소를 클라이언트 브랜드 호스트 이름에 매핑합니다 | 18.101.100.192.in-addr.arpa 도메인 이름 포인터 r18.email.example.com |
-| CNAME | 다른 도메인 이름에 별칭을 제공합니다. | t1.email.example.com의 별칭은 | t1.email.example.campaign.adobe.com |
+| CNAME | 다른 도메인 이름에 별칭을 제공합니다. | t1.email.example.com은 t1.email.example.campaign.adobe.com의 별칭입니다. |
+
+
+도메인 기반 메시지 인증, 보고 및 적합성(DMARC)은 메일 보낸 사람을 인증하고 대상 이메일 시스템이 도메인에서 보낸 메시지를 신뢰하는지 확인하는 데 권장됩니다.
+
+DMARC TXT 레코드의 예:
+
+```
+_dmarc.email.example.com
+
+“v=DMARC1; p=none; rua=mailto:mailauth-reports@myemail.com” 
+```
+
+DMARC를 수동으로 구현하거나 Adobe에 문의하여 브랜드에 대한 DMARC를 설정할 수 있습니다.
 
 ## 설치 요구 사항
 
@@ -194,4 +206,4 @@ Marketing Cloud 서비스를 종료하면 자동으로 도메인 위임이 종�
 
 >[!NOTE]
 >
->[Adobe ](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=ko) Managed Services를 사용하는 고객만 컨트롤 패널을 사용할 수 있습니다.
+>[Adobe ](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=ko-KR) Managed Services를 사용하는 고객만 컨트롤 패널을 사용할 수 있습니다.
