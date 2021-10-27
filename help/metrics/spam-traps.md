@@ -9,7 +9,7 @@ activity: understand
 team: ACS
 exl-id: ffacc1b1-bf3f-466e-9a1d-63aad4d2ec45
 source-git-commit: 68c403f915287e1a50cd276b67b3f48202f45446
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '453'
 ht-degree: 100%
 
@@ -42,8 +42,8 @@ ht-degree: 100%
 
 **Adobe Campaign Classic**
 
-* [SpamAssassin](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/deliverability-management/spamassassin.html?lang=ko#sending-messages)
-* [이중 옵트인으로 구독 양식 만들기](https://experienceleague.adobe.com/docs/campaign-classic/using/designing-content/web-forms/use-cases--web-forms.html?lang=ko#designing-content)
+* [SpamAssassin](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/deliverability-management/spamassassin.html?lang=ko#using-spamassassin)
+* [이중 옵트인으로 구독 양식 만들기](https://experienceleague.adobe.com/docs/campaign-classic/using/designing-content/web-forms/use-cases--web-forms.html?lang=ko#create-a-subscription--form-with-double-opt-in)
 
 **Adobe Campaign Standard**
 
