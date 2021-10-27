@@ -1,6 +1,6 @@
 ---
-title: 바운스 수
-description: 다양한 유형의 바운스에 대해 알아보기.
+title: 바운스
+description: 다양한 유형의 바운스에 대해 알아보세요.
 topics: Deliverability
 kt: 7047
 thumbnail: kt7047.jpg
@@ -9,7 +9,7 @@ activity: understand
 team: ACS
 exl-id: 6338eb67-3efd-476e-8b26-97bbb6a1d35f
 source-git-commit: 68c403f915287e1a50cd276b67b3f48202f45446
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '477'
 ht-degree: 100%
 
