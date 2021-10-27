@@ -3,9 +3,9 @@ user-guide-title: 전달성 모범 사례 안내서
 user-guide-breadcrumb: Deliverability Best Practice Guide
 user-guide-description: 주요 전달성 용어, 개념 및 접근 방식을 학습하여 성공적인 마케팅 프로그램을 위한 역량을 확보하십시오.
 source-git-commit: 3e933104107cd4f62eab99c66957ccd9acb51409
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '169'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -50,7 +50,7 @@ ht-degree: 95%
       + [재참여 모범 사례](/help/additional-resources/re-engagement.md)
       + [실시간 블랙홀 목록](/help/additional-resources/blocklist-databases.md)
       + [문제 해결](/help/additional-resources/troubleshooting.md)
-   + [!DNL Adobe Campaign] {#campaign}에 대한 리소스
+   + [!DNL Adobe Campaign] {#campaign} 리소스
       + [도메인 이름 설정](/help/additional-resources/ac-domain-name-setup.md)
       + [SSL 인증서 요청 프로세스](/help/additional-resources/ac-ssl-certificate-request.md)
       + [새 플랫폼 시작](/help/additional-resources/ac-starting-new-platform.md)
