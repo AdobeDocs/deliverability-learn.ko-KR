@@ -8,7 +8,7 @@ activity: understand
 team: ACS
 exl-id: 929e325a-514d-49e3-91cf-c8383bb9465e
 source-git-commit: 68c403f915287e1a50cd276b67b3f48202f45446
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '430'
 ht-degree: 100%
 
@@ -29,7 +29,7 @@ ht-degree: 100%
 전달성 모범 사례 안내서에서는 다음 주제를 다룹니다.
 
 1. [전달성 전략 및 정의](/help/deliverability-strategy-and-definition.md)
-2. [전달성에 대한 지표](/help/metrics/metrics-overview.md)
+2. [전달성 지표](/help/metrics/metrics-overview.md)
 3. [참여](/help/engagement.md)
 4. [전환 프로세스 - 이메일 플랫폼 전환](/help/transition-process/switching-email-platforms.md)
 5. [첫 노출 수 - 목록 컬렉션 및 시작 이메일](/help/first-impressions/address-collection-and-list-growth.md)
