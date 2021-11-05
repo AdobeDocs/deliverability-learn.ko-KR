@@ -3,53 +3,55 @@ title: Apple 메일 개인 정보 보호 FAQ
 description: Apple 메일 개인 정보 보호 FAQ
 topics: Deliverability
 exl-id: c4b9839d-db1a-4bbc-a1d5-385dddca95a8
-source-git-commit: c66a1d519ab844d103de5b6dd64c5f7f40c3d8d9
+source-git-commit: 994e31f8038f2a6d9ec986f93dc2640e6a8796d7
 workflow-type: tm+mt
-source-wordcount: '1083'
-ht-degree: 0%
+source-wordcount: '1106'
+ht-degree: 1%
 
 ---
 
 # Apple 메일 개인 정보 보호 FAQ
 
-이 FAQ는 [메일 개인 정보 보호](https://www.apple.com/newsroom/2021/06/apple-advances-its-privacy-leadership-with-ios-15-ipados-15-macos-monterey-and-watchos-8/)를 포함하여 iOS 15 릴리스에 대한 Apple의 발표에 대한 초기 지침을 제공합니다. 이러한 변경 사항은 9월에 제공될 예정이며 Adobe는 이 문서를 계속 업데이트하여 고객에게 지침을 제공할 것입니다.
+This FAQ provides initial guidance in response to Apple’s announcement regarding their iOS 15 release, including [Mail Privacy Protection](https://www.apple.com/newsroom/2021/06/apple-advances-its-privacy-leadership-with-ios-15-ipados-15-macos-monterey-and-watchos-8/). These changes are coming in September, and we will continue to update this document and provide guidance to our customers.
 
 ## Apple이 무엇을 발표했습니까?
 
-6월 7일, Apple 연례 세계 개발자 회의(WWDC 2021)에서, 그들은 iOS 15 릴리스에서 [메일 개인 정보 보호](https://www.apple.com/newsroom/2021/06/apple-advances-its-privacy-leadership-with-ios-15-ipados-15-macos-monterey-and-watchos-8/)가 모든 Apple 장치(iPhone, iPad 및 Mac)의 기본 메일 앱에서 활성화될 것이라고 발표했습니다. Apple에 따르면 &quot;메일 개인 정보 보호(Mail Privacy Protection)는 보낸 사람이 사용자 정보를 수집하기 위해 보이지 않는 픽셀을 사용하지 않도록 하여 보낸 사람이 전자 메일을 언제 열었는지 모르고 IP 주소를 마스크하여 다른 온라인 활동에 연결할 수 없거나 위치를 확인하는 데 사용할 수 없도록 합니다.&quot; 마케터에게는 사용자가 Apple의 메일 앱에서 이메일을 언제 또는 열었는지 알 수 없다는 것이 함축입니다. 사용자의 동의가 필요한 제한 사항은 Apple의 이메일 앱(Gmail, Yahoo, Outlook 등)에서 열려 있는 모든 이메일에 적용됩니다.
+On June 7th, at the Apple annual Worldwide Developers Conference (WWDC 2021), they announced in their iOS 15 release that [Mail Privacy Protection](https://www.apple.com/newsroom/2021/06/apple-advances-its-privacy-leadership-with-ios-15-ipados-15-macos-monterey-and-watchos-8/) would be enabled on the native Mail app on all Apple devices – iPhone, iPad, and Mac. According to Apple, “Mail Privacy Protection stops senders from using invisible pixels to collect information about the user, which prevents senders from knowing when they open an email and masks their IP address so it can’t be linked to other online activity or used to determine their location.” 마케터에게는 사용자가 Apple의 메일 앱에서 이메일을 언제 또는 열었는지 알 수 없다는 것이 함축입니다. The restriction, which needs the user’s consent, would apply to any email opened on Apple’s Mail app (Gmail, Yahoo, Outlook, etc.).
 
 ## 언제 발효됩니까?
 
-iOS 15 릴리스는 이르면 9월에 올 가을에 제공될 예정입니다. 이메일 프로그램에 즉시 영향을 주지는 않지만 마케터는 이 변경 사항이 미칠 수 있는 영향과 이메일 마케팅 프로그램을 높일 수 있는 전략을 이해해야 합니다. Adobe은 고객이 미치는 영향을 이해하고 업데이트와 사고 전략을 통해 이러한 변경 사항을 탐색할 수 있도록 지원하므로 이메일 프로그램은 백그라운드에서 실행됩니다.
+The iOS 15 release will be available this fall, possibly as early as September. While there is no immediate impact on email programs right now, marketers need to understand what potential impact this change could have and what strategies can elevate email marketing programs. Adobe은 고객이 미치는 영향을 이해하고 업데이트와 사고 전략을 통해 이러한 변경 사항을 탐색할 수 있도록 지원하므로 이메일 프로그램은 백그라운드에서 실행됩니다.
 
 ## 이메일 캠페인 결과를 추적하고 측정하는 데 어떤 영향을 미칩니까?
 
-Apple Mail 내의 픽셀 추적 기능은 비활성화됩니다. 즉, 마케터는 이메일이 열려 있는 시점을 더 이상 안정적으로 알려주지 않습니다. 추적 픽셀을 비활성화하는 것이 새로운 것은 아니지만 여러 공급업체가 과거에 유사한 조치를 취했습니다. Apple의 메일 앱은 많은 공급업체에서 널리 사용되고 있습니다. 따라서 다른 공급자가 기본적으로 추적 픽셀을 비활성화하도록 선택한 경우 이전에 경험했던 것보다 영향을 더 많이 받을 수 있습니다. 사용자의 동의가 필요한 개인 정보 보호는 Apple의 이메일 앱(Gmail, Yahoo, Outlook 등)에서 열려 있는 모든 이메일에 적용됩니다. 사용자가 Gmail 앱이나 다른 메일 앱을 사용하는 경우 개인 정보 컨트롤에 영향을 주지 않습니다. 컨텍스트의 경우, Q1에 대한 [Apple 모바일 장치 시장 점유율](https://www.counterpointresearch.com/global-smartphone-share/)은 전 세계적으로 17%, 미국 55%였습니다.
+Apple Mail 내의 픽셀 추적 데이터는 더 이상 정확하지 않으므로 마케터는 이메일이 열려 있는 시기를 더 이상 안정적으로 파악할 수 없습니다. 이미지 및 픽셀을 미리 로드하고 프록시를 사용하여 데이터를 익명화하는 것은 새로운 것은 아니지만, 여러 공급업체는 과거에 유사한 조치를 취했습니다. 구현 범위, 방법 및 범위가 새로운 것입니다.
+
+Apple의 메일 앱은 많은 공급업체에서 널리 사용되고 있습니다. Therefore, the impact could be more significant than previously experienced when other providers have chosen to disable tracking pixels by default. The privacy protections, which need the user’s consent, would apply to any email opened on Apple’s Mail app (Gmail, Yahoo, Outlook etc.). 사용자가 Gmail 앱이나 다른 메일 앱을 사용하는 경우 개인 정보 컨트롤에 영향을 주지 않습니다. 컨텍스트의 경우 [Apple 모바일 장치 시장 점유율](https://www.counterpointresearch.com/global-smartphone-share/) 1분기 는 전 세계 17%, 미국 55%였습니다.
 
 ## 다른 영향이 있나요?
 
-Apple은 기본적으로 기본 메일 앱, Safari 브라우저 및 iCloud 서비스에서 IP 주소 정보를 숨깁니다. 공개 비율을 측정하는 것은 Apple의 메일 개인 정보 보호로 인해 영향을 받는 이메일 마케팅의 유일한 측면은 아닙니다. 이메일 서비스를 통해 전송 시간 최적화 전략, 실시간 개인화, 재참여 캠페인 및 자동화된 멀티 웨이브 캠페인을 수행할 수 있습니다. 이러한 변경 사항은 마케터가 iOS 15가 출시되고 올해 가을에 개인 정보 보호 기능이 시행되면 Apple 사용자에게 표시될 이러한 전략의 모습을 결정하는 계획을 시작해야 함을 의미합니다. Adobe은 고객이 업데이트, 지침 및 사고 리더십으로 이러한 변경 사항을 탐색할 수 있도록 지원합니다.
+Apple은 기본적으로 기본 메일 앱, Safari 브라우저 및 iCloud 서비스에서 IP 주소 정보를 숨깁니다. 공개 비율을 측정하는 것은 Apple의 메일 개인 정보 보호로 인해 영향을 받는 이메일 마케팅의 유일한 측면은 아닙니다. 이메일 서비스를 통해 전송 시간 최적화 전략, 실시간 개인화, 재참여 캠페인 및 자동화된 멀티 웨이브 캠페인을 수행할 수 있습니다. These changes mean that marketers must begin planning to determine what these strategies will look like for Apple users once iOS 15 is released and the privacy protection capabilities take hold this fall. Adobe은 고객이 업데이트, 지침 및 사고 리더십으로 이러한 변경 사항을 탐색할 수 있도록 지원합니다.
 
 ## 이 알림은 Apple 장치에서 열린 모든 이메일에 대한 것입니까?
 
-메일 개인 정보 보호 기능은 iOS 15 UI가 있고 기본 Apple Mail 앱에서 전자 메일을 확인하는 사용자에게 관련이 있습니다. 사용자가 Gmail 앱 또는 Apple Mail이 아닌 다른 메일 앱에서 이메일을 확인하는 경우 iOS 15에서도 개인 정보 컨트롤이 적용되지 않습니다. 이를 통해 마케터는 목록과 데이터베이스를 세분화하여 잠재적인 영향을 확인하는 것이 중요합니다.
+메일 개인 정보 보호 기능은 iOS 15 UI가 있고 기본 Apple Mail 앱에서 전자 메일을 확인하는 사용자에게 관련이 있습니다. If the user checks email on the Gmail App or another mail app that is not Apple Mail, even if on iOS 15, the privacy controls will not be in effect. 이를 통해 마케터는 목록과 데이터베이스를 세분화하여 잠재적인 영향을 확인하는 것이 중요합니다.
 
-## 다른 지표와 함께 공개 비율, CTOR(열기 비율을 클릭함) 및 매출을 측정하는 데 어떤 영향을 줍니까?
+## What is the impact on measuring open rates, CTORs (click to open rate) and revenue, along with the other metrics?
 
-전자 메일 열기 비율이 항상 안정적인 지표는 아닙니다. 일부 공급자는 기본적으로 이미지를 차단하며 다른 제공 업체는 이미지를 미리 로드하고 있습니다. 따라서 자체적으로 오픈율을 평가하는 것은 이메일 캠페인의 효과를 분석하는 데 유용한 지표가 아니지만 다른 이메일 지표와 함께 고려할 때 유용할 수 있습니다. 새로운 개인 정보 보호 기능을 통해 마케터는 오픈율에 대한 종속성을 줄이고 클릭 후 바운스 수, 받은 편지함 배치, 클릭 수, 트랜잭션과 같은 다른 성능 지표를 고려해야 합니다. 또한 측정하고 있는 사항을 고려하십시오. 오픈율은 제목란의 함수입니다. 클릭은 오퍼 또는 컨텐츠의 함수입니다. 클릭 후 활동은 제품/서비스/웹 사이트의 기능입니다.
+Email open rate hasn’t always been a reliable metric, with some providers blocking images by default, and others pre-loading images. 따라서 자체적으로 오픈율을 평가하는 것은 이메일 캠페인의 효과를 분석하는 데 유용한 지표가 아니지만 다른 이메일 지표와 함께 고려할 때 유용할 수 있습니다. 새로운 개인 정보 보호 기능을 통해 마케터는 오픈율에 대한 종속성을 줄이고 클릭 후 바운스 수, 받은 편지함 배치, 클릭 수, 트랜잭션과 같은 다른 성능 지표를 고려해야 합니다. 또한 측정하고 있는 사항을 고려하십시오. 오픈율은 제목란의 함수입니다. 클릭은 오퍼 또는 컨텐츠의 함수입니다. 클릭 후 활동은 제품/서비스/웹 사이트의 기능입니다.
 
 ## 열기를 측정하는 것 외에 어떤 것이 영향을 받습니까?
 
-공개 비율을 측정하는 것은 Apple의 메일 개인 정보 보호로 인해 영향을 받는 이메일 마케팅의 유일한 측면은 아닙니다. 이메일 서비스를 통해 전송 시간 최적화 전략, 실시간 개인화, 재참여 캠페인 및 자동화된 멀티 웨이브 캠페인을 수행할 수 있습니다. 개인 정보 제한은 개인화를 위해 위치 데이터를 포함하는 이메일 캠페인에도 영향을 줍니다. 이러한 변경 사항은 마케터가 iOS 15가 출시되고 올해 가을에 개인 정보 보호 기능이 시행되면 Apple 사용자에게 표시될 이러한 전략의 모습을 결정하는 계획을 시작해야 함을 의미합니다. Adobe은 고객과 협력하여 이러한 전략 및 사용 사례를 지원하기 위한 적절한 전략이 있는지 확인합니다.
+Measuring open rates is not the only aspect of email marketing impacted by Apple’s Mail Privacy Protection. Email opens drive send-time optimization strategies, real-time personalization, re-engagement campaigns, and automated multi-wave campaigns. 개인 정보 제한은 개인화를 위해 위치 데이터를 포함하는 이메일 캠페인에도 영향을 줍니다. These changes mean that marketers must begin planning to determine what these strategies will look like for Apple users once iOS 15 is released and the privacy protection capabilities take hold this fall. Adobe은 고객과 협력하여 이러한 전략 및 사용 사례를 지원하기 위한 적절한 전략이 있는지 확인합니다.
 
-## 이제 마케터는 무엇을 수행할 수 있습니까?
+## What can marketers do now?
 
-마케터가 아직 수행하지 않는다면 집중하기 좋은 위치는 Adobe Campaign, Marketo 또는 Journey Optimizer에서 수행할 수 있는 장치 기반 세그멘테이션에 있습니다. 장치 데이터는 마케터가 고객이 이메일을 읽는 데 사용하는 장치를 이해하는 데 도움이 되며, 이는 이메일 프로그램에 미치는 잠재적 영향을 결정하는 좋은 시작점이 될 수 있습니다. 또한 장치 유형별로 세그먼트화하면 대상자가 Apple Mail을 사용하여 이메일을 읽는 방법에 대한 인사이트를 제공합니다. 또한 마케터가 열림 또는 지표(즉, 재참여 캠페인, 전송 시간 최적화 등)로 여는 다른 캠페인 및 전략을 이해하는 것이 유용합니다. Adobe은 iOS 15의 릴리스가 더 가까워지면 추가 지침을 제공합니다.
+If marketers are not doing so already, a good place to focus would be on device-based segmentation, which can be done in Adobe Campaign, Marketo or Journey Optimizer. 장치 데이터는 마케터가 고객이 이메일을 읽는 데 사용하는 장치를 이해하는 데 도움이 되며, 이는 이메일 프로그램에 미치는 잠재적 영향을 결정하는 좋은 시작점이 될 수 있습니다. In addition, segmenting by device type will provide insights into how much of an audience uses Apple Mail to read emails. 또한 마케터가 열림 또는 지표(즉, 재참여 캠페인, 전송 시간 최적화 등)로 여는 다른 캠페인 및 전략을 이해하는 것이 유용합니다. Adobe은 iOS 15의 릴리스가 더 가까워지면 추가 지침을 제공합니다.
 
 ## 모바일 푸시 추적에 영향을 줍니까?
 
-현재 이 개인 정보 보호 기능은 모바일 푸시 추적에 영향을 주지 않을 것으로 생각합니다. 즉, 고객을 추적하고 계속 업데이트하도록 할 수 있는 미지의 정보가 아직 많이 있습니다.
+Currently, we believe this privacy feature will not impact mobile push tracking. That said, there are still many unknowns that we will track and keep customers updated.
 
 ## Adobe은 고객을 어떻게 지원합니까?
 
-POV와 제안 전략(근거리 및 장기)을 간략하게 설명하는 추가 컨텐츠를 게시합니다. 또한 고객은 [게재 가능성 안내서](../introduction.md)를 다운로드하고, 게재 능력에 대한 [과정을 수강하고, 최신 트렌드와 모범 사례를 따라갈 수 있는 [최신 웨비나](https://primetime.bluejeans.com/a2m/events/playback/29edda30-a9b8-4e4b-a460-e829c02c912a)를 볼 수 있습니다. ](http://bit.ly/Deliverability-Course) 고객은 게재 능력에 대한 향후 블로그 게시물, 웨비나 및 업데이트, 개인 정보 보호와 관련된 진화하는 다이내믹한 내용을 지켜볼 수 있습니다.
+POV와 제안 전략(근거리 및 장기)을 간략하게 설명하는 추가 컨텐츠를 게시합니다. 또한 고객은 [게재 기능 안내서](../introduction.md), [게재 가능성 교육 과정](http://bit.ly/Deliverability-Course), 및 보기 [최근 웨비나](https://primetime.bluejeans.com/a2m/events/playback/29edda30-a9b8-4e4b-a460-e829c02c912a) 최신 트렌드 및 모범 사례를 따라갈 수 있는 게재 능력에 대해 알아봅니다. 고객은 게재 능력에 대한 향후 블로그 게시물, 웨비나 및 업데이트, 개인 정보 보호와 관련된 진화하는 다이내믹한 내용을 지켜볼 수 있습니다.
