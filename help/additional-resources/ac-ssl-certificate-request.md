@@ -15,20 +15,20 @@ ht-degree: 1%
 
 # SSL 인증서 요청 프로세스
 
-전자 메일 보내기를 위해 Adobe에 도메인을 위임하면( [도메인 이름 설정](/help/additional-resources/ac-domain-name-setup.md) 참조) Adobe이 특정 기능에 대해 특정 하위 도메인을 만들고 사용합니다.
+전자 메일 전송을 위해 Adobe에 도메인을 위임하면( [도메인 이름 설정](/help/additional-resources/ac-domain-name-setup.md)). Adobe은 특정 기능을 위해 특정 하위 도메인을 만들고 사용합니다.
 
-예를 들어 전자 메일 전송을 위해 Adobe에 *email.example.com*&#x200B;을 위임한 경우 Adobe은 다음과 같은 하위 도메인을 만듭니다.
-* *t.email.example.com*  - 추적 링크용
-* *m.email.example.com*  - 미러 페이지용
-* *res.email.example.com*  - 호스팅된 리소스(예: 이미지)
+예를 들어, *email.example.com* 전자 메일 전송을 위해 Adobe은 다음과 같은 하위 도메인을 만듭니다.
+* *t.email.example.com* - 추적 링크:
+* *m.email.example.com* - 미러 페이지의 경우
+* *res.email.example.com* - 호스팅된 리소스(예: 이미지)
 
-**SSL(HTTPS)**&#x200B;을 통해 이러한 도메인을 보호하는 것이 좋습니다. 실제로, 보안되지 않은 링크(HTTP)는 차단에 취약하며 최신 브라우저에서 경고에 플래그를 지정합니다.
+권장 사항 **ssl(HTTPS)을 통해 이러한 도메인 보안**. 실제로, 보안되지 않은 링크(HTTP)는 차단에 취약하며 최신 브라우저에서 경고에 플래그를 지정합니다.
 
 이러한 하위 도메인에 SSL 인증서를 설치하려면 CSR 파일을 요청한 다음, 나중에 Adobe이 설치 또는 갱신할 수 있도록 SSL 인증서를 구매해야 합니다.
 
 >[!CAUTION]
 >
->SSL 인증서를 설치하기 전에 [이 페이지](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/renewing-subdomain-certificate.html#installing-ssl-certificate)에 나열된 사전 요구 사항을 알고 있는지 확인하십시오.
+>SSL 인증서를 설치하기 전에 다음에 나열된 사전 요구 사항을 알고 있는지 확인하십시오. [이 페이지](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/renewing-subdomain-certificate.html#installing-ssl-certificate).
 >
 >Adobe은 최대 2048비트 인증서만 지원합니다. 4096비트 인증서는 아직 지원되지 않습니다.
 
@@ -76,14 +76,14 @@ ht-degree: 1%
 
 CSR(인증서 서명 요청) 파일을 가져오려면 아래 단계를 따르십시오.
 
-* [Campaign 컨트롤 패널](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=ko-KR)에 액세스할 수 있는 경우 [이 Campaign 컨트롤 패널](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/renewing-subdomain-certificate.html#subdomains-and-certificates)의 지침에 따라에서 CSR 파일을 생성하고 다운로드하십시오.
+* 액세스 권한이 있는 경우 [Campaign 컨트롤 패널](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=ko-KR)의 지침을 따르십시오. [이 페이지](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/renewing-subdomain-certificate.html#subdomains-and-certificates) Campaign 컨트롤 패널에서 CSR 파일을 생성하여 다운로드할 수 있습니다.
 
 * 그렇지 않으면 https://adminconsole.adobe.com/ 를 통해 지원 티켓을 만들어 필요한 하위 도메인에 대한 Adobe 고객 지원 센터에서 CSR 파일을 받으십시오.
 
 다음은 따라야 할 몇 가지 모범 사례입니다.
 
 * 위임된 하위 도메인당 한 개의 요청을 수행합니다.
-* 여러 하위 도메인을 하나의 CSR 요청으로 결합할 수 있지만, 동일한 환경 내에서만 결합할 수 있습니다. 예를 들어, Campaign Classic에서 마케팅 서버, [중간 소싱 서버](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/install-campaign-on-prem/mid-sourcing-server.html) 및 [실행 인스턴스](https://experienceleague.adobe.com/docs/campaign-classic/using/transactional-messaging/configure-transactional-messaging/configuring-instances.html#execution-instance)는 세 개의 개별 환경입니다.
+* 여러 하위 도메인을 하나의 CSR 요청으로 결합할 수 있지만, 동일한 환경 내에서만 결합할 수 있습니다. 예를 들어 Campaign Classic에서 마케팅 서버는 [중간 소싱 서버](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/install-campaign-on-prem/mid-sourcing-server.html), 및 [실행 인스턴스](https://experienceleague.adobe.com/docs/campaign-classic/using/transactional-messaging/configure-transactional-messaging/configuring-instances.html#execution-instance) 는 세 개의 분리된 환경입니다.
 * SSL 인증서를 갱신하려면 먼저 새 CSR을 받아야 합니다. 1년 이상의 이전 CSR 파일을 사용하지 마십시오.
 
 다음 정보를 제공해야 합니다.
@@ -107,8 +107,8 @@ CSR(인증서 서명 요청) 파일을 가져오려면 아래 단계를 따르�
 
 | 제공할 정보 | 예제 값 | 참고 |
 |--- |--- |--- |
-| 국가 [C] | 미국 | 두 문자 코드여야 합니다. 전체 국가 목록 [여기](https://www.ssl.com/csrs/country_codes/)에 액세스합니다.</br>*참고: 영국에서는 GB(영국 아님)를 사용합니다.* |
-| 주(또는 도 이름) [ST] | 일리노이 | 해당되는 경우 값은 약식 이름이 아니라 전체 이름이어야 합니다. |
+| 국가 [C] | 미국 | 두 문자 코드여야 합니다. 전체 국가 목록 액세스 [여기](https://www.ssl.com/csrs/country_codes/).</br>*참고: 영국에서는 GB(영국 아님)를 사용합니다.* |
+| 시/도 이름 [ST] | 일리노이 | 해당되는 경우 값은 약식 이름이 아니라 전체 이름이어야 합니다. |
 | 구/군/시 이름 [L] | 시카고 |
 | 조직 이름 [O] | ACME |
 | 조직 단위 이름 [OU] | IT |
@@ -121,12 +121,12 @@ CSR(인증서 서명 요청) 파일을 가져오려면 아래 단계를 따르�
 
 Adobe이 관련 정보를 사용하여 요청을 제출한 후 CSR(인증서 서명 요청) 파일을 생성하여 제공합니다.
 
-결과 CSR 파일의 텍스트는 **&quot;로 시작해야 합니다.—BEGIN CERTIFICATE REQUEST—&quot;**.
+결과 CSR 파일의 텍스트는 **&quot;—인증서 요청 시작—&quot;**.
 
 Adobe에서 CSR 파일을 받은 후에는 아래 단계를 수행하십시오.
 
-1. CSR 파일 텍스트를 복사하여 https://www.sslshopper.com/csr-decoder.html, <!--https://www.certlogik.com/decoder/,--> 또는 https://www.entrust.net/ssl-technical/csr-viewer.cfm과 같은 온라인 디코더에 붙여넣습니다.
-또는 Linux 시스템에서 로컬로 *OpenSSL* 명령을 사용할 수 있습니다. 자세한 내용은 [이 외부 페이지](https://www.question-defense.com/2009/09/22/use-openssl-to-verify-the-contents-of-a-csr-before-submitting-for-a-ssl-certificate)를 참조하십시오.
+1. CSR 파일 텍스트를 복사하여 https://www.sslshopper.com/csr-decoder.html, <!--https://www.certlogik.com/decoder/,--> 또는 https://www.entrust.net/ssl-technical/csr-viewer.cfm
+또는, *OpenSSL* Linux 시스템에서 로컬로 명령 자세한 내용은 [이 외부 페이지](https://www.question-defense.com/2009/09/22/use-openssl-to-verify-the-contents-of-a-csr-before-submitting-for-a-ssl-certificate).
 1. 모든 검사가 성공했는지 확인합니다.
 1. 올바른 매개 변수와 도메인 이름이 포함되어 있는지 확인합니다.
 1. 다른 모든 데이터가 요청 제출 시 제공한 세부 정보와 일치하는지 확인합니다.
@@ -151,16 +151,16 @@ CSR 파일이 제공되면 CSR 파일을 사용하여 해당 도메인에 대한
 
 SSL 인증서가 생성되면 Adobe으로 보내기 전에 유효성을 검사해야 합니다. 이렇게 하려면 아래 절차를 따르십시오.
 
-1. 인증서에 .pem 확장명이 있는지 확인합니다. 그렇지 않은 경우 PEM 형식으로 변환합니다. *OpenSSL*&#x200B;을 사용하여 변환할 수 있습니다.
-1. 인증서가 **&quot;—BEGIN CERTIFICATE—&quot;**&#x200B;로 시작되는지 확인합니다.
+1. 인증서에 .pem 확장명이 있는지 확인합니다. 그렇지 않은 경우 PEM 형식으로 변환합니다. 을 사용하여 전환을 만들 수 있습니다 *OpenSSL*.
+1. 인증서가 **&quot;—BEGIN CERTIFICATE—&quot;**.
 1. 인증서 텍스트를 https://www.sslshopper.com/certificate-decoder.html 또는 https://www.entrust.net/ssl-technical/csr-viewer.cfm 등의 온라인 디코더에 복사합니다.
-또는 Linux 시스템에서 로컬로 *OpenSSL* 명령을 사용할 수 있습니다. 자세한 내용은 [이 외부 페이지](https://www.shellhacks.com/decode-ssl-certificate/)를 참조하십시오.
+또는, *OpenSSL* Linux 시스템에서 로컬로 명령 자세한 내용은 [이 외부 페이지](https://www.shellhacks.com/decode-ssl-certificate/).
 1. 공통 이름, SAN, 발급자 및 유효 기간을 포함하여 인증서가 올바르게 확인되는지 확인하십시오.
-1. SSL 인증서 확인이 성공하면 인증서가 [이 웹 사이트](https://www.sslshopper.com/certificate-key-matcher.html)를 사용하여 CSR과 일치하는지 확인하십시오. **CSR과 인증서가 일치하는지 확인하고, 해당 필드에 인증서와 CSR을 입력합니다.** 그들은 일치해야 합니다.
+1. SSL 인증서 확인이 성공하면 인증서가 를 사용하여 CSR과 일치하는지 확인합니다 [이 웹 사이트](https://www.sslshopper.com/certificate-key-matcher.html): 선택 **CSR과 인증서가 일치하는지 확인**&#x200B;를 입력하고 해당 필드에 인증서 및 CSR을 입력합니다. 그들은 일치해야 합니다.
 
 ### 5단계 - SSL 인증서 설치 요청
 
-* [Campaign 컨트롤 패널](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html)에 액세스할 수 있는 경우 [이 페이지](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/renewing-subdomain-certificate.html#installing-ssl-certificate)의 지침에 따라 인증서를 Campaign 컨트롤 패널에 업로드하십시오.
+* 액세스 권한이 있는 경우 [Campaign 컨트롤 패널](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html)의 지침을 따르십시오. [이 페이지](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/renewing-subdomain-certificate.html#installing-ssl-certificate) 인증서를 Campaign 컨트롤 패널에 업로드합니다.
 
 * 그렇지 않으면 https://adminconsole.adobe.com/ 을 통해 다른 지원 티켓을 만들어 Adobe 서버에 인증서를 설치하기 위한 Adobe을 요청하십시오.
 
@@ -174,11 +174,11 @@ SSL 인증서가 생성되면 Adobe으로 보내기 전에 유효성을 검사�
 
 SSL 인증서가 설치 및 고객 지원 센터에서 확인되면 모든 URL에 대해 성공적으로 설치되었는지 확인하십시오.
 
-SSL 설치 티켓을 닫기 전에 아래 테스트를 수행합니다. 또한 [이 섹션](#update-configuration)에 설명된 대로 특정 구성을 업데이트해야 합니다.
+SSL 설치 티켓을 닫기 전에 아래 테스트를 수행합니다. 또한 가 지시하는 대로 특정 구성을 업데이트해야 합니다. [이 섹션](#update-configuration).
 
 브라우저에서 다음 URL로 이동합니다(&quot;subdomain.customer.com&quot;을 하위 도메인으로 바꾸기).
 
-* https://subdomain.customer.com/r/test ([웹 응용 프로그램](https://experienceleague.adobe.com/docs/campaign-classic/using/designing-content/web-applications/about-web-applications.html) 하위 도메인에만 해당 - 전자 메일 하위 도메인에 적용되지 않음)
+* https://subdomain.customer.com/r/test (용 [웹 애플리케이션](https://experienceleague.adobe.com/docs/campaign-classic/using/designing-content/web-applications/about-web-applications.html) 하위 도메인만 해당 - 전자 메일 하위 도메인에 적용되지 않음)
 * https://t.subdomain.customer.com/r/test
 * https://m.subdomain.customer.com/r/test
 * https://res.subdomain.customer.com/r/test
@@ -193,13 +193,13 @@ SSL 인증서가 제대로 설치되지 않으면 다음 경고가 표시됩니�
 
 ### 7단계 - 인증서 유효 기간 확인
 
-브라우저에서 인증서의 유효 기간을 확인할 수 있습니다. 예를 들어 Google Chrome에서 **Secure** > **인증서**&#x200B;를 클릭합니다.
+브라우저에서 인증서의 유효 기간을 확인할 수 있습니다. 예를 들어 Google Chrome에서 **보안** > **인증서**.
 
-유효기간을 확인하는 것은 귀하의 책임입니다. Adobe은 인증서 만료를 모니터링하는 프로세스를 구현하는 것이 좋습니다. [이 문서](https://www.thesslstore.com/blog/what-happens-when-your-ssl-certificate-expires/)에서 SSL 인증서가 만료되면 발생하는 사항에 대해 자세히 알아보십시오.
+유효기간을 확인하는 것은 귀하의 책임입니다. Adobe은 인증서 만료를 모니터링하는 프로세스를 구현하는 것이 좋습니다. SSL 인증서가 곧 만료될 때 발생하는 작업에 대해 자세히 알아보십시오 [이 문서](https://www.thesslstore.com/blog/what-happens-when-your-ssl-certificate-expires/).
 
 * 인증서 만료 날짜 최소 2주 전에 업데이트된 인증서를 요청하려면 지원 티켓을 만듭니다. CSR 세부 사항이 변경되지 않는 한 추가 CSR을 요청할 필요가 없습니다.
 
-* [Campaign 컨트롤 패널](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html)에 액세스할 수 있고, 환경이 AWS 환경의 Adobe에 의해 호스팅되는 경우, Campaign 컨트롤 패널이 만료되기 전에 인증서를 갱신하는 데 이를 사용할 수 있습니다. 자세한 내용은 [이 섹션](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/monitoring-ssl-certificates.html#monitoring-certificates)을 참조하십시오.
+* 액세스 권한이 있는 경우 [Campaign 컨트롤 패널](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html), 그리고 환경이 AWS 환경에서 Adobe으로 호스팅되는 경우 Campaign 컨트롤 패널을 사용하여 인증서가 만료되기 전에 인증서를 갱신할 수 있습니다. 추가 정보 [이 섹션](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/monitoring-ssl-certificates.html#monitoring-certificates).
 
 ### 8단계 - 특정 구성 업데이트 {#update-configuration}
 
@@ -207,7 +207,7 @@ SSL 인증서가 제대로 설치되지 않으면 다음 경고가 표시됩니�
 
 >[!NOTE]
 >
->Campaign Classic의 경우 업데이트할 URL은 주로 [배포 마법사](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/initial-configuration/deploying-an-instance.html#deployment-wizard) 및 [외부 계정](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/accessing-external-database/external-accounts.html)(추적, 미러 페이지 및 공개 리소스 도메인)에 있습니다. Campaign Standard은 [브랜딩 구성](https://experienceleague.adobe.com/docs/campaign-standard/using/administrating/application-settings/branding.html#about-brand-identity)을 참조하십시오.
+>Campaign Classic의 경우 업데이트할 URL은 주로 [배포 마법사](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/initial-configuration/deploying-an-instance.html#deployment-wizard) 그리고 [외부 계정](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/accessing-external-database/external-accounts.html) (추적, 미러 페이지 및 공용 리소스 도메인) Campaign Standard에 대해서는 [브랜딩 구성](https://experienceleague.adobe.com/docs/campaign-standard/using/administrating/application-settings/branding.html#about-brand-identity).
 
 구성이 업데이트되면 HTTP가 아닌 HTTPS URL을 사용하여 새 이메일이 전송됩니다. 이제 URL이 안전한지 확인하려면 다음 테스트를 신속하게 수행할 수 있습니다.
 
@@ -218,8 +218,8 @@ SSL 인증서가 제대로 설치되지 않으면 다음 경고가 표시됩니�
 
 **Campaign Classic**
 
-* [Campaign 컨트롤 패널: SSL 인증서 추가(자습서)](https://experienceleague.adobe.com/docs/campaign-classic-learn/control-panel/subdomains-and-certificates/adding-ssl-certificates.html)  - 하위 도메인 보안을 위해 SSL 인증서를 추가하는 방법을 알아봅니다.
+* [Campaign 컨트롤 패널: SSL 인증서 추가(튜토리얼)](https://experienceleague.adobe.com/docs/campaign-classic-learn/control-panel/subdomains-and-certificates/adding-ssl-certificates.html) - 하위 도메인 보안을 위해 SSL 인증서를 추가하는 방법을 알아봅니다.
 
 **Campaign Standard**
 
-* [Campaign 컨트롤 패널: SSL 인증서 추가(자습서)](https://experienceleague.adobe.com/docs/campaign-standard-learn/control-panel/subdomains-and-certificates/adding-ssl-certificates.html)  - 하위 도메인 보안을 위해 SSL 인증서를 추가하는 방법을 알아봅니다.
+* [Campaign 컨트롤 패널: SSL 인증서 추가(튜토리얼)](https://experienceleague.adobe.com/docs/campaign-standard-learn/control-panel/subdomains-and-certificates/adding-ssl-certificates.html) - 하위 도메인 보안을 위해 SSL 인증서를 추가하는 방법을 알아봅니다.

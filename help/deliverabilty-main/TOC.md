@@ -3,7 +3,7 @@ user-guide-title: 전달성 모범 사례 안내서
 user-guide-breadcrumb: Deliverability Best Practice Guide
 user-guide-description: 주요 전달성 용어, 개념 및 접근 방식을 학습하여 성공적인 마케팅 프로그램을 위한 역량을 확보하십시오.
 source-git-commit: 3e933104107cd4f62eab99c66957ccd9acb51409
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '169'
 ht-degree: 100%
 

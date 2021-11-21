@@ -40,4 +40,4 @@ ht-degree: 35%
 
 ## 추가 리소스
 
-* [이 섹션](/help/additional-resources/troubleshooting.md)에서 게재 가능성 문제를 해결하는 방법을 알아봅니다.
+* 에서 게재 기능 문제를 해결하는 방법을 배웁니다. [이 섹션](/help/additional-resources/troubleshooting.md).

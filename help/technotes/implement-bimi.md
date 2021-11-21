@@ -10,9 +10,9 @@ ht-degree: 0%
 
 ---
 
-# Gmail의 [!DNL Brand Indicators for Message Identification] 구현(BIMI)
+# Gmail 구현 [!DNL Brand Indicators for Message Identification] (비미)
 
-Gmail은 최근에 BIMI](https://cloud.google.com/blog/products/identity-security/bringing-bimi-to-gmail-in-google-workspace)에 대한 일반적인 지원을 제공하는 [이라고 발표했습니다. 다음 사항을 포함하여 이 기능을 활용하려면 먼저 처리해야 하는 항목이 많습니다. 검증된 마크 인증서, 상표 로고, 올바른 형식의 로고, DMARC 설정 및 BIMI 레코드를 DNS에 게시합니다. 이 문서에서 이러한 단계를 모두 검토하십시오.
+Gmail은 최근에 그들이 [BIMI의 일반적인 지원을 제공하다](https://cloud.google.com/blog/products/identity-security/bringing-bimi-to-gmail-in-google-workspace). 다음 사항을 포함하여 이 기능을 활용하려면 먼저 처리해야 하는 항목이 많습니다. 검증된 마크 인증서, 상표 로고, 올바른 형식의 로고, DMARC 설정 및 BIMI 레코드를 DNS에 게시합니다. 이 문서에서 이러한 단계를 모두 검토하십시오.
 
 [!DNL Brand Indicators for Message Identification] (BIMI)는 참여하는 플랫폼에서 보낸 사람의 이메일 옆에 승인된 로고를 표시할 수 있는 업계 표준입니다. 이 눈이 사람을 더 쉽게 참여를 높일 수 있을 뿐만 아니라, 발신자의 진위를 확인하는 데 도움이 되므로 피싱과 다른 스팸 술에도 대한 위험을 줄일 수 있습니다.
 
@@ -41,7 +41,7 @@ VMC를 얻으려면 먼저 완료해야 하는 다른 주요 단계가 있습니
 
 또한 형식에 대한 BIMI 로고 요구 사항을 로고로 충족하는지 확인하는 것도 좋습니다.
 
-SVG 형식이어야 하며 SVG Portable/Secure(SVG-P/S) 프로필을 준수해야 합니다. 방법 지침은 [BIMI 작업 그룹](https://bimigroup.org/svg-conversion-tools-released)에서 확인할 수 있습니다.
+SVG 형식이어야 하며 SVG Portable/Secure(SVG-P/S) 프로필을 준수해야 합니다. 방법 관련 지침은 [BIMI 작업 그룹](https://bimigroup.org/svg-conversion-tools-released).
 
 ## DMARC
 
@@ -59,12 +59,12 @@ BIMI에서 사용할 수 있는 전송 도메인에 DMARC가 완전히 구성되
 default._bimi.[domain] IN TXT “v=BIMI1; l=[SVG URL] 
 ```
 
-해당 항목에 대한 세부 정보를 얻을 수 있으며 [BIMI 작업 그룹 사이트](https://bimigroup.org/implementation-guide)에서 무료 BIMI 검사기를 사용할 수도 있습니다.
+해당 항목에 대한 세부 사항을 확인할 수 있으며, [BIMI 작업 그룹 사이트](https://bimigroup.org/implementation-guide).
 
 
 ## 주요 사항
 
-[!DNL Adobe Campaign] 또는 Marketo 클라이언트인 경우 Adobe이 BIMI DNS 업데이트를 만드는 데 도움을 줄 수 있습니다. 고객 지원 센터에 문의하여 요청을 받으십시오. Adobe이 BIMI가 제대로 작동하지 않는 경우 문제 해결에 도움을 줄 수도 있습니다.
+만약 [!DNL Adobe Campaign] Marketo 클라이언트나 Adobe은 BIMI DNS 업데이트를 만드는 데 도움이 될 수 있습니다. 고객 지원 센터에 문의하여 요청을 받으십시오. Adobe이 BIMI가 제대로 작동하지 않는 경우 문제 해결에 도움을 줄 수도 있습니다.
 
 상표 또는 검증된 마크 인증서에 대한 도움말은 법률 팀 및 승인된 VMC 공급업체와 함께 하십시오.
 

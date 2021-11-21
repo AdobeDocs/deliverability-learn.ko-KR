@@ -23,35 +23,35 @@ ht-degree: 6%
 * 보낸 사람 도메인: 스팸 또는 잘못 구성된 발신자 도메인(바운스 메일 주소의 전체 도메인)을 나열합니다.
 * 웹 도메인별: 는 스팸 컨텐츠에 포함된 링크 및 이미지의 URL에 있는 도메인(등록자와 함께 등록된 상위 수준 도메인)을 나열합니다. Adobe 솔루션에서 고려할 도메인은 일반적으로 추적에 사용되는 주소입니다.
 
-다음은 가장 널리 사용되는 RBL 목록입니다. 보다 포괄적인 목록이 필요하면 [https://www.dnsstuff.com/](https://tools.dnsstuff.com/)을 참조하십시오.
+다음은 가장 널리 사용되는 RBL 목록입니다. 보다 포괄적인 목록이 필요하면 [https://www.dnsstuff.com/](https://tools.dnsstuff.com/).
 
 * **스팜하우스**
 
-   [https://www.spamhaus.org/](https://www.spamhaus.org/) 참조
+   을(를) 참조하십시오. [https://www.spamhaus.org/](https://www.spamhaus.org/)
 
-   데이터베이스가 더 중요합니다. 이 목록에 분류된 것은 일반적으로 심각한 상황이다. 이러한 경우 즉시 조치를 취해 상업 서비스, 게재 가능성 및 [고객 지원 센터 Adobe](https://helpx.adobe.com/kr/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)에 경고해야 합니다.
+   데이터베이스가 더 중요합니다. 이 목록에 분류된 것은 일반적으로 심각한 상황이다. 이러한 경우 즉시 조치를 취해 상업 서비스, 게재 가능성 및 경고 메시지를 보내야 합니다 [고객 지원 Adobe](https://helpx.adobe.com/kr/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
 
 * **SpamCop**
 
-   [https://www.spamcop.net/](https://www.spamcop.net/) 참조
+   을(를) 참조하십시오. [https://www.spamcop.net/](https://www.spamcop.net/)
 
    가장 유명한 데이터베이스 중 하나입니다. IP 주소 중 하나가 이 목록에 배치되면 일반적으로 SpamCop 사용자가 메시지를 스팸으로 선언했거나 메시지를 SpamHonepot에 보냈음을 의미합니다.
 
 * **URIBL**
 
-   [https://www.uribl.com/](https://www.uribl.com/) 참조
+   을(를) 참조하십시오. [https://www.uribl.com/](https://www.uribl.com/)
 
-   이 목록은 스팸으로 선언된 메시지에 정기적으로 나타나는 도메인을 식별합니다. 도메인이 이 목록에 표시되면 게재 기능에 큰 영향을 줄 수 있습니다. 게재 가능성 서비스 및 [고객 지원 센터 Adobe](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)에 즉시 알려주어야 합니다.
+   이 목록은 스팸으로 선언된 메시지에 정기적으로 나타나는 도메인을 식별합니다. 도메인이 이 목록에 표시되면 게재 기능에 큰 영향을 줄 수 있습니다. 게재 가능성 서비스 및 [고객 지원 Adobe](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) 즉시 작동합니다.
 
 * **SURBL**
 
-   [http://www.surbl.org/](http://www.surbl.org/) 참조
+   을(를) 참조하십시오. [http://www.surbl.org/](http://www.surbl.org/)
 
-   SURBL은 스팸에 정기적으로 나타나는 웹 사이트를 식별합니다. 도메인이 이 목록에 표시되면 게재 기능에 큰 영향을 줄 수 있습니다. 게재 가능성 서비스 및 [고객 지원 센터 Adobe](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)에 즉시 알려주어야 합니다.
+   SURBL은 스팸에 정기적으로 나타나는 웹 사이트를 식별합니다. 도메인이 이 목록에 표시되면 게재 기능에 큰 영향을 줄 수 있습니다. 게재 가능성 서비스 및 [고객 지원 Adobe](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) 즉시 작동합니다.
 
 * **iX 마니투**
 
-   이것은 IP 목록이며 독일에서 널리 사용되고 있습니다. [https://www.heise.de/ix/nixspam/](https://www.heise.de/ix/nixspam/) 참조
+   이것은 IP 목록이며 독일에서 널리 사용되고 있습니다. 을(를) 참조하십시오. [https://www.heise.de/ix/nixspam/](https://www.heise.de/ix/nixspam/)
 
 <!--* SORBS
 

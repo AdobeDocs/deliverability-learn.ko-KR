@@ -34,10 +34,10 @@ Adobe 플랫폼에서 새 보낸 사람을 위한 온보딩 프로세스의 일�
 
 IP 전략을 잘 짜서 긍정적인 평판을 얻는 것이 중요합니다. IP 및 설정 수는 비즈니스 모델 및 마케팅 목표에 따라 다릅니다. 전문가와 함께 올바른 출발을 위한 명확한 전략을 개발하세요. 주목할 중요한 다음 사항을 고려하십시오.
 
-* **너무 많은** IPscan은  **스노우슈에 스팸을 보내는 사람이 흔히 쓰는 전술이므로 평판 문제를 야기합니다. 이 전략은 스팸 메일의 전달을 최대화하기 위해 많은 IP에 트래픽이 분산되는 스파머가 사용하는 전략입니다**. 사용자가 분기가 아니더라도 너무 많은 IP를 사용하는 경우, 특히 해당 IP에 이전 트래픽이 없는 경우 그럴 수 있습니다.
-* **너무 적은** IPscan으로 인해 처리량 문제가 발생하고 잠재적으로 평판 문제가 발생할 수 있습니다. 처리량은 ISP별로 다릅니다. ISP가 수락하는 시간과 속도는 일반적으로 해당 인프라를 기반으로 하며 평판 기준을 보냅니다.
+* **IP가 너무 많습니다.** 이 명성은 스팸메일 사용자들의 일반적인 전술이기 때문에 평판 문제를 촉발할 수 있다 **스노우슈**&#x200B;은 스팸메일 게재를 최대화하기 위해 많은 IP에 트래픽이 분산되는 스팸메일에서 사용하는 전술입니다. 사용자가 분기가 아니더라도 너무 많은 IP를 사용하는 경우, 특히 해당 IP에 이전 트래픽이 없는 경우 그럴 수 있습니다.
+* **너무 적은 IP** 처리량 문제를 야기하고 잠재적으로 평판 문제를 트리거할 수 있습니다. 처리량은 ISP별로 다릅니다. ISP가 수락하는 시간과 속도는 일반적으로 해당 인프라를 기반으로 하며 평판 기준을 보냅니다.
 * 메시징 유형에 대한 트래픽 분리가 키입니다. 따라서 별도의 IP 풀에서 최소한의 마케팅 및 트랜잭션 메일을 별도의 IP 풀로 배치하는 것이 중요합니다.
-* 메일 전략에 따라 평판이 완전히 다른 경우 다른 IP 풀에서 다른 제품이나 마케팅 스트림을 구분하는 것이 좋습니다. 일부 마케터는 지역별 세그먼트도 제공합니다. 평판이 낮은 트래픽에 대해 IP를 분리하면 평판 문제가 해결되지 않지만, &quot;평판&quot;으로 간주되는 이메일 게재에 문제가 발생하지 않습니다. 결국, 여러분은 더 위험한 대상을 위해 여러분의 좋은 청중을 희생하고 싶지 않을 거예요.
+* 메일 전략에 따라 평판이 완전히 다른 경우 다른 IP 풀에서 다른 제품이나 마케팅 스트림을 구분하는 것이 좋습니다. 일부 마케터는 지역별 세그먼트도 제공합니다. 평판이 낮은 트래픽에 대해 IP를 분리하면 평판 문제가 해결되지 않지만, &quot;평판&quot;으로 여겨지는 이메일 게재와 관련된 문제가 발생하지 않습니다. 결국, 여러분은 더 위험한 대상을 위해 여러분의 좋은 청중을 희생하고 싶지 않을 거예요.
 
 ## 피드백 루프 {#feedback-loops}
 
@@ -45,7 +45,7 @@ IP 전략을 잘 짜서 긍정적인 평판을 얻는 것이 중요합니다. IP
 
 ## 인증 {#authentication}
 
-인증은 ISP가 보낸 사람의 ID를 확인하는 데 사용하는 프로세스입니다. 가장 일반적인 두 인증 프로토콜은 [!DNL Sender Policy Framework] (SPF) 및 [!DNL DomainKeys Identified Mail] (DKIM)입니다. 최종 사용자에게는 표시되지 않지만 ISP가 확인된 보낸 사람의 이메일을 필터링하는 데 도움이 됩니다. [!DNL Domain-based Message Authentication Reporting and Conformance] (DMARC)는 해당 정책이 아직 모든 ISP가 자체 평판 시스템에 통합하지는 않았지만, 인기를 얻고 있습니다.
+인증은 ISP가 보낸 사람의 ID를 확인하는 데 사용하는 프로세스입니다. 가장 일반적인 두 가지 인증 프로토콜은 [!DNL Sender Policy Framework] (SPF) 및 [!DNL DomainKeys Identified Mail] (DKIM). 최종 사용자에게는 표시되지 않지만 ISP가 확인된 보낸 사람의 이메일을 필터링하는 데 도움이 됩니다. [!DNL Domain-based Message Authentication Reporting and Conformance] (DMARC)는 해당 정책이 아직 모든 ISP가 자체 평판 시스템에 통합하지는 않았지만, 인기를 얻고 있습니다.
 
 ### SPF
 
@@ -63,12 +63,12 @@ IP 전략을 잘 짜서 긍정적인 평판을 얻는 것이 중요합니다. IP
 
 **Campaign**
 
-* [이 섹션에서 하위 도메인을 Adobe Campaign Classic 또는 Standard에 완전히 위임하는 방법을 알아봅니다.](/help/additional-resources/ac-domain-name-setup.md)
-* [Campaign 컨트롤 패널: 전체 하위 도메인 위임(자습서)](https://experienceleague.adobe.com/docs/campaign-classic-learn/control-panel/subdomains-and-certificates/subdomain-delegation.html)  -  *하위 도메인을 Adobe Campaign Classic에 완전히 위임하는 방법을 알아봅니다.*
-* [Campaign 컨트롤 패널: 전체 하위 도메인 위임(자습서)](https://experienceleague.adobe.com/docs/campaign-standard-learn/control-panel/subdomains-and-certificates/subdomain-delegation.html)  -  *하위 도메인을 Adobe Campaign Standard에 완전히 위임하는 방법을 알아봅니다.*
-* [이 섹션](/help/additional-resources/acc-technical-recommendations.md#feedback-loop-acc)에서 Campaign Classic 인스턴스에 대한 피드백 루프 구현에 대해 자세히 알아보십시오.
+* 에서 하위 도메인을 Adobe Campaign Classic 또는 Standard에 완전히 위임하는 방법을 알아봅니다 [이 섹션](/help/additional-resources/ac-domain-name-setup.md).
+* [Campaign 컨트롤 패널: 전체 하위 도메인 위임(튜토리얼)](https://experienceleague.adobe.com/docs/campaign-classic-learn/control-panel/subdomains-and-certificates/subdomain-delegation.html) - *하위 도메인을 Adobe Campaign Classic에 완전히 위임하는 방법을 알아봅니다.*
+* [Campaign 컨트롤 패널: 전체 하위 도메인 위임(튜토리얼)](https://experienceleague.adobe.com/docs/campaign-standard-learn/control-panel/subdomains-and-certificates/subdomain-delegation.html) - *하위 도메인을 Adobe Campaign Standard에 완전히 위임하는 방법을 알아봅니다.*
+* 에서 Campaign Classic 인스턴스에 대한 피드백 루프 구현에 대해 자세히 알아보십시오 [이 섹션](/help/additional-resources/acc-technical-recommendations.md#feedback-loop-acc).
 
 ## 추가 리소스
 
-* [이 섹션](/help/additional-resources/authentication.md)에서 SPF, DKIM 및 DMARC 인증 방법에 대해 자세히 알아보십시오.
-* [이 섹션](/help/additional-resources/increase-reputation-with-ip-warming.md)에서 IP 온난화를 통해 전자 메일 신뢰도를 높이는 방법에 대해 자세히 알아보십시오.
+* 에서 SPF, DKIM 및 DMARC 인증 방법에 대해 자세히 알아보십시오 [이 섹션](/help/additional-resources/authentication.md).
+* IP 온난화를 통해 전자 메일 신뢰도를 높이는 방법에 대해 자세히 알아보십시오 [이 섹션](/help/additional-resources/increase-reputation-with-ip-warming.md).

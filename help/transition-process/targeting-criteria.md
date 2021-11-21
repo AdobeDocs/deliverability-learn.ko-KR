@@ -27,7 +27,7 @@ ht-degree: 22%
 
 **Analytics**
 
-* [참여 및 유지 비율을 높이는 방법(자습서)](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/mobile-app-analytics/measuring-mobile-analytics/how-to-increase-engagement-and-retention-rates.html?lang=en#mobile-app-analytics):  *집단을 사용하여 해당 동작을 통해 참여 대상을 식별하고 모바일 앱에서 고착성을 유도하는 근본 원인을 파악합니다. 세그먼트 IQ의 데이터 과학 알고리즘을 사용하여 세그먼트 간의 차이점과 유사성을 알 수 있습니다.*
+* [참여 및 유지 비율을 높이는 방법(튜토리얼)](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/mobile-app-analytics/measuring-mobile-analytics/how-to-increase-engagement-and-retention-rates.html?lang=en#mobile-app-analytics): *집단을 사용하여 해당 동작을 통해 참여 대상을 식별하고 모바일 앱에서 고착성을 유도하는 근본 원인을 파악합니다. 세그먼트 IQ의 데이터 과학 알고리즘을 사용하여 세그먼트 간의 차이점과 유사성을 알 수 있습니다.*
 
 **Campaign Standard**
 

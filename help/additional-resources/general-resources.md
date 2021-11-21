@@ -9,7 +9,7 @@ exl-id: 75538ef8-8e4b-4940-8d11-42ebd7c65e93
 source-git-commit: f441fe45b5b7309082c8eea7423d40003b913b7b
 workflow-type: tm+mt
 source-wordcount: '126'
-ht-degree: 31%
+ht-degree: 35%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 31%
 
 ## 일반 리소스
 
-이 섹션에는 특정 권장 사항 및 우수 사례, 기타 도구 또는 문제 해결 절차와 같이 게재 능력에 대한 몇 가지 추가 리소스가 나열됩니다.
+이 섹션에는 특정 권장 사항 및 우수 사례, 기타 도구 또는 문제 해결 절차와 같은 게재 능력에 대한 몇 가지 추가 리소스가 나열됩니다.
 
 * [스팸 트랩에 대한 모든 정보](../../help/additional-resources/all-about-spam-traps.md)
 * [IP warming으로 이메일 신뢰도 향상](../../help/additional-resources/increase-reputation-with-ip-warming.md)

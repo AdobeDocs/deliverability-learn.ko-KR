@@ -19,13 +19,13 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->Campaign 컨트롤 패널(베타로 사용 가능)를 사용하여 새 하위 도메인을 설정할 수도 있습니다. 자세한 내용은 [이 섹션](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/setting-up-new-subdomain.html#must-read)을 참조하십시오.
+>Campaign 컨트롤 패널(베타로 사용 가능)를 사용하여 새 하위 도메인을 설정할 수도 있습니다. 추가 정보 [이 섹션](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/setting-up-new-subdomain.html#must-read).
 
 ## 하위 도메인
 
 Adobe을 통해 디지털 마케팅은 브랜드의 고객 참여 마케팅 프로그램을 지원하는 컨텍스트 엔진이 될 수 있습니다.  이메일은 디지털 마케팅 프로그램의 기초로 유지됩니다. 그러나 받은 편지함에 도달하는 것이 그 어느 때보다 더 어려워졌다.
 
-이메일 캠페인용 하위 도메인을 만들면 브랜드의 다양한 트래픽 유형(예: 마케팅과 기업)을 특정 IP 풀 및 특정 도메인으로 분리하여 [IP 준비 프로세스](../../help/additional-resources/increase-reputation-with-ip-warming.md)를 빠르게 수행하고 전체적으로 게재 능력을 향상시킬 수 있습니다. 도메인을 공유하는데 도메인을 차단하거나 차단 목록에 추가하면 회사 메일 게재에 영향을 줄 수 있습니다. 그러나 이메일 마케팅 커뮤니케이션과 관련된 도메인의 평판 문제 또는 블록은 해당 이메일 흐름에 영향을 줍니다.  기본 도메인을 발신자로 사용하거나 여러 메일 스트림에 대한 &#39;보낸 사람&#39; 주소로 사용하면 이메일 인증이 중단되어 메시지가 스팸 폴더에 저장되거나 차단될 수 있습니다.
+이메일 캠페인용 하위 도메인을 만들면 브랜드를 특정 IP 풀과 특정 도메인으로 다양한 트래픽 유형(예: 마케팅과 기업)을 분리하여 클릭 속도를 높일 수 있습니다 [IP 온난화 프로세스](../../help/additional-resources/increase-reputation-with-ip-warming.md) 게재 능력을 전반적으로 향상시킬 수 있습니다. 도메인을 공유하는데 도메인을 차단하거나 차단 목록에 추가하면 회사 메일 게재에 영향을 줄 수 있습니다. 그러나 이메일 마케팅 커뮤니케이션과 관련된 도메인의 평판 문제 또는 블록은 해당 이메일 흐름에 영향을 줍니다.  기본 도메인을 발신자로 사용하거나 여러 메일 스트림에 대한 &#39;보낸 사람&#39; 주소로 사용하면 이메일 인증이 중단되어 메시지가 스팸 폴더에 저장되거나 차단될 수 있습니다.
 
 ### 위임
 
@@ -33,10 +33,9 @@ Adobe을 통해 디지털 마케팅은 브랜드의 고객 참여 마케팅 프�
 
 즉, Adobe Campaign의 DNS 서버는 최상위 도메인이 아니라 해당 영역에만 전체 권한을 갖습니다. Adobe Campaign의 DNS 서버는 &quot;t.marketing.example.com&quot; 자체와 같이 해당 영역의 도메인 이름에 대한 질의에 대한 권위 있는 답변을 제공하지만 &quot;www.example.com&quot; 은 제공하지 않습니다.
 
-Adobe Campaign에서 사용할 하위 도메인을 위임함으로써 클라이언트는 Adobe을 사용하여 전자 메일 마케팅 전송 도메인에 대한 업계 표준 게재 기능 요구 사항을 충족하는 데 필요한 DNS 인프라를 유지 관리하는 동시에 내부 전자 메일 도메인에 대한 DNS를 유지 및 제어할 수 있습니다.  하위 도메인을 위임하면 다음을 수행할 수 있습니다.
+Adobe Campaign에서 사용할 하위 도메인을 위임하면 클라이언트는 Adobe을 사용하여 전자 메일 마케팅 전송 도메인에 대한 업계 표준 게재 기능 요구 사항을 충족하는 데 필요한 DNS 인프라를 유지 관리하는 동시에 내부 전자 메일 도메인에 대한 DNS를 유지 및 제어할 수 있습니다.  하위 도메인을 위임하면 다음을 수행할 수 있습니다.
 
-클라이언트는 도메인 이름과 함께 DNS 별칭을 사용하여 브랜드 이미지를 유지합니다
-전자 메일 전송 중에 게재 능력을 완전히 최적화하기 위해 모든 기술 모범 사례를 자체적으로 구현하는 Adobe
+클라이언트는 Adobe 이름과 함께 DNS 별칭을 사용하여 브랜드 이미지를 유지하고, 모든 기술 모범 사례를 자체적으로 구현하여 전자 메일 전송 중에 게재 능력을 완전히 최적화합니다
 
 ## DNS 설정 옵션
 
@@ -52,9 +51,9 @@ Adobe Campaign에서 사용할 하위 도메인을 위임함으로써 클라이�
 | 레코드 유형 | 용도 | 레코드/컨텐츠 예 |
 |--- |--- |--- |
 | MX | 수신 메시지의 메일 서버 지정 | <i>email.example.com</i></br><i>10 inbound.email.example.com</i> |
-| SPF(TXT) | 보낸 사람 정책 프레임워크 | <i>email.example.com</i></br> &quot;v=spf1 redirect=__spf.campaign.adobe.com&quot; |
+| SPF(TXT) | 보낸 사람 정책 프레임워크 | <i>email.example.com</i></br>&quot;v=spf1 redirect=__spf.campaign.adobe.com&quot; |
 | DKIM(TXT) | 식별된 메일 도메인 키 | <i>클라이언트._domainkey.email.example.com</i></br>&quot;v=DKIM1; k=rsa;&quot; &quot;DKIMPUBLICKEY HERE&quot; |
-| 호스트 레코드 (A) | 미러 페이지, 이미지 호스팅 및 추적 링크, 모든 전송 도메인 | m.email.example.com 123.111.100.99</br>t.email.example.com IN 123.111.100.98</br>email.example.com IN A 123.111.100.97 |
+| 호스트 레코드 (A) | 미러 페이지, 이미지 호스팅 및 추적 링크, 모든 전송 도메인 | m.email.example.com IN A 123.111.100.99</br>t.email.example.com (A 123.111.100.98)</br>email.example.com IN A 123.111.100.97 |
 | 역방향 DNS(PTR) | 클라이언트 IP 주소를 클라이언트 브랜드 호스트 이름에 매핑합니다 | 18.101.100.192.in-addr.arpa 도메인 이름 포인터 r18.email.example.com |
 | CNAME | 다른 도메인 이름에 별칭을 제공합니다. | t1.email.example.com은 t1.email.example.campaign.adobe.com의 별칭입니다. |
 
@@ -112,7 +111,7 @@ Adobe Campaign 애플리케이션에서 브랜드 URL(미러 페이지 및 추�
 >[!NOTE]
 >
 >* 회신 주소 필드의 목적은 수신자가 &quot;보낸 사람 주소&quot;가 아닌 다른 주소로 회신하도록 하는 것입니다.  필수 필드는 아니지만 Adobe은 &quot;회신 주소&quot;가 유효하고 모니터링되는 사서함에 연결되도록 강력히 권장합니다.  이 사서함은 고객이 호스트해야 합니다.  예를 들어 customercare@customer.com에서 이메일을 읽고 응답하는 지원 사서함일 수 있습니다.
->* 고객이 &quot;회신 주소&quot;를 선택하지 않은 경우 기본 주소는 항상 `<tenant>-<type>-<env>@<subdomain>`입니다.
+>* 고객이 &quot;회신 주소&quot;를 선택하지 않은 경우 기본 주소는 항상 입니다 `<tenant>-<type>-<env>@<subdomain>`.
 >* 이렇게 &quot;회신 주소&quot;가 설정되면 응답이 모니터링되지 않는 사서함으로 전송됩니다.
 >* Adobe Campaign에서 전자 메일을 보낼 때 &quot;보낸 사람 주소&quot; 사서함은 모니터링되지 않으며 마케팅 사용자가 이 사서함에 액세스할 수 없습니다. 또한 Adobe Campaign은 이 사서함에서 받은 자동 회신 또는 자동 전송 전자 메일을 제공할 수 없습니다.
 >* 캠페인 보낸 사람/보낸 사람 주소 및 오류 주소는 &quot;남용&quot; 또는 &quot;postmaster&quot;일 수 없습니다.
@@ -124,7 +123,7 @@ Adobe Campaign 플랫폼에 사용하기 위해 선택한 하위 도메인은 4�
 
 | 위임된 하위 도메인 | DNS 지침 |
 |--- |--- |
-| `<subdomain>` | `<subdomain>` NS a.ns.campaign.adobe.com  </br> `<subdomain>` NS b.ns.campaign.adobe.com  </br> `<subdomain>` NS c.ns.campaign.adobe.com  </br> `<subdomain>` NS d.ns.campaign.adobe.com |
+| `<subdomain>` | `<subdomain>` NS a.ns.campaign.adobe.com </br> `<subdomain>` NS b.ns.campaign.adobe.com </br> `<subdomain>` NS c.ns.campaign.adobe.com </br> `<subdomain>` NS d.ns.campaign.adobe.com |
 
 ## 추적, 미러 페이지, 리소스
 
@@ -134,7 +133,7 @@ Adobe Campaign 플랫폼에 사용하기 위해 선택한 하위 도메인은 4�
 |--- |--- |
 | 미러 페이지 | m.`<subdomain>` |
 | 추적 | t.`<subdomain>` |
-| 리소스 | res`<subdomain>` |
+| 리소스 | res.`<subdomain>` |
 
 ## 클라우드 배포(선택 사항)
 
@@ -167,7 +166,7 @@ Adobe Campaign 마케팅 인스턴스에서 호스팅하는 외부에서 보는 
 
 | 위임된 하위 도메인 | DNS 지침 |
 |--- |--- |
-| `<subdomain>` | `<subdomain>` CNAME  `<internal customer server>` |
+| `<subdomain>` | `<subdomain>` CNAME `<internal customer server>` |
 
 ## 렌더링된 서비스
 
@@ -206,4 +205,4 @@ Marketing Cloud 서비스를 종료하면 자동으로 도메인 위임이 종�
 
 >[!NOTE]
 >
->[Adobe ](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=ko-KR) Managed Services를 사용하는 고객만 컨트롤 패널을 사용할 수 있습니다.
+>[Campaign 컨트롤 패널](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=ko-KR) 은 Adobe Managed Services를 사용하는 고객에게만 제공됩니다.
