@@ -1,13 +1,13 @@
 ---
 title: Verizon Media Group(Yahoo, AOL, Verizon 등)
-description: '[!DNL Verizon Media Group] 는 일반적으로 대부분의 B2C 목록에 대한 상위 3개 도메인 중 하나입니다. 평판 문제가 발생하면 일반적으로 쓰라리거나 대량 메일을 보내므로 그들은 약간 고유하게 행동한다.'
+description: '"[!DNL Verizon Media Group] 는 일반적으로 대부분의 B2C 목록에 대한 상위 3개 도메인 중 하나입니다. 평판 문제가 생기면 보통 쓰라리거나 대량 우편으로 보내므로 다소 독특하게 행동한다."'
 topics: Deliverability
 kt: 5320
 doc-type: article
 activity: understand
 team: TM
 exl-id: 43e6d3cb-23c3-4076-8026-a1a08e76bd1b
-source-git-commit: 68c403f915287e1a50cd276b67b3f48202f45446
+source-git-commit: a5c86d5e6f310534787f07a04971722dbc9bb33b
 workflow-type: tm+mt
 source-wordcount: '290'
 ht-degree: 2%
