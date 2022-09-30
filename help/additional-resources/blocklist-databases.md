@@ -6,7 +6,7 @@ doc-type: article
 activity: understand
 team: ACS
 exl-id: 4155b89f-a636-404c-8951-563c1b4d0289
-source-git-commit: d6094cd2ef0a8a7741e7d8aa4db15499fad08f90
+source-git-commit: e7427d6109f3201affa58decde36294d1631bf5b
 workflow-type: tm+mt
 source-wordcount: '407'
 ht-degree: 6%
@@ -45,7 +45,7 @@ ht-degree: 6%
 
 * **SURBL**
 
-   을(를) 참조하십시오. [http://www.surbl.org/](http://www.surbl.org/)
+   을(를) 참조하십시오. [https://surbl.org/](https://surbl.org/)
 
    SURBL은 스팸에 정기적으로 나타나는 웹 사이트를 식별합니다. 도메인이 이 목록에 표시되면 게재 기능에 큰 영향을 줄 수 있습니다. 게재 가능성 서비스 및 [고객 지원 Adobe](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) 즉시 작동합니다.
 
