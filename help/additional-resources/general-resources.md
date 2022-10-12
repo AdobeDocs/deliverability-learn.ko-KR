@@ -6,10 +6,10 @@ doc-type: article
 activity: understand
 team: ACS
 exl-id: 75538ef8-8e4b-4940-8d11-42ebd7c65e93
-source-git-commit: f441fe45b5b7309082c8eea7423d40003b913b7b
+source-git-commit: 3616470b31f45d589d323a6b90c7fd5df3b467b7
 workflow-type: tm+mt
-source-wordcount: '126'
-ht-degree: 35%
+source-wordcount: '121'
+ht-degree: 33%
 
 ---
 
@@ -20,7 +20,6 @@ ht-degree: 35%
 게재 능력에 대한 최근 업데이트에 대한 자세한 내용은 다음 기술 정보 를 참조하십시오.
 
 * [BIMI(메시지 식별)를 위한 Gmail 브랜드 지표 구현](../technotes/implement-bimi.md)
-* [Apple 메일 개인 정보 보호 FAQ](../technotes/apple-mail-privacy-faq.md)
 
 ## 일반 리소스
 
