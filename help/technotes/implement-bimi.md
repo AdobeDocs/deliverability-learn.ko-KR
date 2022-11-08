@@ -3,16 +3,16 @@ title: BIMI(메시지 식별)를 위한 Gmail 브랜드 지표 구현
 description: BIMI 구현 방법 알아보기
 topics: Deliverability
 exl-id: 6b911bcc-a531-466a-8bd3-7fa469b96cc7
-source-git-commit: a4d2a75e85f37f48aa3246707b98e473682e13f6
+source-git-commit: 683ffd3c87a4849aa9fa48fbf50db9ade97991af
 workflow-type: tm+mt
-source-wordcount: '686'
+source-wordcount: '715'
 ht-degree: 0%
 
 ---
 
 # Gmail 구현 [!DNL Brand Indicators for Message Identification] (비미)
 
-Gmail은 최근에 그들이 [BIMI의 일반적인 지원을 제공하다](https://cloud.google.com/blog/products/identity-security/bringing-bimi-to-gmail-in-google-workspace). 다음 사항을 포함하여 이 기능을 활용하려면 먼저 처리해야 하는 항목이 많습니다. 검증된 마크 인증서, 상표 로고, 올바른 형식의 로고, DMARC 설정 및 BIMI 레코드를 DNS에 게시합니다. 이 문서에서 이러한 단계를 모두 검토하십시오.
+Gmail은 최근에 그들이 [BIMI의 일반적인 지원을 제공하다](https://cloud.google.com/blog/products/identity-security/bringing-bimi-to-gmail-in-google-workspace){target=&quot;_blank&quot;}. 다음 사항을 포함하여 이 기능을 활용하려면 먼저 처리해야 하는 항목이 많습니다. 검증된 마크 인증서, 상표 로고, 올바른 형식의 로고, DMARC 설정 및 BIMI 레코드를 DNS에 게시합니다. 이 문서에서 이러한 단계를 모두 검토하십시오.
 
 [!DNL Brand Indicators for Message Identification] (BIMI)는 참여하는 플랫폼에서 보낸 사람의 이메일 옆에 승인된 로고를 표시할 수 있는 업계 표준입니다. 이 눈이 사람을 더 쉽게 참여를 높일 수 있을 뿐만 아니라, 발신자의 진위를 확인하는 데 도움이 되므로 피싱과 다른 스팸 술에도 대한 위험을 줄일 수 있습니다.
 
@@ -41,7 +41,7 @@ VMC를 얻으려면 먼저 완료해야 하는 다른 주요 단계가 있습니
 
 또한 형식에 대한 BIMI 로고 요구 사항을 로고로 충족하는지 확인하는 것도 좋습니다.
 
-SVG 형식이어야 하며 SVG Portable/Secure(SVG-P/S) 프로필을 준수해야 합니다. 방법 관련 지침은 [BIMI 작업 그룹](https://bimigroup.org/svg-conversion-tools-released).
+SVG 형식이어야 하며 SVG Portable/Secure(SVG-P/S) 프로필을 준수해야 합니다. 방법 관련 지침은 [BIMI 작업 그룹](https://bimigroup.org/svg-conversion-tools-released){target=&quot;_blank&quot;}.
 
 ## DMARC
 
@@ -59,12 +59,14 @@ BIMI에서 사용할 수 있는 전송 도메인에 DMARC가 완전히 구성되
 default._bimi.[domain] IN TXT “v=BIMI1; l=[SVG URL] 
 ```
 
-해당 항목에 대한 세부 사항을 확인할 수 있으며, [BIMI 작업 그룹 사이트](https://bimigroup.org/implementation-guide).
+해당 항목에 대한 세부 사항을 확인할 수 있으며, [BIMI 작업 그룹 사이트](https://bimigroup.org/implementation-guide){target=&quot;_blank&quot;}.
 
 
 ## 주요 사항
 
-만약 [!DNL Adobe Campaign] Marketo 클라이언트나 Adobe은 BIMI DNS 업데이트를 만드는 데 도움이 될 수 있습니다. 고객 지원 센터에 문의하여 요청을 받으십시오. Adobe이 BIMI가 제대로 작동하지 않는 경우 문제 해결에 도움을 줄 수도 있습니다.
+만약 [!DNL Adobe Campaign], Adobe은 BIMI DNS 업데이트를 만드는 데 도움이 될 수 있습니다. 고객 지원 센터에 문의하여 요청을 받으십시오. Adobe이 BIMI가 제대로 작동하지 않는 경우 문제 해결에 도움을 줄 수도 있습니다.
+
+Marketo 고객인 경우 [이 블로그 게시물](https://nation.marketo.com/t5/support-blogs/how-to-bimi/ba-p/296966)BIMI 레코드 만들기에 대한 지침을 보려면 {target=&quot;_blank&quot;}를 사용하십시오.
 
 상표 또는 검증된 마크 인증서에 대한 도움말은 법률 팀 및 승인된 VMC 공급업체와 함께 하십시오.
 
