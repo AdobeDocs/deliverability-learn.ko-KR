@@ -6,10 +6,10 @@ doc-type: article
 activity: understand
 team: ACS
 exl-id: 8a78abd3-afba-49a7-a2ae-8b2c75326749
-source-git-commit: d6094cd2ef0a8a7741e7d8aa4db15499fad08f90
+source-git-commit: b89bdd05d6b96af8c5520a4c500be76db46ea820
 workflow-type: tm+mt
-source-wordcount: '2265'
-ht-degree: 1%
+source-wordcount: '2253'
+ht-degree: 2%
 
 ---
 
@@ -28,7 +28,7 @@ ht-degree: 1%
 
 >[!CAUTION]
 >
->SSL 인증서를 설치하기 전에 다음에 나열된 사전 요구 사항을 알고 있는지 확인하십시오. [이 페이지](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/renewing-subdomain-certificate.html#installing-ssl-certificate).
+>SSL 인증서를 설치하기 전에 다음에 나열된 사전 요구 사항을 알고 있는지 확인하십시오. [이 페이지](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/renew-ssl/renewing-subdomain-certificate.html?lang=ko).
 >
 >Adobe은 최대 2048비트 인증서만 지원합니다. 4096비트 인증서는 아직 지원되지 않습니다.
 
@@ -126,7 +126,7 @@ Adobe이 관련 정보를 사용하여 요청을 제출한 후 CSR(인증서 서
 Adobe에서 CSR 파일을 받은 후에는 아래 단계를 수행하십시오.
 
 1. CSR 파일 텍스트를 복사하여 https://www.sslshopper.com/csr-decoder.html, <!--https://www.certlogik.com/decoder/,--> 또는 https://www.entrust.net/ssl-technical/csr-viewer.cfm
-또는, *OpenSSL* Linux 시스템에서 로컬로 명령 자세한 내용은 [이 외부 페이지](https://www.question-defense.com/2009/09/22/use-openssl-to-verify-the-contents-of-a-csr-before-submitting-for-a-ssl-certificate).
+또는, *OpenSSL* Linux 시스템에서 로컬로 명령
 1. 모든 검사가 성공했는지 확인합니다.
 1. 올바른 매개 변수와 도메인 이름이 포함되어 있는지 확인합니다.
 1. 다른 모든 데이터가 요청 제출 시 제공한 세부 정보와 일치하는지 확인합니다.
@@ -199,7 +199,7 @@ SSL 인증서가 제대로 설치되지 않으면 다음 경고가 표시됩니�
 
 * 인증서 만료 날짜 최소 2주 전에 업데이트된 인증서를 요청하려면 지원 티켓을 만듭니다. CSR 세부 사항이 변경되지 않는 한 추가 CSR을 요청할 필요가 없습니다.
 
-* 액세스 권한이 있는 경우 [Campaign 컨트롤 패널](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html), 그리고 환경이 AWS 환경에서 Adobe으로 호스팅되는 경우 Campaign 컨트롤 패널을 사용하여 인증서가 만료되기 전에 인증서를 갱신할 수 있습니다. 추가 정보 [이 섹션](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/monitoring-ssl-certificates.html#monitoring-certificates).
+* 액세스 권한이 있는 경우 [Campaign 컨트롤 패널](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html), 그리고 환경이 AWS 환경에서 Adobe으로 호스팅되는 경우 Campaign 컨트롤 패널을 사용하여 인증서가 만료되기 전에 인증서를 갱신할 수 있습니다. 자세한 내용은 [이 섹션](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/monitoring-ssl-certificates.html#monitoring-certificates)을 참조하십시오.
 
 ### 8단계 - 특정 구성 업데이트 {#update-configuration}
 
