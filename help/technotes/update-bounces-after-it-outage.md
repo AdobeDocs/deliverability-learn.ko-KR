@@ -2,9 +2,7 @@
 title: Italia 온라인 중단 후 반송 자격 업데이트
 description: Italia Online 중단 후 반송 조건을 업데이트하는 방법을 알아봅니다.
 feature: Deliverability
-hide: true
-hidefromtoc: true
-source-git-commit: dfa9b3c9537847c79e612bdcfcacc8e0dccd01ea
+source-git-commit: 4494363c060b7e2e1efde46f7ab8260fa900ffd7
 workflow-type: tm+mt
 source-wordcount: '332'
 ht-degree: 0%
