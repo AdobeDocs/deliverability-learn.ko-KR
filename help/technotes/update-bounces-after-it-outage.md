@@ -2,7 +2,7 @@
 title: Italia 온라인 중단 후 반송 자격 업데이트
 description: Italia Online 중단 후 반송 조건을 업데이트하는 방법을 알아봅니다.
 feature: Deliverability
-source-git-commit: 4494363c060b7e2e1efde46f7ab8260fa900ffd7
+source-git-commit: 489a153c72b364bd59b3bace5aa9206d4d888c38
 workflow-type: tm+mt
 source-wordcount: '332'
 ht-degree: 0%
@@ -39,7 +39,7 @@ ht-degree: 0%
 이 문제의 영향을 받은 수신자를 찾거나 다른 ISP에서 이 문제가 다시 발생하는 경우 아래 지침을 참조하십시오.
 
 * Campaign Classic v7 및 Campaign v8의 경우 다음을 참조하십시오 [이 페이지](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/understanding-quarantine-management.html?lang=en#unquarantine-bulk){_blank}.
-* Campaign Standard에 대해서는 [이 페이지](https://experienceleague.corp.adobe.com/docs/campaign-standard/using/testing-and-sending/monitoring-messages/understanding-quarantine-management.html?lang=en#unquarantine-bulk){_blank}.
+* Campaign Standard에 대해서는 [이 페이지](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/monitoring-messages/understanding-quarantine-management.html?lang=en#unquarantine-bulk){_blank}.
 
 
 
