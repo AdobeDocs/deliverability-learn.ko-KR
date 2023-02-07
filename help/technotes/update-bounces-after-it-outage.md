@@ -2,10 +2,11 @@
 title: Italia 온라인 중단 후 반송 자격 업데이트
 description: Italia Online 중단 후 반송 조건을 업데이트하는 방법을 알아봅니다.
 feature: Deliverability
-source-git-commit: 489a153c72b364bd59b3bace5aa9206d4d888c38
+exl-id: a11e88cf-bf37-42cc-9c09-1d58360459b7
+source-git-commit: e4efde4b7caac1bcf11d24632ec9982f98f958a2
 workflow-type: tm+mt
-source-wordcount: '332'
-ht-degree: 0%
+source-wordcount: '415'
+ht-degree: 1%
 
 ---
 
@@ -34,6 +35,8 @@ ht-degree: 0%
 
 ## 업데이트할 프로세스{#outage-update}
 
+### Adobe Campaign{#ac-update}
+
 표준 바운스 처리 논리에 따라 Adobe Campaign은 이러한 수신자를 **[!UICONTROL Status]** 설정 **[!UICONTROL Quarantine]**. 이 문제를 해결하려면 이러한 수신자를 찾아 제거하거나 수신자를 변경하여 Campaign에서 격리 테이블을 업데이트해야 합니다 **[!UICONTROL Status]** to **[!UICONTROL Valid]** 야간 정리 워크플로우가 해당 워크플로우가 제거합니다.
 
 이 문제의 영향을 받은 수신자를 찾거나 다른 ISP에서 이 문제가 다시 발생하는 경우 아래 지침을 참조하십시오.
@@ -41,5 +44,11 @@ ht-degree: 0%
 * Campaign Classic v7 및 Campaign v8의 경우 다음을 참조하십시오 [이 페이지](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/understanding-quarantine-management.html?lang=en#unquarantine-bulk){_blank}.
 * Campaign Standard에 대해서는 [이 페이지](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/monitoring-messages/understanding-quarantine-management.html?lang=en#unquarantine-bulk){_blank}.
 
+### Adobe Journey Optimizer{#ajo-update}
 
+표준 바운스 처리 로직에 따라 Adobe Journey Optimizer은 이러한 이메일 주소를 **[!UICONTROL Reason]** 설정 **[!UICONTROL Invalid Recipient]**. 이 문제를 해결하려면 이러한 이메일 주소를 찾아 제거하여 제외 목록을 업데이트해야 합니다.
+
+식별되면 다음을 사용하여 제외 목록에서 이러한 주소를 수동으로 제거할 수 있습니다 **[!UICONTROL Delete]** 버튼을 클릭합니다. 그런 다음 이러한 주소를 향후 이메일 캠페인에 포함할 수 있습니다.
+
+추가 정보 [이 섹션](https://experienceleague.adobe.com/docs/journey-optimizer/using/configuration/monitor-reputation/manage-suppression-list.html#remove-from-suppression-list){_blank}.
 
