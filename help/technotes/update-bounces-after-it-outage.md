@@ -5,9 +5,9 @@ feature: Deliverability
 exl-id: a11e88cf-bf37-42cc-9c09-1d58360459b7
 hide: true
 hidefromtoc: true
-source-git-commit: 016d7f9da67193d893e762fbe6e191cf87d5b030
+source-git-commit: aca77fb9326e34455a6fec7ffc9a7ad8e1750467
 workflow-type: tm+mt
-source-wordcount: '415'
+source-wordcount: '422'
 ht-degree: 1%
 
 ---
@@ -27,11 +27,11 @@ ht-degree: 1%
 
 ## 영향{#outage-impact}
 
-대부분의 경우, ISP가 중단되었을 때, Campaign을 통해 보낸 일부 이메일이 바운스로 잘못 표시되었습니다. 이는 Adobe에 영향을 줄 뿐만 아니라 중단 기간 동안 Italia Online으로 이메일을 전달하려고 시도하는 모든 사용자에게도 영향을 주었습니다.
+대부분의 경우, 인터넷 서비스 공급자(ISP)가 중단될 때, Campaign이나 Journey Optimizer을 통해 보낸 일부 이메일이 바운스로 잘못 표시되었습니다. 이는 Adobe에 영향을 줄 뿐만 아니라 중단 기간 동안 Italia Online으로 이메일을 전달하려고 시도하는 모든 사용자에게도 영향을 주었습니다.
 
 증상으로는
 
-* **지연 바운스** 메시지 사용 `452 requested action aborted: try again later` - 이러한 작업은 자동으로 다시 시도되며 필요한 작업이 없습니다.
+* **소프트 바운스** 메시지 사용 `452 requested action aborted: try again later` - 이러한 작업은 자동으로 다시 시도되며 필요한 작업이 없습니다.
 
 * **하드 바운스 수** 메시지 사용 `550 <email address> recipient rejected` 은(는) 보낸 사람이 서버를 계속 오버로드하지 않도록 하기 위해 1월 26일 오전 8시~오후 2시(현지 시간) 사이에 ISP에 의해 반환되었습니다. Italia Online Postmaster에서 확인한 바와 같이, 실제 하드 바운스는 아니므로, 해당 메시지로 인해 2023년 1월 26일에 제외된 모든 이메일 주소는 격리하지 않는 것이 좋습니다.
 
