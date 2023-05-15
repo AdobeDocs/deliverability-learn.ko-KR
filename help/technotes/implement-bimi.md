@@ -3,9 +3,9 @@ title: BIMI(메시지 식별)를 위한 Gmail 브랜드 지표 구현
 description: BIMI 구현 방법 알아보기
 topics: Deliverability
 exl-id: 6b911bcc-a531-466a-8bd3-7fa469b96cc7
-source-git-commit: 7b8fbb09883b34b66c2729b6b5cfa1292ae1814e
+source-git-commit: aca2bfff9f0315b735cf0a97f2177083c58e0875
 workflow-type: tm+mt
-source-wordcount: '1063'
+source-wordcount: '1062'
 ht-degree: 0%
 
 ---
@@ -76,7 +76,7 @@ VMC(Verified Mark Certificate)는 Gmail 및 Apple과 같은 일부 사서함 공
 
 확인된 표시 인증서는 브랜드가 로고를 사용할 수 있는 법적 유효성 확인입니다. 인증 기관은 브랜드 로고가 등록된 상표 사무소를 통해 이를 확인할 것입니다. 이 프로세스에는 몇 가지 법적 유효성 검사와 검사가 포함되며 시간이 걸릴 수 있습니다. 현재 두 개의 CA(인증 기관)에서 VMC를 발급하고 있습니다. Digicert와 Entrust. 첫 번째 상표권 사무소는 미국, 캐나다, EU, 영국, 독일, 일본, 호주 그리고 스페인이다.
 
-경험상 로고당 VMC가 1개 필요합니다. 조직 도메인용 VMC가 있으면 하위 도메인이 포함되고, 기능이 추가되면 다른 도메인이 포함됩니다. 다른 로고가 있는 경우 두 개 이상의 VMC가 필요합니다. 함께 작업하도록 선택한 인증 기관 또는 파트너는 이 설정을 설정하는 데 도움이 됩니다.
+일반적으로 로고당 하나의 VMC가 필요합니다. 조직 도메인용 VMC가 있으면 하위 도메인이 포함되고, 기능이 추가되면 다른 도메인이 포함됩니다. 다른 로고가 있는 경우 두 개 이상의 VMC가 필요합니다. 함께 작업하도록 선택한 인증 기관 또는 파트너는 이 설정을 설정하는 데 도움이 됩니다.
 
 >[!NOTE]
 >
