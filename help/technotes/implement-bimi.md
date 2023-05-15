@@ -3,7 +3,7 @@ title: BIMI(메시지 식별)를 위한 Gmail 브랜드 지표 구현
 description: BIMI 구현 방법 알아보기
 topics: Deliverability
 exl-id: 6b911bcc-a531-466a-8bd3-7fa469b96cc7
-source-git-commit: 05f6cd331f4e610e2442d43405333823644d349e
+source-git-commit: 7b8fbb09883b34b66c2729b6b5cfa1292ae1814e
 workflow-type: tm+mt
 source-wordcount: '1063'
 ht-degree: 0%
@@ -22,7 +22,7 @@ BIMI는 게재 능력이나 명성을 직접적으로 향상시키지 않습니�
 
 ## 어떻게 생겼나요?
 
-다양한 공급자에서 구현의 몇 가지 예를 볼 수 있으며, 어떤 공급자가 [BIMI 그룹의 페이지](https://bimigroup.org/where-is-my-bimi-logo-displayed/).
+다양한 공급자에서 구현의 몇 가지 예를 볼 수 있으며, 어떤 공급자가 [BIMI 그룹의 페이지](https://bimigroup.org/where-is-my-bimi-logo-displayed/){target="_blank"}.
 
 ## 비미 그룹은 누구인가요?
 
@@ -32,7 +32,7 @@ BIMI 그룹은 다음과 같은 업계 여러 분야의 이해 당사자들로 �
 
 ## 누가 BIMI를 지지합니까?
 
-BIMI를 지원하는 사서함 공급자들의 목록이 꾸준히 증가하고 있다. 최신 목록을 찾을 수 있습니다 [여기](https://bimigroup.org/bimi-infographic/) BIMI를 고려할 뿐만 아니라 지원 제공자에게도 해당됩니다.
+BIMI를 지원하는 사서함 공급자들의 목록이 꾸준히 증가하고 있다. 최신 목록을 찾을 수 있습니다 [여기](https://bimigroup.org/bimi-infographic/){target="_blank"} BIMI를 고려할 뿐만 아니라 지원 제공자에게도 해당됩니다.
 
 2023년 4월 현재 이 목록에는 Gmail, Yahoo, La Poste, Fastmail, Onet.pl 및 Zone, Profpoint를 스팸 방지 기기로서의 Gmail 및 Apple Mail(iOS 16 이상에서)이 포함되어 있습니다.
 
@@ -65,7 +65,7 @@ DMARC는 브랜드가 사서함 공급자가 실패하는 전자 메일로 수�
 
 ### 브랜드 로고 만들기 {#create-brand-logo}
 
-로고 생성은 요구 사항을 100%까지 따라야 합니다. 항상 을(를) 참조하십시오. [BIMI 그룹의 지침](https://bimigroup.org/creating-bimi-svg-logo-files/).
+로고 생성은 요구 사항을 100%까지 따라야 합니다. 항상 을(를) 참조하십시오. [BIMI 그룹의 지침](https://bimigroup.org/creating-bimi-svg-logo-files/){target="_blank"}.
 
 기술 요구 사항 외에 정사각형 로고, 배경색과 같은 단색 및 기타 다양한 실용적인 권장 사항이 있습니다. 이러한 권장 사항은 최상의 시각화를 위한 것입니다.
 규정 준수 사항으로 인해 로고가 표시되지 않을 수 있습니다.
@@ -102,10 +102,10 @@ VMC를 위한 노력과 비용을 거치해도 이 부분은 지워지지 않습
 
 ## 팁 및 요령
 
-* BIMI Group은 BIMI를 위한 편리한 유효성 검사 도구를 제공합니다. 모든 것이 설정되어 있는지 다시 확인하고 싶거나 로고가 호환되는지 확인하려면 다음 위치로 이동하십시오. [이 링크](https://bimigroup.org/bimi-generator/). 후자의 경우 **[!UICONTROL Generate BIMI]** 자리 표시자 도메인을 입력하고 올바른 로고 URL을 입력합니다. 검사관이 로고의 준수 여부를 알려준다.
+* BIMI Group은 BIMI를 위한 편리한 유효성 검사 도구를 제공합니다. 모든 것이 설정되어 있는지 다시 확인하고 싶거나 로고가 호환되는지 확인하려면 다음 위치로 이동하십시오. [이 링크](https://bimigroup.org/bimi-generator/){target="_blank"}. 후자의 경우 **[!UICONTROL Generate BIMI]** 자리 표시자 도메인을 입력하고 올바른 로고 URL을 입력합니다. 검사관이 로고의 준수 여부를 알려준다.
 
 * VMC 없이 안전하게 시작할 수 있으며, BIMI 레코드에 VMC URL이 포함되지 않은 경우 평판에 아무런 영향을 주지 않지만, 해당 로고는 이미 Yahoo에 표시될 수 있습니다.
 
 * 조직 차원에서 DMARC를 구현하는 것은 큰 일입니다. 일부 회사들은 브랜드들이 완전 DMARC 채택을 할 수 있도록 지원하기 위해 전문화되어 있다.
 
-* FAQ 목록이 게시되었습니다 [여기](https://bimigroup.org/faqs-for-senders-esps/).
+* FAQ 목록이 게시되었습니다 [여기](https://bimigroup.org/faqs-for-senders-esps/){target="_blank"}.
