@@ -3,9 +3,9 @@ user-guide-title: 전달성 모범 사례 안내서
 user-guide-breadcrumb: Deliverability Best Practice Guide
 user-guide-description: 주요 전달성 용어, 개념 및 접근 방식을 학습하여 성공적인 마케팅 프로그램을 위한 역량을 확보하십시오.
 source-git-commit: 05604fff57bbe64a02e97a27369c4aff6c999216
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '172'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -57,5 +57,5 @@ ht-degree: 96%
       + [Campaign Classic - 기술 추천](/help/additional-resources/acc-technical-recommendations.md)
    + 기술 노트 {#technotes}
       + [BIMI 구현](/help/technotes/implement-bimi.md)
-      + [Italia Online 중단 후 바운스 업데이트](/help/technotes/update-bounces-after-it-outage.md)
+      + [이탈리아 온라인 중단 후 바운스 업데이트](/help/technotes/update-bounces-after-it-outage.md)
 
