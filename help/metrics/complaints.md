@@ -1,6 +1,6 @@
 ---
 title: 컴플레인
-description: '사용자가 이메일을 원하지 않거나 예상치 않은 경우 등록되는 컴플레인에 대해 알아봅니다. '
+description: 사용자가 이메일을 원하지 않거나 예상치 않은 경우 등록되는 컴플레인에 대해 알아봅니다.
 topics: Deliverability
 kt: 7048
 thumbnail: kt7048.jpg

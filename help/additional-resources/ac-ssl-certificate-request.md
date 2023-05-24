@@ -65,7 +65,7 @@ ht-degree: 3%
 
 ## 세부 프로세스
 
-### 전제 조건
+### 사전 요구 사항
 
 도메인 이름과 함수(추적, 미러 페이지, 웹 앱 등)를 식별해야 합니다. 보안을 위해.
 >[!NOTE]
@@ -76,7 +76,7 @@ ht-degree: 3%
 
 CSR(인증서 서명 요청) 파일을 가져오려면 아래 단계를 수행합니다.
 
-* 다음에 대한 액세스 권한이 있는 경우: [Campaign 컨트롤 패널](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=ko-KR)의 지침을 따르십시오. [이 페이지](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/renewing-subdomain-certificate.html#subdomains-and-certificates) Campaign 컨트롤 패널에서 CSR 파일을 생성하여 다운로드합니다.
+* 다음에 대한 액세스 권한이 있는 경우: [Campaign 컨트롤 패널](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html)의 지침을 따르십시오. [이 페이지](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/renewing-subdomain-certificate.html#subdomains-and-certificates) Campaign 컨트롤 패널에서 CSR 파일을 생성하여 다운로드합니다.
 
 * 그렇지 않으면 https://adminconsole.adobe.com/ 을 통해 지원 티켓을 만들어 Adobe 고객 지원 센터에서 필요한 하위 도메인에 대한 CSR 파일을 가져옵니다.
 
@@ -160,7 +160,7 @@ SSL 인증서가 생성되면 Adobe으로 보내기 전에 유효성을 검사�
 
 ### 5단계 - SSL 인증서 설치 요청
 
-* 다음에 대한 액세스 권한이 있는 경우: [Campaign 컨트롤 패널](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=ko-KR)의 지침을 따르십시오. [이 페이지](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/renew-ssl/renewing-subdomain-certificate.html?lang=ko) 인증서를 Campaign 컨트롤 패널에 업로드합니다.
+* 다음에 대한 액세스 권한이 있는 경우: [Campaign 컨트롤 패널](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html)의 지침을 따르십시오. [이 페이지](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/renew-ssl/renewing-subdomain-certificate.html?lang=ko) 인증서를 Campaign 컨트롤 패널에 업로드합니다.
 
 * 그렇지 않으면 https://adminconsole.adobe.com/ 을 통해 다른 지원 티켓을 만들어 Adobe 서버에 인증서를 설치하기 위한 Adobe을 요청합니다.
 
@@ -199,7 +199,7 @@ SSL 인증서가 제대로 설치되지 않은 경우 다음 경고가 표시됩
 
 * 인증서 만료일 최소 2주 전에 업데이트된 인증서를 요청하려면 지원 티켓을 만드십시오. CSR 세부 사항이 변경되지 않은 경우에는 추가 CSR을 요청할 필요가 없습니다.
 
-* 다음에 대한 액세스 권한이 있는 경우: [Campaign 컨트롤 패널](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=ko-KR), 그리고 환경이 AWS 환경에서 Adobe에 의해 호스팅되는 경우 만료되기 전에 Campaign 컨트롤 패널을 사용하여 인증서를 갱신할 수 있습니다. 자세한 내용은 [이 섹션](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/monitoring-ssl-certificates.html#monitoring-certificates)을 참조하십시오.
+* 다음에 대한 액세스 권한이 있는 경우: [Campaign 컨트롤 패널](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html), 그리고 환경이 AWS 환경에서 Adobe에 의해 호스팅되는 경우 만료되기 전에 Campaign 컨트롤 패널을 사용하여 인증서를 갱신할 수 있습니다. 자세한 내용은 [이 섹션](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/monitoring-ssl-certificates.html#monitoring-certificates)을 참조하십시오.
 
 ### 8단계 - 특정 구성 업데이트 {#update-configuration}
 
