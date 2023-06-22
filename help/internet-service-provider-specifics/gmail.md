@@ -2,12 +2,12 @@
 title: Gmail
 description: Gmail은 대부분의 보낸 사람의 이메일 목록에서 가장 큰 부분을 차지합니다. 또한 이메일을 다른 사용자와 조금 다르게 처리하는 경향이 있습니다.
 topics: Deliverability
-kt: 5262
+jira: KT-5262
 doc-type: article
 activity: understand
 team: TM
 exl-id: a7319c85-32b5-4a9e-bee9-24f13630c408
-source-git-commit: 68c403f915287e1a50cd276b67b3f48202f45446
+source-git-commit: 9444f8601f2f349398ee5deb9d5f4d4f7abb44f5
 workflow-type: tm+mt
 source-wordcount: '459'
 ht-degree: 0%

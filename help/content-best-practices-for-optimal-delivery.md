@@ -2,13 +2,13 @@
 title: 최적의 전달성을 위한 콘텐츠 모범 사례
 description: 콘텐츠는 키입니다. 관련성에 대한 Dell의 관점을 이미 읽었지만 콘텐츠와 관련하여 전달성을 최적화하는 몇 가지 추가 팁이 있습니다.
 topics: Deliverability
-kt: 5260
+jira: KT-5260
 thumbnail: kt5260.jpg
 doc-type: article
 activity: understand
 team: TM
 exl-id: f0172fa5-1c7e-4ccc-8ac5-4357611d13ec
-source-git-commit: 68c403f915287e1a50cd276b67b3f48202f45446
+source-git-commit: 9444f8601f2f349398ee5deb9d5f4d4f7abb44f5
 workflow-type: tm+mt
 source-wordcount: '195'
 ht-degree: 11%

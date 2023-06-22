@@ -2,13 +2,13 @@
 title: IP 준비 중 ISP 관련 고려 사항
 description: ISP에는 서로 다른 규칙과 트래픽을 보는 다양한 방법이 있습니다. 이는 발병 시 가장 높은 참여자만을 대상으로 하는 맞춤형 플랜이 필요하다.
 topics: Deliverability
-kt: 7054
+jira: KT-7054
 thumbnail: kt7054.jpg
 doc-type: article
 activity: understand
 team: ACS
 exl-id: 7d61c81c-aa40-47a6-9869-1953a6ad22b2
-source-git-commit: 4d82aa498ce155919dde24aa695a8848351763a6
+source-git-commit: 9444f8601f2f349398ee5deb9d5f4d4f7abb44f5
 workflow-type: tm+mt
 source-wordcount: '159'
 ht-degree: 16%

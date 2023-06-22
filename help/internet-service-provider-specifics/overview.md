@@ -2,12 +2,12 @@
 title: 인터넷 서비스 공급자 세부 정보
 description: ISP가 모두 동일한 것은 아닙니다. 이들은 사용자의 받은 편지함에 허용할 이메일과 스팸 폴더로 필터링되거나 아예 허용하지 않는 이메일을 결정할 때 다양한 사항에 중점을 둡니다. 소수의 ISP 간의 중요한 차이점을 간단히 살펴보겠습니다. 모든 ISP의 전체 목록이나 가능한 모든 차이점을 다루기 위한 것은 아닙니다.
 topics: Deliverability
-kt: null
+jira: KT-
 doc-type: article
 activity: understand
 team: TM
 exl-id: cf0c9ccf-ae67-4f95-a8cf-1e23b657aa16
-source-git-commit: 68c403f915287e1a50cd276b67b3f48202f45446
+source-git-commit: 9444f8601f2f349398ee5deb9d5f4d4f7abb44f5
 workflow-type: tm+mt
 source-wordcount: '156'
 ht-degree: 14%

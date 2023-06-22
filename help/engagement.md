@@ -2,13 +2,13 @@
 title: 참여
 description: 참여는 받은 편지함 배치 결정에 영향을 주는 가장 중요한 단일 요소가 되었습니다.
 topics: Deliverability
-kt: 5257
+jira: KT-5257
 thumbnail: kt5257.jpg
 doc-type: article
 activity: understand
 team: ACS
 exl-id: 5a36b821-bcec-4c4f-ae7e-a697df1bb56d
-source-git-commit: 68c403f915287e1a50cd276b67b3f48202f45446
+source-git-commit: 9444f8601f2f349398ee5deb9d5f4d4f7abb44f5
 workflow-type: tm+mt
 source-wordcount: '923'
 ht-degree: 2%

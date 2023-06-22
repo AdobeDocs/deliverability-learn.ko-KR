@@ -2,13 +2,13 @@
 title: 볼륨 - 원활하게 전환하는 방법에 대한 팁
 description: 보내는 메일의 양은 긍정적인 평판을 구축하는 데 매우 중요합니다. 원활하게 전환하기 위해 수행할 수 있는 작업에 대해 알아봅니다.
 topics: Deliverability
-kt: 7055
+jira: KT-7055
 thumbnail: kt7055.jpg
 doc-type: article
 activity: understand
 team: ACS
 exl-id: 1bc56061-0c64-4033-b49c-66618916bca6
-source-git-commit: 68c403f915287e1a50cd276b67b3f48202f45446
+source-git-commit: 9444f8601f2f349398ee5deb9d5f4d4f7abb44f5
 workflow-type: tm+mt
 source-wordcount: '573'
 ht-degree: 1%

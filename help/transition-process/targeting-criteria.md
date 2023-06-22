@@ -2,13 +2,13 @@
 title: 타겟팅 기준
 description: 참여도가 낮은 잠재 고객을 확보하기 전에 효과적으로 신뢰를 구축하기 위해 처음부터 긍정적인 평판을 구축하는 방법을 알아봅니다.
 topics: Deliverability
-kt: 7053
+jira: KT-7053
 thumbnail: kt7053.jpg
 doc-type: article
 activity: understand
 team: ACS
 exl-id: e6a855ba-a929-477f-a339-6861a755a529
-source-git-commit: 68c403f915287e1a50cd276b67b3f48202f45446
+source-git-commit: 9444f8601f2f349398ee5deb9d5f4d4f7abb44f5
 workflow-type: tm+mt
 source-wordcount: '206'
 ht-degree: 22%
