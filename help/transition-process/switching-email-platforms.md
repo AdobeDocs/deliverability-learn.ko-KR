@@ -1,14 +1,16 @@
 ---
 title: 이메일 플랫폼을 원활하게 전환하는 방법.
-description: ESP(이메일 서비스 공급자)를 이동할 때 기존의 설정된 IP 주소도 전환할 수 없습니다. 새로 시작할 때 긍정적인 평판을 높이기 위한 모범 사례를 따르는 것이 중요합니다.
+description: ESP(이메일 서비스 공급자)를 이동할 때 기존에 설정한 IP 주소도 전환할 수 없습니다. 새로 시작할 때 긍정적인 평판을 높이기 위한 모범 사례를 따르는 것이 중요합니다.
 topics: Deliverability
 jira: KT-5259
 thumbnail: kt5259.jpg
 doc-type: article
 activity: understand
+role: Admin
+level: Beginner
 team: ACS
 exl-id: 5444d576-5bc1-4fa6-9956-c63dc3c60440
-source-git-commit: 9444f8601f2f349398ee5deb9d5f4d4f7abb44f5
+source-git-commit: 6b312cdbba496818337c97ec4f42962aea757901
 workflow-type: tm+mt
 source-wordcount: '212'
 ht-degree: 11%
@@ -19,7 +21,7 @@ ht-degree: 11%
 
 ESP(이메일 서비스 공급자)를 이동할 때 기존에 설정한 IP 주소도 전환할 수 없습니다. 새로 시작할 때 긍정적인 평판을 높이기 위한 모범 사례를 따르는 것이 중요합니다. 사용할 새 IP 주소에 아직 평판이 없으므로 ISP는 주소에서 오는 메일을 완전히 신뢰할 수 없으며 고객에게 전달할 수 있도록 허용하는 데 신중해야 합니다.
 
-긍정적인 평판을 확립하는 것은 하나의 과정이다. 하지만 일단 설정되면 작은 부정적 지표가 사용자 및 메일 게재에 미치는 영향이 줄어듭니다.
+긍정적인 평판을 확립하는 것은 하나의 과정이다. 하지만 일단 확립되면, 작은 부정적인 지표는 당신과 당신의 메일 게재에 덜 영향을 미칠 것입니다.
 
 ![전환 프로세스](../assets/transition-process.png)
 

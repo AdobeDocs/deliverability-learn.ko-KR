@@ -5,9 +5,11 @@ topics: Deliverability
 jira: KT-5319
 doc-type: article
 activity: understand
+role: Admin, Leader, User
+level: Beginner
 team: TM
 exl-id: d706cb90-828a-4ab3-8f93-c9bd71553d63
-source-git-commit: 9444f8601f2f349398ee5deb9d5f4d4f7abb44f5
+source-git-commit: 6b312cdbba496818337c97ec4f42962aea757901
 workflow-type: tm+mt
 source-wordcount: '334'
 ht-degree: 2%
@@ -26,7 +28,7 @@ ht-degree: 2%
 
 ## 어떤 데이터를 사용할 수 있습니까
 
-[!DNL Microsoft]의 독점적 발신자 보고 도구, [!DNL Smart Network Data Services] (SNDS)를 사용하면 전송 중인 메일 수와 허용되는 메일 수에 대한 지표와 컴플레인 및 스팸 트랩을 볼 수 있습니다. 공유된 데이터는 샘플이며 정확한 숫자를 반영하지 않지만 그 방법을 가장 잘 나타냅니다 [!DNL Microsoft] 을(를) 보낸 사람으로 표시합니다. [!DNL Microsoft] 는 신뢰할 수 있는 사용자 그룹에 대한 정보를 공개적으로 제공하지 않지만, 해당 데이터는 [!DNL Return Path Certification] 프로그램 추가 요금.
+[!DNL Microsoft]의 소유 발신자 보고 도구입니다. [!DNL Smart Network Data Services] (SNDS)를 사용하면 전송 중인 메일 수와 허용되는 메일 수에 대한 지표와 컴플레인 및 스팸 트랩을 볼 수 있습니다. 공유된 데이터는 샘플이며 정확한 숫자를 반영하지 않지만 그 방법을 가장 잘 나타냅니다 [!DNL Microsoft] 을(를) 보낸 사람으로 표시합니다. [!DNL Microsoft] 는 신뢰할 수 있는 사용자 그룹에 대한 정보를 공개적으로 제공하지 않지만, 해당 데이터는 [!DNL Return Path Certification] 프로그램 추가 요금.
 
 ## 보낸 사람의 신뢰도
 

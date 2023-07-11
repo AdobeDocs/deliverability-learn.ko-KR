@@ -1,13 +1,15 @@
 ---
 title: Verizon Media Group(Yahoo, AOL, Verizon 등)
-description: "[!DNL Verizon Media Group] 는 일반적으로 대부분의 B2C 목록에 대한 상위 3개 도메인 중 하나입니다. 일반적으로 평판 문제가 발생하면 메일을 줄이거나 대량 발송하기 때문에 다소 독특하게 동작합니다."
+description: "[!DNL Verizon Media Group] 는 일반적으로 대부분의 B2C 목록에 대한 상위 3개 도메인 중 하나입니다. 그들은 일반적으로 평판 문제가 발생하면 메일을 줄이거나 대량 발송하기 때문에 어느 정도 독특하게 행동한다."
 topics: Deliverability
 jira: KT-5320
 doc-type: article
 activity: understand
+role: Admin, Leader, User
+level: Beginner
 team: TM
 exl-id: 43e6d3cb-23c3-4076-8026-a1a08e76bd1b
-source-git-commit: 9444f8601f2f349398ee5deb9d5f4d4f7abb44f5
+source-git-commit: 6b312cdbba496818337c97ec4f42962aea757901
 workflow-type: tm+mt
 source-wordcount: '290'
 ht-degree: 2%
@@ -22,7 +24,7 @@ ht-degree: 2%
 
 ## 중요한 데이터
 
-[!DNL Verizon Media Group] (VMG)는 콘텐츠와 URL 필터링 및 스팸 불만을 혼합하여 사용하는 자체 독점 스팸 필터를 빌드하고 유지 관리했습니다. Gmail과 함께 ISP를 초기에 채택하여 도메인별 또는 IP 주소별로 이메일을 필터링합니다.
+[!DNL Verizon Media Group] (VMG)는 콘텐츠와 URL 필터링 및 스팸 불만을 혼합하여 사용하는 자체 독점 스팸 필터를 빌드하고 유지 관리했습니다. Gmail과 함께 ISP를 초기에 채택하여 IP 주소 및 도메인별로 이메일을 필터링합니다.
 
 ## 어떤 데이터를 사용할 수 있습니까
 
