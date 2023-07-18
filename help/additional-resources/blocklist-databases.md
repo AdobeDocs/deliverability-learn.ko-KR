@@ -27,31 +27,31 @@ ht-degree: 6%
 
 * **스팸하우스**
 
-   을(를) 참조하십시오 [https://www.spamhaus.org/](https://www.spamhaus.org/)
+  을(를) 참조하십시오 [https://www.spamhaus.org/](https://www.spamhaus.org/)
 
-   데이터베이스가 더 중요합니다. 이 리스트에 분류되는 것은 일반적으로 심각한 상황이다. 이러한 경우 즉시 조치를 취하고 상업적 서비스, 전달성 및 경고 메시지를 표시해야 합니다. [Adobe 고객 지원 센터](https://helpx.adobe.com/kr/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
+  데이터베이스가 더 중요합니다. 이 리스트에 분류되는 것은 일반적으로 심각한 상황이다. 이러한 경우 즉시 조치를 취하고 상업적 서비스, 전달성 및 경고 메시지를 표시해야 합니다. [Adobe 고객 지원 센터](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
 
 * **SpamCop**
 
-   을(를) 참조하십시오 [https://www.spamcop.net/](https://www.spamcop.net/)
+  을(를) 참조하십시오 [https://www.spamcop.net/](https://www.spamcop.net/)
 
-   그것은 가장 유명한 데이터베이스 중 하나입니다. IP 주소 중 하나가 이 목록에 있으면 일반적으로 SpamCop 사용자가 메시지를 스팸으로 선언했거나 SpamCop 허니팟에 메시지를 보냈다는 의미입니다.
+  그것은 가장 유명한 데이터베이스 중 하나입니다. IP 주소 중 하나가 이 목록에 있으면 일반적으로 SpamCop 사용자가 메시지를 스팸으로 선언했거나 SpamCop 허니팟에 메시지를 보냈다는 의미입니다.
 
 * **URIBL**
 
-   을(를) 참조하십시오 [https://www.uribl.com/](https://www.uribl.com/)
+  을(를) 참조하십시오 [https://www.uribl.com/](https://www.uribl.com/)
 
-   이 목록은 스팸으로 선언된 메시지에 정기적으로 나타나는 도메인을 식별합니다. 도메인이 이 목록에 표시되는 경우 전달성에 상당한 영향을 줄 수 있습니다. 게재 기능 서비스 및 [Adobe 고객 지원 센터](https://helpx.adobe.com/kr/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) 즉시.
+  이 목록은 스팸으로 선언된 메시지에 정기적으로 나타나는 도메인을 식별합니다. 도메인이 이 목록에 표시되는 경우 전달성에 상당한 영향을 줄 수 있습니다. 게재 기능 서비스 및 [Adobe 고객 지원 센터](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) 즉시.
 
 * **SURBL**
 
-   을(를) 참조하십시오 [https://surbl.org/](https://surbl.org/)
+  을(를) 참조하십시오 [https://surbl.org/](https://surbl.org/)
 
-   SURBL은 스팸에 정기적으로 나타나는 웹 사이트를 식별합니다. 도메인이 이 목록에 표시되는 경우 전달성에 상당한 영향을 줄 수 있습니다. 게재 기능 서비스 및 [Adobe 고객 지원 센터](https://helpx.adobe.com/kr/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) 즉시.
+  SURBL은 스팸에 정기적으로 나타나는 웹 사이트를 식별합니다. 도메인이 이 목록에 표시되는 경우 전달성에 상당한 영향을 줄 수 있습니다. 게재 기능 서비스 및 [Adobe 고객 지원 센터](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) 즉시.
 
 * **매니투**
 
-   이것은 IP 목록이며 독일에서 널리 사용되고 있습니다. 을(를) 참조하십시오 [https://www.heise.de/ix/nixspam/](https://www.heise.de/ix/nixspam/)
+  이것은 IP 목록이며 독일에서 널리 사용되고 있습니다. 을(를) 참조하십시오 [https://www.heise.de/ix/nixspam/](https://www.heise.de/ix/nixspam/)
 
 <!--* SORBS
 

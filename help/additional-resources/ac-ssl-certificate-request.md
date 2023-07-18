@@ -76,7 +76,7 @@ ht-degree: 3%
 
 CSR(인증서 서명 요청) 파일을 가져오려면 아래 단계를 수행합니다.
 
-* 다음에 대한 액세스 권한이 있는 경우: [Campaign 컨트롤 패널](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html)의 지침을 따르십시오. [이 페이지](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/renewing-subdomain-certificate.html#subdomains-and-certificates) Campaign 컨트롤 패널에서 CSR 파일을 생성하여 다운로드합니다.
+* 다음에 대한 액세스 권한이 있는 경우: [Campaign 컨트롤 패널](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html)의 지침을 따르십시오. [이 페이지](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/renewing-subdomain-certificate.html?lang=ko#subdomains-and-certificates) Campaign 컨트롤 패널에서 CSR 파일을 생성하여 다운로드합니다.
 
 * 그렇지 않으면 https://adminconsole.adobe.com/ 을 통해 지원 티켓을 만들어 Adobe 고객 지원 센터에서 필요한 하위 도메인에 대한 CSR 파일을 가져옵니다.
 
@@ -149,7 +149,7 @@ CSR 파일이 제공되면 CSR 파일을 사용하여 해당 도메인에 대한
 
 ### 4단계 - SSL 인증서 유효성 검사
 
-SSL 인증서가 생성되면 Adobe으로 보내기 전에 유효성을 검사해야 합니다. 이렇게 하려면 아래 절차를 따르십시오.
+SSL 인증서가 생성되면 Adobe으로 보내기 전에 유효성을 검사해야 합니다. 그 방법은 다음과 같습니다:
 
 1. 인증서의 확장명이 .pem인지 확인합니다. 그렇지 않은 경우 PEM 형식으로 변환합니다. 다음을 사용하여 변환할 수 있습니다. *Openssl*.
 1. 인증서가 다음으로 시작하는지 확인 **&quot;-----인증서 시작-----&quot;**.

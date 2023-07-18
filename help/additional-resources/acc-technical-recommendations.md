@@ -127,11 +127,11 @@ nlserver inMail -instance:instance -verbose.
 * 각 사서함을 하나의 인스턴스로 가져와서
 * 인스턴스 정보가 Adobe Campaign에서 보낸 메시지의 Message-ID 헤더에 포함되므로 피드백 루프 메시지에도 배치되도록 인스턴스를 구성합니다. 간단히 **checkInstanceName** 인스턴스 구성 파일의 매개 변수(기본적으로 인스턴스는 확인되지 않으며 이로 인해 특정 주소가 잘못 격리될 수 있음):
 
-   ```
-   <serverConf>
-     <inMail checkInstanceName="true"/>
-   </serverConf>
-   ```
+  ```
+  <serverConf>
+    <inMail checkInstanceName="true"/>
+  </serverConf>
+  ```
 
 Adobe Campaign의 Deliverability Service는 AOL, BlueTie, Comcast, Cox, EarthLink, FastMail, Gmail, Hotmail, HostedEmail, Libero, Mail.ru, MailTrust, OpenSRS, QQ, RoadRunner, Synacor, Telenor, Terra, UnitedOnline, USA, XS4ALL, Yahoo, Yandex, Zoho 등의 ISP에 대한 피드백 루프 서비스 구독을 관리합니다.
 

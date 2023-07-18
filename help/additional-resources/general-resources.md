@@ -33,7 +33,7 @@ ht-degree: 33%
 * [실시간 블랙홀 목록](../../help/additional-resources/blocklist-databases.md)
 * [문제 해결](../../help/additional-resources/troubleshooting.md)
 
-   <!--
+  <!--
     [IP Certification](../../help/additional-resources/ip-certification.md)
     [Third-party monitoring tools](../../help/additional-resources/third-party-monitoring-tools.md)-->
 
