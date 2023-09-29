@@ -6,10 +6,10 @@ feature: Deliverability
 role: Leader, User
 level: Beginner
 auto-video-transcripts: true
-source-git-commit: be28ecdbcd064e2bcca739db492064869ddbb59a
+source-git-commit: 3be4372aa06d7ef2d1ba2282043d277c4817f9c8
 workflow-type: tm+mt
-source-wordcount: '172'
-ht-degree: 100%
+source-wordcount: '174'
+ht-degree: 98%
 
 ---
 
@@ -60,6 +60,7 @@ ht-degree: 100%
       + [새 플랫폼 시작](/help/additional-resources/ac-starting-new-platform.md)
       + [Campaign Classic - 기술 추천](/help/additional-resources/acc-technical-recommendations.md)
    + 기술 노트 {#technotes}
+      + [DMARC 구현](/help/technotes/implement-dmarc.md)
       + [BIMI 구현](/help/technotes/implement-bimi.md)
       + [이탈리아 온라인 중단 후 바운스 업데이트](/help/technotes/update-bounces-after-it-outage.md)
 
