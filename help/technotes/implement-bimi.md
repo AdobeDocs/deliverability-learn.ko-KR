@@ -4,10 +4,11 @@ description: BIMI 구현 방법 알아보기
 topics: Deliverability
 role: Admin
 level: Beginner
+jira: KT-14079
 exl-id: 6b911bcc-a531-466a-8bd3-7fa469b96cc7
-source-git-commit: 6b312cdbba496818337c97ec4f42962aea757901
+source-git-commit: d23a0477b908427c4e9d889d5d9ed896a6ac8322
 workflow-type: tm+mt
-source-wordcount: '1062'
+source-wordcount: '1099'
 ht-degree: 0%
 
 ---
@@ -68,6 +69,8 @@ DMARC는 실패하는 전자 메일에 대해 사서함 공급자가 수행해�
 ### 브랜드 로고 생성 {#create-brand-logo}
 
 로고 생성은 100%에 대한 요구 사항을 준수해야 합니다. 항상 을(를) 참조하십시오 [BIMI Group의 지침](https://bimigroup.org/creating-bimi-svg-logo-files/){target="_blank"}.
+
+CDN(콘텐츠 전달 네트워크)이 사용되는 경우 사서함 공급자가 로고를 받지 못하게 하는 보호(예: 보트 보호)가 사용되지 않도록 하려면 로고를 보안 위치(HTTPS)에 저장해야 합니다.
 
 기술적 요구 사항 외에도 사각형 로고, 배경색으로 단색 및 기타 같은 실용적인 권장 사항이 있습니다. 이러한 권장 사항은 최상의 시각화를 위한 것입니다.
 준수하지 않으면 로고가 표시되지 않을 수 있습니다.
