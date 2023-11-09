@@ -4,10 +4,11 @@ description: BIMI 구현 방법 알아보기
 topics: Deliverability
 role: Admin
 level: Beginner
-source-git-commit: 5ac5bc90b5a9bf3ce9b390821476c7222983b818
+exl-id: f1c14b10-6191-4202-9825-23f948714f1e
+source-git-commit: bd8cee606c9dcb1593ad3ec45c578f59f8e968f2
 workflow-type: tm+mt
-source-wordcount: '1222'
-ht-degree: 1%
+source-wordcount: '1258'
+ht-degree: 8%
 
 ---
 
@@ -43,11 +44,11 @@ DMARC는 선택 사항이며, 필수는 아니지만 무료이며, 이메일 수
 
 ## DMARC 구현 우수 사례 {#best-practice}
 
-DMARC는 선택 사항이므로 기본적으로 모든 ESP의 플랫폼에서 구성되지 않습니다. DMARC 레코드가 작동하려면 도메인의 DNS에 DMARC 레코드를 만들어야 합니다. 또한 조직 내에서 DMARC 보고서가 이동해야 하는 위치를 나타내려면 선택한 전자 메일 주소가 필요합니다. DMARC의 잠재적 영향에 대한 DMARC의 이해를 돕기 위해 DMARC 정책을 p=none에서 p=quarantine, p=reject로 상향 조정하여 DMARC 구현을 천천히 롤아웃하는 것이 좋습니다.
+DMARC는 선택 사항이므로 기본적으로 모든 ESP의 플랫폼에서 구성되지 않습니다. DMARC 레코드가 작동하려면 도메인의 DNS에 DMARC 레코드를 만들어야 합니다. 또한 조직 내에서 DMARC 보고서가 이동해야 하는 위치를 나타내려면 선택한 전자 메일 주소가 필요합니다. 모범 사례로서, DMARC의 잠재적 영향에 대한 DMARC 이해를 도우면서 DMARC 정책을 p=none에서 p=quarantine, p=reject로 단계적으로 확대하여 DMARC 구현을 천천히 롤아웃하는 것이 좋습니다.
 
 1. 받아서 사용하는 피드백을 분석합니다(p=none). 이렇게 하면 수신자는 인증에 실패하는 메시지에 대해 작업을 수행하지 않지만 이메일 보고서를 보낸 사람에게 계속 전송합니다. 또한 합법적인 메시지가 인증에 실패한 경우 SPF/DKIM 문제를 검토하고 수정합니다.
 1. SPF 및 DKIM이 정렬되어 모든 합법적인 이메일에 대한 인증을 전달하는지 확인한 다음, 정책을 (p=quarantine)으로 이동하여 수신 이메일 서버에서 인증에 실패한 이메일을 격리합니다(일반적으로 해당 메시지를 스팸 폴더에 배치함).
-1. 정책을 (p=reject)로 조정합니다. p= 거부 정책은 수신자에게 인증에 실패한 도메인에 대한 모든 이메일을 완전히 거부(반송)하도록 지시합니다. 이 정책이 활성화되면 도메인에서 100% 인증된 것으로 확인된 이메일에만 받은 편지함 배치 기회가 생깁니다.
+1. 정책을 (p=reject)로 조정합니다. p= reject 정책은 수신자에게 인증에 실패한 도메인에 대한 모든 이메일을 완전히 거부(바운스)하도록 지시합니다. 이 정책을 활성화하면 도메인에서 100% 인증된 것으로 확인된 이메일만 받은 편지함에 배치될 수 있습니다.
 
    >[!NOTE]
    >
@@ -90,6 +91,10 @@ DMARC 레코드에는 DMARC 태그라는 여러 구성 요소가 있습니다. �
 | aspf | 선택 사항입니다 | Strict(s) 또는 Relaxed(r)일 수 있습니다. 느슨한 정렬은 ReturnPath 도메인이 보낸 사람 주소의 하위 도메인일 수 있음을 의미합니다. 엄격한 정렬은 Return-Path 도메인이 From 주소와 정확히 일치해야 함을 의미합니다. | aspf=r | r |
 
 ## DMARC 및 Adobe Campaign {#campaign}
+
+>[!NOTE]
+>
+>Campaign 인스턴스가 AWS에서 호스팅되는 경우 Campaign 컨트롤 패널으로 하위 도메인에 대한 DMARC를 구현할 수 있습니다. [Campaign 컨트롤 패널을 사용하여 DMARC 레코드를 구현하는 방법 알아보기](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/txt-records/dmarc.html).
 
 DMARC 실패의 일반적인 원인은 &#39;시작&#39; 주소와 &#39;오류 - 종료&#39; 또는 &#39;반환 경로&#39; 주소 간의 오정렬입니다. 이를 방지하기 위해 DMARC를 설정할 때 게재 템플릿에서 &#39;보낸 사람&#39; 및 &#39;오류 받는 사람&#39; 주소 설정을 다시 확인하는 것이 좋습니다.
 
