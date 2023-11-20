@@ -6,7 +6,7 @@ feature: Deliverability
 role: Leader, User
 level: Beginner
 auto-video-transcripts: true
-source-git-commit: 7d8c1229b421471f7908c1e13bb80af5b14e42ff
+source-git-commit: acf2686d59bc27063a255a02de52cbaa3734d5ed
 workflow-type: tm+mt
 source-wordcount: '178'
 ht-degree: 96%
@@ -46,7 +46,7 @@ ht-degree: 96%
 + [실제로 적용](/help/putting-it-in-practice.md)
 + 부록: 추가 리소스 {#additional-resources}
    + [개요](/help/additional-resources/general-resources.md)
-   + [Yahoo 및 Gmail 업데이트](/help/guidence-around-changes-to-google-and-yahoo.md)
+   + [Yahoo 및 Gmail 업데이트](/help/guidance-around-changes-to-google-and-yahoo.md)
    + 일반 리소스 {#generic-resources}
       + [스팸 트랩에 대한 모든 정보](/help/additional-resources/all-about-spam-traps.md)
       + [IP warming으로 이메일 신뢰도 향상](/help/additional-resources/increase-reputation-with-ip-warming.md)
