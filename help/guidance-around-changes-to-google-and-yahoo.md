@@ -7,7 +7,7 @@ doc-type: Article
 last-substantial-update: 2023-11-06T00:00:00Z
 jira: KT-14320
 thumbnail: KT-14320.jpeg
-source-git-commit: ce0ecaa7f62e8ba0bbf44dc180908b81475a225e
+source-git-commit: d237d0dd921d84461a4edd47d8da501c23576d58
 workflow-type: tm+mt
 source-wordcount: '1312'
 ht-degree: 1%
@@ -51,7 +51,7 @@ DMARC는 현재 Adobe에서 완전히 지원되지만 필수는 아닙니다. �
 Marketo Engage의 경우 Adobe이 이미 &quot;mailto&quot; 옵션을 활성화했으며 현재 &quot;http/URL&quot; 옵션을 지원하지 않습니다. 향후 추가 업데이트가 있을 예정입니다.
 Adobe Campaign 및 Adobe Journey Optimizer Adobe의 경우 &quot;mailto&quot;와 &quot;1-클릭&quot; 옵션을 모두 사용하는 것이 좋습니다.
 
-목록 구독 취소 구현 방법에 대한 자세한 내용이 필요한 경우 다음을 확인하십시오. [여기](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations.html?lang=en#list-unsubscribe){target="_blank"} for **[!DNL Adobe Campaign Classic]**, [here](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-14778.html?lang=en){target="_blank"}, or **[!DNL Adobe Campaign Standard]**, and [here](https://experienceleague.adobe.com/docs/journey-optimizer/using/email/email-opt-out.html?lang=en){target="_blank"} 대상 **[!DNL Adobe Journey Optimizer]**&#x200B;또는 언제든지 Adobe 고객 지원 팀에 문의하십시오.
+목록 구독 취소 구현 방법에 대한 자세한 내용이 필요한 경우 다음을 확인하십시오. [여기](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations.html?lang=en#list-unsubscribe){target="_blank"} for **[!DNL Adobe Campaign Classic]**, [here](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-14778.html?lang=en){target="_blank"} for **[!DNL Adobe Campaign Standard]**, and [here](https://experienceleague.adobe.com/docs/journey-optimizer/using/email/email-opt-out.html?lang=en){target="_blank"} 대상 **[!DNL Adobe Journey Optimizer]**&#x200B;또는 언제든지 Adobe 고객 지원 팀에 문의하십시오.
 
 목록 구독 취소 헤더에 대한 필요는 트랜잭션 이메일에는 적용되지 않습니다. 구독자가 생성하지 않는 포기한 장바구니 및 유사한 통신과 같은 트리거된 메시지는 다음과 같은 사서함 공급자의 마케팅으로 간주됩니다 [!DNL Google] 및 [!DNL Yahoo] 그리고 그들은 목록-구독 취소가 필요할 것입니다.
 
