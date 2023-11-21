@@ -7,10 +7,10 @@ doc-type: Article
 last-substantial-update: 2023-11-06T00:00:00Z
 jira: KT-14320
 thumbnail: KT-14320.jpeg
-source-git-commit: 0aeff034f6ca2a3dce065240384d1b0e7922fa31
+source-git-commit: 304c09426f9fd149f8fd0e89a50030819a772e71
 workflow-type: tm+mt
-source-wordcount: '1312'
-ht-degree: 0%
+source-wordcount: '1341'
+ht-degree: 1%
 
 ---
 
@@ -48,8 +48,17 @@ DMARC는 현재 Adobe에서 완전히 지원되지만 필수는 아닙니다. �
 주의할 점은 다음과 같습니다 [!DNL Google] 및 [!DNL Yahoo] 은 둘 다 &quot;1-Click&quot; 이라는 이름으로 &quot;http/URL&quot; 옵션을 참조하며 이는 의도적인 것입니다. 기술적으로 원래 &quot;http/URL&quot; 옵션을 사용하면 수신자를 웹 사이트로 리디렉션할 수 있습니다. 그것은 의 초점이 아니다 [!DNL Yahoo] 및 [!DNL Google], 두 사람 모두 웹 사이트 대신 HTTPS POST 요청을 통해 구독 취소를 처리하는 데 중점을 둔 업데이트된 RFC8058을 참조하여 &quot;1-클릭&quot;으로 만듭니다.
 Marketo Engage의 경우 Adobe이 이미 &quot;mailto&quot; 옵션을 활성화했으며 현재 &quot;http/URL&quot; 옵션을 지원하지 않습니다. 향후 추가 업데이트가 있을 예정입니다.
 Adobe Campaign 및 Adobe Journey Optimizer Adobe의 경우 &quot;mailto&quot;와 &quot;1-클릭&quot; 옵션을 모두 사용하는 것이 좋습니다.
-목록 구독 취소 구현 방법에 대한 자세한 내용이 필요한 경우 다음을 확인하십시오. [여기] (https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations.html?lang=en#list-unsubscribe){target="_blank"} for Adobe Campaign Classic, [here] (https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-14778.html?lang=en){target="_blank"} for Adobe Campaign Standard, and [here] (https://experienceleague.adobe.com/docs/journey-optimizer/using/email/email-opt-out.html?lang=en){target="_blank"} Adobe Journey Optimizer의 경우 언제든지 Adobe 고객 지원 팀에 문의하십시오.
+
+목록 구독 취소 구현 방법에 대한 자세한 내용이 필요한 경우 다음을 확인하십시오. [여기](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations.html?lang=en#list-unsubscribe){target="_blank"}
+
+Adobe Campaign Classic의 경우 [여기](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-14778.html?lang=en){target="_blank"}
+
+Adobe Campaign Standard 및 [여기](https://experienceleague.adobe.com/docs/journey-optimizer/using/email/email-opt-out.html?lang=en){target="_blank"}
+
+Adobe Journey Optimizer의 경우 언제든지 Adobe 고객 지원 팀에 문의하십시오.
+
 목록 구독 취소 헤더에 대한 필요는 트랜잭션 이메일에는 적용되지 않습니다. 구독자가 생성하지 않는 포기한 장바구니 및 유사한 통신과 같은 트리거된 메시지는 다음과 같은 사서함 공급자의 마케팅으로 간주됩니다 [!DNL Google] 및 [!DNL Yahoo] 그리고 그들은 목록-구독 취소가 필요할 것입니다.
+
 ![image](https://git.corp.adobe.com/storage/user/38257/files/a2da6bdb-524d-46a7-b765-718c1fe407b0)
 
 ## 2일 이내에 구독 취소 처리:
