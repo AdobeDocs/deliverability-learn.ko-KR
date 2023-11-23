@@ -7,13 +7,13 @@ doc-type: Article
 last-substantial-update: 2023-11-06T00:00:00Z
 jira: KT-14320
 thumbnail: KT-14320.jpeg
-source-git-commit: 059e57ac5b40c8e7c8562d0dca5c51de01c6b041
+exl-id: 879e9124-3cfe-4d85-a7d1-64ceb914a460
+source-git-commit: be133b442284b39daa8e2dd276c2942402b4936d
 workflow-type: tm+mt
 source-wordcount: '1329'
 ht-degree: 1%
 
 ---
-
 
 # 의 발표된 변경 내용에 대한 지침 [!DNL Google] 및 [!DNL Yahoo]
 
@@ -42,7 +42,7 @@ Adobe 고객인 경우 요구 사항의 대부분이 이미 설정의 일부이�
 [!DNL Google] 및 [!DNL Yahoo] 은(는) 둘 다 귀하에게 이메일을 전송하는 데 사용하는 모든 도메인에 대한 DMARC 레코드를 보유해야 합니다. 현재 p=reject 또는 p=quarantine 설정이 필요하지 않으므로 일반적으로 &quot;모니터링&quot; 설정이라고 하는 p=none 설정을 완벽하게 사용할 수 있습니다. 이렇게 해도 이메일의 처리 방식은 변경되지 않으며, DMARC 없이 일반적으로 수행하는 작업을 수행합니다. 이 설정을 수행하는 것은 DMARC로 자신을 보호하는 첫 번째 단계이며 이메일 전송을 통한 새로운 이점 또한 제공합니다. [!DNL Google] 및 [!DNL Yahoo] 또한 이메일 에코 시스템 내 어디에나 인증 문제가 있는지 확인하는 데 도움이 될 수 있습니다.
 DMARC는 현재 Adobe에서 완전히 지원되지만 필수는 아닙니다. 무료 DMARC 검사기를 사용하여 하위 도메인에 대한 DMARC 설정이 있는지 확인하고, 설정되지 않은 경우 Adobe 지원 팀에 문의하여 해당 설정을 가져오는 방법을 확인하십시오.
 
-또한 DMARC와 구현 방법에 대한 자세한 내용을 확인할 수 있습니다 [여기](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/technotes/implement-dmarc.html?lang=ko){target="_blank"} for Adobe Campaign and Adobe Journey Optimizer Adobe or [here](https://experienceleague.adobe.com/docs/marketo/using/getting-started-with-marketo/setup/configure-protocols-for-marketo.html){target="_blank"} Marketo Engage.
+또한 DMARC와 구현 방법에 대한 자세한 내용을 확인할 수 있습니다 [여기](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/technotes/implement-dmarc.html?lang=ko){target="_blank"} for Adobe Campaign or [here](https://experienceleague.adobe.com/docs/marketo/using/getting-started-with-marketo/setup/configure-protocols-for-marketo.html){target="_blank"} Marketo Engage.
 
 ## 1번 클릭(목록) 구독 취소:
 
