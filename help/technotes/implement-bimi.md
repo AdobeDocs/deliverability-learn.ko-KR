@@ -6,7 +6,7 @@ role: Admin
 level: Beginner
 jira: KT-14079
 exl-id: 6b911bcc-a531-466a-8bd3-7fa469b96cc7
-source-git-commit: ad0646da88f2b1474e74b6c741d0dd5701e88978
+source-git-commit: b96539608acd51ce76ef5bdaf5afd07b5a4208b7
 workflow-type: tm+mt
 source-wordcount: '1125'
 ht-degree: 0%
@@ -72,7 +72,7 @@ DMARC는 실패하는 전자 메일에 대해 사서함 공급자가 수행해�
 
 CDN(콘텐츠 전달 네트워크)이 사용되는 경우 사서함 공급자가 로고를 받지 못하게 하는 보호(예: 보트 보호)가 사용되지 않도록 하려면 로고를 보안 위치(HTTPS)에 저장해야 합니다.
 
-기술적 요구 사항 외에도 사각형 로고, 배경색으로 단색 및 기타 같은 실용적인 권장 사항이 있습니다. 이러한 권장 사항은 최상의 시각화를 위한 것입니다. 일부 공급자는 BIMI 작업 그룹에 의한 요구 사항에 추가 자체 요구 사항을 가지고 있습니다. [Gmail](https://support.google.com/a/answer/10911027?sjid=903725605955621707-EU){target="_blank"}. 예를 들어 로고는 96 x 96픽셀 이상이어야 합니다.
+기술적 요구 사항 외에도 사각형 로고, 배경색으로 단색 및 기타 같은 실용적인 권장 사항이 있습니다. 이러한 권장 사항은 최상의 시각화를 위한 것입니다. 일부 공급자는 BIMI 작업 그룹에 의한 요구 사항에 추가 자체 요구 사항을 가지고 있습니다. [Gmail](https://support.google.com/a/answer/10911027?sjid=903725605955621707-EU){target="_blank"} 예를 들어 로고는 96 x 96픽셀 이상이어야 합니다.
 준수하지 않으면 로고가 표시되지 않을 수 있습니다.
 
 ### 확인된 마크 인증서(VMC) {#vmc}
