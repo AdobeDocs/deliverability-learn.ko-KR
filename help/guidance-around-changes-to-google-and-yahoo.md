@@ -8,10 +8,10 @@ last-substantial-update: 2023-11-06T00:00:00Z
 jira: KT-14320
 thumbnail: KT-14320.jpeg
 exl-id: 879e9124-3cfe-4d85-a7d1-64ceb914a460
-source-git-commit: 0ad2e59948aa94008ae5c3f6eec7914223bdb02a
+source-git-commit: 2bfff0bc63dc1a19f02f40d631e503298937ec8b
 workflow-type: tm+mt
-source-wordcount: '1604'
-ht-degree: 1%
+source-wordcount: '1595'
+ht-degree: 0%
 
 ---
 
@@ -31,7 +31,9 @@ Adobe의 이메일 전달성 전문가는 이러한 블로그 게시물과 모�
 
 ## 그래서, 정확히 어떤 게 [!DNL Google] 및 [!DNL Yahoo] 뭐하는 거야?
 
-이메일의 세계에는 법적 요구 사항, 실질적 요구 사항 및 일반적인 모범 사례가 있습니다. 법적 요건은 장소마다 매우 다르며 이 주제에서는 다루지 않습니다. 대신, [!DNL Google] 및 [!DNL Yahoo] 는 모범 사례를 취하여 실용적인 요구 사항으로 만들고 있습니다. 항목 없음 [!DNL Google] 및 [!DNL Yahoo] 2월부터 새로운 도입 요구 사항이 시작될 예정이며, 몇 년 동안 모범 사례 권장 사항인 경우가 많았지만, 채택이 업계에서 느리고 고르지 못했습니다. 이 은(는) [!DNL Google] 및 [!DNL Yahoo]은 &quot;사용자에게 이메일을 배포하려는 경우(이는 이메일 목록의 상당한 부분을 나타낼 수 있으며, 경우에 따라 지역 및 업종에 따라 70%까지) 이러한 작업을 수행해야 합니다&quot;라고 말하며 채택 프로세스를 진행하는 데 도움이 되는 방법입니다.
+이메일의 세계에는 법적 요구 사항, 실질적 요구 사항 및 일반적인 모범 사례가 있습니다. 법적 요건은 장소마다 매우 다르며 이 주제에서는 다루지 않습니다. 대신, [!DNL Google] 및 [!DNL Yahoo] 는 모범 사례를 취하여 실용적인 요구 사항으로 만들고 있습니다.
+
+항목 없음 [!DNL Google] 및 [!DNL Yahoo] 2월부터 새로운 도입 요구 사항이 시작될 예정이며, 몇 년 동안 모범 사례 권장 사항인 경우가 많았지만, 채택이 업계에서 느리고 고르지 못했습니다. 이 은(는) [!DNL Google] 및 [!DNL Yahoo]은 &quot;사용자에게 이메일을 배포하려는 경우(이는 이메일 목록의 상당한 부분을 나타낼 수 있으며, 경우에 따라 지역 및 업종에 따라 70%까지) 이러한 작업을 수행해야 합니다&quot;라고 말하며 채택 프로세스를 진행하는 데 도움이 되는 방법입니다.
 
 ## 세부 사항은 무엇입니까?
 
@@ -50,9 +52,10 @@ DMARC는 현재 Adobe에서 완전히 지원되지만 필수는 아닙니다. �
 ## 1번 클릭(목록) 구독 취소:
 
 당황하지 마세요. [!DNL Google] 및 [!DNL Yahoo] 보안 봇이 단순히 작업을 수행하거나 실수로 클릭할 수 있는 이메일 본문 또는 바닥글의 구독 취소 링크에 대해 이야기하고 있지 않습니다. 즉, &quot;mailto&quot; 또는 &quot;http/URL&quot; 버전에 대한 목록 구독 취소 헤더 기능이 있습니다. 이것은 다음 내의 함수입니다 [!DNL Yahoo] 및 사용자가 구독 취소를 클릭할 수 있는 Gmail UI입니다. Gmail은 &quot;스팸 보고&quot;를 클릭하는 사용자에게 대신 구독 취소가 의도되었는지 확인하도록 메시지를 표시하기도 합니다. 이렇게 하면 대신 구독 취소로 전환하여(평판을 손상시키지 않음) 받는 불만(불만 사항은 평판을 손상함) 수를 줄일 수 있습니다.
-주의할 점은 다음과 같습니다 [!DNL Google] 및 [!DNL Yahoo] 은 둘 다 &quot;1-Click&quot; 이라는 이름으로 &quot;http/URL&quot; 옵션을 참조하며 이는 의도적으로 한 것입니다. 기술적으로 원래 &quot;http/URL&quot; 옵션을 사용하면 수신자를 웹 사이트로 리디렉션할 수 있습니다. 그것은 의 초점이 아니다 [!DNL Yahoo] 및 [!DNL Google], 두 사람 모두 웹 사이트 대신 HTTPS POST 요청을 통해 구독 취소를 처리하는 데 중점을 둔 업데이트된 RFC8058을 참조하여 &quot;1-클릭&quot;으로 만듭니다.
 
-오늘, [!DNL Gmail] 은 &quot;mailto&quot; 목록 구독 취소 옵션을 허용합니다. [!DNL Gmail] 은(는) &quot;mailto&quot;가 향후 자신의 기대에 부합하지 않는다고 밝혔으며, 2월부터 발신자는 &quot;게시&quot; 목록 구독 취소 옵션을 활성화해야 합니다.
+주의할 점은 다음과 같습니다 [!DNL Google] 및 [!DNL Yahoo] 은 둘 다 &quot;1-Click&quot; 이라는 이름으로 &quot;http/URL&quot; 옵션을 참조하며 이는 의도적으로 한 것입니다. 기술적으로 원래 &quot;http/URL&quot; 옵션을 사용하면 수신자를 웹 사이트로 리디렉션할 수 있습니다. 그것은 의 초점이 아니다 [!DNL Yahoo] 및 [!DNL Google], 두 사람 모두 업데이트된 [RFC8058](https://datatracker.ietf.org/doc/html/rfc8058){target="_blank"} 웹 사이트 대신 HTTPS POST 요청을 통해 &quot;1-클릭&quot;으로 구독 취소를 처리하는 데 중점을 둡니다.
+
+현재 Gmail은 &quot;mailto&quot; 목록 구독 취소 옵션을 허용합니다. Gmail은 &quot;mailto&quot;가 향후 기대에 미치지 못하며, 보낸 사람은 &quot;게시&quot; 목록 구독 취소 옵션을 활성화해야 한다고 말했습니다. 이미 특정 유형의 목록 구독을 취소한 발신자는 2024년 6월 1일까지 &quot;1-클릭&quot; 목록 구독을 취소해야 합니다.
 
 [!DNL Yahoo] 은(는) &quot;mailto&quot; 옵션을 계속 사용할 것이지만, 향후 &quot;post&quot;를 필요로 할 것이라고 말했습니다.
 
@@ -96,7 +99,9 @@ Adobe Campaign 및 Adobe Journey Optimizer Adobe의 경우 &quot;mailto&quot;와
 ## 이 경우 마케터로서 나에게 어떤 영향을 미칩니까?
 
 Gmail 및 [!DNL Yahoo] 은 이메일이 스팸 폴더로 도달하거나 차단됩니다(즉, 이메일이 게재되지 않았음을 나타내는 바운스를 MBP에서 다시 얻음).
+
 따라서 Adobe은 위에 설명된 변경 사항을 살펴보고 가능한 한 빨리 준수하도록 권장합니다. 지금이 바로 벤치마킹을 시작할 수 있는 좋은 시기이기도 합니다. [!DNL Yahoo] 및 [!DNL Google] 지표에 대한 중요한 변경 사항이 있는지 확인하려면 2월을 방문하십시오.
+
 도움을 드리고자 합니다. 질문이 있거나 지원이 필요한 경우 Adobe 전달성 컨설턴트와 상담하거나 아직 전달성 컨설턴트가 없는 경우 계정 팀에 문의하여 전달성 컨설턴트를 추가해 주십시오.
 
 ## 이 근처에 다른 방법이 있나요?
@@ -107,3 +112,9 @@ Gmail 및 [!DNL Yahoo] 은 이메일이 스팸 폴더로 도달하거나 차단�
 
 현재는 (으)로 전송된 이메일에는 적용되지 않습니다. [!DNL Yahoo].JP 또는 [!DNL Gmail] 작업 영역 계정에서는 이러한 위치에서 오는 이메일에 적용됩니다.
 
+## 추가 리소스(이러한 변경에 국한되지 않음):
+
+[!DNL Google Sender Guidelines](https://support.google.com/mail/answer/81126)
+[!DNL Google FAQ](https://support.google.com/a/answer/14229414?sjid=2864589551334481470-NC)
+[!DNL Yahoo Sender Guidelines](https://senders.yahooinc.com/best-practices/)
+[!DNL Yahoo FAQ](https://senders.yahooinc.com/faqs/)
