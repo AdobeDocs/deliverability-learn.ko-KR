@@ -8,9 +8,9 @@ last-substantial-update: 2023-11-06T00:00:00Z
 jira: KT-14320
 thumbnail: KT-14320.jpeg
 exl-id: 879e9124-3cfe-4d85-a7d1-64ceb914a460
-source-git-commit: 16ff60cdcb1ca1558b8021d27b235b6977c2f40a
+source-git-commit: 60c3e42c480ec4d438c51753bc6c37a01b1550e7
 workflow-type: tm+mt
-source-wordcount: '1565'
+source-wordcount: '1564'
 ht-degree: 0%
 
 ---
@@ -89,7 +89,7 @@ Adobe은 &quot;mailto&quot; 및 &quot;post/1-Click&quot; 목록 구독 취소 �
 * 낮은 스팸 속도를 유지하면 발신자는 사용자 피드백의 가끔씩 급증하는 것에 더 탄력적으로 대응할 수 있습니다.
 * 마찬가지로, 높은 스팸 비율을 유지하면 스팸 분류가 늘어납니다. 스팸 분류에 긍정적으로 반영되도록 스팸 비율 개선에 시간이 걸릴 수 있다.
 
-[!DNL Yahoo] 그들의 불만 문턱은 또한 0.30%대에 있을 것이라고 말했다.
+[!DNL Yahoo] 자신의 불만 접수 임계값도 0.30%대가 될 것이라고 명시했습니다.
 
 [!DNL Google] 및 [!DNL Yahoo]단 하루의 불만이나 일시적인 항의 급증의 원인이 되는 실수에 대해 발신자를 처벌하는 것이 목표가 아니다. 대신 오랜 기간 불만 비율이 높거나 잘못된 전송 행동 패턴을 보이는 발신자에 초점을 맞추고 있다.
 
