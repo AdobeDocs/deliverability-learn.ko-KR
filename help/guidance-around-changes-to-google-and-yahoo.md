@@ -8,7 +8,7 @@ last-substantial-update: 2023-11-06T00:00:00Z
 jira: KT-14320
 thumbnail: KT-14320.jpeg
 exl-id: 879e9124-3cfe-4d85-a7d1-64ceb914a460
-source-git-commit: 2bfff0bc63dc1a19f02f40d631e503298937ec8b
+source-git-commit: e7c3164acb1eb2ee46938cea333f416e0376f5b6
 workflow-type: tm+mt
 source-wordcount: '1595'
 ht-degree: 0%
@@ -114,7 +114,10 @@ Gmail 및 [!DNL Yahoo] 은 이메일이 스팸 폴더로 도달하거나 차단�
 
 ## 추가 리소스(이러한 변경에 국한되지 않음):
 
-[!DNL Google Sender Guidelines](https://support.google.com/mail/answer/81126)
-[!DNL Google FAQ](https://support.google.com/a/answer/14229414?sjid=2864589551334481470-NC)
-[!DNL Yahoo Sender Guidelines](https://senders.yahooinc.com/best-practices/)
-[!DNL Yahoo FAQ](https://senders.yahooinc.com/faqs/)
+[!DNL Google Sender Guidelines](https://support.google.com/mail/answer/81126){target="_blank"}
+
+[!DNL Google FAQ](https://support.google.com/a/answer/14229414?sjid=2864589551334481470-NC){target="_blank"}
+
+[!DNL Yahoo Sender Guidelines](https://senders.yahooinc.com/best-practices/){target="_blank"}
+
+[!DNL Yahoo FAQ](https://senders.yahooinc.com/faqs/){target="_blank"}
