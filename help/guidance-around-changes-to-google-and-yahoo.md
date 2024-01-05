@@ -8,7 +8,7 @@ last-substantial-update: 2023-11-06T00:00:00Z
 jira: KT-14320
 thumbnail: KT-14320.jpeg
 exl-id: 879e9124-3cfe-4d85-a7d1-64ceb914a460
-source-git-commit: 69c95855786408f32de2f72e7f1deb122fb369ea
+source-git-commit: c1aebdc34c3cc38325e9160360f7847f276bd53e
 workflow-type: tm+mt
 source-wordcount: '1758'
 ht-degree: 0%
@@ -68,9 +68,10 @@ Adobe은 &quot;mailto&quot; 및 &quot;post/1-Click&quot; 목록 구독 취소 �
 >[!INFO]
 > Adobe은 다음과 같은 요구 사항을 충족하도록 사용자를 지원하기 위해 모든 이메일 전송 플랫폼에서 &quot;게시&quot; 지원을 활성화하는 데 노력하고 있습니다.
 > 
-> * [!DNL Adobe Campaign Classic V7/V8]: 오늘 POST 1-클릭을 완전히 지원합니다. 단계별 설정에 대한 업데이트가 게시됩니다. [여기](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations.html?lang=en#list-unsubscribe){target="_blank"} 1월 중순까지
->* [!DNL Adobe Campaign Standard]: POST 1-클릭을 지원하도록 업데이트 중입니다. 곧 업데이트를 다시 확인하십시오. 설정에 대한 지침이 제공됩니다. [여기](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-14778.html?lang=en){target="_blank"}
->* [!DNL Adobe Journey Optimizer]: 오늘 POST 1-클릭을 완전히 지원합니다. 단계별 설정에 대한 업데이트가 게시됩니다. [여기](https://experienceleague.adobe.com/docs/journey-optimizer/using/email/email-opt-out.html?lang=en){target="_blank"} 1월 중순까지
+> 
+> * [!DNL Adobe Campaign Classic V7/V8]: 오늘 POST 1-클릭을 완전히 지원합니다. 단계별 설정에 대한 업데이트가 게시됩니다. [여기](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations.html?lang=en#list-unsubscribe){target="_blank"} 1월 중순까지.
+>* [!DNL Adobe Campaign Standard]: POST 1-클릭을 지원하도록 업데이트 중입니다. 곧 업데이트를 다시 확인하십시오. 설정에 대한 지침이 제공됩니다. [여기](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-14778.html?lang=en){target="_blank"}.
+>* [!DNL Adobe Journey Optimizer]: 오늘 POST 1-클릭을 완전히 지원합니다. 단계별 설정에 대한 업데이트가 게시됩니다. [여기](https://experienceleague.adobe.com/docs/journey-optimizer/using/email/email-opt-out.html?lang=en){target="_blank"} 1월 중순까지.
 > * [!DNL Marketo]: POST 1-클릭을 지원하도록 업데이트 중입니다. 준비가 되면 필요한 경우 자동으로 적용됩니다.
 
 
@@ -99,7 +100,7 @@ Adobe은 &quot;mailto&quot; 및 &quot;post/1-Click&quot; 목록 구독 취소 �
 
 10월에 처음 발표된 이후 타임라인에 대한 업데이트가 예정되어 있습니다. 가장 최근 타임라인은 다음과 같습니다.
 
-## [!DNL Gmail]:
+[!DNL Gmail]:
 
 2024년 2월 - 미준수 경고를 제공하기 위해 설계된 임시 바운스가 시작됩니다. 아직 규정을 준수하지 않는 경우 짧은 지연 후에도 이메일은 정상적으로 배달됩니다. 당신이 완전히 규정을 준수한다면, 일시적인 반등은 없을 것이고 당신은 아무것도 알아차리지 못할 것이다.
 
@@ -107,7 +108,7 @@ Adobe은 &quot;mailto&quot; 및 &quot;post/1-Click&quot; 목록 구독 취소 �
 
 2024년 6월 1일 - List-Unsubscribe 1-Click을 포함하여 완전히 준수하지 않은 보낸 사람은 차단됩니다.
 
-## [!DNL Yahoo]:
+[!DNL Yahoo]:
 
 는 정확한 날짜를 밝히지 않았지만, &quot;시행의 롤아웃은 2024년 2월에 시작될 것&quot;이라고 말했다. 적용은 점진적으로 진행될 예정입니다.&quot;
 
