@@ -8,9 +8,9 @@ last-substantial-update: 2023-11-06T00:00:00Z
 jira: KT-14320
 thumbnail: KT-14320.jpeg
 exl-id: 879e9124-3cfe-4d85-a7d1-64ceb914a460
-source-git-commit: c1aebdc34c3cc38325e9160360f7847f276bd53e
+source-git-commit: 2de69c2def1abfc4107feb80ad973f689af8b27e
 workflow-type: tm+mt
-source-wordcount: '1758'
+source-wordcount: '1755'
 ht-degree: 0%
 
 ---
@@ -59,7 +59,7 @@ DMARC는 현재 Adobe에서 완전히 지원되지만 필수는 아닙니다. �
 
 [!DNL Yahoo] 은(는) &quot;mailto&quot; 옵션을 계속 사용할 것이지만, 향후 &quot;post&quot;를 필요로 할 것이라고 말했습니다.
 
-Adobe은 &quot;mailto&quot; 및 &quot;post/1-Click&quot; 목록 구독 취소 옵션을 모두 사용할 것을 권장합니다. Adobe은 이러한 요구 사항 및 향후 업데이트를 충족하여 사용자를 지원하기 위해 모든 이메일 전송 플랫폼에서 &quot;게시&quot; 지원을 활성화하는 작업을 진행하고 있습니다.
+Adobe은 &quot;mailto&quot; 및 &quot;post/1-Click&quot; 목록 구독 취소 옵션을 모두 사용할 것을 권장합니다. Adobe은 모든 이메일 전송 플랫폼에서 &quot;게시&quot; 지원을 활성화하여 이러한 요구 사항을 충족하는 사용자를 지원하고 있습니다. 아래 세부 정보를 참조하십시오.
 
 목록 구독 취소 헤더에 대한 필요는 트랜잭션 이메일에는 적용되지 않습니다. 구독자가 생성하지 않는 포기한 장바구니 및 유사한 통신과 같은 트리거된 메시지는 다음과 같은 사서함 공급자의 마케팅으로 간주됩니다 [!DNL Google] 및 [!DNL Yahoo] 그리고 그들은 목록-구독 취소가 필요할 것입니다.
 
