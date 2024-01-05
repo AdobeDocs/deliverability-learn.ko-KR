@@ -8,9 +8,9 @@ last-substantial-update: 2023-11-06T00:00:00Z
 jira: KT-14320
 thumbnail: KT-14320.jpeg
 exl-id: 879e9124-3cfe-4d85-a7d1-64ceb914a460
-source-git-commit: 60c3e42c480ec4d438c51753bc6c37a01b1550e7
+source-git-commit: 1f2a6c7b53a5f5110250c8aecac349c5b72feb6b
 workflow-type: tm+mt
-source-wordcount: '1564'
+source-wordcount: '1759'
 ht-degree: 0%
 
 ---
@@ -41,7 +41,7 @@ Adobe 고객인 경우 요구 사항의 대부분이 이미 설정의 일부이�
 
 ## DMARC:
 
-[!DNL Google] 및 [!DNL Yahoo] 은(는) 둘 다 귀하에게 이메일을 전송하는 데 사용하는 모든 도메인에 대한 DMARC 레코드를 보유해야 합니다. 현재 p=reject 또는 p=quarantine 설정이 필요하지 않으므로 일반적으로 &quot;모니터링&quot; 설정이라고 하는 p=none 설정을 완벽하게 사용할 수 있습니다. 이렇게 해도 이메일의 처리 방식은 변경되지 않으며, DMARC 없이 일반적으로 수행하는 작업을 수행합니다. 이 설정을 수행하는 것은 DMARC로 자신을 보호하는 첫 번째 단계이며 이메일 전송을 통한 새로운 이점 또한 제공합니다. [!DNL Google] 및 [!DNL Yahoo] 또한 이메일 에코 시스템 내 어디에나 인증 문제가 있는지 확인하는 데 도움이 될 수 있습니다.
+[!DNL Google] 및 [!DNL Yahoo] 은(는) 둘 다 귀하에게 이메일을 전송하는 데 사용하는 모든 도메인에 대한 DMARC 레코드를 보유해야 합니다. 현재 p=reject 또는 p=quarantine 설정이 필요하지 않으므로 일반적으로 &quot;모니터링&quot; 설정이라고 하는 p=none 설정을 지금은 완벽하게 사용할 수 있습니다. 이렇게 해도 이메일의 처리 방식은 변경되지 않으며, DMARC 없이 일반적으로 수행하는 작업을 수행합니다. 이 설정을 수행하는 것은 DMARC로 자신을 보호하는 첫 번째 단계이며 이메일 전송을 통한 새로운 이점 또한 제공합니다. [!DNL Google] 및 [!DNL Yahoo] 또한 이메일 에코 시스템 내 어디에나 인증 문제가 있는지 확인하는 데 도움이 될 수 있습니다.
 
 DMARC에 대한 규칙은 변경되지 않습니다. 즉, 금지하도록 구성되지 않으면 상위 도메인(예: adobe.com)의 DMARC 레코드가 상속되고 하위 도메인(예: email.adobe.com)을 포함합니다. 하위 도메인을 추가하려는 경우나 여러 가지 업무상의 이유로 추가해야 하는 경우가 아니라면 하위 도메인에 서로 다른 DMARC 레코드가 필요하지 않습니다.
 
@@ -66,12 +66,12 @@ Adobe은 &quot;mailto&quot; 및 &quot;post/1-Click&quot; 목록 구독 취소 �
 [!DNL Google] 및 [!DNL Yahoo] 수신자는 경우에 따라 구독을 취소한 다음 나중에 다시 구독합니다. 그들은 이러한 상황을 확인하는 방법에 대한 비밀 소스를 기꺼이 공유하지 않지만, 이러한 경우에 잘못 보낸 사람들에게 벌칙을 주는 것을 피하기 위한 방법을 연구하고 있다.
 
 >[!INFO]
-> 솔루션에 대한 목록 구독 취소를 구현하는 방법에 대한 자세한 내용은 다음을 확인하십시오.
-> * [!DNL Adobe Campaign Classic]: [기술 추천](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations.html?lang=en#list-unsubscribe){target="_blank"}
->* [!DNL Adobe Campaign Standard]: [List-Unsubscribe 헤더란 무엇입니까? 그리고 ACS에서 이를 어떻게 구현할 수 있습니까?](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-14778.html?lang=en){target="_blank"}
->* [!DNL Adobe Journey Optimizer]: [이메일 옵트아웃 관리](https://experienceleague.adobe.com/docs/journey-optimizer/using/email/email-opt-out.html?lang=en){target="_blank"}
+> Adobe은 다음과 같은 요구 사항을 충족하도록 사용자를 지원하기 위해 모든 이메일 전송 플랫폼에서 &quot;게시&quot; 지원을 활성화하는 데 노력하고 있습니다.
+> * [!DNL Adobe Campaign Classic V7/V8]: 오늘 POST 1-클릭을 완전히 지원합니다. 단계별 설정에 대한 업데이트가 게시됩니다. [여기](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations.html?lang=en#list-unsubscribe){target="_blank"} 1월 중순까지
+>* [!DNL Adobe Campaign Standard]: POST 1-클릭을 지원하도록 업데이트 중입니다. 곧 업데이트를 다시 확인하십시오. 설정에 대한 지침이 제공됩니다. [여기](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-14778.html?lang=en){target="_blank"}
+>* [!DNL Adobe Journey Optimizer]: 오늘 POST 1-클릭을 완전히 지원합니다. 단계별 설정에 대한 업데이트가 게시됩니다. [여기](https://experienceleague.adobe.com/docs/journey-optimizer/using/email/email-opt-out.html?lang=en){target="_blank"} 1월 중순까지
 >
-> 또는 언제든지 고객 지원 Adobe 팀에 문의하십시오.
+> Marketo: POST 1-클릭을 지원하도록 업데이트 중입니다. 준비가 되면 필요한 경우 자동으로 적용됩니다.
 
 
 ## 2일 이내에 구독 취소 처리:
@@ -94,6 +94,22 @@ Adobe은 &quot;mailto&quot; 및 &quot;post/1-Click&quot; 목록 구독 취소 �
 [!DNL Google] 및 [!DNL Yahoo]단 하루의 불만이나 일시적인 항의 급증의 원인이 되는 실수에 대해 발신자를 처벌하는 것이 목표가 아니다. 대신 오랜 기간 불만 비율이 높거나 잘못된 전송 행동 패턴을 보이는 발신자에 초점을 맞추고 있다.
 
 고객 불만 비율을 모니터링하는 데 도움이 필요하거나 고객 불만 감소 전략에 도움이 필요한 경우 Adobe 전달성 컨설턴트와 상담하거나 아직 전달성 컨설턴트가 없는 경우 계정 팀에 문의하여 전달성 컨설턴트 추가에 대해 알아보십시오.
+
+## 어떤 시간대를 보고 있나요?
+
+10월에 처음 발표된 이후 타임라인에 대한 업데이트가 예정되어 있습니다. 가장 최근 타임라인은 다음과 같습니다.
+
+[!DNL Gmail]:
+
+2024년 2월 - 미준수 경고를 제공하기 위해 설계된 임시 바운스가 시작됩니다. 아직 규정을 준수하지 않는 경우 짧은 지연 후에도 이메일은 정상적으로 배달됩니다. 당신이 완전히 규정을 준수한다면, 일시적인 반등은 없을 것이고 당신은 아무것도 알아차리지 못할 것이다.
+
+2024년 4월 - 목록 구독 취소 1-클릭을 제외한 모든 사항을 준수하지 않는 발신자에 대해 차단이 시작됩니다. 호환되지 않는 이메일은 일부만 차단되며 차단되는 비율은 시간이 지남에 따라 증가합니다.
+
+2024년 6월 1일 - List-Unsubscribe 1-Click을 포함하여 완전히 준수하지 않은 보낸 사람은 차단됩니다.
+
+[!DNL Yahoo]:
+
+는 정확한 날짜를 밝히지 않았지만, &quot;시행의 롤아웃은 2024년 2월에 시작될 것&quot;이라고 말했다. 적용은 점진적으로 진행될 예정입니다.&quot;
 
 ## 이 경우 마케터로서 나에게 어떤 영향을 미칩니까?
 
