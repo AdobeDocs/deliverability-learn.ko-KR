@@ -6,9 +6,9 @@ doc-type: article
 activity: understand
 team: ACS
 exl-id: 39ed3773-18bf-4653-93b6-ffc64546406b
-source-git-commit: 22e47edbef3f8388e4cd3a01524091458d27ed43
+source-git-commit: 6653260e6bb3fc379529ea4081eeae0a8f7f4eb9
 workflow-type: tm+mt
-source-wordcount: '1712'
+source-wordcount: '1726'
 ht-degree: 0%
 
 ---
@@ -220,7 +220,12 @@ subject=unsubscribe%=message.mimeMessageId%>
 
 위의 예에서는 원클릭을 지원하는 ISP에 대해 원클릭 목록 구독 취소를 활성화하면서도 URL 목록 구독 취소를 지원하지 않는 수신자는 이메일을 통해 여전히 구독 취소를 요청할 수 있습니다.
 
-유형화 규칙을 통해 원클릭 목록 구독 취소를 구성하는 방법을 보려면 여기를 클릭하십시오.
+
+### 원클릭 목록 구독 취소를 지원하는 유형화 규칙 만들기:
+
+1 * 새 유형화 규칙 만들기 탐색 트리에서 새 유형화 를 클릭하여 새로 만듭니다
+![이미지](https://git.corp.adobe.com/storage/user/38257/files/b8d48b7f-0f33-4118-b61d-e60351c68260)
+
 
 ## 이메일 최적화 {#email-optimization}
 
