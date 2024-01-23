@@ -6,7 +6,7 @@ doc-type: article
 activity: understand
 team: ACS
 exl-id: 39ed3773-18bf-4653-93b6-ffc64546406b
-source-git-commit: 81f7f1b98a1393e265d6881b889fe2aa2ea35e02
+source-git-commit: 9ef6a2d18a7ab580822ca6a0ff8d485354ff71d4
 workflow-type: tm+mt
 source-wordcount: '1731'
 ht-degree: 0%
@@ -203,8 +203,9 @@ Gmail, Outlook.com 및 Microsoft Outlook은 이 메서드를 지원하며 구독
 
 원클릭 목록 구독 취소를 직접 구성하려면 다음을 수행합니다.
 
-· 다음 &quot;구독 취소 수신자 클릭 안함&quot; 웹 애플리케이션 1, [리소스] -> [온라인] -> [웹 애플리케이션] 2, [구독 취소 수신자 클릭 안함] XML 업로드 · 목록 구독 취소 및 목록 구독 취소 게시물 1 구성, [게재 속성]의 SMTP 섹션으로 이동
-2. 추가 SMTP 헤더 아래에서 명령줄에 을 입력합니다(각 헤더는 별도의 줄에 있어야 함).
+* 다음 &quot;Unsubscribe recipients no-click&quot; 웹 응용 프로그램에 추가 1* Go to Resources -> Online -> Web Applications 2* &quot;Unsubscribe recipients no-click&quot; XML을 업로드합니다
+* List-Unsubscribe 및 List-Unsubscribe-Post 구성 1* 게재 속성의 SMTP 섹션으로 이동합니다.
+2* 추가 SMTP 헤더 아래에서 명령줄에 을 입력합니다(각 헤더는 별도의 줄에 있어야 함).
 
 List-Unsubscribe-Post: List-Unsubscribe=One-Click List-Unsubscribe: &lt;https: domain.com=&quot;&quot; webapp=&quot;&quot; unsubnoclick=&quot;&quot; id=&quot;&lt;%=&quot; recipient.cryptidcamp=&quot;&quot;>>, &lt;mailto: erroraddress=&quot;&quot; subject=&quot;unsubscribe%=message.mimeMessageId%&quot;>
 
