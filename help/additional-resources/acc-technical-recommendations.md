@@ -6,9 +6,9 @@ doc-type: article
 activity: understand
 team: ACS
 exl-id: 39ed3773-18bf-4653-93b6-ffc64546406b
-source-git-commit: 1f3391430fa5a86973b8a1bd811b856dea23402e
+source-git-commit: 22e47edbef3f8388e4cd3a01524091458d27ed43
 workflow-type: tm+mt
-source-wordcount: '1722'
+source-wordcount: '1712'
 ht-degree: 0%
 
 ---
@@ -212,8 +212,11 @@ Gmail, Outlook.com 및 Microsoft Outlook은 이 메서드를 지원하며 구독
 * 게재 속성의 SMTP 섹션으로 이동합니다.
 * 추가 SMTP 헤더 아래에서 명령줄에 을 입력합니다(각 헤더는 별도의 줄에 있어야 함).
 
-,, List-Unsubscribe-Post: List-Unsubscribe=One-Click List-Unsubscribe: &lt;https: domain.com=&quot;&quot; webapp=&quot;&quot; unsubnoclick=&quot;&quot; id=&quot;&lt;%=&quot; recipient.cryptidcamp=&quot;&quot;>>, &lt;mailto: erroraddress=&quot;&quot; subject=&quot;unsubscribe%=message.mimeMessageId%&quot;>
-,,
+```
+List-Unsubscribe-Post: List-Unsubscribe=One-Click
+List-Unsubscribe: <https//domain.com/webApp/unsubNoClick?id=<%= recipient.cryptidcamp %>>, <mailto: %=errorAddress%?
+subject=unsubscribe%=message.mimeMessageId%>
+```
 
 위의 예에서는 원클릭을 지원하는 ISP에 대해 원클릭 목록 구독 취소를 활성화하면서도 URL 목록 구독 취소를 지원하지 않는 수신자는 이메일을 통해 여전히 구독 취소를 요청할 수 있습니다.
 
