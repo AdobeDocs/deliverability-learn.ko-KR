@@ -6,7 +6,7 @@ doc-type: article
 activity: understand
 team: ACS
 exl-id: 39ed3773-18bf-4653-93b6-ffc64546406b
-source-git-commit: caff9c7d77aed62c9d055fbca370aa756e4bf28b
+source-git-commit: c99e860507df99fdd4e4fad567eb5e9433ab56ef
 workflow-type: tm+mt
 source-wordcount: '1722'
 ht-degree: 0%
@@ -175,12 +175,12 @@ Gmail, Outlook.com 및 Microsoft Outlook은 이 메서드를 지원하며 구독
 
 이 추가는 각 이메일 또는 기존 게재 템플릿에서 수행할 수 있습니다. 이 기능을 포함하는 새 게재 템플릿을 만들 수도 있습니다.
 
-1. 목록 구독 취소: <mailto:unsubscribe@domain.com>
+* 목록 구독 취소: <mailto:unsubscribe@domain.com>
 구독 취소 링크를 클릭하면 사용자의 기본 이메일 클라이언트가 열립니다. 이 유형화 규칙은 이메일을 만드는 데 사용되는 유형화에 추가해야 합니다.
 
-2. 목록 구독 취소: <https://domain.com/unsubscribe.jsp>
+* 목록 구독 취소: <https://domain.com/unsubscribe.jsp>
 구독 취소 링크를 클릭하면 사용자가 구독 취소 양식으로 리디렉션됩니다.
-   ![이미지](https://git.corp.adobe.com/storage/user/38257/files/3b46450f-2502-48ed-87b9-f537e1850963)
+  ![이미지](https://git.corp.adobe.com/storage/user/38257/files/3b46450f-2502-48ed-87b9-f537e1850963)
 
 
 ### 유형화 규칙 만들기 {#creating-a-typology-rule}
@@ -199,18 +199,18 @@ Gmail, Outlook.com 및 Microsoft Outlook은 이 메서드를 지원하며 구독
 
 2024년 6월 1일부터 Yahoo 및 Gmail은 보낸 사람이 원클릭 목록 구독 취소를 준수하도록 요구합니다. One-Click List-Unsubscribe 요구 사항 발송자를 준수하려면 다음 작업을 수행해야 합니다.
 
-1. List-Unsubscribe-Post: List-Unsubscribe=One-Click에 추가
-2. URI 구독 취소 링크 포함
-3. Adobe Campaign에서 지원하는 수신자의 HTTP POST 응답 수신을 지원합니다.
+* List-Unsubscribe-Post: List-Unsubscribe=One-Click에 추가
+* URI 구독 취소 링크 포함
+* Adobe Campaign에서 지원하는 수신자의 HTTP POST 응답 수신을 지원합니다.
 
 원클릭 목록 구독 취소를 직접 구성하려면 다음을 수행합니다.
 
 * 다음 &quot;수신자 비클릭&quot; 웹 애플리케이션에 추가 
-1. 리소스 -> 온라인 -> 웹 응용 프로그램으로 이동
-2. &quot;구독 취소 수신자 클릭 없음&quot; XML 업로드
+* 리소스 -> 온라인 -> 웹 응용 프로그램으로 이동
+* &quot;구독 취소 수신자 클릭 없음&quot; XML 업로드
 * 목록 구독 취소 및 목록 구독 취소 게시물 구성
-1. 게재 속성의 SMTP 섹션으로 이동합니다.
-2. 추가 SMTP 헤더 아래에서 명령줄에 을 입력합니다(각 헤더는 별도의 줄에 있어야 함).
+* 게재 속성의 SMTP 섹션으로 이동합니다.
+* 추가 SMTP 헤더 아래에서 명령줄에 을 입력합니다(각 헤더는 별도의 줄에 있어야 함).
 
 List-Unsubscribe-Post: List-Unsubscribe=One-Click List-Unsubscribe: &lt;https: domain.com=&quot;&quot; webapp=&quot;&quot; unsubnoclick=&quot;&quot; id=&quot;&lt;%=&quot; recipient.cryptidcamp=&quot;&quot;>>, &lt;mailto: erroraddress=&quot;&quot; subject=&quot;unsubscribe%=message.mimeMessageId%&quot;>
 
