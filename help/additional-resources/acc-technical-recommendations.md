@@ -6,7 +6,7 @@ doc-type: article
 activity: understand
 team: ACS
 exl-id: 39ed3773-18bf-4653-93b6-ffc64546406b
-source-git-commit: f9dc4fb190557e2698891853965936ef32124f4a
+source-git-commit: 2eceddf12ce2baea1113d2688f9f8e75f7d31923
 workflow-type: tm+mt
 source-wordcount: '1864'
 ht-degree: 1%
@@ -207,7 +207,7 @@ Gmail, Outlook.com 및 Microsoft Outlook은 이 메서드를 지원하며 구독
 
 * 다음 &quot;수신자 비클릭&quot; 웹 애플리케이션에 추가 
 * 리소스 -> 온라인 -> 웹 응용 프로그램으로 이동
-* &quot;구독 취소 수신자 클릭 없음&quot; 업로드 [XML](/help/assets/WebAppUnsubNoClick.xml)
+* &quot;구독 취소 수신자 클릭 없음&quot; 업로드 [XML](/help/assets/WebAppUnsubNoClick.xml.zip)
 
 * 목록 구독 취소 및 목록 구독 취소 게시물 구성
 * 게재 속성의 SMTP 섹션으로 이동합니다.
@@ -224,9 +224,9 @@ subject=unsubscribe%=message.mimeMessageId%>
 
 ### 원클릭 목록 구독 취소를 지원하는 유형화 규칙 만들기:
 
-새 유형화 규칙 만들기
+새 유형화 규칙을 만듭니다.
 
-탐색 트리에서 &quot;새로 만들기&quot;를 클릭하여 새 유형화를 만듭니다
+* 탐색 트리에서 &quot;새로 만들기&quot;를 클릭하여 새 유형화를 만듭니다
 
 ![이미지](/help/assets/CreatingTypologyRules1.png)
 
@@ -356,7 +356,7 @@ return true;
 
 ![이미지](/help/assets/CreatingTypologyRules4.png)
 
-새 게재를 준비합니다(게재 속성의 추가 SMTP 헤더가 비어 있는지 확인).
+새 게재 준비(게재 속성의 추가 SMTP 헤더가 비어 있는지 확인)
 
 ![이미지](/help/assets/CreatingTypologyRules5.png)
 
