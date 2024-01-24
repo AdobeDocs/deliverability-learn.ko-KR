@@ -6,7 +6,7 @@ doc-type: article
 activity: understand
 team: ACS
 exl-id: 39ed3773-18bf-4653-93b6-ffc64546406b
-source-git-commit: 8cd825d24a77570ed54e3d4988100b25cd0a2eda
+source-git-commit: b192fc5a3287f4e20269f668ff71f328edf94482
 workflow-type: tm+mt
 source-wordcount: '1871'
 ht-degree: 1%
@@ -224,10 +224,12 @@ subject=unsubscribe%=message.mimeMessageId%>
 ### 원클릭 목록 구독 취소를 지원하는 유형화 규칙 만들기:
 
 새 유형화 규칙 만들기
+
 * 탐색 트리에서 새로 만들기 를 클릭하여 새 유형화를 만듭니다
   ![이미지](https://git.corp.adobe.com/AdobeDocs/deliverability-learn.en/blob/main/help/assets/CreatingTypologyRules1.png)
 
 유형화 규칙을 계속 구성합니다.
+
 * 규칙 유형 : 제어
 * 채널: 이메일
 * 단계 : 개인화 시작 시
@@ -349,19 +351,20 @@ return true;
 ![이미지](https://git.corp.adobe.com/AdobeDocs/deliverability-learn.en/blob/main/help/assets/CreatingTypologyRules3.png)
 
 이메일에 유형화에 새 규칙을 추가합니다(기본 유형화는 정상).
+
 ![이미지](https://git.corp.adobe.com/AdobeDocs/deliverability-learn.en/blob/main/help/assets/CreatingTypologyRules4.png)
 
 새 게재를 준비합니다(게재 속성의 추가 SMTP 헤더가 비어 있는지 확인).
+
 ![이미지](https://git.corp.adobe.com/AdobeDocs/deliverability-learn.en/blob/main/help/assets/CreatingTypologyRules5.png)
 
 게재를 준비하는 동안 새 유형화 규칙이 적용되는지 확인합니다.
+
 ![이미지](https://git.corp.adobe.com/AdobeDocs/deliverability-learn.en/blob/main/help/assets/CreatingTypologyRules6.png)
 
-목록 구독 취소가 있는지 확인
+목록 구독 취소가 있는지 확인합니다.
+
 ![이미지](https://git.corp.adobe.com/AdobeDocs/deliverability-learn.en/blob/main/help/assets/CreatingTypologyRules6.png)
-
-
-
 
 ## 이메일 최적화 {#email-optimization}
 
