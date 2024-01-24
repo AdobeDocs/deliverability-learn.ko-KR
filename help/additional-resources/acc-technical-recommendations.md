@@ -6,7 +6,7 @@ doc-type: article
 activity: understand
 team: ACS
 exl-id: 39ed3773-18bf-4653-93b6-ffc64546406b
-source-git-commit: 2eceddf12ce2baea1113d2688f9f8e75f7d31923
+source-git-commit: b9c8beefe577c8c0943bab31323d5778f1930606
 workflow-type: tm+mt
 source-wordcount: '1864'
 ht-degree: 1%
@@ -245,15 +245,13 @@ subject=unsubscribe%=message.mimeMessageId%>
 >[!NOTE]
 >
 >아래에 설명된 코드는 예시로서 참조되어야 한다.
+>이 예에서는 다음 방법을 자세히 설명합니다.
+>* URL 목록 구독 취소를 구성하고 헤더를 추가하거나 기존 mailto: 매개 변수를 추가하고 다음으로 바꿉니다. &lt;mailto..>, <http://…>
+>* List-Unsubscribe-Post 헤더에 추가
+>게시물 URL 예는 var headerUnsubUrl = &quot;http;//campmomentumv7-mkt-prod3.campaign.adobe.com/webApp/unsubNoClick?id=&lt;%= recipient.cryptedId %>&quot;;을 사용합니다.
+>* 다른 매개 변수를 추가할 수 있습니다(&amp;service = ...)
 >
 
-이 예에서는 다음 방법을 자세히 설명합니다.
-* URL 목록 구독 취소를 구성하고 헤더를 추가하거나 기존 mailto: 매개 변수를 추가하고 다음으로 바꿉니다. &lt;mailto..>, <http://…>
-* List-Unsubscribe-Post 헤더에 추가
-
-게시물 URL 예는 var headerUnsubUrl = &quot;http;//campmomentumv7-mkt-prod3.campaign.adobe.com/webApp/unsubNoClick?id=&lt;%= recipient.cryptedId %>&quot;;을 사용합니다.
-
-다른 매개 변수를 추가할 수 있습니다(&amp;service = ...)
 
 ```
 // Function to add or replace a header in the provided headers 
