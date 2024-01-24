@@ -6,9 +6,9 @@ doc-type: article
 activity: understand
 team: ACS
 exl-id: 39ed3773-18bf-4653-93b6-ffc64546406b
-source-git-commit: 69655998dfaadd59daf0f65fe04f16f67ff955ee
+source-git-commit: 6800c3236a4ffb5005cff12de86cce0295402b00
 workflow-type: tm+mt
-source-wordcount: '1870'
+source-wordcount: '1871'
 ht-degree: 1%
 
 ---
@@ -227,7 +227,7 @@ subject=unsubscribe%=message.mimeMessageId%>
 
 탐색 트리에서 새로 만들기 를 클릭하여 새 유형화를 만듭니다
 
-![typologyrues1](help/assets/CreatingTypologyRules1.png)
+![typologyrues1](https://git.corp.adobe.com/AdobeDocs/deliverability-learn.en/commit/ae78f381d0501bbc71f5a33bd2e8dd52563b193f#diff-99b6d79de1599be3ab6a20bd059e70a4a39b09feae147af09a91009f90fd1ced)
 
 유형화 규칙을 계속 구성합니다.
 
