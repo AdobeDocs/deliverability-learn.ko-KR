@@ -6,7 +6,7 @@ doc-type: article
 activity: understand
 team: ACS
 exl-id: 39ed3773-18bf-4653-93b6-ffc64546406b
-source-git-commit: d8cc8e3ee8b1a0fc6beaec1a7bc357f3a9f52e0f
+source-git-commit: acb2f0c5c983445b538381833f3596251938480a
 workflow-type: tm+mt
 source-wordcount: '1857'
 ht-degree: 0%
@@ -241,7 +241,7 @@ subject=unsubscribe%=message.mimeMessageId%>
 >
 
 이 예에서는 다음 방법을 자세히 설명합니다.
-* URL 목록 구독 취소를 구성하고 헤더를 추가하거나 기존 mailto: 매개 변수를 추가하고 다음으로 바꿉니다. &lt;mailto..>, <http:…>
+* URL 목록 구독 취소를 구성하고 헤더를 추가하거나 기존 mailto: 매개 변수를 추가하고 다음으로 바꿉니다. &lt;mailto..>, <http://…>
 * List-Unsubscribe-Post 헤더에 추가
 
 게시물 URL 예는 var headerUnsubUrl = &quot;http;//campmomentumv7-mkt-prod3.campaign.adobe.com/webApp/unsubNoClick?id=&lt;%= recipient.cryptedId %>&quot;;을 사용합니다.
