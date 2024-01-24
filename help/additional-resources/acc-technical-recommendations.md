@@ -6,9 +6,9 @@ doc-type: article
 activity: understand
 team: ACS
 exl-id: 39ed3773-18bf-4653-93b6-ffc64546406b
-source-git-commit: 0f61e0c36f979372f05772ad5a37114dcb05e8e5
+source-git-commit: 443f8e0c68705e481e7a3b2dbc6d3618d20e6f32
 workflow-type: tm+mt
-source-wordcount: '1870'
+source-wordcount: '1864'
 ht-degree: 1%
 
 ---
@@ -225,7 +225,7 @@ subject=unsubscribe%=message.mimeMessageId%>
 
 새 유형화 규칙 만들기
 
-탐색 트리에서 새로 만들기 를 클릭하여 새 유형화를 만듭니다
+탐색 트리에서 &quot;새로 만들기&quot;를 클릭하여 새 유형화를 만듭니다
 
 ![이미지](/help/assets/CreatingTypologyRules1.png)
 
@@ -237,7 +237,7 @@ subject=unsubscribe%=message.mimeMessageId%>
 * 레벨 : 원하는 대로
 * 활성
 
-![이미지](https://git.corp.adobe.com/AdobeDocs/deliverability-learn.en/blob/main/help/assets/CreatingTypologyRules2.png)
+![이미지](/help/assets/CreatingTypologyRules2.png)
 
 유형화 규칙의 Javascript를 코딩합니다.
 
@@ -349,23 +349,23 @@ if ( headerUnsubPost === "" ) {
 return true; 
 ```
 
-![이미지](https://git.corp.adobe.com/AdobeDocs/deliverability-learn.en/blob/main/help/assets/CreatingTypologyRules3.png)
+![이미지](/help/assets/CreatingTypologyRules3.png)
 
 이메일에 유형화에 새 규칙을 추가합니다(기본 유형화는 정상).
 
-![이미지](https://git.corp.adobe.com/AdobeDocs/deliverability-learn.en/blob/main/help/assets/CreatingTypologyRules4.png)
+![이미지](/help/assets/CreatingTypologyRules4.png)
 
 새 게재를 준비합니다(게재 속성의 추가 SMTP 헤더가 비어 있는지 확인).
 
-![이미지](https://git.corp.adobe.com/AdobeDocs/deliverability-learn.en/blob/main/help/assets/CreatingTypologyRules5.png)
+![이미지](/help/assets/CreatingTypologyRules5.png)
 
 게재를 준비하는 동안 새 유형화 규칙이 적용되는지 확인합니다.
 
-![이미지](https://git.corp.adobe.com/AdobeDocs/deliverability-learn.en/blob/main/help/assets/CreatingTypologyRules6.png)
+![이미지](/help/assets/CreatingTypologyRules6.png)
 
 목록 구독 취소가 있는지 확인합니다.
 
-![이미지](https://git.corp.adobe.com/AdobeDocs/deliverability-learn.en/blob/main/help/assets/CreatingTypologyRules6.png)
+![이미지](/help/assets/CreatingTypologyRules7.png)
 
 ## 이메일 최적화 {#email-optimization}
 
