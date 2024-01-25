@@ -6,7 +6,7 @@ doc-type: article
 activity: understand
 team: ACS
 exl-id: 39ed3773-18bf-4653-93b6-ffc64546406b
-source-git-commit: 097f41c29e189c2a8abf79e65ec322d39a2213db
+source-git-commit: 2b8a058e271843750a025e1aa3f61151c285e0d0
 workflow-type: tm+mt
 source-wordcount: '1860'
 ht-degree: 1%
@@ -228,7 +228,7 @@ subject=unsubscribe%=message.mimeMessageId%>
 
 * 탐색 트리에서 &quot;새로 만들기&quot;를 클릭하여 새 유형화를 만듭니다
 
-![이미지](/help/assets/CreatingTypologyRules1.png){width="50%"}{hight="50%"}
+![이미지](/help/assets/CreatingTypologyRules1.png){width="150%"}{hight="150%"}
 
 유형화 규칙을 계속 구성합니다.
 
