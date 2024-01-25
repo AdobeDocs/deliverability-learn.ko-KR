@@ -6,9 +6,9 @@ doc-type: article
 activity: understand
 team: ACS
 exl-id: 39ed3773-18bf-4653-93b6-ffc64546406b
-source-git-commit: b9c8beefe577c8c0943bab31323d5778f1930606
+source-git-commit: 097f41c29e189c2a8abf79e65ec322d39a2213db
 workflow-type: tm+mt
-source-wordcount: '1864'
+source-wordcount: '1860'
 ht-degree: 1%
 
 ---
@@ -180,7 +180,7 @@ Gmail, Outlook.com 및 Microsoft Outlook은 이 메서드를 지원하며 구독
 
 * 목록 구독 취소: <https://domain.com/unsubscribe.jsp>
 구독 취소 링크를 클릭하면 사용자가 구독 취소 양식으로 리디렉션됩니다.
-  ![이미지](https://git.corp.adobe.com/storage/user/38257/files/3b46450f-2502-48ed-87b9-f537e1850963)
+  ![이미지](/help/assets/ListUnsubscribe1.png)
 
 
 ### 유형화 규칙 만들기 {#creating-a-typology-rule}
@@ -228,7 +228,7 @@ subject=unsubscribe%=message.mimeMessageId%>
 
 * 탐색 트리에서 &quot;새로 만들기&quot;를 클릭하여 새 유형화를 만듭니다
 
-![이미지](/help/assets/CreatingTypologyRules1.png)
+![이미지](/help/assets/CreatingTypologyRules1.png){width="50%"}{hight="50%"}
 
 유형화 규칙을 계속 구성합니다.
 
@@ -248,7 +248,7 @@ subject=unsubscribe%=message.mimeMessageId%>
 >이 예에서는 다음 방법을 자세히 설명합니다.
 >* URL 목록 구독 취소를 구성하고 헤더를 추가하거나 기존 mailto: 매개 변수를 추가하고 다음으로 바꿉니다. &lt;mailto..>, <http://…>
 >* List-Unsubscribe-Post 헤더에 추가
->게시물 URL 예는 var headerUnsubUrl = &quot;http;//campmomentumv7-mkt-prod3.campaign.adobe.com/webApp/unsubNoClick?id=&lt;%= recipient.cryptedId %>&quot;;을 사용합니다.
+>게시물 URL 예제는 var headerUnsubUrl = &quot;http://campmomentumv7-mkt-prod3.campaign.adobe.com/webApp/unsubNoClick?id=&lt;%= recipient.cryptedId %>&quot;를 사용합니다.
 >* 다른 매개 변수를 추가할 수 있습니다(&amp;service = ...)
 >
 
