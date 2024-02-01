@@ -8,9 +8,9 @@ last-substantial-update: 2023-11-06T00:00:00Z
 jira: KT-14320
 thumbnail: KT-14320.jpeg
 exl-id: 879e9124-3cfe-4d85-a7d1-64ceb914a460
-source-git-commit: 73d0722bb0b40ea9cad9d50a805396fdfac27c49
+source-git-commit: ef6152550bf56395dd9e57e1286b1bebf141128c
 workflow-type: tm+mt
-source-wordcount: '1762'
+source-wordcount: '1760'
 ht-degree: 0%
 
 ---
@@ -69,7 +69,7 @@ Adobe은 &quot;mailto&quot; 및 &quot;post/1-Click&quot; 목록 구독 취소 �
 > Adobe은 다음과 같은 요구 사항을 충족하도록 사용자를 지원하기 위해 모든 이메일 전송 플랫폼에서 &quot;게시&quot; 지원을 활성화하는 데 노력하고 있습니다.
 > 
 > 
-> * [!DNL Adobe Campaign Classic V7/V8]: POST을 완전히 지원합니다. 오늘 클릭, 지침을 찾을 수 있습니다. [여기](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations.html?lang=en#list-unsubscribe){target="_blank"} 1월 중순까지.
+> * [!DNL Adobe Campaign Classic V7/V8]: POST을 완전히 지원합니다. 오늘 클릭, 지침을 찾을 수 있습니다. [여기](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations.html?lang=en#list-unsubscribe){target="_blank"}.
 >* [!DNL Adobe Campaign Standard]: 2월 말까지 POST 1-클릭을 지원하도록 업데이트 중입니다. 설정에 대한 지침이 제공됩니다. [여기](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-14778.html?lang=en){target="_blank"} 준비되면.
 >* [!DNL Adobe Journey Optimizer]: 오늘 POST 1-클릭을 지원하지만 몇 가지 주요 개선 사항이 진행 중입니다. 단계별 설정에 대한 업데이트가 게시됩니다. [여기](https://experienceleague.adobe.com/docs/journey-optimizer/using/email/email-opt-out.html?lang=en){target="_blank"} 준비되면.
 > * [!DNL Marketo]: POST 1-클릭을 지원하도록 업데이트 중입니다. 준비가 되면 필요한 경우 자동으로 적용됩니다.
