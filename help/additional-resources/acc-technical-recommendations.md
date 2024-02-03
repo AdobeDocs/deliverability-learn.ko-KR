@@ -6,9 +6,9 @@ doc-type: article
 activity: understand
 team: ACS
 exl-id: 39ed3773-18bf-4653-93b6-ffc64546406b
-source-git-commit: 98ec94935810c060ec0ad7c70336276104072ee3
+source-git-commit: 238c67562ebbe179b326e4093b90b0ee05a070ae
 workflow-type: tm+mt
-source-wordcount: '1861'
+source-wordcount: '1863'
 ht-degree: 1%
 
 ---
@@ -224,20 +224,20 @@ subject=unsubscribe%=message.mimeMessageId%>
 
 ### 원클릭 목록 구독 취소를 지원하는 유형화 규칙 만들기:
 
-1. **새 유형화 규칙을 만듭니다.**
+**1. 새 유형화 규칙을 만듭니다.**
 
-   * 탐색 트리에서 &quot;새로 만들기&quot;를 클릭하여 새 유형화를 만듭니다
+    * 탐색 트리에서 &quot;새로 만들기&quot;를 클릭하여 새 유형화를 만듭니다
 
 ![이미지](/help/assets/CreatingTypologyRules1.png)
 
 
-* **유형화 규칙을 계속 구성합니다.**
+**2. **유형화 규칙을 계속 구성합니다.**
 
-   * 규칙 유형: 제어
-   * 채널: 이메일
-   * 단계: 개인화 시작 시
-   * 레벨: 원하는 대로
-   * 활성
+    * 규칙 유형: 제어
+    * 채널: 이메일
+    * 단계: 개인화 시작 시
+    * 레벨: 원하는 대로
+    * 활성
 
 ![이미지](/help/assets/CreatingTypologyRules2.png)
 
