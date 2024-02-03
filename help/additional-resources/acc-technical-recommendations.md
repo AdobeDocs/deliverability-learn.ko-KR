@@ -6,7 +6,7 @@ doc-type: article
 activity: understand
 team: ACS
 exl-id: 39ed3773-18bf-4653-93b6-ffc64546406b
-source-git-commit: 5f00c22382aff61c9aa218f60ecfeabc743a2742
+source-git-commit: 5ce1c499d897ccbec7713ef2ad03ef0a810971b4
 workflow-type: tm+mt
 source-wordcount: '1861'
 ht-degree: 1%
@@ -224,20 +224,20 @@ subject=unsubscribe%=message.mimeMessageId%>
 
 ### 원클릭 목록 구독 취소를 지원하는 유형화 규칙 만들기:
 
-1. **새 유형화 규칙을 만듭니다.**
+* **새 유형화 규칙을 만듭니다.**
 
-* 탐색 트리에서 &quot;새로 만들기&quot;를 클릭하여 새 유형화를 만듭니다
+   * 탐색 트리에서 &quot;새로 만들기&quot;를 클릭하여 새 유형화를 만듭니다
 
 ![이미지](/help/assets/CreatingTypologyRules1.png)
 
 
-2. **유형화 규칙을 계속 구성합니다.**
+* **유형화 규칙을 계속 구성합니다.**
 
-* 규칙 유형: 제어
-* 채널: 이메일
-* 단계: 개인화 시작 시
-* 레벨: 원하는 대로
-* 활성
+   * 규칙 유형: 제어
+   * 채널: 이메일
+   * 단계: 개인화 시작 시
+   * 레벨: 원하는 대로
+   * 활성
 
 ![이미지](/help/assets/CreatingTypologyRules2.png)
 
@@ -353,22 +353,22 @@ return true;
 ![이미지](/help/assets/CreatingTypologyRules3.png)
 
 
-3. **이메일에 유형화에 새 규칙을 추가합니다(기본 유형화는 정상).**
+* **이메일에 유형화에 새 규칙을 추가합니다(기본 유형화는 정상).**
 
 ![이미지](/help/assets/CreatingTypologyRules4.png)
 
 
-4. **새 게재 준비(게재 속성의 추가 SMTP 헤더가 비어 있는지 확인)**
+* **새 게재 준비(게재 속성의 추가 SMTP 헤더가 비어 있는지 확인)**
 
 ![이미지](/help/assets/CreatingTypologyRules5.png)
 
 
-5. **게재를 준비하는 동안 새 유형화 규칙이 적용되는지 확인합니다.**
+* **게재를 준비하는 동안 새 유형화 규칙이 적용되는지 확인합니다.**
 
 ![이미지](/help/assets/CreatingTypologyRules6.png)
 
 
-6. **목록 구독 취소가 있는지 확인합니다.**
+* **목록 구독 취소가 있는지 확인합니다.**
 
 ![이미지](/help/assets/CreatingTypologyRules7.png)
 
