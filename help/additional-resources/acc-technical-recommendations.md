@@ -6,7 +6,7 @@ doc-type: article
 activity: understand
 team: ACS
 exl-id: 39ed3773-18bf-4653-93b6-ffc64546406b
-source-git-commit: d9b3505de11cc7c50db2a318274b73a758348578
+source-git-commit: 5f00c22382aff61c9aa218f60ecfeabc743a2742
 workflow-type: tm+mt
 source-wordcount: '1861'
 ht-degree: 1%
@@ -224,31 +224,33 @@ subject=unsubscribe%=message.mimeMessageId%>
 
 ### 원클릭 목록 구독 취소를 지원하는 유형화 규칙 만들기:
 
-새 유형화 규칙을 만듭니다.
+1. **새 유형화 규칙을 만듭니다.**
 
 * 탐색 트리에서 &quot;새로 만들기&quot;를 클릭하여 새 유형화를 만듭니다
 
 ![이미지](/help/assets/CreatingTypologyRules1.png)
 
-유형화 규칙을 계속 구성합니다.
 
-* 규칙 유형 : 제어
+2. **유형화 규칙을 계속 구성합니다.**
+
+* 규칙 유형: 제어
 * 채널: 이메일
-* 단계 : 개인화 시작 시
-* 레벨 : 원하는 대로
+* 단계: 개인화 시작 시
+* 레벨: 원하는 대로
 * 활성
 
 ![이미지](/help/assets/CreatingTypologyRules2.png)
 
-유형화 규칙의 Javascript를 코딩합니다.
+
+**유형화 규칙의 Javascript를 코딩합니다.**
 
 >[!NOTE]
 >
 >아래에 설명된 코드는 예시로서 참조되어야 한다.
 >이 예에서는 다음 방법을 자세히 설명합니다.
->* URL 목록 구독 취소를 구성하고 헤더를 추가하거나 기존 mailto: 매개 변수를 추가하고 다음으로 바꿉니다. &lt;mailto..>>, http://...
+>* URL 목록 구독 취소를 구성하고 헤더를 추가하거나 기존 mailto: 매개 변수를 추가하고 다음으로 바꿉니다. &lt;mailto..>>, https://...
 >* List-Unsubscribe-Post 헤더에 추가
->게시물 URL 예제는 var headerUnsubUrl = &quot;http://campmomentumv7-mkt-prod3.campaign.adobe.com/webApp/unsubNoClick?id=&lt;%= recipient.cryptedId %>&quot;를 사용합니다.
+>게시물 URL 예제는 var headerUnsubUrl = &quot;https://campmomentumv7-mkt-prod3.campaign.adobe.com/webApp/unsubNoClick?id=&lt;%= recipient.cryptedId %>&quot;를 사용합니다÷
 >* 다른 매개 변수를 추가할 수 있습니다(&amp;service = ...)
 >
 
@@ -319,7 +321,7 @@ function getHeader(headers, header) {
   
   
 // Define the unsubscribe URL 
-var headerUnsubUrl = "http://campmomentumv7-mkt-prod3.campaign.adobe.com/webApp/unsubNoClick?id=<%= recipient.cryptedId %>"; 
+var headerUnsubUrl = "https://campmomentumv7-mkt-prod3.campaign.adobe.com/webApp/unsubNoClick?id=<%= recipient.cryptedId %>"; 
   
 // Get the value of the List-Unsubscribe header 
 var headerUnsub = getHeader(delivery.mailParameters.headers, "List-Unsubscribe"); 
@@ -350,21 +352,26 @@ return true;
 
 ![이미지](/help/assets/CreatingTypologyRules3.png)
 
-이메일에 유형화에 새 규칙을 추가합니다(기본 유형화는 정상).
+
+3. **이메일에 유형화에 새 규칙을 추가합니다(기본 유형화는 정상).**
 
 ![이미지](/help/assets/CreatingTypologyRules4.png)
 
-새 게재 준비(게재 속성의 추가 SMTP 헤더가 비어 있는지 확인)
+
+4. **새 게재 준비(게재 속성의 추가 SMTP 헤더가 비어 있는지 확인)**
 
 ![이미지](/help/assets/CreatingTypologyRules5.png)
 
-게재를 준비하는 동안 새 유형화 규칙이 적용되는지 확인합니다.
+
+5. **게재를 준비하는 동안 새 유형화 규칙이 적용되는지 확인합니다.**
 
 ![이미지](/help/assets/CreatingTypologyRules6.png)
 
-목록 구독 취소가 있는지 확인합니다.
+
+6. **목록 구독 취소가 있는지 확인합니다.**
 
 ![이미지](/help/assets/CreatingTypologyRules7.png)
+
 
 ## 이메일 최적화 {#email-optimization}
 
