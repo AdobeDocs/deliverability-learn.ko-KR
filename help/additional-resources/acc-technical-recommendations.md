@@ -6,7 +6,7 @@ doc-type: article
 activity: understand
 team: ACS
 exl-id: 39ed3773-18bf-4653-93b6-ffc64546406b
-source-git-commit: 0c735dcf872728be6131b5a185f4b6973b26dcd3
+source-git-commit: 73ce12a86176e59ff4112c19382f7a62714b41e7
 workflow-type: tm+mt
 source-wordcount: '1867'
 ht-degree: 1%
@@ -226,20 +226,20 @@ subject=unsubscribe%=message.mimeMessageId%>
 
 **1. 새 유형화 규칙을 만듭니다.**
 
-    * 탐색 트리에서 &quot;새로 만들기&quot;를 클릭하여 새 유형화를 만듭니다
+* 탐색 트리에서 &quot;새로 만들기&quot;를 클릭하여 새 유형화를 만듭니다
 
 
 ![이미지](/help/assets/CreatingTypologyRules1.png)
 
 
 
-**2. **유형화 규칙을 계속 구성합니다.**
+**2. 유형화 규칙을 계속 구성합니다.**
 
-    * 규칙 유형: 제어
-    * 채널: 이메일
-    * 단계: 개인화 시작 시
-    * 레벨: 원하는 대로
-    * 활성
+* 규칙 유형: 제어
+* 채널: 이메일
+* 단계: 개인화 시작 시
+* 레벨: 원하는 대로
+* 활성
 
 
 ![이미지](/help/assets/CreatingTypologyRules2.png)
