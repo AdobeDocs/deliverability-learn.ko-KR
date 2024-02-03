@@ -6,9 +6,9 @@ doc-type: article
 activity: understand
 team: ACS
 exl-id: 39ed3773-18bf-4653-93b6-ffc64546406b
-source-git-commit: f8aaa0c21daf93953fb0daa6a5d9262c8d1654a0
+source-git-commit: c14b1eecbe522c650a8be376f8f133901497216a
 workflow-type: tm+mt
-source-wordcount: '1858'
+source-wordcount: '1863'
 ht-degree: 1%
 
 ---
@@ -175,10 +175,10 @@ Gmail, Outlook.com 및 Microsoft Outlook은 이 메서드를 지원하며 구독
 
 이 추가는 각 이메일 또는 기존 게재 템플릿에서 수행할 수 있습니다. 이 기능을 포함하는 새 게재 템플릿을 만들 수도 있습니다.
 
-1. 목록 구독 취소: <mailto:unsubscribe@domain.com>
+    1. 목록 구독 취소: mailto:unsubscribe@domain.com
 구독 취소 링크를 클릭하면 사용자의 기본 이메일 클라이언트가 열립니다. 이 유형화 규칙은 이메일을 만드는 데 사용되는 유형화에 추가해야 합니다.
 
-2. 목록 구독 취소: <https://domain.com/unsubscribe.jsp>
+    2. 목록 구독 취소: https://domain.com/unsubscribe.jsp
 구독 취소 링크를 클릭하면 사용자가 구독 취소 양식으로 리디렉션됩니다.
 
 ![이미지](/help/assets/UTF-8-1.png)
@@ -246,7 +246,7 @@ subject=unsubscribe%=message.mimeMessageId%>
 >
 >아래에 설명된 코드는 예시로서 참조되어야 한다.
 >이 예에서는 다음 방법을 자세히 설명합니다.
->* URL 목록 구독 취소를 구성하고 헤더를 추가하거나 기존 mailto: 매개 변수를 추가하고 다음으로 바꿉니다. &lt;mailto..>, <http://…>
+>* URL 목록 구독 취소를 구성하고 헤더를 추가하거나 기존 mailto: 매개 변수를 추가하고 다음으로 바꿉니다. &lt;mailto..>>, http://...
 >* List-Unsubscribe-Post 헤더에 추가
 >게시물 URL 예제는 var headerUnsubUrl = &quot;http://campmomentumv7-mkt-prod3.campaign.adobe.com/webApp/unsubNoClick?id=&lt;%= recipient.cryptedId %>&quot;를 사용합니다.
 >* 다른 매개 변수를 추가할 수 있습니다(&amp;service = ...)
