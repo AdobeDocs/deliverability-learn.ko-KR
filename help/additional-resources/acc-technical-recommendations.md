@@ -6,7 +6,7 @@ doc-type: article
 activity: understand
 team: ACS
 exl-id: 39ed3773-18bf-4653-93b6-ffc64546406b
-source-git-commit: 5ce1c499d897ccbec7713ef2ad03ef0a810971b4
+source-git-commit: 98ec94935810c060ec0ad7c70336276104072ee3
 workflow-type: tm+mt
 source-wordcount: '1861'
 ht-degree: 1%
@@ -224,7 +224,7 @@ subject=unsubscribe%=message.mimeMessageId%>
 
 ### 원클릭 목록 구독 취소를 지원하는 유형화 규칙 만들기:
 
-* **새 유형화 규칙을 만듭니다.**
+1. **새 유형화 규칙을 만듭니다.**
 
    * 탐색 트리에서 &quot;새로 만들기&quot;를 클릭하여 새 유형화를 만듭니다
 
