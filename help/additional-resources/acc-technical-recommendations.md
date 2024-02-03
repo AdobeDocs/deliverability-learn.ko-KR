@@ -6,9 +6,9 @@ doc-type: article
 activity: understand
 team: ACS
 exl-id: 39ed3773-18bf-4653-93b6-ffc64546406b
-source-git-commit: 66526ebad0914ef9afa995f7d826e644c0350182
+source-git-commit: 3dc1d2f352346fa2ef7b5c883da6a3e243cb32c0
 workflow-type: tm+mt
-source-wordcount: '1860'
+source-wordcount: '1858'
 ht-degree: 1%
 
 ---
@@ -180,7 +180,7 @@ Gmail, Outlook.com 및 Microsoft Outlook은 이 메서드를 지원하며 구독
 
 * 목록 구독 취소: <https://domain.com/unsubscribe.jsp>
 구독 취소 링크를 클릭하면 사용자가 구독 취소 양식으로 리디렉션됩니다.
-  ![이미지](/help/assets/ListUnsubscribe1.png)
+  ![이미지](/help/assets/UTF-8-1.png)
 
 
 ### 유형화 규칙 만들기 {#creating-a-typology-rule}
@@ -206,12 +206,11 @@ Gmail, Outlook.com 및 Microsoft Outlook은 이 메서드를 지원하며 구독
 원클릭 목록 구독 취소를 직접 구성하려면 다음을 수행합니다.
 
 * 다음 &quot;수신자 비클릭&quot; 웹 애플리케이션에 추가 
-* 리소스 -> 온라인 -> 웹 응용 프로그램으로 이동
-* &quot;구독 취소 수신자 클릭 없음&quot; 업로드 [XML](/help/assets/WebAppUnsubNoClick.xml.zip)
-
+   1. 리소스 -> 온라인 -> 웹 응용 프로그램으로 이동
+   2. &quot;구독 취소 수신자 클릭 없음&quot; 업로드 [XML](/help/assets/WebAppUnsubNoClick.xml.zip)
 * 목록 구독 취소 및 목록 구독 취소 게시물 구성
-* 게재 속성의 SMTP 섹션으로 이동합니다.
-* 추가 SMTP 헤더 아래에서 명령줄에 을 입력합니다(각 헤더는 별도의 줄에 있어야 함).
+   1. 게재 속성의 SMTP 섹션으로 이동합니다.
+   2. 추가 SMTP 헤더 아래에서 명령줄에 을 입력합니다(각 헤더는 별도의 줄에 있어야 함).
 
 ```
 List-Unsubscribe-Post: List-Unsubscribe=One-Click
