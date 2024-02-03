@@ -6,9 +6,9 @@ doc-type: article
 activity: understand
 team: ACS
 exl-id: 39ed3773-18bf-4653-93b6-ffc64546406b
-source-git-commit: c14b1eecbe522c650a8be376f8f133901497216a
+source-git-commit: 8fe2a9de16a7856c66a643ce7aaf22bae016246e
 workflow-type: tm+mt
-source-wordcount: '1863'
+source-wordcount: '1861'
 ht-degree: 1%
 
 ---
@@ -175,11 +175,9 @@ Gmail, Outlook.com 및 Microsoft Outlook은 이 메서드를 지원하며 구독
 
 이 추가는 각 이메일 또는 기존 게재 템플릿에서 수행할 수 있습니다. 이 기능을 포함하는 새 게재 템플릿을 만들 수도 있습니다.
 
-    1. 목록 구독 취소: mailto:unsubscribe@domain.com
-구독 취소 링크를 클릭하면 사용자의 기본 이메일 클라이언트가 열립니다. 이 유형화 규칙은 이메일을 만드는 데 사용되는 유형화에 추가해야 합니다.
+1.List-Unsubscribe: mailto:unsubscribe@domain.com 구독 취소 링크를 클릭하면 사용자의 기본 이메일 클라이언트가 열립니다. 이 유형화 규칙은 이메일을 만드는 데 사용되는 유형화에 추가해야 합니다.
 
-    2. 목록 구독 취소: https://domain.com/unsubscribe.jsp
-구독 취소 링크를 클릭하면 사용자가 구독 취소 양식으로 리디렉션됩니다.
+2.목록 구독 취소: https://domain.com/unsubscribe.jsp 구독 취소 링크를 클릭하면 사용자가 구독 취소 양식으로 리디렉션됩니다.
 
 ![이미지](/help/assets/UTF-8-1.png)
 
