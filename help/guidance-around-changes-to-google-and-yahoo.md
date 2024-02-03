@@ -8,7 +8,7 @@ last-substantial-update: 2023-11-06T00:00:00Z
 jira: KT-14320
 thumbnail: KT-14320.jpeg
 exl-id: 879e9124-3cfe-4d85-a7d1-64ceb914a460
-source-git-commit: 8de2247f78f8c6e8467ffe51ffdf1b6107d30118
+source-git-commit: 50017358f7f88f5579de282a1f528916ecb17493
 workflow-type: tm+mt
 source-wordcount: '1775'
 ht-degree: 0%
@@ -51,7 +51,7 @@ DMARC TXT 레코드 구성은 현재 Campaign 및 AJO용 Adobe에서 완전히 �
 
 ## 1번 클릭(목록) 구독 취소:
 
-당황하지 마세요. [!DNL Google] 및 [!DNL Yahoo] 보안 봇이 단순히 작업을 수행하거나 실수로 클릭할 수 있는 이메일 본문 또는 바닥글의 구독 취소 링크에 대해 이야기하고 있지 않습니다. 즉, &quot;mailto&quot; 또는 &quot;http/URL&quot; 버전에 대한 목록 구독 취소 헤더 기능이 있습니다. 이것은 다음 내의 함수입니다 [!DNL Yahoo] 및 사용자가 구독 취소를 클릭할 수 있는 Gmail UI입니다. Gmail은 &quot;스팸 보고&quot;를 클릭하는 사용자에게 대신 구독 취소가 의도되었는지 확인하도록 메시지를 표시하기도 합니다. 이렇게 하면 대신 구독 취소로 전환하여(평판을 손상시키지 않음) 받는 불만(불만 사항은 평판을 손상함) 수를 줄일 수 있습니다.
+당황하지 마세요. [!DNL Google] 및 [!DNL Yahoo] 보안 봇이 단순히 작업을 수행하거나 실수로 클릭할 수 있는 이메일 본문 또는 바닥글의 구독 취소 링크에 대해 이야기하고 있지 않습니다. 즉, &quot;mailto&quot; 또는 &quot;http/URI&quot; 버전에 대한 목록 구독 취소 헤더 기능이 있습니다. 이것은 다음 내의 함수입니다 [!DNL Yahoo] 및 사용자가 구독 취소를 클릭할 수 있는 Gmail UI입니다. Gmail은 &quot;스팸 보고&quot;를 클릭하는 사용자에게 대신 구독 취소가 의도되었는지 확인하도록 메시지를 표시하기도 합니다. 이렇게 하면 대신 구독 취소로 전환하여(평판을 손상시키지 않음) 받는 불만(불만 사항은 평판을 손상함) 수를 줄일 수 있습니다.
 
 주의할 점은 다음과 같습니다 [!DNL Google] 및 [!DNL Yahoo] 두 가지 모두 &quot;1-Click&quot; 이름으로 &quot;http/URI&quot; 옵션을 참조하며 이는 의도적인 것입니다. 기본적으로 원래 &quot;http/URI&quot; 옵션을 사용하면 수신자를 웹 사이트로 리디렉션할 수 있습니다. 그것은 의 초점이 아니다 [!DNL Yahoo] 및 [!DNL Google], 두 사람 모두 업데이트된 [RFC8058](https://datatracker.ietf.org/doc/html/rfc8058){target="_blank"} 웹 사이트 대신 HTTPS POST 요청을 통해 &quot;1-클릭&quot;으로 구독 취소를 처리하는 데 중점을 둡니다.
 
