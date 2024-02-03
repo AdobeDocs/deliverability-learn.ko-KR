@@ -8,9 +8,9 @@ last-substantial-update: 2023-11-06T00:00:00Z
 jira: KT-14320
 thumbnail: KT-14320.jpeg
 exl-id: 879e9124-3cfe-4d85-a7d1-64ceb914a460
-source-git-commit: ef6152550bf56395dd9e57e1286b1bebf141128c
+source-git-commit: 8de2247f78f8c6e8467ffe51ffdf1b6107d30118
 workflow-type: tm+mt
-source-wordcount: '1760'
+source-wordcount: '1775'
 ht-degree: 0%
 
 ---
@@ -45,7 +45,7 @@ Adobe 고객인 경우 요구 사항의 대부분이 이미 설정의 일부이�
 
 DMARC에 대한 규칙은 변경되지 않습니다. 즉, 금지하도록 구성되지 않으면 상위 도메인(예: adobe.com)의 DMARC 레코드가 상속되고 하위 도메인(예: email.adobe.com)을 포함합니다. 하위 도메인을 추가하려는 경우나 여러 가지 업무상의 이유로 추가해야 하는 경우가 아니라면 하위 도메인에 서로 다른 DMARC 레코드가 필요하지 않습니다.
 
-DMARC는 현재 Adobe에서 완전히 지원되지만 필수는 아닙니다. 무료 DMARC 검사기를 사용하여 하위 도메인에 대한 DMARC 설정이 있는지 확인하고, 설정되지 않은 경우 Adobe 지원 팀에 문의하여 해당 설정을 가져오는 방법을 확인하십시오.
+DMARC TXT 레코드 구성은 현재 Campaign 및 AJO용 Adobe에서 완전히 지원되지만 필수 사항은 아닙니다. 무료 DMARC 검사기를 사용하여 하위 도메인에 대한 DMARC 설정이 있는지 확인하고, 설정되지 않은 경우 Adobe 지원 팀에 문의하여 해당 설정을 가져오는 방법을 확인하십시오.
 
 또한 DMARC와 구현 방법에 대한 자세한 내용을 확인할 수 있습니다 [여기](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/technotes/implement-dmarc.html?lang=ko){target="_blank"} for Adobe Campaign, [here](https://experienceleague.adobe.com/docs/journey-optimizer/using/reporting/deliverability/dmarc-record-update.html?lang=en){target="_blank"} for AJO, or [here](https://experienceleague.adobe.com/docs/marketo/using/getting-started-with-marketo/setup/configure-protocols-for-marketo.html){target="_blank"} Marketo Engage.
 
@@ -53,7 +53,7 @@ DMARC는 현재 Adobe에서 완전히 지원되지만 필수는 아닙니다. �
 
 당황하지 마세요. [!DNL Google] 및 [!DNL Yahoo] 보안 봇이 단순히 작업을 수행하거나 실수로 클릭할 수 있는 이메일 본문 또는 바닥글의 구독 취소 링크에 대해 이야기하고 있지 않습니다. 즉, &quot;mailto&quot; 또는 &quot;http/URL&quot; 버전에 대한 목록 구독 취소 헤더 기능이 있습니다. 이것은 다음 내의 함수입니다 [!DNL Yahoo] 및 사용자가 구독 취소를 클릭할 수 있는 Gmail UI입니다. Gmail은 &quot;스팸 보고&quot;를 클릭하는 사용자에게 대신 구독 취소가 의도되었는지 확인하도록 메시지를 표시하기도 합니다. 이렇게 하면 대신 구독 취소로 전환하여(평판을 손상시키지 않음) 받는 불만(불만 사항은 평판을 손상함) 수를 줄일 수 있습니다.
 
-주의할 점은 다음과 같습니다 [!DNL Google] 및 [!DNL Yahoo] 은 둘 다 &quot;1-Click&quot; 이라는 이름으로 &quot;http/URL&quot; 옵션을 참조하며 이는 의도적으로 한 것입니다. 기술적으로 원래 &quot;http/URL&quot; 옵션을 사용하면 수신자를 웹 사이트로 리디렉션할 수 있습니다. 그것은 의 초점이 아니다 [!DNL Yahoo] 및 [!DNL Google], 두 사람 모두 업데이트된 [RFC8058](https://datatracker.ietf.org/doc/html/rfc8058){target="_blank"} 웹 사이트 대신 HTTPS POST 요청을 통해 &quot;1-클릭&quot;으로 구독 취소를 처리하는 데 중점을 둡니다.
+주의할 점은 다음과 같습니다 [!DNL Google] 및 [!DNL Yahoo] 두 가지 모두 &quot;1-Click&quot; 이름으로 &quot;http/URI&quot; 옵션을 참조하며 이는 의도적인 것입니다. 기본적으로 원래 &quot;http/URI&quot; 옵션을 사용하면 수신자를 웹 사이트로 리디렉션할 수 있습니다. 그것은 의 초점이 아니다 [!DNL Yahoo] 및 [!DNL Google], 두 사람 모두 업데이트된 [RFC8058](https://datatracker.ietf.org/doc/html/rfc8058){target="_blank"} 웹 사이트 대신 HTTPS POST 요청을 통해 &quot;1-클릭&quot;으로 구독 취소를 처리하는 데 중점을 둡니다.
 
 현재 Gmail은 &quot;mailto&quot; 목록 구독 취소 옵션을 허용합니다. Gmail은 &quot;mailto&quot;가 향후 기대에 미치지 못하며, 보낸 사람은 &quot;게시&quot; 목록 구독 취소 옵션을 활성화해야 한다고 말했습니다. 이미 특정 유형의 목록 구독을 취소한 발신자는 2024년 6월 1일까지 &quot;1-클릭&quot; 목록 구독을 취소해야 합니다.
 
@@ -71,8 +71,8 @@ Adobe은 &quot;mailto&quot; 및 &quot;post/1-Click&quot; 목록 구독 취소 �
 > 
 > * [!DNL Adobe Campaign Classic V7/V8]: POST을 완전히 지원합니다. 오늘 클릭, 지침을 찾을 수 있습니다. [여기](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations.html?lang=en#list-unsubscribe){target="_blank"}.
 >* [!DNL Adobe Campaign Standard]: 2월 말까지 POST 1-클릭을 지원하도록 업데이트 중입니다. 설정에 대한 지침이 제공됩니다. [여기](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-14778.html?lang=en){target="_blank"} 준비되면.
->* [!DNL Adobe Journey Optimizer]: 오늘 POST 1-클릭을 지원하지만 몇 가지 주요 개선 사항이 진행 중입니다. 단계별 설정에 대한 업데이트가 게시됩니다. [여기](https://experienceleague.adobe.com/docs/journey-optimizer/using/email/email-opt-out.html?lang=en){target="_blank"} 준비되면.
-> * [!DNL Marketo]: POST 1-클릭을 지원하도록 업데이트 중입니다. 준비가 되면 필요한 경우 자동으로 적용됩니다.
+>* [!DNL Adobe Journey Optimizer]: 오늘 POST 1-클릭을 지원하지만 몇 가지 주요 개선 사항이 진행 중이며 2024년 3월에 진행될 예정입니다. 설명서에 대한 업데이트가 게시됩니다 [여기](https://experienceleague.adobe.com/docs/journey-optimizer/using/email/email-opt-out.html?lang=en){target="_blank"} 준비되면.
+> * [!DNL Marketo]: 2024년 1월 31일부터 POST 1-클릭-목록-구독 취소를 완전히 지원합니다. 사용자는 작업을 수행할 필요가 없습니다.
 
 
 ## 2일 이내에 구독 취소 처리:
