@@ -6,7 +6,7 @@ doc-type: article
 activity: understand
 team: ACS
 exl-id: 39ed3773-18bf-4653-93b6-ffc64546406b
-source-git-commit: 3dc1d2f352346fa2ef7b5c883da6a3e243cb32c0
+source-git-commit: f8aaa0c21daf93953fb0daa6a5d9262c8d1654a0
 workflow-type: tm+mt
 source-wordcount: '1858'
 ht-degree: 1%
@@ -149,7 +149,7 @@ Adobe Campaign의 Deliverability Service는 AOL, BlueTie, Comcast, Cox, EarthLin
 목록 구독 취소를 사용하려면 다음과 유사한 명령줄을 입력해야 합니다.
 
 ```
-List-Unsubscribe: <mailto: client@newsletter.example.com?subject=unsubscribe?body=unsubscribe>
+List-Unsubscribe: <mailto:client@newsletter.example.com?subject=unsubscribe?body=unsubscribe>
 ```
 
 >[!CAUTION]
@@ -159,7 +159,7 @@ List-Unsubscribe: <mailto: client@newsletter.example.com?subject=unsubscribe?bod
 다음 명령줄을 사용하여 다이내믹을 만들 수 있습니다 **목록-구독 취소**:
 
 ```
-List-Unsubscribe: <mailto: %=errorAddress%?subject=unsubscribe%=message.mimeMessageId%>
+List-Unsubscribe: <mailto:%=errorAddress%?subject=unsubscribe%=message.mimeMessageId%>
 ```
 
 Gmail, Outlook.com 및 Microsoft Outlook은 이 메서드를 지원하며 구독 취소 버튼은 인터페이스에서 직접 사용할 수 있습니다. 이 기법은 불만율을 낮춥니다.
@@ -175,12 +175,13 @@ Gmail, Outlook.com 및 Microsoft Outlook은 이 메서드를 지원하며 구독
 
 이 추가는 각 이메일 또는 기존 게재 템플릿에서 수행할 수 있습니다. 이 기능을 포함하는 새 게재 템플릿을 만들 수도 있습니다.
 
-* 목록 구독 취소: <mailto:unsubscribe@domain.com>
+1. 목록 구독 취소: <mailto:unsubscribe@domain.com>
 구독 취소 링크를 클릭하면 사용자의 기본 이메일 클라이언트가 열립니다. 이 유형화 규칙은 이메일을 만드는 데 사용되는 유형화에 추가해야 합니다.
 
-* 목록 구독 취소: <https://domain.com/unsubscribe.jsp>
+2. 목록 구독 취소: <https://domain.com/unsubscribe.jsp>
 구독 취소 링크를 클릭하면 사용자가 구독 취소 양식으로 리디렉션됩니다.
-  ![이미지](/help/assets/UTF-8-1.png)
+
+![이미지](/help/assets/UTF-8-1.png)
 
 
 ### 유형화 규칙 만들기 {#creating-a-typology-rule}
@@ -199,9 +200,9 @@ Gmail, Outlook.com 및 Microsoft Outlook은 이 메서드를 지원하며 구독
 
 2024년 6월 1일부터 Yahoo 및 Gmail은 보낸 사람이 원클릭 목록 구독 취소를 준수하도록 요구합니다. One-Click List-Unsubscribe 요구 사항 발송자를 준수하려면 다음 작업을 수행해야 합니다.
 
-* List-Unsubscribe-Post: List-Unsubscribe=One-Click에 추가
-* URI 구독 취소 링크 포함
-* Adobe Campaign에서 지원하는 수신자의 HTTP POST 응답 수신을 지원합니다.
+1. List-Unsubscribe-Post: List-Unsubscribe=One-Click에 추가
+2. URI 구독 취소 링크 포함
+3. Adobe Campaign에서 지원하는 수신자의 HTTP POST 응답 수신을 지원합니다.
 
 원클릭 목록 구독 취소를 직접 구성하려면 다음을 수행합니다.
 
