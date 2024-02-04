@@ -1,12 +1,11 @@
 ---
-source-git-commit: 25a1d799589268ab3108267670a3212bc9c47f7d
+source-git-commit: 945a7ba5e3c3ac9544199e1bb62273933a82f04a
 workflow-type: tm+mt
 source-wordcount: '168'
 ht-degree: 7%
 
 ---
-### 원클릭 목록 구독 취소를 지원하는 유형화 규칙 만들기:
-###
+# 원클릭 목록 구독 취소를 지원하는 유형화 규칙 만들기:
 
 **1. 새 유형화 규칙을 만듭니다.**
 * 탐색 트리에서 &quot;새로 만들기&quot;를 클릭하여 새 유형화를 만듭니다
