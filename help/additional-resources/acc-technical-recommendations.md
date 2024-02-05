@@ -6,7 +6,7 @@ doc-type: article
 activity: understand
 team: ACS
 exl-id: 39ed3773-18bf-4653-93b6-ffc64546406b
-source-git-commit: b4be656998890f9c98b8417835ae7c5bda2bc499
+source-git-commit: 2e3cebdad1613c852e950c379ddba689a3d8110e
 workflow-type: tm+mt
 source-wordcount: '1867'
 ht-degree: 1%
@@ -159,7 +159,7 @@ List-Unsubscribe: <mailto:client@newsletter.example.com?subject=unsubscribe?body
 다음 명령줄을 사용하여 다이내믹을 만들 수 있습니다 **목록-구독 취소**:
 
 ```
-List-Unsubscribe: <mailto:%=errorAddress%?subject=unsubscribe%=message.mimeMessageId%>
+List-Unsubscribe: <mailto:<%=errorAddress%>?subject=unsubscribe%=message.mimeMessageId%>
 ```
 
 Gmail, Outlook.com 및 Microsoft Outlook은 이 메서드를 지원하며 구독 취소 버튼은 인터페이스에서 직접 사용할 수 있습니다. 이 기법은 불만율을 낮춥니다.
@@ -215,7 +215,7 @@ Gmail, Outlook.com 및 Microsoft Outlook은 이 메서드를 지원하며 구독
 
 ```
 List-Unsubscribe-Post: List-Unsubscribe=One-Click
-List-Unsubscribe: <https//domain.com/webApp/unsubNoClick?id=<%= recipient.cryptidcamp %>>, <mailto: %=errorAddress%?
+List-Unsubscribe: <https://domain.com/webApp/unsubNoClick?id=<%= recipient.cryptidcamp %>>, <mailto: %=errorAddress%?
 subject=unsubscribe%=message.mimeMessageId%>
 ```
 
