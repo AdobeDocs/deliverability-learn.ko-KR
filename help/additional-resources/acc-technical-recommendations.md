@@ -6,7 +6,7 @@ doc-type: article
 activity: understand
 team: ACS
 exl-id: 39ed3773-18bf-4653-93b6-ffc64546406b
-source-git-commit: 2e3cebdad1613c852e950c379ddba689a3d8110e
+source-git-commit: bfdf87937d001791701884d29db2da1fd7a0e8ee
 workflow-type: tm+mt
 source-wordcount: '1867'
 ht-degree: 1%
@@ -215,8 +215,7 @@ Gmail, Outlook.com 및 Microsoft Outlook은 이 메서드를 지원하며 구독
 
 ```
 List-Unsubscribe-Post: List-Unsubscribe=One-Click
-List-Unsubscribe: <https://domain.com/webApp/unsubNoClick?id=<%= recipient.cryptidcamp %>>, <mailto: %=errorAddress%?
-subject=unsubscribe%=message.mimeMessageId%>
+List-Unsubscribe: https://domain.com/webApp/unsubNoClick?id=<%= recipient.cryptedId %>, < mailto:<%@ include option='NmsEmail_DefaultErrorAddr' %>?subject=unsubscribe<%=escape(message.mimeMessageId) %> >
 ```
 
 위의 예에서는 원클릭을 지원하는 ISP에 대해 원클릭 목록 구독 취소를 활성화하면서도 URL 목록 구독 취소를 지원하지 않는 수신자는 이메일을 통해 여전히 구독 취소를 요청할 수 있습니다.
