@@ -6,9 +6,9 @@ doc-type: article
 activity: understand
 team: ACS
 exl-id: 39ed3773-18bf-4653-93b6-ffc64546406b
-source-git-commit: bfdf87937d001791701884d29db2da1fd7a0e8ee
+source-git-commit: b5e1d878c889112e08da0969d50bdb3c72e48f8c
 workflow-type: tm+mt
-source-wordcount: '1867'
+source-wordcount: '1868'
 ht-degree: 1%
 
 ---
@@ -139,7 +139,7 @@ Adobe Campaign의 Deliverability Service는 AOL, BlueTie, Comcast, Cox, EarthLin
 
 ### 목록 구독 취소 정보 {#about-list-unsubscribe}
 
-이름이 인 SMTP 헤더 추가 **목록-구독 취소** 는 최적의 전달성 관리를 위해 필수입니다.2024년 6월 1일부터 Yahoo 및 Gmail은 보낸 사람이 원클릭 목록 구독 취소를 준수하도록 요구합니다. 원클릭 목록 구독 취소를 구성하는 방법을 이해하려면 아래를 참조하십시오.
+이름이 인 SMTP 헤더 추가 **목록-구독 취소** 는 최적의 전달성 관리를 위해 필수입니다. 2024년 6월 1일부터 Yahoo 및 Gmail은 보낸 사람이 원클릭 목록 구독 취소를 준수하도록 요구합니다. 원클릭 목록 구독 취소를 구성하는 방법은 다음을 참조하십시오. [이 섹션](#one-click-list-unsubscribe).
 
 
 이 헤더는 &quot;스팸으로 보고&quot; 아이콘 대신 사용할 수 있습니다. 이메일 인터페이스에 구독 취소 링크로 표시됩니다.
@@ -181,7 +181,7 @@ Gmail, Outlook.com 및 Microsoft Outlook은 이 메서드를 지원하며 구독
 목록 구독 취소: https://domain.com/unsubscribe.jsp
 * 클릭 **구독 취소** 링크는 사용자를 구독 취소 양식으로 리디렉션합니다.
 
-![이미지](/help/assets/UTF-8-1.png)
+![이미지](../assets/UTF-8-1.png)
 
 
 ### 유형화 규칙 만들기 {#creating-a-typology-rule}
@@ -196,7 +196,7 @@ Gmail, Outlook.com 및 Microsoft Outlook은 이 메서드를 지원하며 구독
 >
 >에서 Adobe Campaign Classic에서 유형화 규칙을 만드는 방법을 알아봅니다. [이 섹션](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/campaign-optimization/about-campaign-typologies.html#typology-rules).
 
-### 원클릭 목록 구독 취소
+### 원클릭 목록 구독 취소 {#one-click-list-unsubscribe}
 
 2024년 6월 1일부터 Yahoo 및 Gmail은 보낸 사람이 원클릭 목록 구독 취소를 준수하도록 요구합니다. One-Click List-Unsubscribe 요구 사항 발송자를 준수하려면 다음 작업을 수행해야 합니다.
 
@@ -215,7 +215,7 @@ Gmail, Outlook.com 및 Microsoft Outlook은 이 메서드를 지원하며 구독
 
 ```
 List-Unsubscribe-Post: List-Unsubscribe=One-Click
-List-Unsubscribe: https://domain.com/webApp/unsubNoClick?id=<%= recipient.cryptedId %>, < mailto:<%@ include option='NmsEmail_DefaultErrorAddr' %>?subject=unsubscribe<%=escape(message.mimeMessageId) %> >
+List-Unsubscribe: <https://domain.com/webApp/unsubNoClick?id=<%= recipient.cryptedId %> >, < mailto:<%@ include option='NmsEmail_DefaultErrorAddr' %>?subject=unsubscribe<%=escape(message.mimeMessageId) %> >
 ```
 
 위의 예에서는 원클릭을 지원하는 ISP에 대해 원클릭 목록 구독 취소를 활성화하면서도 URL 목록 구독 취소를 지원하지 않는 수신자는 이메일을 통해 여전히 구독 취소를 요청할 수 있습니다.
@@ -227,9 +227,7 @@ List-Unsubscribe: https://domain.com/webApp/unsubNoClick?id=<%= recipient.crypte
 
 * 탐색 트리에서 &quot;새로 만들기&quot;를 클릭하여 새 유형화를 만듭니다
 
-
-![이미지](/help/assets/CreatingTypologyRules1.png)
-
+![이미지](../assets/CreatingTypologyRules1.png)
 
 
 **2. 유형화 규칙을 계속 구성합니다.**
@@ -241,7 +239,7 @@ List-Unsubscribe: https://domain.com/webApp/unsubNoClick?id=<%= recipient.crypte
 * 활성
 
 
-![이미지](/help/assets/CreatingTypologyRules2.png)
+![이미지](../assets/CreatingTypologyRules2.png)
 
 
 **유형화 규칙의 Javascript를 코딩합니다.**
@@ -354,31 +352,31 @@ return true;
 ```
 
 
-![이미지](/help/assets/CreatingTypologyRules3.png)
+![이미지](../assets/CreatingTypologyRules3.png)
 
 
 
 **3. 이메일에 유형화에 새 규칙을 추가합니다(기본 유형화는 정상).**
 
-![이미지](/help/assets/CreatingTypologyRules4.png)
+![이미지](../assets/CreatingTypologyRules4.png)
 
 
 
 **4. 새 게재 준비(게재 속성의 추가 SMTP 헤더가 비어 있는지 확인)**
 
-![이미지](/help/assets/CreatingTypologyRules5.png)
+![이미지](../assets/CreatingTypologyRules5.png)
 
 
 
 **5. 게재를 준비하는 동안 새 유형화 규칙이 적용되는지 확인합니다.**
 
-![이미지](/help/assets/CreatingTypologyRules6.png)
+![이미지](../assets/CreatingTypologyRules6.png)
 
 
 
 **6. 목록 구독 취소가 있는지 확인합니다.**
 
-![이미지](/help/assets/CreatingTypologyRules7.png)
+![이미지](../assets/CreatingTypologyRules7.png)
 
 
 ## 이메일 최적화 {#email-optimization}
