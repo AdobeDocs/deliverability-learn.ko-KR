@@ -1,5 +1,5 @@
 ---
-source-git-commit: d30c3e96a9e341f34d471af35692da9e1c0b72d4
+source-git-commit: 5e7c7bf626b6277abf8d50181826deb2e21c868f
 workflow-type: tm+mt
 source-wordcount: '944'
 ht-degree: 0%
@@ -48,7 +48,7 @@ DO: 구독자가 관계를 받아쓰도록 허용합니다.
 
 DO: 이메일 템플릿에서 목록 구독 취소 헤더를 사용하여 이메일 상단에 구독 취소 링크가 표시되는 이메일 클라이언트(예: gmail.com)를 쉽게 찾아 사용자가 구독 취소를 찾는 데 익숙한 위치에 도달하도록 합니다.
 
-+ 한 번의 클릭으로 구독을 취소하는 것과 관련된 업계 이니셔티브에 대해 자세히 알아보려면 여기(https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/guidance-around-changes-to-google-and-yahoo.html)를 클릭하십시오.
++ 클릭 [여기](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/guidance-around-changes-to-google-and-yahoo.html?lang=ko) 클릭 한 번으로 구독 취소와 관련된 업계 이니셔티브에 대해 자세히 알아보십시오.
 
 허용되지 않는 항목
 
