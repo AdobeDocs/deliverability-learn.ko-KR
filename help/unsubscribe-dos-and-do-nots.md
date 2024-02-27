@@ -1,10 +1,21 @@
 ---
-source-git-commit: 68580661062e1e323ff728c09ebf3a5103544fff
+title: 가입 해지 및 탈퇴
+description: 구독 취소를 관리할 때 수행할 작업과 피해야 할 작업 목록을 사용하십시오.
+feature: Deliverability
+role: Admin
+level: Beginner
+doc-type: Feature Video
+duration: 0
+last-substantial-update: 2024-02-27T00:00:00Z
+jira: KT-15029
+source-git-commit: 77de42d30ce01ab66323da1731a4a0bf96a94f44
 workflow-type: tm+mt
-source-wordcount: '929'
+source-wordcount: '948'
 ht-degree: 0%
 
 ---
+
+
 # 가입 해지 및 탈퇴
 
 구독 취소는 이메일 라이프사이클의 자연스러운 일부입니다. 하지만 마케터들은 가끔 작별인사를 하기가 어렵습니다. 당신은 가장 매력적인 이메일을 만들고 브랜드에서 제공하는 제품 및 서비스에 대한 최고의 거래를 제공하기 위해 열심히 일합니다. 그러나 일부 가입자가 계속 진행하기로 결정하는 것은 완전히 정상이며 예상해야 합니다. 이는 여러 가지 이유 때문일 수 있지만, 결론은 그들이 더 이상 귀하로부터 듣고 싶어하지 않는다는 것입니다.
