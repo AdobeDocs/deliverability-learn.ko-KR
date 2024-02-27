@@ -6,9 +6,9 @@ doc-type: article
 activity: understand
 team: ACS
 exl-id: 39ed3773-18bf-4653-93b6-ffc64546406b
-source-git-commit: b5e1d878c889112e08da0969d50bdb3c72e48f8c
+source-git-commit: 466b775442964e2d8cad133280e6b9f8af148b25
 workflow-type: tm+mt
-source-wordcount: '1868'
+source-wordcount: '1871'
 ht-degree: 1%
 
 ---
@@ -139,8 +139,11 @@ Adobe Campaign의 Deliverability Service는 AOL, BlueTie, Comcast, Cox, EarthLin
 
 ### 목록 구독 취소 정보 {#about-list-unsubscribe}
 
-이름이 인 SMTP 헤더 추가 **목록-구독 취소** 는 최적의 전달성 관리를 위해 필수입니다. 2024년 6월 1일부터 Yahoo 및 Gmail은 보낸 사람이 원클릭 목록 구독 취소를 준수하도록 요구합니다. 원클릭 목록 구독 취소를 구성하는 방법은 다음을 참조하십시오. [이 섹션](#one-click-list-unsubscribe).
+이름이 인 SMTP 헤더 추가 **목록-구독 취소** 는 최적의 전달성 관리를 위해 필수입니다.
 
+>[!CAUTION]
+>
+>2024년 6월 1일부터 Yahoo! 그리고 Gmail은 두 가지 모두에 대해 발신자가 준수하도록 요구할 것입니다 **원클릭 목록-구독 취소**. 원클릭 목록 구독 취소를 구성하는 방법은 다음을 참조하십시오. [이 섹션](#one-click-list-unsubscribe).
 
 이 헤더는 &quot;스팸으로 보고&quot; 아이콘 대신 사용할 수 있습니다. 이메일 인터페이스에 구독 취소 링크로 표시됩니다.
 
@@ -191,20 +194,18 @@ Gmail, Outlook.com 및 Microsoft Outlook은 이 메서드를 지원하며 구독
 >[!NOTE]
 >
 >유형화 규칙을 만드는 것이 좋습니다. 목록 구독 취소 기능은 각 이메일에 자동으로 추가됩니다.
-
->[!NOTE]
 >
->에서 Adobe Campaign Classic에서 유형화 규칙을 만드는 방법을 알아봅니다. [이 섹션](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/campaign-optimization/about-campaign-typologies.html#typology-rules).
+>의 Adobe Campaign v7/v8에서 유형화 규칙을 만드는 방법을 알아봅니다. [이 섹션](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/campaign-optimization/about-campaign-typologies.html#typology-rules).
 
 ### 원클릭 목록 구독 취소 {#one-click-list-unsubscribe}
 
-2024년 6월 1일부터 Yahoo 및 Gmail은 보낸 사람이 원클릭 목록 구독 취소를 준수하도록 요구합니다. One-Click List-Unsubscribe 요구 사항 발송자를 준수하려면 다음 작업을 수행해야 합니다.
+2024년 6월 1일부터 Yahoo 및 Gmail은 보낸 사람이 원클릭 목록 구독 취소를 준수하도록 요구합니다. 이 요구 사항을 준수하려면 보낸 사람은 다음 작업을 수행해야 합니다.
 
-1. List-Unsubscribe-Post: List-Unsubscribe=One-Click에 추가
-2. URI 구독 취소 링크 포함
-3. Adobe Campaign에서 지원하는 수신자의 HTTP POST 응답 수신을 지원합니다.
+1. 다음 명령줄을 추가합니다.`List-Unsubscribe-Post: List-Unsubscribe=One-Click`.
+1. URI 구독 취소 링크를 포함합니다.
+1. Adobe Campaign에서 지원하는 수신자의 HTTP POST 응답 수신을 지원합니다.
 
-원클릭 목록 구독 취소를 직접 구성하려면 다음을 수행합니다.
+Adobe Campaign v7/v8에서 바로 원클릭 목록 구독 취소를 구성하려면 다음 작업을 수행하십시오.
 
 * 다음 &quot;수신자 비클릭&quot; 웹 애플리케이션에 추가 
    1. 리소스 -> 온라인 -> 웹 응용 프로그램으로 이동

@@ -8,10 +8,10 @@ last-substantial-update: 2023-11-06T00:00:00Z
 jira: KT-14320
 thumbnail: KT-14320.jpeg
 exl-id: 879e9124-3cfe-4d85-a7d1-64ceb914a460
-source-git-commit: 50017358f7f88f5579de282a1f528916ecb17493
+source-git-commit: e2c2fbfee5e404e1eef25dd0068a6bdd560ed977
 workflow-type: tm+mt
-source-wordcount: '1775'
-ht-degree: 0%
+source-wordcount: '1770'
+ht-degree: 1%
 
 ---
 
@@ -55,25 +55,23 @@ DMARC TXT 레코드 구성은 현재 Campaign 및 AJO용 Adobe에서 완전히 �
 
 주의할 점은 다음과 같습니다 [!DNL Google] 및 [!DNL Yahoo] 두 가지 모두 &quot;1-Click&quot; 이름으로 &quot;http/URI&quot; 옵션을 참조하며 이는 의도적인 것입니다. 기본적으로 원래 &quot;http/URI&quot; 옵션을 사용하면 수신자를 웹 사이트로 리디렉션할 수 있습니다. 그것은 의 초점이 아니다 [!DNL Yahoo] 및 [!DNL Google], 두 사람 모두 업데이트된 [RFC8058](https://datatracker.ietf.org/doc/html/rfc8058){target="_blank"} 웹 사이트 대신 HTTPS POST 요청을 통해 &quot;1-클릭&quot;으로 구독 취소를 처리하는 데 중점을 둡니다.
 
-현재 Gmail은 &quot;mailto&quot; 목록 구독 취소 옵션을 허용합니다. Gmail은 &quot;mailto&quot;가 향후 기대에 미치지 못하며, 보낸 사람은 &quot;게시&quot; 목록 구독 취소 옵션을 활성화해야 한다고 말했습니다. 이미 특정 유형의 목록 구독을 취소한 발신자는 2024년 6월 1일까지 &quot;1-클릭&quot; 목록 구독을 취소해야 합니다.
+오늘, Gmail은 &quot;mailto&quot; 목록 구독 취소 옵션을 허용합니다. Gmail은 &quot;mailto&quot;가 향후 기대에 부합하지 않으며 발신자는 &quot;게시&quot; 목록 구독 취소 옵션을 활성화해야 한다고 말했습니다. 이미 특정 유형의 목록 구독을 취소한 발신자는 2024년 6월 1일까지 &quot;1번의 클릭으로&quot; 목록 구독을 취소해야 합니다.
 
-[!DNL Yahoo] 은(는) &quot;mailto&quot; 옵션을 계속 사용할 것이지만, 향후 &quot;post&quot;를 필요로 할 것이라고 말했습니다.
+[!DNL Yahoo] 은 현재로서는 &quot;mailto&quot; 옵션을 계속 사용하지만 향후 &quot;post&quot;를 필요로 할 것이라고 말했습니다.
 
-Adobe은 &quot;mailto&quot; 및 &quot;post/1-Click&quot; 목록 구독 취소 옵션을 모두 사용할 것을 권장합니다. Adobe은 모든 이메일 전송 플랫폼에서 &quot;게시&quot; 지원을 활성화하여 이러한 요구 사항을 충족하는 사용자를 지원하고 있습니다. 아래 세부 정보를 참조하십시오.
+Adobe은 &quot;mailto&quot;와 &quot;post/1-Click&quot; 목록 구독 취소 옵션을 모두 사용할 것을 권장합니다. Adobe이 모든 이메일 전송 플랫폼에서 &quot;게시물&quot; 지원을 활성화하여 이러한 요구 사항을 충족하는 사용자를 지원하고 있습니다. 아래 세부 정보를 참조하십시오.
 
 목록 구독 취소 헤더에 대한 필요는 트랜잭션 이메일에는 적용되지 않습니다. 구독자가 생성하지 않는 포기한 장바구니 및 유사한 통신과 같은 트리거된 메시지는 다음과 같은 사서함 공급자의 마케팅으로 간주됩니다 [!DNL Google] 및 [!DNL Yahoo] 그리고 그들은 목록-구독 취소가 필요할 것입니다.
 
 [!DNL Google] 및 [!DNL Yahoo] 수신자는 경우에 따라 구독을 취소한 다음 나중에 다시 구독합니다. 그들은 이러한 상황을 확인하는 방법에 대한 비밀 소스를 기꺼이 공유하지 않지만, 이러한 경우에 잘못 보낸 사람들에게 벌칙을 주는 것을 피하기 위한 방법을 연구하고 있다.
 
 >[!INFO]
-> Adobe은 다음과 같은 요구 사항을 충족하도록 사용자를 지원하기 위해 모든 이메일 전송 플랫폼에서 &quot;게시&quot; 지원을 활성화하는 데 노력하고 있습니다.
-> 
-> 
-> * [!DNL Adobe Campaign Classic V7/V8]: POST을 완전히 지원합니다. 오늘 클릭, 지침을 찾을 수 있습니다. [여기](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations.html?lang=en#list-unsubscribe){target="_blank"}.
->* [!DNL Adobe Campaign Standard]: 2월 말까지 POST 1-클릭을 지원하도록 업데이트 중입니다. 설정에 대한 지침이 제공됩니다. [여기](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-14778.html?lang=en){target="_blank"} 준비되면.
+> Adobe은 다음 요구 사항을 충족하여 사용자를 지원하기 위해 모든 이메일 전송 플랫폼에서 &quot;게시물&quot; 지원을 활성화하는 데 노력하고 있습니다.
+>
+> * [!DNL Adobe Campaign v7/v8]: POST을 완전히 지원합니다. 오늘 클릭, 지침을 찾을 수 있습니다. [여기](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations.html?lang=en#list-unsubscribe){target="_blank"}.
+>* [!DNL Adobe Campaign Standard]: 2월 19일부터 에서는 POST 1-클릭을 완전히 지원합니다. 추가 정보를 찾을 수 있음 [여기](https://experienceleague.adobe.com/docs/campaign-standard/using/administrating/configuring-channels/configuring-email-channel.html#email-channel-parameters){target="_blank"}.
 >* [!DNL Adobe Journey Optimizer]: 오늘 POST 1-클릭을 지원하지만 몇 가지 주요 개선 사항이 진행 중이며 2024년 3월에 진행될 예정입니다. 설명서에 대한 업데이트가 게시됩니다 [여기](https://experienceleague.adobe.com/docs/journey-optimizer/using/email/email-opt-out.html?lang=en){target="_blank"} 준비되면.
-> * [!DNL Marketo]: 2024년 1월 31일부터 POST 1-클릭-목록-구독 취소를 완전히 지원합니다. 사용자는 작업을 수행할 필요가 없습니다.
-
+> * [!DNL Marketo]: 2024년 1월 31일부터 은 POST 1-클릭 목록-구독 취소를 지원합니다. 사용자는 작업을 수행할 필요가 없습니다.
 
 ## 2일 이내에 구독 취소 처리:
 
@@ -92,7 +90,7 @@ Adobe은 &quot;mailto&quot; 및 &quot;post/1-Click&quot; 목록 구독 취소 �
 
 [!DNL Yahoo] 자신의 불만 접수 임계값도 0.30%대가 될 것이라고 명시했습니다.
 
-[!DNL Google] 및 [!DNL Yahoo]단 하루의 불만이나 일시적인 항의 급증의 원인이 되는 실수에 대해 발신자를 처벌하는 것이 목표가 아니다. 대신 오랜 기간 불만 비율이 높거나 잘못된 전송 행동 패턴을 보이는 발신자에 초점을 맞추고 있다.
+[!DNL Google] 및 [!DNL Yahoo]그들의 목표는 단 하나의 나쁜 날이나 일시적인 불만의 증가를 야기하는 실수에 대해 발신자들을 처벌하지 않는 것입니다. 대신 오랜 기간 불만 비율이 높거나 잘못된 전송 행동 패턴을 보이는 발신자에 초점을 맞추고 있다.
 
 고객 불만 비율을 모니터링하는 데 도움이 필요하거나 고객 불만 감소 전략에 도움이 필요한 경우 Adobe 전달성 컨설턴트와 상담하거나 아직 전달성 컨설턴트가 없는 경우 계정 팀에 문의하여 전달성 컨설턴트 추가에 대해 알아보십시오.
 
