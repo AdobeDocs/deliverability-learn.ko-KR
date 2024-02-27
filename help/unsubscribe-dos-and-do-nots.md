@@ -8,7 +8,7 @@ doc-type: Feature Video
 duration: 0
 last-substantial-update: 2024-02-27T00:00:00Z
 jira: KT-15029
-source-git-commit: 77de42d30ce01ab66323da1731a4a0bf96a94f44
+source-git-commit: d4af9b039e2f8f140124cf21edec825e803c1308
 workflow-type: tm+mt
 source-wordcount: '948'
 ht-degree: 0%
@@ -30,7 +30,8 @@ ht-degree: 0%
 
 **수행:** 구독 취소 링크를 랜딩 페이지로 이동하여 목록에서 제거할 것인지 확인할 수 있습니다.
 
-+ 랜딩 페이지의 언어에는 &quot;구독 취소 확인&quot;을 클릭하는 링크와 &quot;옵트다운을 허용하고 회원님으로부터 받는 메일 빈도를 낮추겠습니다&quot;라는 링크가 포함되어야 합니다. 이 방법은 한 번의 클릭으로 구독을 취소할 수 있는 방법은 아니지만 두 번의 클릭으로 인해 잘못된 구독 취소가 발생하는 것을 방지하는 데 도움이 됩니다.
+랜딩 페이지의 언어에는 &quot;구독 취소 확인&quot;을 클릭하는 링크와 &quot;옵트다운을 허용하고 회원님으로부터 받는 메일 빈도를 낮추겠습니다&quot;라는 링크가 포함되어야 합니다. 이 방법은 한 번의 클릭으로 구독을 취소할 수 있는 방법은 아니지만 두 번의 클릭으로 인해 잘못된 구독 취소가 발생하는 것을 방지하는 데 도움이 됩니다.
+
 + 가입을 해지하면 사용자를 랜딩 페이지로 이동할 수 있으므로 사용자가 페이지에 도달하면 랜딩 페이지에서 한 번의 클릭으로 가입 해지할 수 있습니다.
 
 **수행:** 프로세스를 쉽고 투명하게 만듭니다. 예:
@@ -57,7 +58,7 @@ ht-degree: 0%
 
 **수행:** 이메일 템플릿에서 목록 구독 취소 헤더를 사용하여 이메일 상단에 구독 취소 링크가 표시되는 이메일 클라이언트(예: gmail.com)에서 구독 취소를 찾는 데 익숙한 위치를 쉽게 찾을 수 있도록 하십시오.
 
-+ 클릭 [여기](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/guidance-around-changes-to-google-and-yahoo.html?lang=ko) 클릭 한 번으로 구독 취소와 관련된 업계 이니셔티브에 대해 자세히 알아보십시오.
+클릭 [여기](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/guidance-around-changes-to-google-and-yahoo.html?lang=ko) 클릭 한 번으로 구독 취소와 관련된 업계 이니셔티브에 대해 자세히 알아보십시오.
 
 ## 허용되지 않는 항목
 
@@ -90,6 +91,7 @@ ht-degree: 0%
 **금지 사항:** 요청을 처리하기 전에 강제로 구독을 취소한 이유를 제공하세요.
 
 + 고객에게 이 정보를 추가할 위치를 허용하면 향후 인사이트에 관해 도움이 될 수 있지만, 구독 취소 랜딩 페이지에서 선택적 필드로 만들 수 있습니다.
+
 + 더 나은 접근 방법은 성공적으로 구독 취소했음을 알려 준 다음 선택적으로 이유를 제공할 수 있는 공간을 허용하는 것입니다.
 
 불만 사항보다는 가입 해제가 더 낫다는 것을 기억하세요. 이메일 프로그램에 적극적으로 참여하지 않는 사람은 게재 가능성 평판과 지표에 부정적인 영향을 미칠 수 있습니다. 이제 여러분이 현재 구독자를 참여시키고, 관련 있는 메시징을 오픈하고, 클릭스루하고, 구매하기를 기다릴 수 없는 참여자로 취급하여 더 깊은 관계를 형성하는 데 집중할 때입니다!
