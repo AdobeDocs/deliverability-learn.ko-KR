@@ -6,10 +6,10 @@ feature: Deliverability
 role: Leader, User
 level: Beginner
 auto-video-transcripts: true
-source-git-commit: c1f5d0f8ba021d200e547d47ca9298b58146c25e
+source-git-commit: 8603a2facb100a1d1bb8b8ed0a39f4eb6666bb48
 workflow-type: tm+mt
-source-wordcount: '188'
-ht-degree: 94%
+source-wordcount: '183'
+ht-degree: 97%
 
 ---
 
@@ -47,7 +47,7 @@ ht-degree: 94%
 + 부록: 추가 리소스 {#additional-resources}
    + [개요](/help/additional-resources/general-resources.md)
    + [Yahoo 및 Gmail 업데이트](/help/guidance-around-changes-to-google-and-yahoo.md)
-   + [가입 해지 및 탈퇴](/help/unsubscribe Do&#39;s &amp; Do Not&#39;s.md) {#unsubscribe-dos-and-do-nots}
+   + [가입 해지 및 탈퇴](/help/Unsubscribe-Do's-&-Do-Not's.md) {#unsubscribe-dos-and-do-nots}
    + 일반 리소스 {#generic-resources}
       + [스팸 트랩에 대한 모든 정보](/help/additional-resources/all-about-spam-traps.md)
       + [IP warming으로 이메일 신뢰도 향상](/help/additional-resources/increase-reputation-with-ip-warming.md)
