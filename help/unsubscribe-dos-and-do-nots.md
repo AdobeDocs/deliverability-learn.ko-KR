@@ -8,9 +8,9 @@ doc-type: Feature Video
 duration: 0
 last-substantial-update: 2024-02-27T00:00:00Z
 jira: KT-15029
-source-git-commit: d4af9b039e2f8f140124cf21edec825e803c1308
+source-git-commit: 7f1e756683bfc5c8587101fcbf86db010a5b6a7e
 workflow-type: tm+mt
-source-wordcount: '948'
+source-wordcount: '935'
 ht-degree: 0%
 
 ---
@@ -58,7 +58,6 @@ ht-degree: 0%
 
 **수행:** 이메일 템플릿에서 목록 구독 취소 헤더를 사용하여 이메일 상단에 구독 취소 링크가 표시되는 이메일 클라이언트(예: gmail.com)에서 구독 취소를 찾는 데 익숙한 위치를 쉽게 찾을 수 있도록 하십시오.
 
-클릭 [여기](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/guidance-around-changes-to-google-and-yahoo.html?lang=ko) 클릭 한 번으로 구독 취소와 관련된 업계 이니셔티브에 대해 자세히 알아보십시오.
 
 ## 허용되지 않는 항목
 
