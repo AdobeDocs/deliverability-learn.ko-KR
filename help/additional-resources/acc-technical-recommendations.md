@@ -6,9 +6,9 @@ doc-type: article
 activity: understand
 team: ACS
 exl-id: 39ed3773-18bf-4653-93b6-ffc64546406b
-source-git-commit: ea91b7285814eca254590f2aff128fb6e5f77520
+source-git-commit: ffa2e9788326389ae2e4da6e272367cdc837b72e
 workflow-type: tm+mt
-source-wordcount: '2060'
+source-wordcount: '2086'
 ht-degree: 1%
 
 ---
@@ -141,6 +141,8 @@ Adobe Campaign의 Deliverability Service는 AOL, BlueTie, Comcast, Cox, EarthLin
 
 이 헤더는 &quot;스팸으로 보고&quot; 아이콘 대신 사용할 수 있습니다. ISP의 이메일 인터페이스에 &quot;구독 취소&quot; 링크로 표시됩니다.
 
+이 기능을 사용하면 고객 불만 접수 비율이 낮아지고 평판이 보호됩니다. 피드백은 구독 취소로 실행됩니다.
+
 Gmail, Outlook.com, Yahoo! 및 Microsoft Outlook에서는 이 메서드를 지원합니다. &quot;구독 취소&quot; 링크는 인터페이스에서 직접 사용할 수 있습니다. 예:
 
 ![이미지](../assets/List-Unsubscribe-example-Gmail.png)
@@ -153,8 +155,6 @@ Gmail, Outlook.com, Yahoo! 및 Microsoft Outlook에서는 이 메서드를 지�
 >* ISP의 스팸 고객 불만 임계값 아래
 >* 완전히 인증됨
 
-이 기능을 사용하면 고객 불만 접수 비율이 낮아지고 평판이 보호됩니다. 피드백은 구독 취소로 실행됩니다.
-
 목록 구독 취소 헤더 기능의 두 가지 버전이 있습니다.
 
 * **&quot;mailto&quot; 목록-구독 취소** - 이 메서드를 사용하여 다음을 클릭합니다. **구독 취소** 링크는 이메일 헤더에 지정된 구독 취소 주소로 미리 채워진 이메일을 보냅니다. [자세히 알아보기](#mailto-list-unsubscribe)
@@ -163,7 +163,7 @@ Gmail, Outlook.com, Yahoo! 및 Microsoft Outlook에서는 이 메서드를 지�
 
 * **&quot;원클릭&quot; 목록-구독 취소** - 이 메서드를 사용하여 다음을 클릭합니다. **구독 취소** 링크는 사용자를 바로 가입 해지합니다. [자세히 알아보기](#one-click-list-unsubscribe)
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >2024년 6월 1일부터 Yahoo! 그리고 Gmail은 두 가지 모두에 대해 발신자가 준수하도록 요구할 것입니다 **원클릭 목록-구독 취소**. [이 변경 사항에 대해 자세히 알아보기](../guidance-around-changes-to-google-and-yahoo.md)
 >
@@ -193,9 +193,7 @@ Gmail, Outlook.com, Yahoo! 및 Microsoft Outlook에서는 이 메서드를 지�
 
 이 추가는 각 이메일 또는 기존 게재 템플릿에서 수행할 수 있습니다. 이 기능을 포함하는 새 게재 템플릿을 만들 수도 있습니다.
 
-예를 들어 다음 스크립트를 **[!UICONTROL Additional SMTP headers]** 필드: `List-Unsubscribe: mailto:unsubscribe@domain.com`
-
-클릭 **구독 취소** 링크는 unsubscribe@domain.com 주소로 이메일을 보냅니다.
+예를 들어 다음 스크립트를 **[!UICONTROL Additional SMTP headers]** 필드: `List-Unsubscribe: mailto:unsubscribe@domain.com`. 클릭 **구독 취소** 링크는 unsubscribe@domain.com 주소로 이메일을 보냅니다.
 
 동적 주소를 사용할 수도 있습니다. 예를 들어 플랫폼에 대해 정의된 오류 주소로 이메일을 보내려면 다음 스크립트를 사용할 수 있습니다. `List-Unsubscribe: <mailto:<%=errorAddress%>?subject=unsubscribe%=message.mimeMessageId%>`
 
@@ -247,6 +245,8 @@ Adobe Campaign v7/v8에서 바로 한 번의 클릭으로 목록 구독 취소 P
 
 #### 게재 또는 템플릿에서 원클릭 목록 구독 취소 구성 {#one-click-delivery-template}
 
+게재 또는 게재 템플릿에서 원클릭 목록 구독 취소를 구성하려면 아래 단계를 따르십시오.
+
 1. 로 이동 **[!UICONTROL SMTP]** 섹션에 있는 마지막 항목이 될 필요가 없습니다.
 
 1. 아래 **[!UICONTROL Additional SMTP Headers]**&#x200B;아래 예와 같이 명령줄을 입력합니다. 각 헤더는 별도의 줄에 있어야 합니다.
@@ -263,6 +263,8 @@ List-Unsubscribe: <https://domain.com/webApp/unsubNoClick?id=<%= recipient.crypt
 위의 예에서는 원클릭을 지원하는 ISP에 대해 원클릭 목록 구독 취소를 활성화하면서도 &quot;mailto&quot;를 지원하지 않는 수신자는 이메일을 통해 구독 취소를 요청할 수 있습니다.
 
 #### 원클릭 목록 구독 취소를 지원하는 유형화 규칙 만들기 {#one-click-typology-rule}
+
+유형화 규칙을 사용하여 한 번의 클릭으로 목록 구독 취소를 구성하려면 아래 단계를 따르십시오.
 
 1. 탐색 트리에서 로 이동합니다. **[!UICONTROL Typolgy rules]** 및 클릭 **[!UICONTROL New]**.
 
