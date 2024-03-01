@@ -6,9 +6,9 @@ doc-type: article
 activity: understand
 team: ACS
 exl-id: 39ed3773-18bf-4653-93b6-ffc64546406b
-source-git-commit: dd2de465850181cf72085328352c38bcefd59458
+source-git-commit: ea91b7285814eca254590f2aff128fb6e5f77520
 workflow-type: tm+mt
-source-wordcount: '2014'
+source-wordcount: '2060'
 ht-degree: 1%
 
 ---
@@ -139,11 +139,11 @@ Adobe Campaign의 Deliverability Service는 AOL, BlueTie, Comcast, Cox, EarthLin
 
 이름이 인 SMTP 헤더 추가 **목록-구독 취소** 는 최적의 전달성 관리를 위해 필수입니다.
 
-이 헤더는 &quot;스팸으로 보고&quot; 아이콘 대신 사용할 수 있습니다. ISP의 이메일 인터페이스에 &quot;구독 취소&quot; 링크로 표시됩니다. 예:
+이 헤더는 &quot;스팸으로 보고&quot; 아이콘 대신 사용할 수 있습니다. ISP의 이메일 인터페이스에 &quot;구독 취소&quot; 링크로 표시됩니다.
+
+Gmail, Outlook.com, Yahoo! 및 Microsoft Outlook에서는 이 메서드를 지원합니다. &quot;구독 취소&quot; 링크는 인터페이스에서 직접 사용할 수 있습니다. 예:
 
 ![이미지](../assets/List-Unsubscribe-example-Gmail.png)
-
-Gmail, Outlook.com, Yahoo! 및 Microsoft Outlook에서는 이 메서드를 지원합니다. &quot;구독 취소&quot; 링크는 인터페이스에서 직접 사용할 수 있습니다.
 
 >[!NOTE]
 >
@@ -161,7 +161,6 @@ Gmail, Outlook.com, Yahoo! 및 Microsoft Outlook에서는 이 메서드를 지�
 
 <!--OR: With this method, clicking the **Unsubscribe** link opens the user's default email client with a pre-filled email to the unsubscribe address specified in the email header. This allows the user to unsubscribe simply by sending the email without any further manual steps.-->
 
-및
 * **&quot;원클릭&quot; 목록-구독 취소** - 이 메서드를 사용하여 다음을 클릭합니다. **구독 취소** 링크는 사용자를 바로 가입 해지합니다. [자세히 알아보기](#one-click-list-unsubscribe)
 
 >[!CAUTION]
@@ -172,23 +171,17 @@ Gmail, Outlook.com, Yahoo! 및 Microsoft Outlook에서는 이 메서드를 지�
 
 ### &quot;mailto&quot; 목록-구독 취소 {#mailto-list-unsubscribe}
 
-&quot;mailto&quot; List-Unsubscribe를 사용하려면 다음과 유사한 명령줄을 입력해야 합니다.
+이 메서드를 사용하여 **구독 취소** 링크는 이메일 헤더에 지정된 구독 취소 주소로 미리 채워진 이메일을 보냅니다.
 
-```
-List-Unsubscribe: <mailto:client@newsletter.example.com?subject=unsubscribe?body=unsubscribe>
-```
+&quot;mailto&quot; 목록 구독 취소를 사용하려면 다음과 같이 이메일 주소를 지정하는 명령줄을 입력해야 합니다. `List-Unsubscribe: <mailto:client@newsletter.example.com?subject=unsubscribe?body=unsubscribe>`
 
 >[!CAUTION]
 >
 >위의 예는 수신자 테이블을 기반으로 합니다. 다른 테이블에서 데이터베이스를 구현한 경우에는 명령줄에 올바른 정보를 다시 입력해야 합니다.
 
-다음과 같은 명령줄을 사용하여 동적 &quot;mailto&quot; 목록-구독 취소를 만들 수도 있습니다.
+다음과 같은 명령줄을 사용하여 동적 &quot;mailto&quot; 목록-구독 취소를 만들 수도 있습니다. `List-Unsubscribe: <mailto:<%=errorAddress%>?subject=unsubscribe%=message.mimeMessageId%>`
 
-```
-List-Unsubscribe: <mailto:<%=errorAddress%>?subject=unsubscribe%=message.mimeMessageId%>
-```
-
-구현하려면 **&quot;mailto&quot; 목록-구독 취소**, 다음 중 하나를 수행할 수 있습니다.
+구현하려면 **&quot;mailto&quot; 목록-구독 취소** Campaign에서 다음 중 하나를 수행할 수 있습니다.
 
 * 게재 또는 게재 템플릿에 명령줄을 직접 추가 - [방법 알아보기](#adding-a-command-line-in-a-delivery-template)
 
@@ -200,7 +193,7 @@ List-Unsubscribe: <mailto:<%=errorAddress%>?subject=unsubscribe%=message.mimeMes
 
 이 추가는 각 이메일 또는 기존 게재 템플릿에서 수행할 수 있습니다. 이 기능을 포함하는 새 게재 템플릿을 만들 수도 있습니다.
 
-예를 들어 다음 스크립트를 **[!UICONTROL Additional SMTP headers]**: `List-Unsubscribe: mailto:unsubscribe@domain.com`
+예를 들어 다음 스크립트를 **[!UICONTROL Additional SMTP headers]** 필드: `List-Unsubscribe: mailto:unsubscribe@domain.com`
 
 클릭 **구독 취소** 링크는 unsubscribe@domain.com 주소로 이메일을 보냅니다.
 
@@ -229,7 +222,9 @@ List-Unsubscribe: https://domain.com/unsubscribe.jsp
 >
 >유형화 규칙을 만드는 것이 좋습니다. 목록 구독 취소 기능은 이 유형화 규칙을 사용하여 각 이메일에 자동으로 추가됩니다.
 
-### 원클릭 목록 구독 취소 {#one-click-list-unsubscribe}
+### 원클릭 목록-구독 취소 {#one-click-list-unsubscribe}
+
+이 메서드를 사용하여 **구독 취소** 링크는 사용자를 바로 가입 해지하므로 가입을 해지하기 위한 단일 작업만 필요합니다.
 
 2024년 6월 1일부터 Yahoo! 그리고 Gmail은 보낸 사람이 원클릭 목록 구독 취소를 준수하도록 요구할 것입니다. [이 변경 사항에 대해 자세히 알아보기](../guidance-around-changes-to-google-and-yahoo.md)
 
@@ -245,7 +240,7 @@ Adobe Campaign v7/v8에서 바로 한 번의 클릭으로 목록 구독 취소 P
 
 1. &quot;구독 취소 수신자 클릭 없음&quot; 업로드 [XML](/help/assets/WebAppUnsubNoClick.xml.zip) 파일.
 
-구성하려면 **원클릭 목록-구독 취소**, 다음 중 하나를 수행할 수 있습니다.
+구성하려면 **원클릭 목록-구독 취소** Campaign에서 다음 중 하나를 수행할 수 있습니다.
 
 * 게재 또는 게재 템플릿에 명령줄 추가 - [방법 알아보기](#one-click-delivery-template)
 * 유형화 규칙 만들기 - [방법 알아보기](#one-click-typology-rule)
@@ -265,7 +260,7 @@ List-Unsubscribe: <https://domain.com/webApp/unsubNoClick?id=<%= recipient.crypt
 
 ![이미지](../assets/List-Unsubscribe-1-click-template-SMTP.png)
 
-위의 예에서는 원클릭을 지원하는 ISP에 대해 원클릭 목록 구독 취소를 활성화하면서도 &quot;mailto&quot; 목록 구독 취소를 지원하지 않는 수신자는 여전히 이메일을 통해 구독 취소를 요청할 수 있습니다.
+위의 예에서는 원클릭을 지원하는 ISP에 대해 원클릭 목록 구독 취소를 활성화하면서도 &quot;mailto&quot;를 지원하지 않는 수신자는 이메일을 통해 구독 취소를 요청할 수 있습니다.
 
 #### 원클릭 목록 구독 취소를 지원하는 유형화 규칙 만들기 {#one-click-typology-rule}
 
