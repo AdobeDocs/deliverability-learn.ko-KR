@@ -1,5 +1,5 @@
 ---
-source-git-commit: 0332be5688f9d0375d1dba97c39a87d0e8d28c52
+source-git-commit: d105a5b7d81aa14144b9d01f28a5e24c1110ae6c
 workflow-type: tm+mt
 source-wordcount: '168'
 ht-degree: 7%
@@ -8,11 +8,13 @@ ht-degree: 7%
 # 원클릭 목록 구독 취소를 지원하는 유형화 규칙 만들기:
 
 **1. 새 유형화 규칙을 만듭니다.**
+
 * 탐색 트리에서 &quot;새로 만들기&quot;를 클릭하여 새 유형화를 만듭니다
 
 ![이미지](/help/assets/CreatingTypologyRules1.png)
 
 **2. 유형화 규칙을 계속 구성합니다.**
+
 * 규칙 유형: 제어
 * 단계: 타겟팅 시작 시
 * 채널: 이메일
