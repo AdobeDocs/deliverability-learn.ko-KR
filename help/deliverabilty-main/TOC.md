@@ -6,9 +6,9 @@ feature: Deliverability
 role: Leader, User
 level: Beginner
 auto-video-transcripts: true
-source-git-commit: f79df94a991939a1599a751f9d758f14ce328e12
+source-git-commit: 0d78f4c588ae55c61a7e40e07a3b8d33ce84cb01
 workflow-type: tm+mt
-source-wordcount: '183'
+source-wordcount: '179'
 ht-degree: 97%
 
 ---
@@ -46,7 +46,6 @@ ht-degree: 97%
 + [실제로 적용](/help/putting-it-in-practice.md)
 + 부록: 추가 리소스 {#additional-resources}
    + [개요](/help/additional-resources/general-resources.md)
-   + [Yahoo 및 Gmail 업데이트](/help/guidance-around-changes-to-google-and-yahoo.md)
    + [가입 해지 및 탈퇴](/help/unsubscribe-dos-and-do-nots.md)
    + 일반 리소스 {#generic-resources}
       + [스팸 트랩에 대한 모든 정보](/help/additional-resources/all-about-spam-traps.md)
