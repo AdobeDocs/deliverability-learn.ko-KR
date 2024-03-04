@@ -6,7 +6,7 @@ doc-type: article
 activity: understand
 team: ACS
 exl-id: 39ed3773-18bf-4653-93b6-ffc64546406b
-source-git-commit: ffa2e9788326389ae2e4da6e272367cdc837b72e
+source-git-commit: 3ceca47634f946488115ccbef5cb9ffb5aba8b07
 workflow-type: tm+mt
 source-wordcount: '2086'
 ht-degree: 1%
@@ -232,7 +232,7 @@ List-Unsubscribe: https://domain.com/unsubscribe.jsp
 * URI 구독 취소 링크를 포함합니다.
 * Adobe Campaign에서 지원하는 수신자의 HTTP POST 응답 수신을 지원합니다. 외부 서비스를 사용할 수도 있습니다.
 
-Adobe Campaign v7/v8에서 바로 한 번의 클릭으로 목록 구독 취소 POST 응답을 지원하려면 &quot;구독 취소 수신자 노 클릭&quot; 웹 애플리케이션에 를 추가해야 합니다. 방법은 다음과 같습니다.
+Adobe Campaign v7/v8에서 바로 원클릭 목록 구독 취소 POST 응답을 지원하려면 &quot;구독 취소 수신자 no-click&quot; 웹 애플리케이션에 를 추가해야 합니다. 방법은 다음과 같습니다.
 
 1. 다음으로 이동 **[!UICONTROL Resources]** > **[!UICONTROL Online]** > **[!UICONTROL Web applications]**.
 
