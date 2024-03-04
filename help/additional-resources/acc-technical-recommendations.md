@@ -6,9 +6,9 @@ doc-type: article
 activity: understand
 team: ACS
 exl-id: 39ed3773-18bf-4653-93b6-ffc64546406b
-source-git-commit: 3ceca47634f946488115ccbef5cb9ffb5aba8b07
+source-git-commit: 12bd5f583476dad0eac9641389ce35b40dc5136c
 workflow-type: tm+mt
-source-wordcount: '2086'
+source-wordcount: '2045'
 ht-degree: 1%
 
 ---
@@ -165,9 +165,7 @@ Gmail, Outlook.com, Yahoo! 및 Microsoft Outlook에서는 이 메서드를 지�
 
 >[!IMPORTANT]
 >
->2024년 6월 1일부터 Yahoo! 그리고 Gmail은 두 가지 모두에 대해 발신자가 준수하도록 요구할 것입니다 **원클릭 목록-구독 취소**. [이 변경 사항에 대해 자세히 알아보기](../guidance-around-changes-to-google-and-yahoo.md)
->
->에서 원클릭 목록 구독 취소를 구성하는 방법을 알아봅니다. [이 섹션](#one-click-list-unsubscribe).
+>>에서 원클릭 목록 구독 취소를 구성하는 방법을 알아봅니다. [이 섹션](#one-click-list-unsubscribe).
 
 ### &quot;mailto&quot; 목록-구독 취소 {#mailto-list-unsubscribe}
 
@@ -223,8 +221,6 @@ List-Unsubscribe: https://domain.com/unsubscribe.jsp
 ### 원클릭 목록-구독 취소 {#one-click-list-unsubscribe}
 
 이 메서드를 사용하여 **구독 취소** 링크는 사용자를 바로 가입 해지하므로 가입을 해지하기 위한 단일 작업만 필요합니다.
-
-2024년 6월 1일부터 Yahoo! 그리고 Gmail은 보낸 사람이 원클릭 목록 구독 취소를 준수하도록 요구할 것입니다. [이 변경 사항에 대해 자세히 알아보기](../guidance-around-changes-to-google-and-yahoo.md)
 
 이 요구 사항을 준수하려면 보낸 사람은 다음 작업을 수행해야 합니다.
 
