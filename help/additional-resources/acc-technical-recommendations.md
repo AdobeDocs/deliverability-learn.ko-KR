@@ -6,9 +6,9 @@ doc-type: article
 activity: understand
 team: ACS
 exl-id: 39ed3773-18bf-4653-93b6-ffc64546406b
-source-git-commit: 12bd5f583476dad0eac9641389ce35b40dc5136c
+source-git-commit: b163628adde1e4d7225a1c2c54d29b24e2b2a352
 workflow-type: tm+mt
-source-wordcount: '2045'
+source-wordcount: '2064'
 ht-degree: 1%
 
 ---
@@ -159,13 +159,11 @@ Gmail, Outlook.com, Yahoo! 및 Microsoft Outlook에서는 이 메서드를 지�
 
 * **&quot;mailto&quot; 목록-구독 취소** - 이 메서드를 사용하여 다음을 클릭합니다. **구독 취소** 링크는 이메일 헤더에 지정된 구독 취소 주소로 미리 채워진 이메일을 보냅니다. [자세히 알아보기](#mailto-list-unsubscribe)
 
-<!--OR: With this method, clicking the **Unsubscribe** link opens the user's default email client with a pre-filled email to the unsubscribe address specified in the email header. This allows the user to unsubscribe simply by sending the email without any further manual steps.-->
-
 * **&quot;원클릭&quot; 목록-구독 취소** - 이 메서드를 사용하여 다음을 클릭합니다. **구독 취소** 링크는 사용자를 바로 가입 해지합니다. [자세히 알아보기](#one-click-list-unsubscribe)
 
->[!IMPORTANT]
+>[!NOTE]
 >
->>에서 원클릭 목록 구독 취소를 구성하는 방법을 알아봅니다. [이 섹션](#one-click-list-unsubscribe).
+>2024년 6월 1일부터 주요 ISP는 보낸 사람이 따라야 할 사항을 요구하게 됩니다 **원클릭 목록-구독 취소**.
 
 ### &quot;mailto&quot; 목록-구독 취소 {#mailto-list-unsubscribe}
 
@@ -197,17 +195,6 @@ Gmail, Outlook.com, Yahoo! 및 Microsoft Outlook에서는 이 메서드를 지�
 
 ![이미지](../assets/List-Unsubscribe-template-SMTP.png)
 
-<!--
-List-Unsubscribe: mailto:unsubscribe@domain.com 
-* Clicking the **unsubscribe** link opens the user's default email client. This typology rule must be added in a typology used for creating email.
-
-List-Unsubscribe: https://domain.com/unsubscribe.jsp 
-
-* Clicking the **unsubscribe** link redirects the user to your unsubscribe form.
-
-  ![image](../assets/UTF-8-1.png)
--->
-
 #### 유형화 규칙 만들기 {#creating-a-typology-rule}
 
 규칙에는 명령줄을 생성하는 스크립트가 포함되어야 하며 이메일 헤더에 포함되어야 합니다.
@@ -221,6 +208,8 @@ List-Unsubscribe: https://domain.com/unsubscribe.jsp
 ### 원클릭 목록-구독 취소 {#one-click-list-unsubscribe}
 
 이 메서드를 사용하여 **구독 취소** 링크는 사용자를 바로 가입 해지하므로 가입을 해지하기 위한 단일 작업만 필요합니다.
+
+2024년 6월 1일부터 주요 ISP는 보낸 사람이 따라야 할 사항을 요구하게 됩니다 **원클릭 목록-구독 취소**.
 
 이 요구 사항을 준수하려면 보낸 사람은 다음 작업을 수행해야 합니다.
 
