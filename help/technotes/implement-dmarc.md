@@ -5,10 +5,10 @@ topics: Deliverability
 role: Admin
 level: Beginner
 exl-id: f1c14b10-6191-4202-9825-23f948714f1e
-source-git-commit: bd8cee606c9dcb1593ad3ec45c578f59f8e968f2
+source-git-commit: 2a78db97a46150237629eef32086919cacf4998c
 workflow-type: tm+mt
-source-wordcount: '1258'
-ht-degree: 8%
+source-wordcount: '1284'
+ht-degree: 5%
 
 ---
 
@@ -44,7 +44,7 @@ DMARC는 선택 사항이며, 필수는 아니지만 무료이며, 이메일 수
 
 ## DMARC 구현 우수 사례 {#best-practice}
 
-DMARC는 선택 사항이므로 기본적으로 모든 ESP의 플랫폼에서 구성되지 않습니다. DMARC 레코드가 작동하려면 도메인의 DNS에 DMARC 레코드를 만들어야 합니다. 또한 조직 내에서 DMARC 보고서가 이동해야 하는 위치를 나타내려면 선택한 전자 메일 주소가 필요합니다. 모범 사례로서, DMARC의 잠재적 영향에 대한 DMARC 이해를 도우면서 DMARC 정책을 p=none에서 p=quarantine, p=reject로 단계적으로 확대하여 DMARC 구현을 천천히 롤아웃하는 것이 좋습니다.
+DMARC는 선택 사항이므로 기본적으로 모든 ESP의 플랫폼에서 구성되지 않습니다. DMARC 레코드가 작동하려면 도메인의 DNS에 DMARC 레코드를 만들어야 합니다. 또한 조직 내에서 DMARC 보고서가 이동해야 하는 위치를 나타내려면 선택한 전자 메일 주소가 필요합니다. DMARC의 잠재적 영향에 대한 DMARC의 이해를 돕기 위해 DMARC 정책을 p=none에서 p=quarantine, p=reject로 상향 조정하여 DMARC 구현을 천천히 롤아웃하는 것이 좋습니다.
 
 1. 받아서 사용하는 피드백을 분석합니다(p=none). 이렇게 하면 수신자는 인증에 실패하는 메시지에 대해 작업을 수행하지 않지만 이메일 보고서를 보낸 사람에게 계속 전송합니다. 또한 합법적인 메시지가 인증에 실패한 경우 SPF/DKIM 문제를 검토하고 수정합니다.
 1. SPF 및 DKIM이 정렬되어 모든 합법적인 이메일에 대한 인증을 전달하는지 확인한 다음, 정책을 (p=quarantine)으로 이동하여 수신 이메일 서버에서 인증에 실패한 이메일을 격리합니다(일반적으로 해당 메시지를 스팸 폴더에 배치함).
@@ -68,6 +68,10 @@ DMARC는 SPF/DKIM에 실패한 이메일에 대한 보고서를 받는 기능을
 * [드마르키안](https://dmarcian.com/)
 * [Proofpoint](https://www.proofpoint.com/us)
 
+>[!CAUTION]
+>
+>보고서를 받기 위해 추가하려는 이메일 주소가 DMARC 레코드가 생성된 도메인 외부에 있는 경우 해당 외부 도메인에 이 도메인을 소유하는 DNS를 지정하도록 승인해야 합니다. 이렇게 하려면 다음에 설명된 단계를 수행합니다. [dmarc.org 설명서](https://dmarc.org/2015/08/receiving-dmarc-reports-outside-your-domain)
+
 ### DMARC 레코드 예 {#example}
 
 ```
@@ -78,12 +82,12 @@ v=DMARC1; p=reject; fo=1; rua=mailto:dmarc_rua@emaildefense.proofpoint.com;ruf=m
 
 DMARC 레코드에는 DMARC 태그라는 여러 구성 요소가 있습니다. 각 태그에는 DMARC의 특정 측면을 지정하는 값이 있습니다.
 
-| 태그 이름 | 필수/선택적 | 함수 | 예 | 기본값 |
+| 태그 이름 | 필수/선택 사항 | 함수 | 예 | 기본값 |
 |  ---  |  ---  |  ---  |  ---  |  ---  |
 | v | 필수 여부 | 이 DMARC 태그는 버전을 지정합니다. 현재 버전은 하나만 있으므로 v=DMARC1이라는 고정 값이 있습니다. | V=DMARC1 DMARC1 | DMARC1 |
 | p | 필수 여부 | 선택한 DMARC 정책을 표시하고 수신자에게 인증 검사에 실패한 메일을 보고, 격리 또는 거부하도록 안내합니다. | p=none, 격리 또는 거부 | - |
 | fo | 선택 사항입니다 | 도메인 소유자가 보고 옵션을 지정할 수 있도록 허용합니다. | 0: 모든 것이 실패하면 보고서 생성<br/>1: 실패할 경우 보고서 생성<br/>d: DKIM이 실패할 경우 보고서 생성<br/>s: SPF 실패 시 보고서 생성 | 1(DMARC 보고서에 권장) |
-| pct | 선택 사항입니다 | 필터링 대상 메시지의 비율을 알려줍니다. | pct=20 | 100 |
+| pct | 선택 사항입니다 | 필터링 대상 메시지의 비율을 알려줍니다. | pct=20 | 10 |
 | rua | 선택 사항(권장) | 집계 보고서가 배달될 위치를 식별합니다. | `rua=mailto:aggrep@example.com` | - |
 | 러프 | 선택 사항(권장) | 법의학 보고서가 배달될 위치를 식별합니다. | `ruf=mailto:authfail@example.com` | - |
 | sp | 선택 사항입니다 | 상위 도메인의 하위 도메인에 대한 DMARC 정책을 지정합니다. | sp=reject | - |
