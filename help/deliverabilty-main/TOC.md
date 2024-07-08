@@ -7,9 +7,9 @@ role: Leader, User
 level: Beginner
 auto-video-transcripts: true
 source-git-commit: 0d78f4c588ae55c61a7e40e07a3b8d33ce84cb01
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '179'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -46,7 +46,7 @@ ht-degree: 97%
 + [실제로 적용](/help/putting-it-in-practice.md)
 + 부록: 추가 리소스 {#additional-resources}
    + [개요](/help/additional-resources/general-resources.md)
-   + [가입 해지 및 탈퇴](/help/unsubscribe-dos-and-do-nots.md)
+   + [구독 취소 시 지침](/help/unsubscribe-dos-and-do-nots.md)
    + 일반 리소스 {#generic-resources}
       + [스팸 트랩에 대한 모든 정보](/help/additional-resources/all-about-spam-traps.md)
       + [IP warming으로 이메일 신뢰도 향상](/help/additional-resources/increase-reputation-with-ip-warming.md)
