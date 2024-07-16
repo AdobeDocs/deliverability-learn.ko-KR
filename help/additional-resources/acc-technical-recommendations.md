@@ -25,11 +25,11 @@ Adobe Campaign은 IP 주소에 대해 역방향 DNS가 지정되었는지 확인
 
 네트워크 구성의 중요한 점은 보내는 메시지의 각 IP 주소에 대해 올바른 역방향 DNS가 정의되어 있는지 확인하는 것입니다. 즉, 지정된 IP 주소의 경우 초기 IP 주소로 다시 루프백되는 일치하는 DNS(A 레코드)와 역방향 DNS 레코드(PTR 레코드)가 있습니다.
 
-역방향 DNS에 대한 도메인 선택은 특정 ISP를 처리할 때 영향을 줍니다. 특히 AOL은 역방향 DNS와 동일한 도메인에 있는 주소가 있는 피드백 루프만 허용합니다(참조) [피드백 루프](#feedback-loop)).
+역방향 DNS에 대한 도메인 선택은 특정 ISP를 처리할 때 영향을 줍니다. 특히 AOL은 역방향 DNS와 같은 도메인에 있는 주소가 있는 피드백 루프만 허용합니다([피드백 루프](#feedback-loop) 참조).
 
 >[!NOTE]
 >
->다음을 사용할 수 있습니다. [이 외부 도구](https://mxtoolbox.com/SuperTool.aspx) 을 클릭하여 도메인의 구성을 확인합니다.
+>[이 외부 도구](https://mxtoolbox.com/SuperTool.aspx)를 사용하여 도메인의 구성을 확인할 수 있습니다.
 
 ### MX 규칙 {#mx-rules}
 
@@ -39,7 +39,7 @@ MX 규칙(Mail eXchanger)은 보내는 서버와 받는 서버 간의 통신을 
 
 >[!NOTE]
 >
->Adobe Campaign Classic의 MX 관리에 대한 자세한 내용은 [이 섹션](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/additional-configurations/email-deliverability.html#mx-configuration).
+>Adobe Campaign Classic의 MX 관리에 대한 자세한 내용은 [이 섹션](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/additional-configurations/email-deliverability.html#mx-configuration)을 참조하세요.
 
 ### TLS {#tls}
 
@@ -67,34 +67,34 @@ SPF 레코드는 현재 DNS 서버에서 TXT 유형 레코드(코드 16) 또는 
 v=spf1 ip4:12.34.56.78/32 ip4:12.34.56.79/32 ~all
 ```
 
-도메인에 대한 이메일을 보내도록 승인된 두 개의 IP 주소인 12.34.56.78과 12.34.56.79를 정의합니다. **~all** 는 다른 주소는 SoftFail로 해석해야 함을 의미합니다.
+도메인에 대한 이메일을 보내도록 승인된 두 개의 IP 주소인 12.34.56.78과 12.34.56.79를 정의합니다. **~all**&#x200B;은(는) 다른 주소는 SoftFail로 해석해야 함을 의미합니다.
 
 SPF 레코드를 정의하는 Recommendations:
 
-* 추가 **~all** (소프트 실패) 또는 **-all** (실패) 끝에 정의된 서버 이외의 모든 서버를 거부합니다. 이 기능이 없으면 서버는 중립 평가와 함께 이 도메인을 생성할 수 있습니다.
-* 추가하지 않음 **ptr** (openspf.org에서는 비용이 많이 들고 신뢰할 수 없는 것으로 간주하여 이를 방지할 것을 권장합니다.)
+* 정의된 서버 이외의 모든 서버를 거부하려면 끝에 **~all**(SoftFail) 또는 **-all**(Fail)을 추가하십시오. 이 기능이 없으면 서버는 중립 평가와 함께 이 도메인을 생성할 수 있습니다.
+* **ptr**&#x200B;을(를) 추가하지 마십시오(비용이 많이 들고 신뢰할 수 없는 경우 openspf.org 권장).
 
 >[!NOTE]
 >
->에서 SPF에 대해 자세히 알아보기 [이 섹션](/help/additional-resources/authentication.md#spf).
+>[이 섹션](/help/additional-resources/authentication.md#spf)에서 SPF에 대해 자세히 알아보세요.
 
 ## 인증
 
 >[!NOTE]
 >
->에서 다양한 형식의 이메일 인증에 대해 자세히 알아보십시오. [이 섹션](/help/additional-resources/authentication.md).
+>[이 섹션](/help/additional-resources/authentication.md)에서 다양한 전자 메일 인증 양식에 대해 자세히 알아보세요.
 
 ### D김 {#dkim-acc}
 
 >[!NOTE]
 >
->호스팅 또는 하이브리드 설치의 경우 를 로 업그레이드한 경우 [향상된 MTA](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-emails/sending-an-email/sending-with-enhanced-mta.html#sending-messages), DKIM 전자 메일 인증 서명은 모든 도메인이 있는 모든 메시지에 대해 Enhanced MTA에서 수행합니다.
+>호스팅 또는 하이브리드 설치의 경우 [Enhanced MTA](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-emails/sending-an-email/sending-with-enhanced-mta.html#sending-messages)(으)로 업그레이드하면 모든 도메인이 있는 모든 메시지에 대해 Enhanced MTA에서 DKIM 전자 메일 인증 서명을 수행합니다.
 
-사용 [D김](/help/additional-resources/authentication.md#dkim) Adobe Campaign Classic을 사용하려면 다음 전제 조건이 필요합니다.
+Adobe Campaign Classic에서 [DKIM](/help/additional-resources/authentication.md#dkim)을(를) 사용하려면 다음 전제 조건이 필요합니다.
 
 **Adobe Campaign 옵션 선언**: Adobe Campaign에서 DKIM 개인 키는 DKIM 선택기와 도메인을 기반으로 합니다. 현재 선택기가 다른 동일한 도메인/하위 도메인에 대해 여러 개의 개인 키를 만들 수 없습니다. 플랫폼 또는 이메일에서 인증에 사용해야 하는 선택기 도메인/하위 도메인을 정의할 수는 없습니다. 플랫폼은 개인 키 중 하나를 선택할 수 있으며, 이는 인증이 실패할 가능성이 높다는 것을 의미합니다.
 
-* Adobe Campaign 인스턴스에 대해 DomainKeys를 구성한 경우 **dkim** 다음에서 [도메인 관리 규칙](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/understanding-delivery-failures.html#email-management-rules). 그렇지 않으면 DKIM을 대체한 도메인 키와 동일한 구성 단계(개인/공개 키)를 따릅니다.
+* Adobe Campaign 인스턴스에 대해 DomainKeys를 구성한 경우 [도메인 관리 규칙](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/understanding-delivery-failures.html#email-management-rules)에서 **dkim**&#x200B;을(를) 선택하면 됩니다. 그렇지 않으면 DKIM을 대체한 도메인 키와 동일한 구성 단계(개인/공개 키)를 따릅니다.
 * 향상된 버전의 DomainKeys인 DKIM과 동일한 도메인에 대해 DomainKeys 및 DKIM을 모두 활성화할 필요는 없습니다.
 * 현재 DKIM의 유효성을 검사하는 도메인은 AOL, Gmail입니다.
 
@@ -102,7 +102,7 @@ SPF 레코드를 정의하는 Recommendations:
 
 피드백 루프는 ISP 수준에서 메시지를 보내는 데 사용되는 IP 주소 범위에 대해 지정된 이메일 주소를 선언함으로써 작동합니다. ISP는 바운스 메시지에 대해 수행되는 작업과 유사한 방식으로 이 사서함에 전송하며, 이 메시지는 수신자가 스팸으로 보고합니다. 불만을 제기한 사용자에게 향후 게재를 차단하도록 플랫폼을 구성해야 합니다. 적절한 옵트아웃 링크를 사용하지 않았더라도 더 이상 연락하지 않는 것이 중요합니다. ISP가 IP 주소를 차단 목록에 추가하다에 추가한다는 이러한 컴플레인에 기반합니다. ISP에 따라 1% 안팎의 컴플레인이 발생하면 IP 주소가 차단된다.
 
-피드백 루프 메시지 형식을 정의하는 표준이 현재 작성 중입니다. [ARF(Abuse Feedback Reporting Format)](https://tools.ietf.org/html/rfc6650).
+피드백 루프 메시지 형식을 정의하는 표준이 현재 만들어지고 있습니다. [ARF(Abuse Feedback Reporting Format)](https://tools.ietf.org/html/rfc6650).
 
 인스턴스에 대한 피드백 루프를 구현하려면 다음이 필요합니다.
 
@@ -111,8 +111,8 @@ SPF 레코드를 정의하는 Recommendations:
 
 Adobe Campaign에서 간단한 피드백 루프를 구현하면 바운스 메시지 기능이 사용됩니다. 피드백 루프 사서함은 바운스 사서함으로 사용되며 이러한 메시지를 검색하기 위한 규칙이 정의됩니다. 메시지를 스팸으로 보고한 수신자의 이메일 주소가 격리 목록에 추가됩니다.
 
-* 바운스 메일 규칙 만들기 또는 수정, **Feedback_loop**, 위치 **[!UICONTROL Administration > Campaign Management > Non deliverables Management > Mail rule sets]** 를 이유로 **거부됨** 및 유형 **하드**.
-* 특별히 피드백 루프에 대해 사서함이 정의된 경우 새 외부 바운스 메일 계정을 만들어 사서함에 액세스할 매개 변수를 정의합니다 **[!UICONTROL Administration > Platform > External accounts]**.
+* **거부됨** 및 유형 **하드**&#x200B;을(를) 사용하여 **[!UICONTROL Administration > Campaign Management > Non deliverables Management > Mail rule sets]**&#x200B;에서 바운스 메일 규칙 **Feedback_loop**&#x200B;을(를) 만들거나 수정합니다.
+* 사서함이 특별히 피드백 루프에 대해 정의된 경우 **[!UICONTROL Administration > Platform > External accounts]**&#x200B;에 새 외부 바운스 메일 계정을 만들어 사서함에 액세스할 매개 변수를 정의합니다.
 
 컴플레인 알림을 처리하기 위해 메커니즘이 즉시 작동합니다. 이 규칙이 올바르게 작동하는지 확인하려면 이러한 메시지가 수집되지 않도록 계정을 일시적으로 비활성화한 다음 피드백 루프 사서함의 내용을 수동으로 확인할 수 있습니다. 서버에서 다음 명령을 실행합니다.
 
@@ -125,7 +125,7 @@ nlserver inMail -instance:instance -verbose.
 
 * 받은 메시지를 인스턴스가 있는 수만큼 사서함에 복제합니다.
 * 각 사서함을 하나의 인스턴스로 가져와서
-* 인스턴스 정보가 Adobe Campaign에서 보낸 메시지의 Message-ID 헤더에 포함되므로 피드백 루프 메시지에도 배치되도록 인스턴스를 구성합니다. 간단히 **checkInstanceName** 인스턴스 구성 파일의 매개 변수(기본적으로 인스턴스는 확인되지 않으며 이로 인해 특정 주소가 잘못 격리될 수 있음):
+* 인스턴스 정보가 Adobe Campaign에서 보낸 메시지의 Message-ID 헤더에 포함되므로 피드백 루프 메시지에도 배치되도록 인스턴스를 구성합니다. 인스턴스 구성 파일에 **checkInstanceName** 매개 변수를 지정하기만 하면 됩니다(기본적으로 인스턴스가 확인되지 않으며 이로 인해 특정 주소가 잘못 격리될 수 있음).
 
   ```
   <serverConf>
@@ -137,7 +137,7 @@ Adobe Campaign의 Deliverability Service는 AOL, BlueTie, Comcast, Cox, EarthLin
 
 ## 목록-구독 취소 {#list-unsubscribe}
 
-이름이 인 SMTP 헤더 추가 **목록-구독 취소** 는 최적의 전달성 관리를 위해 필수입니다.
+최적의 게재 능력을 관리하려면 **List-Unsubscribe**(이)라는 SMTP 헤더를 추가해야 합니다.
 
 이 헤더는 &quot;스팸으로 보고&quot; 아이콘 대신 사용할 수 있습니다. ISP의 이메일 인터페이스에 &quot;구독 취소&quot; 링크로 표시됩니다.
 
@@ -157,39 +157,39 @@ Gmail, Outlook.com, Yahoo! 및 Microsoft Outlook에서는 이 메서드를 지�
 
 목록 구독 취소 헤더 기능의 두 가지 버전이 있습니다.
 
-* **&quot;mailto&quot; 목록-구독 취소** - 이 메서드를 사용하여 다음을 클릭합니다. **구독 취소** 링크는 이메일 헤더에 지정된 구독 취소 주소로 미리 채워진 이메일을 보냅니다. [자세히 알아보기](#mailto-list-unsubscribe)
+* **&quot;mailto&quot; List-Unsubscribe** - 이 메서드를 사용하여 **구독 취소** 링크를 클릭하면 미리 채워진 이메일이 이메일 헤더에 지정된 구독 취소 주소로 전송됩니다. [자세히 알아보기](#mailto-list-unsubscribe)
 
-* **&quot;원클릭&quot; 목록-구독 취소** - 이 메서드를 사용하여 다음을 클릭합니다. **구독 취소** 링크는 사용자를 바로 가입 해지합니다. [자세히 알아보기](#one-click-list-unsubscribe)
+* **&quot;One-Click&quot; List-Unsubscribe** - 이 메서드를 사용하면 **Unsubscribe** 링크를 클릭하면 사용자가 바로 구독 취소됩니다. [자세히 알아보기](#one-click-list-unsubscribe)
 
 >[!NOTE]
 >
->2024년 6월 1일부터 주요 ISP는 보낸 사람이 따라야 할 사항을 요구하게 됩니다 **원클릭 목록-구독 취소**.
+>2024년 6월 1일부터 주요 ISP에서는 보낸 사람이 **One-Click List-Unsubscribe**&#x200B;를 준수해야 합니다.
 
 ### &quot;mailto&quot; 목록-구독 취소 {#mailto-list-unsubscribe}
 
-이 메서드를 사용하여 **구독 취소** 링크는 이메일 헤더에 지정된 구독 취소 주소로 미리 채워진 이메일을 보냅니다.
+이 메서드를 사용하면 **구독 취소** 링크를 클릭하면 미리 채워진 이메일이 이메일 헤더에 지정된 구독 취소 주소로 전송됩니다.
 
-&quot;mailto&quot; 목록 구독 취소를 사용하려면 다음과 같이 이메일 주소를 지정하는 명령줄을 입력해야 합니다. `List-Unsubscribe: <mailto:client@newsletter.example.com?subject=unsubscribe?body=unsubscribe>`
+&quot;mailto&quot; 목록-구독 취소를 사용하려면 `List-Unsubscribe: <mailto:client@newsletter.example.com?subject=unsubscribe?body=unsubscribe>`(으)와 같이 전자 메일 주소를 지정하는 명령줄을 입력해야 합니다.
 
 >[!CAUTION]
 >
 >위의 예는 수신자 테이블을 기반으로 합니다. 다른 테이블에서 데이터베이스를 구현한 경우에는 명령줄에 올바른 정보를 다시 입력해야 합니다.
 
-다음과 같은 명령줄을 사용하여 동적 &quot;mailto&quot; 목록-구독 취소를 만들 수도 있습니다. `List-Unsubscribe: <mailto:<%=errorAddress%>?subject=unsubscribe%=message.mimeMessageId%>`
+다음과 같은 명령줄을 사용하여 동적 &quot;mailto&quot; 목록 구독 취소를 만들 수도 있습니다. `List-Unsubscribe: <mailto:<%=errorAddress%>?subject=unsubscribe%=message.mimeMessageId%>`
 
-구현하려면 **&quot;mailto&quot; 목록-구독 취소** Campaign에서 다음 중 하나를 수행할 수 있습니다.
+Campaign에서 **&quot;mailto&quot; List-Unsubscribe**&#x200B;을(를) 구현하려면 다음 중 하나를 수행할 수 있습니다.
 
-* 게재 또는 게재 템플릿에 명령줄을 직접 추가 - [방법 알아보기](#adding-a-command-line-in-a-delivery-template)
+* 게재 또는 게재 템플릿에 직접 명령줄 추가 - [방법 알아보기](#adding-a-command-line-in-a-delivery-template)
 
 * 유형화 규칙 만들기 - [방법 알아보기](#creating-a-typology-rule)
 
 #### 게재 또는 템플릿에 명령줄 추가 {#adding-a-command-line-in-a-delivery-template}
 
-명령줄을 **[!UICONTROL Additional SMTP headers]** 전자 메일 SMTP 헤더의 섹션입니다.
+전자 메일 SMTP 헤더의 **[!UICONTROL Additional SMTP headers]** 섹션에 명령줄을 추가해야 합니다.
 
 이 추가는 각 이메일 또는 기존 게재 템플릿에서 수행할 수 있습니다. 이 기능을 포함하는 새 게재 템플릿을 만들 수도 있습니다.
 
-예를 들어 다음 스크립트를 **[!UICONTROL Additional SMTP headers]** 필드: `List-Unsubscribe: mailto:unsubscribe@domain.com`. 클릭 **구독 취소** 링크는 unsubscribe@domain.com 주소로 이메일을 보냅니다.
+예를 들어 **[!UICONTROL Additional SMTP headers]** 필드에 다음 스크립트를 입력합니다. `List-Unsubscribe: mailto:unsubscribe@domain.com`. **구독 취소** 링크를 클릭하면 unsubscribe@domain.com 주소로 이메일이 전송됩니다.
 
 동적 주소를 사용할 수도 있습니다. 예를 들어 플랫폼에 대해 정의된 오류 주소로 이메일을 보내려면 다음 스크립트를 사용할 수 있습니다. `List-Unsubscribe: <mailto:<%=errorAddress%>?subject=unsubscribe%=message.mimeMessageId%>`
 
@@ -199,7 +199,7 @@ Gmail, Outlook.com, Yahoo! 및 Microsoft Outlook에서는 이 메서드를 지�
 
 규칙에는 명령줄을 생성하는 스크립트가 포함되어야 하며 이메일 헤더에 포함되어야 합니다.
 
-의 Adobe Campaign v7/v8에서 유형화 규칙을 만드는 방법을 알아봅니다. [이 섹션](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/campaign-optimization/about-campaign-typologies.html#typology-rules).
+[이 섹션](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/campaign-optimization/about-campaign-typologies.html#typology-rules)에서 Adobe Campaign v7/v8에 유형화 규칙을 만드는 방법을 알아봅니다.
 
 >[!NOTE]
 >
@@ -207,23 +207,23 @@ Gmail, Outlook.com, Yahoo! 및 Microsoft Outlook에서는 이 메서드를 지�
 
 ### 원클릭 목록-구독 취소 {#one-click-list-unsubscribe}
 
-이 메서드를 사용하여 **구독 취소** 링크는 사용자를 바로 가입 해지하므로 가입을 해지하기 위한 단일 작업만 필요합니다.
+이 방법을 사용하면 **구독 취소** 링크를 클릭하면 사용자의 구독이 바로 취소되므로 구독을 취소하기 위한 단일 작업만 필요합니다.
 
-2024년 6월 1일부터 주요 ISP는 보낸 사람이 따라야 할 사항을 요구하게 됩니다 **원클릭 목록-구독 취소**.
+2024년 6월 1일부터 주요 ISP에서는 보낸 사람이 **One-Click List-Unsubscribe**&#x200B;를 준수해야 합니다.
 
 이 요구 사항을 준수하려면 보낸 사람은 다음 작업을 수행해야 합니다.
 
-* 다음 명령줄을 추가합니다. `List-Unsubscribe-Post: List-Unsubscribe=One-Click`.
+* `List-Unsubscribe-Post: List-Unsubscribe=One-Click` 명령줄을 추가합니다.
 * URI 구독 취소 링크를 포함합니다.
 * Adobe Campaign에서 지원하는 수신자의 HTTP POST 응답 수신을 지원합니다. 외부 서비스를 사용할 수도 있습니다.
 
 Adobe Campaign v7/v8에서 바로 원클릭 목록 구독 취소 POST 응답을 지원하려면 &quot;구독 취소 수신자 no-click&quot; 웹 애플리케이션에 를 추가해야 합니다. 방법은 다음과 같습니다.
 
-1. 다음으로 이동 **[!UICONTROL Resources]** > **[!UICONTROL Online]** > **[!UICONTROL Web applications]**.
+1. **[!UICONTROL Resources]** > **[!UICONTROL Online]** > **[!UICONTROL Web applications]**(으)로 이동합니다.
 
-1. &quot;구독 취소 수신자 클릭 없음&quot; 업로드 [XML](/help/assets/WebAppUnsubNoClick.xml.zip) 파일.
+1. &quot;구독 취소 받는 사람 클릭 안 함&quot; [XML](/help/assets/WebAppUnsubNoClick.xml.zip) 파일을 업로드합니다.
 
-구성하려면 **원클릭 목록-구독 취소** Campaign에서 다음 중 하나를 수행할 수 있습니다.
+Campaign에서 **한 번의 클릭으로 목록 구독 취소**&#x200B;를 구성하려면 다음 중 하나를 수행할 수 있습니다.
 
 * 게재 또는 게재 템플릿에 명령줄 추가 - [방법 알아보기](#one-click-delivery-template)
 * 유형화 규칙 만들기 - [방법 알아보기](#one-click-typology-rule)
@@ -232,9 +232,9 @@ Adobe Campaign v7/v8에서 바로 원클릭 목록 구독 취소 POST 응답을 
 
 게재 또는 게재 템플릿에서 원클릭 목록 구독 취소를 구성하려면 아래 단계를 따르십시오.
 
-1. 로 이동 **[!UICONTROL SMTP]** 섹션에 있는 마지막 항목이 될 필요가 없습니다.
+1. 게재 속성의 **[!UICONTROL SMTP]** 섹션으로 이동합니다.
 
-1. 아래 **[!UICONTROL Additional SMTP Headers]**&#x200B;아래 예와 같이 명령줄을 입력합니다. 각 헤더는 별도의 줄에 있어야 합니다.
+1. **[!UICONTROL Additional SMTP Headers]**&#x200B;에서 아래 예와 같은 명령줄을 입력합니다. 각 헤더는 별도의 줄에 있어야 합니다.
 
 예:
 
@@ -251,7 +251,7 @@ List-Unsubscribe: <https://domain.com/webApp/unsubNoClick?id=<%= recipient.crypt
 
 유형화 규칙을 사용하여 한 번의 클릭으로 목록 구독 취소를 구성하려면 아래 단계를 따르십시오.
 
-1. 탐색 트리에서 로 이동합니다. **[!UICONTROL Typolgy rules]** 및 클릭 **[!UICONTROL New]**.
+1. 탐색 트리에서 **[!UICONTROL Typolgy rules]**(으)로 이동하여 **[!UICONTROL New]**&#x200B;을(를) 클릭합니다.
 
    ![이미지](../assets/CreatingTypologyRules1.png)
 
@@ -274,8 +274,8 @@ List-Unsubscribe: <https://domain.com/webApp/unsubNoClick?id=<%= recipient.crypt
    >아래에 설명된 코드는 예시로서 참조되어야 한다.
 
    이 예에서는 다음 방법을 자세히 설명합니다.
-   * &quot;mailto&quot; 목록 구독 취소를 구성합니다. 헤더를 추가하거나 기존 &quot;mailto:&quot; 매개 변수를 추가하고 다음으로 바꿉니다. &lt;mailto..>>, https://...
-   * One-Click List-Unsubscribe 헤더에 을 추가합니다. 다음을 사용합니다 `var headerUnsubUrl = "https://campmomentumv7-mkt-prod3.campaign.adobe.com/webApp/unsubNoClick?id=<%= recipient.cryptedId %>"÷`
+   * &quot;mailto&quot; 목록 구독 취소를 구성합니다. 헤더를 추가하거나 기존 &quot;mailto:&quot; 매개 변수를 추가하고 &lt;mailto...로 바꿉니다.>, https://...
+   * One-Click List-Unsubscribe 헤더에 을 추가합니다. `var headerUnsubUrl = "https://campmomentumv7-mkt-prod3.campaign.adobe.com/webApp/unsubNoClick?id=<%= recipient.cryptedId %>"÷` 사용
 
    >[!NOTE]
    >
@@ -391,7 +391,7 @@ List-Unsubscribe: <https://domain.com/webApp/unsubNoClick?id=<%= recipient.crypt
 
    >[!CAUTION]
    >
-   >다음을 확인합니다 **[!UICONTROL Additional SMTP headers]** 게재 속성의 필드가 비어 있습니다.
+   >게재 속성의 **[!UICONTROL Additional SMTP headers]** 필드가 비어 있는지 확인합니다.
 
    ![이미지](../assets/CreatingTypologyRules5.png)
 
@@ -409,9 +409,9 @@ List-Unsubscribe: <https://domain.com/webApp/unsubNoClick?id=<%= recipient.crypt
 
 SMTP(Simple Mail Transfer Protocol)는 이메일 전송을 위한 인터넷 표준입니다.
 
-규칙에 의해 확인되지 않은 SMTP 오류는 **[!UICONTROL Administration]** > **[!UICONTROL Campaign Management]** > **[!UICONTROL Non deliverables Management]** > **[!UICONTROL Delivery log qualification]** 폴더를 삭제합니다. 이러한 오류 메시지는 기본적으로 연결할 수 없는 소프트 오류로 해석됩니다.
+규칙에 의해 확인되지 않은 SMTP 오류는 **[!UICONTROL Administration]** > **[!UICONTROL Campaign Management]** > **[!UICONTROL Non deliverables Management]** > **[!UICONTROL Delivery log qualification]** 폴더에 나열됩니다. 이러한 오류 메시지는 기본적으로 연결할 수 없는 소프트 오류로 해석됩니다.
 
-가장 일반적인 오류를 식별하고에 해당 규칙을 추가해야 합니다. **[!UICONTROL Administration]** > **[!UICONTROL Campaign Management]** > **[!UICONTROL Non deliverables Management]** > **[!UICONTROL Mail rule sets]** smtp 서버의 피드백을 올바르게 확인하려면 다음을 수행하십시오. 이렇게 하지 않으면 플랫폼은 지정된 테스트 횟수 후에 불필요한 재시도(알 수 없는 사용자의 경우)를 수행하거나 특정 수신자를 잘못 격리합니다.
+SMTP 서버의 피드백을 올바르게 확인하려면 가장 일반적인 오류를 식별하고 해당 규칙을 **[!UICONTROL Administration]** > **[!UICONTROL Campaign Management]** > **[!UICONTROL Non deliverables Management]** > **[!UICONTROL Mail rule sets]**&#x200B;에 추가해야 합니다. 이렇게 하지 않으면 플랫폼은 지정된 테스트 횟수 후에 불필요한 재시도(알 수 없는 사용자의 경우)를 수행하거나 특정 수신자를 잘못 격리합니다.
 
 ### 전용 IP {#dedicated-ips}
 

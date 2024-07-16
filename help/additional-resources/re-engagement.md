@@ -8,8 +8,8 @@ team: ACS
 exl-id: 30118706-d4c0-4bd8-8c9b-50c26b8374ef
 source-git-commit: d6094cd2ef0a8a7741e7d8aa4db15499fad08f90
 workflow-type: tm+mt
-source-wordcount: '924'
-ht-degree: 1%
+source-wordcount: '913'
+ht-degree: 0%
 
 ---
 
@@ -26,7 +26,7 @@ ht-degree: 1%
 
 ## ISP는 비참여 활동을 어떻게 보습니까? {#how-do-isps-view-non-engagement-activity-}
 
-수년간 ISP는 사용자의 참여 피드백 지표를 사용하여 메시지를 배치할 위치나 메시지를 전달해야 하는 사항을 결정해 왔습니다. 사용자 [참여](/help/engagement.md) 양수 및 음수 피드백 모두로 구성되며 ISP는 둘 다 지속적으로 모니터링합니다. 약혼을 하지 않는 것은 아마도 부정적 관여의 주요 원인 중 하나일 것이다. 전달성의 관점에서 볼 때, 참여가 없는 사용자에게 캠페인을 일관되게 보내면 IP 주소 및 도메인의 전체 신뢰도가 낮아질 수도 있습니다.
+수년간 ISP는 사용자의 참여 피드백 지표를 사용하여 메시지를 배치할 위치나 메시지를 전달해야 하는 사항을 결정해 왔습니다. 사용자 [참여](/help/engagement.md)은(는) 양수 및 음수 피드백으로 구성되며 ISP는 둘 다 지속적으로 모니터링합니다. 약혼을 하지 않는 것은 아마도 부정적 관여의 주요 원인 중 하나일 것이다. 전달성의 관점에서 볼 때, 참여가 없는 사용자에게 캠페인을 일관되게 보내면 IP 주소 및 도메인의 전체 신뢰도가 낮아질 수도 있습니다.
 
 Gmail, Microsoft® 및 OATH와 같은 ISP는 미참여를 원하지 않는 이메일로 보고 메시지를 스팸 폴더로 리디렉션하기 시작합니다. 또한 이러한 구독자는 더 이상 이메일 계정을 소유하지 않을 수 있으며 이를 &quot;재활용된&quot; 스팸 트랩으로 사용할 수 있습니다. 즉, 주소가 잠시 동안 유효하지 않으며 모든 메시지가 거부됩니다. 구독자 관리 시스템이 &quot;하드 바운스된&quot; 주소를 제거하지 않는 경우 심각한 게재 문제를 일으킬 수 있는 스팸 트랩으로 메일링이 전달될 수 있습니다.
 
@@ -78,6 +78,6 @@ Adobe 플랫폼을 사용하는 고객은 세그먼트에 따라 열기 및 클�
 * [Campaign Classic의 추적 로그](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/delivery-dashboard.html#tracking-logs)
 * [Campaign Standard의 추적 로그](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/sending-and-tracking-messages/tracking-messages.html#tracking-logs)
 
-**Adobe 고객 여정 관리**
+**고객 여정 관리 Adobe**
 
 * [메시지 추적](https://experienceleague.adobe.com/docs/journey-optimizer/using/reporting/message-tracking.html?lang=ko)

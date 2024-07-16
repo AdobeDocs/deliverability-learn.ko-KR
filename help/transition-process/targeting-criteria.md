@@ -12,8 +12,8 @@ level: Beginner
 exl-id: e6a855ba-a929-477f-a339-6861a755a529
 source-git-commit: 6b312cdbba496818337c97ec4f42962aea757901
 workflow-type: tm+mt
-source-wordcount: '206'
-ht-degree: 22%
+source-wordcount: '188'
+ht-degree: 16%
 
 ---
 
@@ -29,7 +29,7 @@ ht-degree: 22%
 
 **Analytics**
 
-* [참여 및 유지율을 높이는 방법(튜토리얼)](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/mobile-app-analytics/measuring-mobile-analytics/how-to-increase-engagement-and-retention-rates.html?lang=en#mobile-app-analytics): *Cohorts 를 사용한 행동을 통해 참여 고객의 행동을 식별하고 내 모바일 앱을 지속적으로 사용하게 하는 원동력이 무엇인지를 파악합니다. 세그먼트 IQ의 데이터 과학 알고리즘을 사용하여 세그먼트 간의 차이점과 유사성을 알 수 있습니다.*
+* [참여 및 유지율을 높이는 방법(튜토리얼)](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/mobile-app-analytics/measuring-mobile-analytics/how-to-increase-engagement-and-retention-rates.html?lang=en#mobile-app-analytics): *Cohorts를 사용한 행동을 통해 참여 대상자를 식별하고 모바일 앱에서의 지속적인 연결을 유도하는 근본 원인을 파악합니다. 세그먼트 IQ의 데이터 과학 알고리즘을 사용하여 세그먼트 간의 차이점과 유사성을 알 수 있습니다.*
 
 **Campaign Standard**
 

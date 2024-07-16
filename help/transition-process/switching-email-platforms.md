@@ -1,5 +1,5 @@
 ---
-title: 이메일 플랫폼을 원활하게 전환하는 방법.
+title: 이메일 플랫폼을 원활하게 전환하는 방법입니다.
 description: ESP(이메일 서비스 공급자)를 이동할 때 기존에 설정한 IP 주소도 전환할 수 없습니다. 새로 시작할 때 긍정적인 평판을 높이기 위한 모범 사례를 따르는 것이 중요합니다.
 topics: Deliverability
 jira: KT-5259
@@ -12,8 +12,8 @@ team: ACS
 exl-id: 5444d576-5bc1-4fa6-9956-c63dc3c60440
 source-git-commit: 6b312cdbba496818337c97ec4f42962aea757901
 workflow-type: tm+mt
-source-wordcount: '212'
-ht-degree: 11%
+source-wordcount: '213'
+ht-degree: 7%
 
 ---
 

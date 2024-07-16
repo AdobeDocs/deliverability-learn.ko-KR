@@ -2,7 +2,7 @@
 source-git-commit: d105a5b7d81aa14144b9d01f28a5e24c1110ae6c
 workflow-type: tm+mt
 source-wordcount: '168'
-ht-degree: 7%
+ht-degree: 6%
 
 ---
 # 원클릭 목록 구독 취소를 지원하는 유형화 규칙 만들기:
@@ -25,14 +25,14 @@ ht-degree: 7%
 ![이미지](/help/assets/CreatingTypologyRules2.png)
 
 
-**유형화 규칙의 Javascript를 코딩합니다.**
+**유형화 규칙의 javascript 코드:**
 
 
 >[!NOTE]
 >
 >아래에 설명된 코드는 예시로서 참조되어야 한다.
 >이 예에서는 다음 방법을 자세히 설명합니다.
->* URL 목록 구독 취소를 구성하고 헤더를 추가하거나 기존 mailto: 매개 변수를 추가하고 다음으로 바꿉니다. &lt;mailto..>>, https://...
+>* URL 목록 구독 취소를 구성하고 헤더를 추가하거나 기존 mailto: 매개 변수를 추가하고 &lt;mailto...로 바꿉니다.>, https://...
 >* List-Unsubscribe-Post 헤더에 추가
 >게시물 URL 예제는 var headerUnsubUrl = &quot;https://campmomentumv7-mkt-prod3.campaign.adobe.com/webApp/unsubNoClick?id=&lt;%= recipient.cryptedId %>&quot;를 사용합니다÷
 >* 다른 매개 변수를 추가할 수 있습니다(&amp;service = ...)
@@ -137,20 +137,20 @@ return true;
 
 ![이미지](/help/assets/CreatingTypologyRules3.png)
 
-**3. 이메일에 유형화에 새 규칙을 추가합니다(기본 유형화는 정상).**
+**3. 전자 메일에 유형화에 새 규칙을 추가합니다(기본 유형화는 정상).**
 
 ![이미지](/help/assets/CreatingTypologyRules4.png)
 
-**4. 새 게재 준비(게재 속성의 추가 SMTP 헤더가 비어 있는지 확인)**
+**4. 새 게재를 준비합니다(게재 속성의 추가 SMTP 헤더가 비어 있는지 확인)**
 
 ![이미지](/help/assets/CreatingTypologyRules5.png)
 
-**5. 게재를 준비하는 동안 새 유형화 규칙이 적용되는지 확인합니다.**
+**5. 게재를 준비하는 동안 새 유형화 규칙이 적용되는지 확인하십시오.**
 
 ![이미지](/help/assets/CreatingTypologyRules6.png)
 
 
 
-**6. 목록 구독 취소가 있는지 확인합니다.**
+**6. List-Unsubscribe가 있는지 확인합니다.**
 
 ![이미지](/help/assets/CreatingTypologyRules7.png)

@@ -8,11 +8,11 @@ exl-id: f1c14b10-6191-4202-9825-23f948714f1e
 source-git-commit: 2a78db97a46150237629eef32086919cacf4998c
 workflow-type: tm+mt
 source-wordcount: '1284'
-ht-degree: 5%
+ht-degree: 9%
 
 ---
 
-# 구현 [!DNL Domain-based Message Authentication, Reporting and Conformance] (DMARC)
+# [!DNL Domain-based Message Authentication, Reporting and Conformance] 구현(DMARC)
 
 이 문서의 목적은 독자에게 전자 메일 인증 방법인 DMARC에 대한 추가 정보를 제공하는 것입니다. DMARC의 작동 방식과 다양한 정책 옵션을 설명함으로써, 독자는 DMARC가 이메일 전달성에 미치는 영향을 더 잘 이해할 수 있습니다.
 
@@ -22,9 +22,9 @@ ht-degree: 5%
 
 DMARC에는 세 가지 정책 옵션이 있습니다.
 
-* **모니터(p=none):** 사서함 공급자/ISP에 메시지에 대해 일반적인 작업을 수행하도록 지시합니다.
+* **모니터(p=none):** 사서함 공급자/ISP가 메시지에 대해 일반적으로 수행하는 작업을 수행하도록 지시합니다.
 * **격리(p=격리):** 사서함 공급자/ISP에 DMARC를 전달하지 않는 메일을 받는 사람의 스팸 또는 정크 폴더로 배달하도록 지시합니다.
-* **거부(p=거부):** 사서함 공급자/ISP에 DMARC를 전달하지 않는 메일을 차단하도록 지시하여 바운스가 발생합니다.
+* **거부(p=거부):** 사서함 공급자/ISP에 DMARC를 전달하지 않아 바운스가 발생하는 메일을 차단하도록 지시합니다.
 
 ## DMARC는 어떻게 작동합니까? {#how}
 
@@ -44,7 +44,8 @@ DMARC는 선택 사항이며, 필수는 아니지만 무료이며, 이메일 수
 
 ## DMARC 구현 우수 사례 {#best-practice}
 
-DMARC는 선택 사항이므로 기본적으로 모든 ESP의 플랫폼에서 구성되지 않습니다. DMARC 레코드가 작동하려면 도메인의 DNS에 DMARC 레코드를 만들어야 합니다. 또한 조직 내에서 DMARC 보고서가 이동해야 하는 위치를 나타내려면 선택한 전자 메일 주소가 필요합니다. DMARC의 잠재적 영향에 대한 DMARC의 이해를 돕기 위해 DMARC 정책을 p=none에서 p=quarantine, p=reject로 상향 조정하여 DMARC 구현을 천천히 롤아웃하는 것이 좋습니다.
+DMARC는 선택 사항이므로 기본적으로 모든 ESP의 플랫폼에서 구성되지 않습니다. DMARC 레코드가 작동하려면 도메인의 DNS에 DMARC 레코드를 만들어야 합니다. 또한 조직 내에서 DMARC 보고서가 이동해야 하는 위치를 나타내려면 선택한 전자 메일 주소가 필요합니다. 가장 좋은 방법은 다음과 같습니다
+DMARC의 잠재적 영향에 대한 DMARC의 이해를 돕기 위해 DMARC 정책을 p=none에서 p=quarantine, p=reject로 상향 조정하여 DMARC 구현을 천천히 롤아웃하는 것이 좋습니다.
 
 1. 받아서 사용하는 피드백을 분석합니다(p=none). 이렇게 하면 수신자는 인증에 실패하는 메시지에 대해 작업을 수행하지 않지만 이메일 보고서를 보낸 사람에게 계속 전송합니다. 또한 합법적인 메시지가 인증에 실패한 경우 SPF/DKIM 문제를 검토하고 수정합니다.
 1. SPF 및 DKIM이 정렬되어 모든 합법적인 이메일에 대한 인증을 전달하는지 확인한 다음, 정책을 (p=quarantine)으로 이동하여 수신 이메일 서버에서 인증에 실패한 이메일을 격리합니다(일반적으로 해당 메시지를 스팸 폴더에 배치함).
@@ -58,19 +59,19 @@ DMARC는 선택 사항이므로 기본적으로 모든 ESP의 플랫폼에서 �
 
 DMARC는 SPF/DKIM에 실패한 이메일에 대한 보고서를 받는 기능을 제공합니다. ISP 서비스에는 발신자가 DMARC 정책에서 RUA/RUF 태그를 통해 받을 수 있는 인증 프로세스의 일부로 생성된 두 개의 다른 보고서가 있습니다.
 
-* **집계 보고서(RUA):** GDPR에 민감한 PII(개인 식별 정보)를 포함하지 않습니다.
-* **법정 보고서(RUF):** GDPR에 민감한 이메일 주소를 포함합니다. 활용하기 전에 GDPR 준수가 필요한 정보를 처리하는 방법을 내부적으로 확인하는 것이 가장 좋습니다.
+* **집계 보고서(RUA):**&#x200B;에 GDPR에 민감한 PII(개인 식별 정보)가 포함되어 있지 않습니다.
+* **포렌식 보고서(RUF):**&#x200B;에 GDPR에 민감한 전자 메일 주소가 있습니다. 활용하기 전에 GDPR 준수가 필요한 정보를 처리하는 방법을 내부적으로 확인하는 것이 가장 좋습니다.
 
 이러한 보고서의 주요 용도는 스푸핑이 시도되는 이메일의 개요를 수신하는 것입니다. 타사 도구를 통해 가장 잘 요약되는 고도의 기술 보고서입니다. DMARC 모니터링을 전문으로 하는 몇 가지 회사는 다음과 같습니다.
 
 * [ValiMail](https://www.valimail.com/products/#automated-delivery)
-* [아가리](https://www.agari.com/)
-* [드마르키안](https://dmarcian.com/)
-* [Proofpoint](https://www.proofpoint.com/us)
+* [Agari](https://www.agari.com/)
+* [Dmarcian](https://dmarcian.com/)
+* [증명 지점](https://www.proofpoint.com/us)
 
 >[!CAUTION]
 >
->보고서를 받기 위해 추가하려는 이메일 주소가 DMARC 레코드가 생성된 도메인 외부에 있는 경우 해당 외부 도메인에 이 도메인을 소유하는 DNS를 지정하도록 승인해야 합니다. 이렇게 하려면 다음에 설명된 단계를 수행합니다. [dmarc.org 설명서](https://dmarc.org/2015/08/receiving-dmarc-reports-outside-your-domain)
+>보고서를 받기 위해 추가하려는 이메일 주소가 DMARC 레코드가 생성된 도메인 외부에 있는 경우 해당 외부 도메인에 이 도메인을 소유하는 DNS를 지정하도록 승인해야 합니다. 이렇게 하려면 [dmarc.org 설명서](https://dmarc.org/2015/08/receiving-dmarc-reports-outside-your-domain)에 설명된 단계를 수행합니다.
 
 ### DMARC 레코드 예 {#example}
 
@@ -82,11 +83,11 @@ v=DMARC1; p=reject; fo=1; rua=mailto:dmarc_rua@emaildefense.proofpoint.com;ruf=m
 
 DMARC 레코드에는 DMARC 태그라는 여러 구성 요소가 있습니다. 각 태그에는 DMARC의 특정 측면을 지정하는 값이 있습니다.
 
-| 태그 이름 | 필수/선택 사항 | 함수 | 예 | 기본값 |
+| 태그 이름 | 필수/선택 사항 | 함수 | 예 | 기본 값 |
 |  ---  |  ---  |  ---  |  ---  |  ---  |
 | v | 필수 여부 | 이 DMARC 태그는 버전을 지정합니다. 현재 버전은 하나만 있으므로 v=DMARC1이라는 고정 값이 있습니다. | V=DMARC1 DMARC1 | DMARC1 |
 | p | 필수 여부 | 선택한 DMARC 정책을 표시하고 수신자에게 인증 검사에 실패한 메일을 보고, 격리 또는 거부하도록 안내합니다. | p=none, 격리 또는 거부 | - |
-| fo | 선택 사항입니다 | 도메인 소유자가 보고 옵션을 지정할 수 있도록 허용합니다. | 0: 모든 것이 실패하면 보고서 생성<br/>1: 실패할 경우 보고서 생성<br/>d: DKIM이 실패할 경우 보고서 생성<br/>s: SPF 실패 시 보고서 생성 | 1(DMARC 보고서에 권장) |
+| fo | 선택 사항입니다 | 도메인 소유자가 보고 옵션을 지정할 수 있도록 허용합니다. | 0: 모든 항목이 실패하면 보고서 생성<br/>1: 모든 항목이 실패하면 보고서 생성<br/>d: DKIM이 실패하면 보고서 생성<br/>s: SPF가 실패하면 보고서 생성 | 1(DMARC 보고서에 권장) |
 | pct | 선택 사항입니다 | 필터링 대상 메시지의 비율을 알려줍니다. | pct=20 | 10 |
 | rua | 선택 사항(권장) | 집계 보고서가 배달될 위치를 식별합니다. | `rua=mailto:aggrep@example.com` | - |
 | 러프 | 선택 사항(권장) | 법의학 보고서가 배달될 위치를 식별합니다. | `ruf=mailto:authfail@example.com` | - |
@@ -98,7 +99,7 @@ DMARC 레코드에는 DMARC 태그라는 여러 구성 요소가 있습니다. �
 
 >[!NOTE]
 >
->Campaign 인스턴스가 AWS에서 호스팅되는 경우 Campaign 컨트롤 패널으로 하위 도메인에 대한 DMARC를 구현할 수 있습니다. [Campaign 컨트롤 패널을 사용하여 DMARC 레코드를 구현하는 방법 알아보기](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/txt-records/dmarc.html).
+>Campaign 인스턴스가 AWS에서 호스팅되는 경우 Campaign 컨트롤 패널으로 하위 도메인에 대한 DMARC를 구현할 수 있습니다. [Campaign 컨트롤 패널을 사용하여 DMARC 레코드를 구현하는 방법을 알아봅니다](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/txt-records/dmarc.html).
 
 DMARC 실패의 일반적인 원인은 &#39;시작&#39; 주소와 &#39;오류 - 종료&#39; 또는 &#39;반환 경로&#39; 주소 간의 오정렬입니다. 이를 방지하기 위해 DMARC를 설정할 때 게재 템플릿에서 &#39;보낸 사람&#39; 및 &#39;오류 받는 사람&#39; 주소 설정을 다시 확인하는 것이 좋습니다.
 
@@ -119,4 +120,4 @@ DMARC 실패의 일반적인 원인은 &#39;시작&#39; 주소와 &#39;오류 - 
 ## 유용한 링크 {#links}
 
 * [DMARC.org](https://dmarc.org/){target="_blank"}
-* [M3AAWG 이메일 인증](https://www.m3aawg.org/sites/default/files/document/M3AAWG_Email_Authentication_Update-2015.pdf){target="_blank"}
+* [M3AAWG 전자 메일 인증](https://www.m3aawg.org/sites/default/files/document/M3AAWG_Email_Authentication_Update-2015.pdf){target="_blank"}

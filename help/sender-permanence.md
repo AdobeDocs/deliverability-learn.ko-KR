@@ -11,7 +11,7 @@ exl-id: f57de522-1361-43a3-8f8b-f9a191986529
 source-git-commit: 9444f8601f2f349398ee5deb9d5f4d4f7abb44f5
 workflow-type: tm+mt
 source-wordcount: '135'
-ht-degree: 5%
+ht-degree: 2%
 
 ---
 
@@ -23,10 +23,10 @@ ht-degree: 5%
 * 일관성은 ISP에게 보낸 사람이 신뢰할 수 있고 잘못된 전송 방침으로 인해 발생하는 신뢰도 문제를 우회하려고 시도하지 않는다는 것을 입증하는 데 중요합니다.
 * 일부 ISP가 발신자의 신뢰도를 조금이라도 고려하기 위해서는 이러한 일관된 전략을 장기간에 걸쳐 유지하는 것이 필요합니다.
 
-**여기 몇 가지 예가 있습니다.**
+**몇 가지 예제는 다음과 같습니다.**
 
 ![전송 영구성](assets/Sender_Permanence_1.png)
 
-![잘못된 전송 영구성](assets/Sender_Permanence_2.png)
+![전송 영구성이 잘못되었습니다](assets/Sender_Permanence_2.png)
 
-![허용 가능한 전송 영구성](assets/Sender_Permanence_3.png)
+![전송 영구성 허용](assets/Sender_Permanence_3.png)
