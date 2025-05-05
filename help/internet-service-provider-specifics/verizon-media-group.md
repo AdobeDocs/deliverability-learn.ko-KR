@@ -16,7 +16,7 @@ ht-degree: 2%
 
 ---
 
-# [!DNL Verizon Media Group](Yahoo, AOL, Verizon 등)
+# [!DNL Verizon Media Group] (Yahoo, AOL, Verizon 등)
 
 [!DNL Verizon Media Group]은(는) 일반적으로 대부분의 B2C 목록에서 상위 3개 도메인 중 하나입니다. 일반적으로 평판 문제가 발생하면 메일을 줄이거나 대량 발송하기 때문에 다소 독특하게 동작합니다.
 
@@ -24,7 +24,7 @@ ht-degree: 2%
 
 ## 중요한 데이터
 
-[!DNL Verizon Media Group](VMG)은 콘텐츠 및 URL 필터링과 스팸 컴플레인을 혼합하여 고유한 스팸 필터를 빌드하고 유지 관리합니다. Gmail과 함께 ISP를 초기에 채택하여 IP 주소 및 도메인별로 이메일을 필터링합니다.
+[!DNL Verizon Media Group] (VMG)은 콘텐츠 및 URL 필터링과 스팸 컴플레인을 혼합하여 고유한 스팸 필터를 빌드하고 유지 관리합니다. Gmail과 함께 ISP를 초기에 채택하여 IP 주소 및 도메인별로 이메일을 필터링합니다.
 
 ## 어떤 데이터를 사용할 수 있습니까
 

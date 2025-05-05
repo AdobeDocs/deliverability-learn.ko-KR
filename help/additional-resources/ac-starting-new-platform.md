@@ -31,7 +31,7 @@ ISP는 이메일 전송에 사용된 적이 없고 갑자기 대량의 이메일
 
 * Adobe에서 보낸 이메일 캠페인에 고유한 전용 하위 도메인을 구성합니다.
 
-* 이 정보가 있으면 **잘못된 주소를 격리 테이블로 가져오기**하십시오.
+* 이 정보가 있으면 **잘못된 주소를 격리 테이블로 가져오기**&#x200B;하십시오.
 플랫폼 시작은 종종 처음으로 주소 목록을 사용할 때 발생하며 완전히 정규화되지 않을 수 있습니다. 잘못된 주소나 허니팟 주소로 전송하는 경우 플랫폼의 평판이 떨어집니다.
 
    * 잘못된 주소 목록이 있는 경우 처음 보내기 전에 격리 테이블로 해당 목록을 가져오는 것이 가장 좋습니다. 격리 테이블은 **[!UICONTROL Administration > Campaign Management > Non deliverables Management > Non deliverables and addresses]**(Campaign Classic) 및 **[!UICONTROL Administration > Channels > Quarantines > Addresses]**(Campaign Standard) 메뉴를 통해 사용할 수 있습니다.

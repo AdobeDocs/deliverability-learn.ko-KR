@@ -15,7 +15,7 @@ ht-degree: 0%
 
 # [!DNL Brand Indicators for Message Identification] 구현(BIMI)
 
-[!DNL Brand Indicators for Message Identification](BIMI)은 참여 플랫폼에서 보낸 사람의 전자 메일 옆에 승인된 로고가 표시되도록 하는 업계 표준입니다.
+[!DNL Brand Indicators for Message Identification] (BIMI)은 참여 플랫폼에서 보낸 사람의 전자 메일 옆에 승인된 로고가 표시되도록 하는 업계 표준입니다.
 
 이 표준을 사용하면 브랜드는 사서함 공급자의 받은 편지함에 표시해야 하는 로고를 결정할 수 있습니다. BIMI DNS(Domain Name System) 레코드에 게시되면 사서함 공급자는 특정 기준을 충족할 경우 이 로고를 선택하여 받은 편지함에 표시할 수 있습니다.
 

@@ -16,7 +16,7 @@ ht-degree: 1%
 
 ---
 
-# [!DNL Microsoft]([!DNL Hotmail], [!DNL Outlook], [!DNL Windows Live] 등)
+# [!DNL Microsoft] ([!DNL Hotmail], [!DNL Outlook], [!DNL Windows Live] 등)
 
 [!DNL Microsoft]은(는) 일반적으로 목록의 구성에 따라 두 번째 또는 세 번째로 큰 공급자이며 다른 ISP와 약간 다른 트래픽을 처리합니다.
 
@@ -28,7 +28,7 @@ ht-degree: 1%
 
 ## 어떤 데이터를 사용할 수 있습니까
 
-[!DNL Microsoft]의 고유 발신자 보고 도구인 [!DNL Smart Network Data Services](SNDS)을 사용하면 전송 중인 메일 수와 허용되는 메일 수와 컴플레인 및 스팸 트랩에 대한 지표를 볼 수 있습니다. 공유된 데이터는 샘플이며 정확한 숫자를 반영하지 않지만 [!DNL Microsoft]이(가) 보낸 사람으로 귀하를 보는 방식을 가장 잘 나타냅니다. [!DNL Microsoft]은(는) 신뢰할 수 있는 사용자 그룹에 대한 정보를 공개적으로 제공하지 않지만 해당 데이터는 [!DNL Return Path Certification] 프로그램을 통해 추가 비용으로 사용할 수 있습니다.
+[!DNL Microsoft]의 고유 발신자 보고 도구인 [!DNL Smart Network Data Services] (SNDS)을 사용하면 전송 중인 메일 수와 허용되는 메일 수와 컴플레인 및 스팸 트랩에 대한 지표를 볼 수 있습니다. 공유된 데이터는 샘플이며 정확한 숫자를 반영하지 않지만 [!DNL Microsoft]이(가) 보낸 사람으로 귀하를 보는 방식을 가장 잘 나타냅니다. [!DNL Microsoft]은(는) 신뢰할 수 있는 사용자 그룹에 대한 정보를 공개적으로 제공하지 않지만 해당 데이터는 [!DNL Return Path Certification] 프로그램을 통해 추가 비용으로 사용할 수 있습니다.
 
 ## 보낸 사람의 신뢰도
 
