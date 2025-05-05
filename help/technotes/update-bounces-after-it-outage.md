@@ -45,8 +45,8 @@ ht-degree: 3%
 
 이 문제의 영향을 받은 수신자를 찾으려면 또는 다른 ISP에서 이 문제가 다시 발생하는 경우 아래 지침을 참조하십시오.
 
-* Campaign Classic v7 및 Campaign v8의 경우 [이 페이지](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/understanding-quarantine-management.html?lang=en#unquarantine-bulk){_blank}를 참조하세요.
-* Campaign Standard은 [이 페이지](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/monitoring-messages/understanding-quarantine-management.html?lang=en#unquarantine-bulk){_blank}를 참조하세요.
+* Campaign Classic v7 및 Campaign v8의 경우 [이 페이지](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/understanding-quarantine-management.html?lang=ko#unquarantine-bulk){_blank}를 참조하세요.
+* Campaign Standard은 [이 페이지](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/monitoring-messages/understanding-quarantine-management.html?lang=ko#unquarantine-bulk){_blank}를 참조하세요.
 
 ### Adobe Journey Optimizer{#ajo-update}
 
@@ -54,5 +54,5 @@ ht-degree: 3%
 
 식별되면 **[!UICONTROL Delete]** 단추를 사용하여 제외 목록에서 이러한 주소를 수동으로 제거할 수 있습니다. 이후 이메일 캠페인에 이러한 주소를 포함할 수 있습니다.
 
-자세한 내용은 [이 섹션](https://experienceleague.adobe.com/docs/journey-optimizer/using/configuration/monitor-reputation/manage-suppression-list.html#remove-from-suppression-list){_blank}을 참조하세요.
+자세한 내용은 [이 섹션](https://experienceleague.adobe.com/docs/journey-optimizer/using/configuration/monitor-reputation/manage-suppression-list.html?lang=ko#remove-from-suppression-list){_blank}을 참조하세요.
 

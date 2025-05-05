@@ -99,7 +99,7 @@ DMARC 레코드에는 DMARC 태그라는 여러 구성 요소가 있습니다. �
 
 >[!NOTE]
 >
->Campaign 인스턴스가 AWS에서 호스팅되는 경우 Campaign 컨트롤 패널으로 하위 도메인에 대한 DMARC를 구현할 수 있습니다. [Campaign 컨트롤 패널을 사용하여 DMARC 레코드를 구현하는 방법을 알아봅니다](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/txt-records/dmarc.html).
+>Campaign 인스턴스가 AWS에서 호스팅되는 경우 Campaign 컨트롤 패널으로 하위 도메인에 대한 DMARC를 구현할 수 있습니다. [Campaign 컨트롤 패널을 사용하여 DMARC 레코드를 구현하는 방법을 알아봅니다](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/txt-records/dmarc.html?lang=ko).
 
 DMARC 실패의 일반적인 원인은 &#39;시작&#39; 주소와 &#39;오류 - 종료&#39; 또는 &#39;반환 경로&#39; 주소 간의 오정렬입니다. 이를 방지하기 위해 DMARC를 설정할 때 게재 템플릿에서 &#39;보낸 사람&#39; 및 &#39;오류 받는 사람&#39; 주소 설정을 다시 확인하는 것이 좋습니다.
 

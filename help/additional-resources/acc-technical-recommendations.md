@@ -39,7 +39,7 @@ MX 규칙(Mail eXchanger)은 보내는 서버와 받는 서버 간의 통신을 
 
 >[!NOTE]
 >
->Adobe Campaign Classic의 MX 관리에 대한 자세한 내용은 [이 섹션](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/additional-configurations/email-deliverability.html#mx-configuration)을 참조하세요.
+>Adobe Campaign Classic의 MX 관리에 대한 자세한 내용은 [이 섹션](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/additional-configurations/email-deliverability.html?lang=ko#mx-configuration)을 참조하세요.
 
 ### TLS {#tls}
 
@@ -88,13 +88,13 @@ SPF 레코드를 정의하는 Recommendations:
 
 >[!NOTE]
 >
->호스팅 또는 하이브리드 설치의 경우 [Enhanced MTA](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-emails/sending-an-email/sending-with-enhanced-mta.html#sending-messages)(으)로 업그레이드하면 모든 도메인이 있는 모든 메시지에 대해 Enhanced MTA에서 DKIM 전자 메일 인증 서명을 수행합니다.
+>호스팅 또는 하이브리드 설치의 경우 [Enhanced MTA](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-emails/sending-an-email/sending-with-enhanced-mta.html?lang=ko#sending-messages)(으)로 업그레이드하면 모든 도메인이 있는 모든 메시지에 대해 Enhanced MTA에서 DKIM 전자 메일 인증 서명을 수행합니다.
 
 Adobe Campaign Classic에서 [DKIM](/help/additional-resources/authentication.md#dkim)을(를) 사용하려면 다음 전제 조건이 필요합니다.
 
 **Adobe Campaign 옵션 선언**: Adobe Campaign에서 DKIM 개인 키는 DKIM 선택기와 도메인을 기반으로 합니다. 현재 선택기가 다른 동일한 도메인/하위 도메인에 대해 여러 개의 개인 키를 만들 수 없습니다. 플랫폼 또는 이메일에서 인증에 사용해야 하는 선택기 도메인/하위 도메인을 정의할 수는 없습니다. 플랫폼은 개인 키 중 하나를 선택할 수 있으며, 이는 인증이 실패할 가능성이 높다는 것을 의미합니다.
 
-* Adobe Campaign 인스턴스에 대해 DomainKeys를 구성한 경우 [도메인 관리 규칙](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/understanding-delivery-failures.html#email-management-rules)에서 **dkim**&#x200B;을(를) 선택하면 됩니다. 그렇지 않으면 DKIM을 대체한 도메인 키와 동일한 구성 단계(개인/공개 키)를 따릅니다.
+* Adobe Campaign 인스턴스에 대해 DomainKeys를 구성한 경우 [도메인 관리 규칙](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/understanding-delivery-failures.html?lang=ko#email-management-rules)에서 **dkim**&#x200B;을(를) 선택하면 됩니다. 그렇지 않으면 DKIM을 대체한 도메인 키와 동일한 구성 단계(개인/공개 키)를 따릅니다.
 * 향상된 버전의 DomainKeys인 DKIM과 동일한 도메인에 대해 DomainKeys 및 DKIM을 모두 활성화할 필요는 없습니다.
 * 현재 DKIM의 유효성을 검사하는 도메인은 AOL, Gmail입니다.
 
@@ -199,7 +199,7 @@ Campaign에서 **&quot;mailto&quot; List-Unsubscribe**&#x200B;을(를) 구현하
 
 규칙에는 명령줄을 생성하는 스크립트가 포함되어야 하며 이메일 헤더에 포함되어야 합니다.
 
-[이 섹션](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/campaign-optimization/about-campaign-typologies.html#typology-rules)에서 Adobe Campaign v7/v8에 유형화 규칙을 만드는 방법을 알아봅니다.
+[이 섹션](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/campaign-optimization/about-campaign-typologies.html?lang=ko#typology-rules)에서 Adobe Campaign v7/v8에 유형화 규칙을 만드는 방법을 알아봅니다.
 
 >[!NOTE]
 >

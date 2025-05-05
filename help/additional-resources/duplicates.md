@@ -37,9 +37,9 @@ ht-degree: 5%
 
 **Adobe Campaign Classic**
 
-* [중복 제거 활동](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/targeting-activities/deduplication.html)
+* [중복 제거 활동](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/targeting-activities/deduplication.html?lang=ko)
 * [중복 제거 활동의 병합 기능 사용](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/use-cases/data-management/deduplication-merge.html?lang=ko)
 
 **Adobe Campaign Standard**
 
-* [가져온 파일에서 데이터 중복 제거](https://experienceleague.adobe.com/docs/campaign-standard/using/managing-processes-and-data/workflow-use-case/data-management/deduplicating-data-imported-file.html)
+* [가져온 파일에서 데이터 중복 제거](https://experienceleague.adobe.com/docs/campaign-standard/using/managing-processes-and-data/workflow-use-case/data-management/deduplicating-data-imported-file.html?lang=ko)
