@@ -6,10 +6,10 @@ doc-type: article
 activity: understand
 team: ACS
 exl-id: 75538ef8-8e4b-4940-8d11-42ebd7c65e93
-source-git-commit: 3616470b31f45d589d323a6b90c7fd5df3b467b7
+source-git-commit: b859229410ca0199f9e9d57025a9fe022834a217
 workflow-type: tm+mt
-source-wordcount: '121'
-ht-degree: 31%
+source-wordcount: '124'
+ht-degree: 32%
 
 ---
 
@@ -33,13 +33,14 @@ ht-degree: 31%
 * [실시간 블랙홀 목록](../../help/additional-resources/blocklist-databases.md)
 * [문제 해결](../../help/additional-resources/troubleshooting.md)
 
-  <!--
-    [IP Certification](../../help/additional-resources/ip-certification.md)
-    [Third-party monitoring tools](../../help/additional-resources/third-party-monitoring-tools.md)-->
+<!--
+[IP Certification](../../help/additional-resources/ip-certification.md)
+[Third-party monitoring tools](../../help/additional-resources/third-party-monitoring-tools.md)
+-->
 
 ## 제품별 리소스
 
-또한 이 섹션에는 게재 능력을 구현하고 Adobe 솔루션을 성공적으로 사용하는 데 도움이 되는 다양한 제품별 리소스가 기재되어 있습니다.
+또한 이 섹션에는 게재 능력을 구현하고 Adobe 솔루션을 성공적으로 사용할 수 있도록 도와주는 제품별 리소스가 다수 나열되어 있습니다.
 
 **[!DNL Adobe Campaign]**
 

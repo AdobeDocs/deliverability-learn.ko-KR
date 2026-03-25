@@ -6,10 +6,10 @@ doc-type: article
 activity: understand
 team: ACS
 exl-id: 4155b89f-a636-404c-8951-563c1b4d0289
-source-git-commit: e7427d6109f3201affa58decde36294d1631bf5b
+source-git-commit: b859229410ca0199f9e9d57025a9fe022834a217
 workflow-type: tm+mt
-source-wordcount: '373'
-ht-degree: 2%
+source-wordcount: '423'
+ht-degree: 9%
 
 ---
 
@@ -29,7 +29,7 @@ ht-degree: 2%
 
   [https://www.spamhaus.org/](https://www.spamhaus.org/)을 참조하세요.
 
-  데이터베이스가 더 중요합니다. 이 리스트에 분류되는 것은 일반적으로 심각한 상황이다. 이 경우 즉시 조치를 취하고 상용 서비스, 게재 가능성 및 [고객 지원 센터 Adobe](https://helpx.adobe.com/kr/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)을 경고해야 합니다.
+  데이터베이스가 더 중요합니다. 이 리스트에 분류되는 것은 일반적으로 심각한 상황이다. 이 경우 즉시 조치를 취하고 상용 서비스, 게재 가능성 및 [Adobe 고객 지원 센터](https://helpx.adobe.com/kr/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)에 경고해야 합니다.
 
 * **SpamCop**
 
@@ -41,18 +41,20 @@ ht-degree: 2%
 
   [https://www.uribl.com/](https://www.uribl.com/)을 참조하세요.
 
-  이 목록은 스팸으로 선언된 메시지에 정기적으로 나타나는 도메인을 식별합니다. 도메인이 이 목록에 표시되는 경우 전달성에 상당한 영향을 줄 수 있습니다. 배달 서비스 및 [고객 지원 센터 Adobe](https://helpx.adobe.com/kr/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)에 즉시 알려야 합니다.
+  이 목록은 스팸으로 선언된 메시지에 정기적으로 나타나는 도메인을 식별합니다. 도메인이 이 목록에 표시되는 경우 전달성에 상당한 영향을 줄 수 있습니다. 배달 서비스 및 [Adobe 고객 지원 센터](https://helpx.adobe.com/kr/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)에 즉시 알려야 합니다.
 
 * **SURBL**
 
   [https://surbl.org/](https://surbl.org/)을 참조하세요.
 
-  SURBL은 스팸에 정기적으로 나타나는 웹 사이트를 식별합니다. 도메인이 이 목록에 표시되는 경우 전달성에 상당한 영향을 줄 수 있습니다. 배달 서비스 및 [고객 지원 센터 Adobe](https://helpx.adobe.com/kr/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)에 즉시 알려야 합니다.
+  SURBL은 스팸에 정기적으로 나타나는 웹 사이트를 식별합니다. 도메인이 이 목록에 표시되는 경우 전달성에 상당한 영향을 줄 수 있습니다. 배달 서비스 및 [Adobe 고객 지원 센터](https://helpx.adobe.com/kr/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)에 즉시 알려야 합니다.
 
 * **iX 유지**
 
   이것은 IP 목록이며 독일에서 널리 사용되고 있습니다. [https://www.heise.de/ix/nixspam/](https://www.heise.de/ix/nixspam/)을 참조하세요.
 
-<!--* SORBS
+<!--
+* SORBS
 
-  [https://www.nl.sorbs.net](https://www.nl.sorbs.net) compiles a list of IP addresses that are reputed to be dynamic IP address (i.e. attributed temporarily to ISP subscribers) or "open relay" addresses. Certain domains check whether the IP address of a sender is not listed on this site before accepting email. Checking the IP addresses on this site can prove useful.-->
+  [https://www.nl.sorbs.net](https://www.nl.sorbs.net) compiles a list of IP addresses that are reputed to be dynamic IP address (i.e. attributed temporarily to ISP subscribers) or "open relay" addresses. Certain domains check whether the IP address of a sender is not listed on this site before accepting email. Checking the IP addresses on this site can prove useful.
+-->
