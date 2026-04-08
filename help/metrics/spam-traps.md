@@ -9,8 +9,8 @@ activity: understand
 team: ACS
 exl-id: ffacc1b1-bf3f-466e-9a1d-63aad4d2ec45
 source-git-commit: 9444f8601f2f349398ee5deb9d5f4d4f7abb44f5
-workflow-type: tm+mt
-source-wordcount: '416'
+workflow-type: ht
+source-wordcount: '495'
 ht-degree: 100%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 100%
 
 재활용된 스팸 트랩은 한 번 유효했지만 더 이상 사용되지 않는 주소입니다. 목록을 최대한 깔끔하게 유지하는 중요한 방법은 전체 목록에 이메일을 정기적으로 보내고 바운스된 이메일을 적절히 제거하는 것입니다. 이렇게 하면 중단된 이메일 주소를 격리하고 더 이상 사용하지 못하도록 할 수 있습니다.
 
-어떤 경우에는 주소를 30일 이내에 재활용할 수 있습니다. 규칙적으로 보내는 것은 비활성 사용자를 정기적으로 억제할 뿐만 아니라, 좋은 목록 예방의 핵심입니다. **재참여 캠페인**&#x200B;은 일반적으로 정교한 이메일 마케팅 프로그램의 일부입니다. 이 캠페인 스타일을 사용하면 발신자가 더 이상 이메일로 전송되지 않을 사용자를 다시 확보할 수 있습니다.
+어떤 경우에는 주소를 30일 이내에 재활용할 수 있습니다. 규칙적으로 보내는 것은 비활성 사용자를 정기적으로 억제하고 목록 위생을 양호하게 유지하기 위한 핵심 요소입니다. **재참여 캠페인**&#x200B;은 일반적으로 정교한 이메일 마케팅 프로그램의 일부입니다. 이 캠페인 스타일을 사용하면 발신자가 더 이상 이메일로 전송되지 않을 사용자를 다시 확보할 수 있습니다.
 
 ## 오타
 
@@ -43,9 +43,9 @@ ht-degree: 100%
 **Adobe Campaign Classic**
 
 * [SpamAssassin](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/deliverability-management/spamassassin.html?lang=ko#using-spamassassin)
-* [이중 옵트인으로 구독 양식 만들기](https://experienceleague.adobe.com/docs/campaign-classic/using/designing-content/web-forms/use-cases--web-forms.html?lang=ko#create-a-subscription--form-with-double-opt-in)
+* [중복 옵트인으로 구독 양식 만들기](https://experienceleague.adobe.com/docs/campaign-classic/using/designing-content/web-forms/use-cases--web-forms.html?lang=ko#create-a-subscription--form-with-double-opt-in)
 
 **Adobe Campaign Standard**
 
 * [이메일 및 스팸 방지 분석 미리 보기](https://experienceleague.adobe.com/docs/campaign-standard-learn/tutorials/designing-content/email-designer/preview-your-email.html?lang=ko#designing-content)
-* [이중 옵트인 프로세스](https://experienceleague.adobe.com/docs/campaign-standard/using/communication-channels/landing-pages/setting-up-a-double-opt-in-process.html?lang=ko#communication-channels)
+* [중복 옵트인 프로세스](https://experienceleague.adobe.com/docs/campaign-standard/using/communication-channels/landing-pages/setting-up-a-double-opt-in-process.html?lang=ko#communication-channels)

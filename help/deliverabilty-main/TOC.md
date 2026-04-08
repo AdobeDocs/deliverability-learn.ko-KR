@@ -7,9 +7,9 @@ role: Leader, User
 level: Beginner
 auto-video-transcripts: true
 source-git-commit: 0d78f4c588ae55c61a7e40e07a3b8d33ce84cb01
-workflow-type: tm+mt
-source-wordcount: '179'
-ht-degree: 97%
+workflow-type: ht
+source-wordcount: '182'
+ht-degree: 100%
 
 ---
 
@@ -55,7 +55,7 @@ ht-degree: 97%
       + [재참여 모범 사례](/help/additional-resources/re-engagement.md)
       + [실시간 블랙홀 목록](/help/additional-resources/blocklist-databases.md)
       + [문제 해결](/help/additional-resources/troubleshooting.md)
-   + [!DNL Adobe Campaign]에 대한 리소스 {#campaign}
+   + [!DNL Adobe Campaign] 리소스 {#campaign}
       + [도메인 이름 설정](/help/additional-resources/ac-domain-name-setup.md)
       + [SSL 인증서 요청 프로세스](/help/additional-resources/ac-ssl-certificate-request.md)
       + [새 플랫폼 시작](/help/additional-resources/ac-starting-new-platform.md)

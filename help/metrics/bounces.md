@@ -9,8 +9,8 @@ activity: understand
 team: ACS
 exl-id: 6338eb67-3efd-476e-8b26-97bbb6a1d35f
 source-git-commit: 9444f8601f2f349398ee5deb9d5f4d4f7abb44f5
-workflow-type: tm+mt
-source-wordcount: '429'
+workflow-type: ht
+source-wordcount: '527'
 ht-degree: 100%
 
 ---
@@ -52,11 +52,11 @@ ht-degree: 100%
 **Adobe Campaign Classic**
 
 * [게재 실패 유형 및 이유](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/understanding-delivery-failures.html?lang=ko#delivery-failure-types-and-reasons)
-* [바운스 메일 관리](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/understanding-delivery-failures.html?lang=ko#bounce-mail-management)
-* [게재 불가 및 바운스 보고서](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/reports-on-deliveries/global-reports.html?lang=ko#non-deliverables-and-bounces)
+* [바운스 이메일 관리](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/understanding-delivery-failures.html?lang=ko#bounce-mail-management)
+* [비게재 항목 및 바운스 보고서](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/reports-on-deliveries/global-reports.html?lang=ko#non-deliverables-and-bounces)
 
 **Adobe Campaign Standard**
 
 * [게재 실패 유형 및 이유](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/monitoring-messages/understanding-delivery-failures.html?lang=ko#delivery-failure-types-and-reasons)
-* [바운스 메일 조건](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/monitoring-messages/understanding-delivery-failures.html?lang=ko#bounce-mail-qualification)
+* [바운스 이메일 선별](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/monitoring-messages/understanding-delivery-failures.html?lang=ko#bounce-mail-qualification)
 * [바운스 요약 보고서](https://experienceleague.adobe.com/docs/campaign-standard/using/reporting/list-of-reports/bounce-summary.html?lang=ko#reporting)

@@ -10,9 +10,9 @@ level: Beginner
 team: ACS
 exl-id: 929e325a-514d-49e3-91cf-c8383bb9465e
 source-git-commit: 7e1bd4d4d691e2598770416b002b8eff344cef74
-workflow-type: tm+mt
-source-wordcount: '429'
-ht-degree: 94%
+workflow-type: ht
+source-wordcount: '461'
+ht-degree: 100%
 
 ---
 
@@ -26,7 +26,7 @@ ht-degree: 94%
 
 현실을 살펴보겠습니다. 오늘날에는 그 어느 때보다도 두드러져야 합니다. 즉, 고객에게 개인화되고, 고유하며, 관련성 높은 고객 경험을 제공합니다. 그렇지 않으면 고객을 영원히 잃게 됩니다. 고객이 계속 참여하도록 유도하는 통합적이고 동적인 멀티채널 전략을 수립해야 합니다.
 
-이 안내서를 사용하여 주요 전달성 용어, 개념 및 접근 방식을 학습하여 앞서 나갈 수 있습니다. 전달성, 받은 편지함 배치 및 매출에 높은 우선 순위를 두고 마케팅 믹스의 최전선에서 이메일 채널을 유지하는 데 사용합니다.
+이 안내서를 사용하여 주요 전달성 용어, 개념 및 접근 방식을 학습하여 앞서 나갈 수 있습니다. 전달성, 받은 편지함 배치, 매출에 높은 우선순위를 두고 마케팅 믹스의 최전선에서 이메일 채널을 유지하는 데 활용하세요.
 
 전달성 모범 사례 안내서에서는 다음 주제를 다룹니다.
 
@@ -34,7 +34,7 @@ ht-degree: 94%
 2. [전달성 지표](/help/metrics/metrics-overview.md)
 3. [참여](/help/engagement.md)
 4. [전환 프로세스 - 이메일 플랫폼 전환](/help/transition-process/switching-email-platforms.md)
-5. [첫 노출 수 - 목록 컬렉션 및 시작 이메일](/help/first-impressions/address-collection-and-list-growth.md)
+5. [첫 노출 수 - 목록 컬렉션 및 환영 이메일](/help/first-impressions/address-collection-and-list-growth.md)
 6. [최적의 전달성을 위한 콘텐츠 모범 사례](/help/content-best-practices-for-optimal-delivery.md)
 7. [보낸 사람 영구성](/help/sender-permanence.md)
 8. [인터넷 서비스 공급자 세부 정보](/help/internet-service-provider-specifics/overview.md)
@@ -47,7 +47,7 @@ ht-degree: 94%
 
 ## 소스
 
-[!DNL Heinz Tschabitscher], [&quot;전 세계적에서 얼마나 많은 사람들이 이메일을 사용합니까?&quot;](https://www.lifewire.com/how-many-email-users-are-there-1171213), Lifewire, 2019년 6월 24일.
+[!DNL Heinz Tschabitscher], [&quot;How Many People Use Email Worldwide?&quot;](https://www.lifewire.com/how-many-email-users-are-there-1171213), Lifewire, 2019년 6월 24일.
 
 [!DNL Lori Lewis], [&quot;2019: 이것이 매순간 인터넷에서 일어나는 일입니다.”](https://www.allaccess.com/merge/archive/29580/2019-this-is-what-happens-in-an-internet-minute), Merge, 2019년 3월 5일
 

@@ -9,8 +9,8 @@ activity: understand
 team: ACS
 exl-id: 0343820d-f5af-4b8a-bcab-dbb47ae7aecb
 source-git-commit: 9444f8601f2f349398ee5deb9d5f4d4f7abb44f5
-workflow-type: tm+mt
-source-wordcount: '276'
+workflow-type: ht
+source-wordcount: '307'
 ht-degree: 100%
 
 ---
@@ -35,8 +35,8 @@ ht-degree: 100%
 
 **Adobe Campaign Classic**
 
-* [지표 추적](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/reports-on-deliveries/delivery-reports.html?lang=ko#tracking-indicators)
+* [추적 지표](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/reports-on-deliveries/delivery-reports.html?lang=ko#tracking-indicators)
 
 **Adobe Campaign Standard**
 
-* [불만 사항 보고서](https://experienceleague.adobe.com/docs/campaign-standard/using/reporting/list-of-reports/complaints.html?lang=ko#reporting)
+* [컴플레인 보고서](https://experienceleague.adobe.com/docs/campaign-standard/using/reporting/list-of-reports/complaints.html?lang=ko#reporting)
