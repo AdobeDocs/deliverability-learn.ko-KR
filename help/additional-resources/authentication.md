@@ -6,9 +6,25 @@ doc-type: article
 activity: understand
 team: ACS
 exl-id: 03609139-b39b-4051-bcde-9ac7c5358b87
-source-git-commit: d6094cd2ef0a8a7741e7d8aa4db15499fad08f90
+TQID: https://experienceleague.adobe.com/zuhBmNWmF8CoCSNofsg3FKCcQFLOFfZmRutB2P1L4-U
+product_v2:
+  - id: b27e5950-9033-45ac-9f86-eb22e567f615
+  - id: d0a3eab4-7b10-4d96-a71e-6c0f8e7b7c87
+  - id: dfc56824-e8b9-499e-85d4-21aedb507314
+feature_v2:
+  - id: ea90ebee-5c84-42d9-8b21-006bdabc95a3
+  - id: f71e690b-4480-4b67-9ef5-88f42f9cdfdb
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+level_v2:
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+  - id: d095671a-1355-40aa-8b5f-06c33c68080b
+source-git-commit: 75df8537199680e5f1fc4b98cefdb05220fee7bf
 workflow-type: tm+mt
-source-wordcount: '757'
+source-wordcount: 769
 ht-degree: 0%
 
 ---
@@ -39,28 +55,28 @@ SPF를 확인하면 발신자 도메인의 유효성을 평가할 수 있습니�
 
 DNS 서버 수준에서 수행된 레코드는 최대 48시간이 소요될 수 있습니다. 이 지연은 수신 서버의 DNS 캐시를 새로 고치는 빈도에 따라 다릅니다.
 
-## D김 {#dkim}
+## DKIM {#dkim}
 
 DKIM(DomainKeys Identified Mail) 인증은 SPF의 후속 인증입니다. 수신 이메일 서버가 메시지를 보낸 사람이 실제로 메시지를 보냈는지, 그리고 메시지 콘텐츠가 원래 보낸 시간(및 DKIM &quot;서명&quot;)과 받은 시간 사이에 변경되었는지 확인할 수 있는 공개 키 암호화를 사용합니다. 이 표준은 일반적으로 &quot;보낸 사람&quot; 또는 &quot;보낸 사람&quot; 헤더의 도메인을 사용합니다.
 
-DKIM은 DomainKeys, Yahoo! 그리고 Cisco는 인터넷 메일 인증 원칙을 확인했으며 발신자 도메인의 신뢰성을 확인하고 메시지의 무결성을 보장하는 데 사용됩니다.
+DKIM은 DomainKeys, Yahoo!의 조합에서 가져옵니다. 그리고 Cisco는 인터넷 메일 인증 원칙을 확인했으며 발신자 도메인의 신뢰성을 확인하고 메시지의 무결성을 보장하는 데 사용됩니다.
 
-DKIM이 **도메인 키** 인증을 대체했습니다.
+DKIM이 **DomainKeys** 인증을 대체했습니다.
 
 DKIM을 사용하려면 몇 가지 전제 조건이 필요합니다.
 
-* **보안**: 암호화는 DKIM의 키 요소입니다. DKIM의 보안 수준을 보장하기 위해 권장되는 암호화 크기로 1024b를 사용하는 것이 좋습니다. 낮은 DKIM 키는 대부분의 액세스 공급자가 유효한 것으로 간주하지 않습니다.
+* **보안**: 암호화는 DKIM의 키 요소입니다. DKIM의 보안 수준을 보장하기 위해 권장되는 암호화 크기로 1024b를 사용하는 것이 좋습니다. 대부분의 액세스 공급자는 낮은 DKIM 키를 유효한 것으로 간주하지 않습니다.
 * **신뢰도**: 신뢰도는 IP 및/또는 도메인을 기반으로 하지만 덜 투명한 DKIM 선택기도 고려해야 할 핵심 요소입니다. 선택기를 선택하는 것이 중요합니다. 누구나 사용할 수 있으므로 신뢰도가 낮은 &quot;기본&quot; 선택기를 유지하지 마십시오. **보존 및 획득 통신** 및 인증을 위해 다른 선택기를 구현해야 합니다.
 
 [이 섹션](/help/additional-resources/acc-technical-recommendations.md#dkim-acc)에서 Campaign Classic을 사용할 때 DKIM 필수 구성 요소에 대해 자세히 알아보세요.
 
 ## DMARC {#dmarc}
 
-DMARC(도메인 기반 메시지 인증, 보고 및 적합성)는 가장 최근의 이메일 인증 형식이며 SPF 및 DKIM 인증을 사용하여 이메일의 성공 여부를 결정합니다. DMARC는 다음과 같은 두 가지 중요한 점에서 독특하고 강력합니다.
+DMARC(Domain-based Message Authentication, Reporting and Conformance)는 가장 최근의 이메일 인증 형식이며 SPF 및 DKIM 인증 모두에 의존하여 이메일 통과 또는 실패 여부를 결정합니다. DMARC은 다음 두 가지 중요한 면에서 독특하고 강력합니다.
 
 * 적합성 - 이를 통해 발신자는 인증에 실패한 모든 메시지를 어떻게 할지 ISP에 지시할 수 있습니다(예: 승인하지 않음).
-* 보고 - DMARC 인증에 실패한 모든 메시지를 각 메시지에 사용된 &quot;보낸 사람&quot; 도메인 및 IP 주소와 함께 보여주는 자세한 보고서를 보낸 사람에게 제공합니다. 이를 통해 회사는 인증에 실패하고 일부 유형의 &quot;수정&quot;(예: SPF 레코드에 IP 주소 추가)이 필요한 합법적인 이메일과 이메일 도메인에서 피싱 시도의 소스 및 보급을 식별할 수 있습니다.
+* 보고 - 보낸 사람에게 &quot;보낸 사람&quot; 도메인 및 각각에 사용된 IP 주소와 함께 DMARC 인증에 실패한 모든 메시지를 표시하는 자세한 보고서를 제공합니다. 이를 통해 회사는 인증에 실패하고 일부 유형의 &quot;수정&quot;(예: SPF 레코드에 IP 주소 추가)이 필요한 합법적인 이메일과 이메일 도메인에서 피싱 시도의 소스 및 보급을 식별할 수 있습니다.
 
 >[!NOTE]
 >
->DMARC는 [250ok](https://250ok.com/)에서 생성한 보고서를 활용할 수 있습니다.
+>DMARC은 [250ok](https://250ok.com/)에서 생성한 보고서를 활용할 수 있습니다.

@@ -8,9 +8,19 @@ doc-type: article
 activity: understand
 team: TM
 exl-id: 1007b0ea-7a62-4b46-ba32-191df64a15be
-source-git-commit: 9444f8601f2f349398ee5deb9d5f4d4f7abb44f5
+TQID: https://experienceleague.adobe.com/KG0GoucZ5XT-U2VHzaH1DschMaYb62EJvYzordlrw1E
+product_v2:
+  - id: b27e5950-9033-45ac-9f86-eb22e567f615
+  - id: d0a3eab4-7b10-4d96-a71e-6c0f8e7b7c87
+  - id: dfc56824-e8b9-499e-85d4-21aedb507314
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+level_v2:
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+source-git-commit: 75df8537199680e5f1fc4b98cefdb05220fee7bf
 workflow-type: tm+mt
-source-wordcount: '572'
+source-wordcount: 576
 ht-degree: 0%
 
 ---
@@ -36,7 +46,7 @@ ht-degree: 0%
 **예상 설정**
 그들에게 긍정적인 경험에 초점을 맞추고 있다는 것을 분명히 해라. 그들이 당신에게 무엇을 기대해야 하는지 그리고 얼마나 자주 기대해야 하는지 진술하십시오. 그들이 자신의 경험을 쉽게 관리할 수 있는 방법을 제공하는 것(즉, 선호 센터에 대한 링크)도 좋은 생각이다. 또한 사용자가 구독 중인 콘텐츠를 참조할 수 있도록 이전 콘텐츠에 링크를 추가하는 것이 좋습니다.
 
-**브랜드에 대한 느낌을 얻을 수 있도록 허용**
+**브랜드에 대한 느낌을 받을 수 있도록 합니다.**
 브랜드는 저마다 목소리가 있습니다. 환영 이메일에 내 메시지가 명확하게 표시되도록 하십시오. 이렇게 하면 새 구독자가 브랜드와 더 많이 연결하고 이후 이메일의 스타일 변경에 의해 놀라게 되는 것을 방지할 수 있습니다.
 
 **간결하게 유지**

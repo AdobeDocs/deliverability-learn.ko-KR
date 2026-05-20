@@ -6,10 +6,27 @@ doc-type: article
 activity: understand
 team: ACS
 exl-id: 8a78abd3-afba-49a7-a2ae-8b2c75326749
-source-git-commit: 0be68f5674904aa105985a6e5fc4771c41f7fe48
+TQID: https://experienceleague.adobe.com/zM1boPuxPGJbjlSk1ncR7vTvrhe529sv-OCZwNTCHRE
+product_v2:
+  - id: b27e5950-9033-45ac-9f86-eb22e567f615
+  - id: d0a3eab4-7b10-4d96-a71e-6c0f8e7b7c87
+  - id: dfc56824-e8b9-499e-85d4-21aedb507314
+feature_v2:
+  - id: b3b8a63f-51fc-40f6-a7d2-a31c5d49fb45
+  - id: c5f60233-d5ea-4453-a799-0ad258b4d399
+  - id: f71e690b-4480-4b67-9ef5-88f42f9cdfdb
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+level_v2:
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2:
+  - id: d095671a-1355-40aa-8b5f-06c33c68080b
+  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+source-git-commit: 75df8537199680e5f1fc4b98cefdb05220fee7bf
 workflow-type: tm+mt
-source-wordcount: '2124'
-ht-degree: 1%
+source-wordcount: 2374
+ht-degree: 4%
 
 ---
 
@@ -47,14 +64,14 @@ SSL(HTTPS)을 통해 **이러한 도메인을 보호하는 것이 좋습니다**
 | 낮은 보증 인증서 | 도메인 확인 인증서라고도 하는 낮은 보증 인증서는 인증서에 도메인 이름만 포함하고 비즈니스/조직 이름은 포함하지 않습니다. |
 | PEM(Privacy Enhanced Mail) | ASCII(Base64) 데이터가 포함된 확장명이 .pem인 인증서입니다. 이러한 인증서는 &quot; - - - - - - - BEGIN CERTIFICATE - - - -&quot; 줄로 시작합니다. |
 | 루트 인증서 | 인증 기관은 트리 구조의 형태로 인증서를 발급합니다. 루트 인증서는 트리의 최상위 인증서입니다. |
-| SAN(주체 대체 이름) | 주체 대체 이름은 단일 SSL 인증서의 일부로 서명해야 하는 추가 호스트 이름(사이트, IP 주소, 일반 이름 등)입니다. |
+| SAN(주체 대체 이름) | 주체 대체 이름은 추가 호스트 이름(사이트, IP 주소, 일반 이름 등)입니다. 단일 SSL 인증서의 일부로 서명해야 합니다. |
 | 자체 서명된 인증서 | 신뢰할 수 있는 인증 기관이 아니라 인증서를 만드는 사람이 서명한 인증서. 자체 서명된 인증서는 CA에서 서명한 인증서와 동일한 수준의 암호화를 활성화할 수 있지만 두 가지 주요 단점이 있습니다.<ul><li>방문자의 연결이 하이재킹될 수 있으므로 공격자는 전송된 모든 데이터를 볼 수 있습니다(따라서 연결 암호화의 목적 상실)</li><li> 신뢰할 수 있는 인증서처럼 인증서를 해지할 수 없습니다.</li></ul> |
 | SSL(보안 소켓 레이어) | 웹 서버와 브라우저 간에 암호화된 링크를 설정하는 표준 보안 기술입니다. |
 | 와일드카드 인증서 | 와일드카드 인증서는 *.adobe.com과 같은 단일 도메인 이름에서 무제한으로 첫 번째 수준 하위 도메인을 보호할 수 있습니다. |
 
 ## 주요 단계
 
-1. CSR(인증서 서명 요청) 파일을 요청하고 필요한 정보(국가, 주, 도시, 조직 이름, 조직 단위 이름 등)를 Adobe에 제공합니다.
+1. CSR(인증서 서명 요청) 파일을 요청하고 필요한 정보(국가, 주, 도시, 조직 이름, 조직 단위 이름 등)를 제공합니다. Adobe으로.
 1. Adobe에서 생성한 CSR 파일의 유효성을 확인하고 제공한 모든 정보가 올바른지 확인하십시오.
 1. CSR 세부 정보를 사용하여 신뢰할 수 있는 인증 기관<!--taking care of asking for using the subjectAltName SSL extension (SAN) if it is for several domain names, and get/purchase the resulting certificate (ideally) in PEM format for Apache server-->에서 서명한 인증서를 생성합니다.
 1. SSL 인증서의 유효성을 검사하고 CSR과 일치하는지 확인합니다.
@@ -67,7 +84,7 @@ SSL(HTTPS)을 통해 **이러한 도메인을 보호하는 것이 좋습니다**
 
 ### 전제 조건
 
-도메인 이름과 보안할 기능(추적, 미러 페이지, 웹 앱 등)을 식별해야 합니다.
+도메인 이름과 함수(추적, 미러 페이지, 웹 앱 등)를 식별해야 합니다. 보안을 위해.
 >[!NOTE]
 >
 >Adobe은 포함할 도메인 이름 및 함수를 정의하는 데 도움이 될 수 있습니다. 자세한 내용은 Adobe 계정 팀에 문의하십시오.
@@ -107,7 +124,7 @@ CSR(인증서 서명 요청) 파일을 가져오려면 아래 단계를 수행�
 
 | 제공할 정보 | 예제 값 | 메모 |
 |--- |--- |--- |
-| 국가 [C] | 미국 | 두 글자로 된 코드여야 합니다. 전체 국가 목록 [여기](https://www.ssl.com/csrs/country_codes/)에 액세스합니다.</br>*참고: 영국은 GB(영국 아님)를 사용합니다.* |
+| 국가 [C] | 미국 | 두 글자로 된 코드여야 합니다. 전체 국가 목록에 액세스 [여기](https://www.ssl.com/csrs/country_codes/).</br>*참고: 영국은 GB(영국 아님)를 사용합니다.* |
 | 시/도 이름 [ST] | 일리노이 | 해당하는 경우. 값은 약어가 아닌 전체 이름이어야 합니다. |
 | 구/군/시 이름 [L] | 시카고 | |
 | 조직 이름 [O] | ACME | |

@@ -9,14 +9,30 @@ role: Admin, Leader, User
 level: Beginner
 team: TM
 exl-id: d706cb90-828a-4ab3-8f93-c9bd71553d63
-source-git-commit: 6b312cdbba496818337c97ec4f42962aea757901
+TQID: https://experienceleague.adobe.com/pbp5vbHUIHSL9zL9gQf4LpIhEYZI1umEesy3czbJx-4
+product_v2:
+  - id: b27e5950-9033-45ac-9f86-eb22e567f615
+  - id: d0a3eab4-7b10-4d96-a71e-6c0f8e7b7c87
+  - id: dfc56824-e8b9-499e-85d4-21aedb507314
+feature_v2:
+  - id: ea90ebee-5c84-42d9-8b21-006bdabc95a3
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+level_v2:
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+source-git-commit: 75df8537199680e5f1fc4b98cefdb05220fee7bf
 workflow-type: tm+mt
-source-wordcount: '335'
+source-wordcount: 335
 ht-degree: 1%
 
 ---
 
-# [!DNL Microsoft] ([!DNL Hotmail], [!DNL Outlook], [!DNL Windows Live] 등)
+# [!DNL Microsoft]&#x200B;([!DNL Hotmail], [!DNL Outlook], [!DNL Windows Live] 등)
 
 [!DNL Microsoft]은(는) 일반적으로 목록의 구성에 따라 두 번째 또는 세 번째로 큰 공급자이며 다른 ISP와 약간 다른 트래픽을 처리합니다.
 
@@ -28,7 +44,7 @@ ht-degree: 1%
 
 ## 어떤 데이터를 사용할 수 있습니까
 
-[!DNL Microsoft]의 고유 발신자 보고 도구인 [!DNL Smart Network Data Services] (SNDS)을 사용하면 전송 중인 메일 수와 허용되는 메일 수와 컴플레인 및 스팸 트랩에 대한 지표를 볼 수 있습니다. 공유된 데이터는 샘플이며 정확한 숫자를 반영하지 않지만 [!DNL Microsoft]이(가) 보낸 사람으로 귀하를 보는 방식을 가장 잘 나타냅니다. [!DNL Microsoft]은(는) 신뢰할 수 있는 사용자 그룹에 대한 정보를 공개적으로 제공하지 않지만 해당 데이터는 [!DNL Return Path Certification] 프로그램을 통해 추가 비용으로 사용할 수 있습니다.
+[!DNL Microsoft]의 고유 발신자 보고 도구인 [!DNL Smart Network Data Services]&#x200B;(SNDS)을 사용하면 전송 중인 메일 수와 허용되는 메일 수와 컴플레인 및 스팸 트랩에 대한 지표를 볼 수 있습니다. 공유된 데이터는 샘플이며 정확한 숫자를 반영하지 않지만 [!DNL Microsoft]이(가) 보낸 사람으로 귀하를 보는 방식을 가장 잘 나타냅니다. [!DNL Microsoft]은(는) 신뢰할 수 있는 사용자 그룹에 대한 정보를 공개적으로 제공하지 않지만 해당 데이터는 [!DNL Return Path Certification] 프로그램을 통해 추가 비용으로 사용할 수 있습니다.
 
 ## 보낸 사람의 신뢰도
 
