@@ -100,7 +100,7 @@ CSR(인증서 서명 요청) 파일을 가져오려면 아래 단계를 수행�
 다음은 따라야 할 몇 가지 모범 사례입니다.
 
 * 위임된 하위 도메인당 요청을 한 개 발생시킵니다.
-* 여러 하위 도메인을 단일 CSR 요청으로 결합할 수 있지만 동일한 환경 내에서만 가능합니다. 예를 들어 Campaign Classic에서 마케팅 서버, [중간 소싱 서버](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/install-campaign-on-prem/mid-sourcing-server.html) 및 [실행 인스턴스](https://experienceleague.adobe.com/docs/campaign-classic/using/transactional-messaging/configure-transactional-messaging/configuring-instances.html#execution-instance)는 세 개의 개별 환경입니다.
+* 여러 하위 도메인을 단일 CSR 요청으로 결합할 수 있지만 동일한 환경 내에서만 가능합니다. 예를 들어 Campaign Classic에서 마케팅 서버, [중간 소싱 서버](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/install-campaign-on-prem/mid-sourcing-server.html?lang=ko) 및 [실행 인스턴스](https://experienceleague.adobe.com/docs/campaign-classic/using/transactional-messaging/configure-transactional-messaging/configuring-instances.html?lang=ko#execution-instance)는 세 개의 개별 환경입니다.
 * SSL 인증서 갱신 전에 새 CSR을 받아야 합니다. 1년 이상 전의 이전 CSR 파일을 사용하지 마십시오.
 
 다음 정보를 제공해야 합니다.
@@ -216,7 +216,7 @@ SSL 인증서가 제대로 설치되지 않은 경우 다음 경고가 표시됩
 
 * 인증서 만료일 최소 2주 전에 업데이트된 인증서를 요청하려면 지원 티켓을 만드십시오. CSR 세부 사항이 변경되지 않은 경우에는 추가 CSR을 요청할 필요가 없습니다.
 
-* [Campaign 컨트롤 패널](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=ko)에 대한 액세스 권한이 있고 환경이 AWS 환경에서 Adobe에 의해 호스팅되는 경우 만료되기 전에 Campaign 컨트롤 패널을 사용하여 인증서를 갱신할 수 있습니다. 자세한 내용은 [이 섹션](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/monitoring-ssl-certificates.html#monitoring-certificates)을 참조하십시오.
+* [Campaign 컨트롤 패널](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=ko)에 대한 액세스 권한이 있고 환경이 AWS 환경에서 Adobe에 의해 호스팅되는 경우 만료되기 전에 Campaign 컨트롤 패널을 사용하여 인증서를 갱신할 수 있습니다. 자세한 내용은 [이 섹션](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/monitoring-ssl-certificates.html?lang=ko#monitoring-certificates)을 참조하십시오.
 
 ### 8단계 - 특정 구성 업데이트 {#update-configuration}
 
@@ -224,7 +224,7 @@ SSL 인증서가 제대로 설치되지 않은 경우 다음 경고가 표시됩
 
 >[!NOTE]
 >
->Campaign Classic의 경우 업데이트할 URL은 주로 [배포 마법사](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/initial-configuration/deploying-an-instance.html#deployment-wizard)와 [외부 계정](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/accessing-external-database/external-accounts.html)&#x200B;(추적, 미러 페이지 및 공개 리소스 도메인)에 있습니다. Campaign Standard의 경우 [브랜딩 구성](https://experienceleague.adobe.com/docs/campaign-standard/using/administrating/application-settings/branding.html#about-brand-identity)을 참조하세요.
+>Campaign Classic의 경우 업데이트할 URL은 주로 [배포 마법사](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/initial-configuration/deploying-an-instance.html#deployment-wizard)와 [외부 계정](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/accessing-external-database/external-accounts.html?lang=ko)&#x200B;(추적, 미러 페이지 및 공개 리소스 도메인)에 있습니다. Campaign Standard의 경우 [브랜딩 구성](https://experienceleague.adobe.com/docs/campaign-standard/using/administrating/application-settings/branding.html?lang=ko#about-brand-identity)을 참조하세요.
 
 구성이 업데이트되면 새 이메일이 HTTP가 아닌 HTTPS URL을 통해 전송됩니다. 이제 URL이 안전한지 확인하기 위해 다음 테스트를 빠르게 수행할 수 있습니다.
 
@@ -235,8 +235,8 @@ SSL 인증서가 제대로 설치되지 않은 경우 다음 경고가 표시됩
 
 **Campaign Classic**
 
-* [Campaign 컨트롤 패널: SSL 인증서 추가(튜토리얼)](https://experienceleague.adobe.com/docs/campaign-classic-learn/control-panel/subdomains-and-certificates/adding-ssl-certificates.html) - 하위 도메인 보안을 위해 SSL 인증서를 추가하는 방법에 대해 알아봅니다.
+* [Campaign 컨트롤 패널: SSL 인증서 추가(튜토리얼)](https://experienceleague.adobe.com/docs/campaign-classic-learn/control-panel/subdomains-and-certificates/adding-ssl-certificates.html?lang=ko) - 하위 도메인 보안을 위해 SSL 인증서를 추가하는 방법에 대해 알아봅니다.
 
 **Campaign Standard**
 
-* [Campaign 컨트롤 패널: SSL 인증서 추가(튜토리얼)](https://experienceleague.adobe.com/docs/campaign-standard-learn/control-panel/subdomains-and-certificates/adding-ssl-certificates.html) - 하위 도메인 보안을 위해 SSL 인증서를 추가하는 방법에 대해 알아봅니다.
+* [Campaign 컨트롤 패널: SSL 인증서 추가(튜토리얼)](https://experienceleague.adobe.com/docs/campaign-standard-learn/control-panel/subdomains-and-certificates/adding-ssl-certificates.html?lang=ko) - 하위 도메인 보안을 위해 SSL 인증서를 추가하는 방법에 대해 알아봅니다.

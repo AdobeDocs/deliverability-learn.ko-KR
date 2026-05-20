@@ -95,7 +95,7 @@ Adobe 플랫폼을 사용하는 고객은 세그먼트에 따라 열기 및 클�
 **Adobe Campaign**
 
 * [Campaign Classic의 추적 로그](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/delivery-dashboard.html#tracking-logs)
-* [Campaign Standard의 추적 로그](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/sending-and-tracking-messages/tracking-messages.html#tracking-logs)
+* [Campaign Standard의 추적 로그](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/sending-and-tracking-messages/tracking-messages.html?lang=ko#tracking-logs)
 
 **Adobe 고객 여정 관리**
 

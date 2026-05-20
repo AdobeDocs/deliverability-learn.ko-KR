@@ -71,7 +71,7 @@ MX 규칙(Mail eXchanger)은 보내는 서버와 받는 서버 간의 통신을 
 
 >[!NOTE]
 >
->Adobe Campaign Classic의 MX 관리에 대한 자세한 내용은 [이 섹션](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/additional-configurations/email-deliverability.html#mx-configuration)을 참조하세요.
+>Adobe Campaign Classic의 MX 관리에 대한 자세한 내용은 [이 섹션](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/additional-configurations/email-deliverability.html?lang=ko#mx-configuration)을 참조하세요.
 
 ### TLS {#tls}
 
@@ -231,7 +231,7 @@ Campaign에서 **&quot;mailto&quot; List-Unsubscribe**&#x200B;을(를) 구현하
 
 규칙에는 명령줄을 생성하는 스크립트가 포함되어야 하며 이메일 헤더에 포함되어야 합니다.
 
-[이 섹션](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/campaign-optimization/about-campaign-typologies.html#typology-rules)에서 Adobe Campaign v7/v8에 유형화 규칙을 만드는 방법을 알아봅니다.
+[이 섹션](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/campaign-optimization/about-campaign-typologies.html?lang=ko#typology-rules)에서 Adobe Campaign v7/v8에 유형화 규칙을 만드는 방법을 알아봅니다.
 
 >[!NOTE]
 >

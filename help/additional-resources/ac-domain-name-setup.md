@@ -43,7 +43,7 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->Campaign 컨트롤 패널(Beta로 사용 가능)를 사용하여 새 하위 도메인을 설정할 수도 있습니다. 자세한 내용은 [이 섹션](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/setting-up-new-subdomain.html#must-read)을 참조하십시오.
+>Campaign 컨트롤 패널(Beta로 사용 가능)를 사용하여 새 하위 도메인을 설정할 수도 있습니다. 자세한 내용은 [이 섹션](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/setting-up-new-subdomain.html?lang=ko#must-read)을 참조하십시오.
 
 ## 하위 도메인
 
@@ -225,7 +225,7 @@ Marketing Cloud 서비스가 종료되면 자동으로 도메인 위임이 종�
 
 이렇게 하면 Adobe Campaign에 위임한 모든 하위 도메인을 확인하고 SSL 인증서 갱신을 요청할 수 있습니다.
 
-자세한 내용은 [전용 설명서](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/monitoring-subdomains.html#subdomains-and-certificates)를 참조하십시오.
+자세한 내용은 [전용 설명서](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/monitoring-subdomains.html?lang=ko#subdomains-and-certificates)를 참조하십시오.
 
 >[!NOTE]
 >
