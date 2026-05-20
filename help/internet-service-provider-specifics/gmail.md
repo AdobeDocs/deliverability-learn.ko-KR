@@ -9,9 +9,14 @@ role: Admin, Leader, User
 level: Beginner
 team: TM
 exl-id: a7319c85-32b5-4a9e-bee9-24f13630c408
-source-git-commit: 6b312cdbba496818337c97ec4f42962aea757901
+TQID: https://experienceleague.adobe.com/JU2Mswl8hi0LmTN9XQAUn2n0I4Ye4xpdKK5PnPuL9dY
+product_v2: id: b27e5950-9033-45ac-9f86-eb22e567f615id: d0a3eab4-7b10-4d96-a71e-6c0f8e7b7c87id: dfc56824-e8b9-499e-85d4-21aedb507314
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: f8a45b24-4be7-4f1b-909b-60d06b483a20
+level_v2: id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+source-git-commit: 75df8537199680e5f1fc4b98cefdb05220fee7bf
 workflow-type: tm+mt
-source-wordcount: '472'
+source-wordcount: 473
 ht-degree: 0%
 
 ---
@@ -24,11 +29,11 @@ ht-degree: 0%
 
 ## 중요한 데이터
 
-[!DNL Gmail]은(는) 필터링 결정의 많은 부분에 대한 사용자의 피드백에 중점을 둡니다. 이러한 결정에 관여하는 비결에 대해서는 알 수 없지만, 대부분의 마케터들이 모니터링할 수 있는 일반적인 기준이 있습니다. 오픈율 및 클릭률은 타겟 대상의 참여에 대한 통찰력을 제공하며 긍정적인 평판과 높은 받은 편지함 배치를 유도하는 데 사용할 수 있습니다.
+[!DNL Gmail]은(는) 필터링 결정의 많은 부분에 대한 사용자의 피드백에 중점을 둡니다. 이러한 결정에 관여하는 비결에 대해서는 알 수 없지만, 대부분의 마케터들이 모니터링할 수 있는 일반적인 기준이 있습니다. 오픈율 및 클릭률은 insight을 타겟 대상의 참여에 제공하며 긍정적인 평판과 높은 받은 편지함 배치를 유도하는 데 사용할 수 있습니다.
 
 ## 사용 가능한 데이터
 
-[!DNL Gmail]은(는) [!DNL Gmail Postmaster] 도구를 통해 전송 사례를 보는 방법에 대한 제한된 통찰력을 제공합니다. 이 도구를 사용하면 전송 IP 및 도메인 신뢰도, 인증 결과 및 컴플레인 문제에 대한 높은 수준의 보기가 가능합니다.
+[!DNL Gmail]은(는) [!DNL Gmail Postmaster] 도구를 통해 전송 사례를 보는 방법에 대해 제한된 insight을 제공합니다. 이 도구를 사용하면 전송 IP 및 도메인 신뢰도, 인증 결과 및 컴플레인 문제에 대한 높은 수준의 보기가 가능합니다.
 
 >[!NOTE]
 >

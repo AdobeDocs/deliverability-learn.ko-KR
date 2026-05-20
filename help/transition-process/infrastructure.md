@@ -10,9 +10,15 @@ role: Admin, Leader
 level: Beginner
 team: ACS
 exl-id: 4025d95c-cc77-4e0c-9904-aaf60019b18c
-source-git-commit: 6b312cdbba496818337c97ec4f42962aea757901
+TQID: https://experienceleague.adobe.com/FWlVtNGACEM6dKsnYQJU-z04mP902M5EXZmxxsKDyqU
+product_v2: id: b27e5950-9033-45ac-9f86-eb22e567f615id: d0a3eab4-7b10-4d96-a71e-6c0f8e7b7c87id: dfc56824-e8b9-499e-85d4-21aedb507314
+feature_v2: id: b0bb9048-d951-48d8-8232-45cf248a7e27id: c5f60233-d5ea-4453-a799-0ad258b4d399id: e2290edd-b061-4880-9d79-dee306cf5aa9id: ea90ebee-5c84-42d9-8b21-006bdabc95a3id: f71e690b-4480-4b67-9ef5-88f42f9cdfdb
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: f8a45b24-4be7-4f1b-909b-60d06b483a20
+level_v2: id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: 75df8537199680e5f1fc4b98cefdb05220fee7bf
 workflow-type: tm+mt
-source-wordcount: '898'
+source-wordcount: 923
 ht-degree: 2%
 
 ---
@@ -43,31 +49,31 @@ Adobe 플랫폼에서 새 보낸 사람을 위한 온보딩 프로세스의 일�
 
 ## 피드백 루프 {#feedback-loops}
 
-그 이면에는 바운스, 컴플레인, 구독 취소 등에 관한 데이터를 처리하는 Adobe 플랫폼이 있습니다. 이러한 피드백 루프 설정은 전달성에 중요한 측면이다. 컴플레인은 평판을 손상시킬 수 있으므로 타겟 대상의 컴플레인을 등록하는 이메일 주소를 사용해야 합니다. Gmail은 이 데이터를 다시 제공하지 않습니다. 목록 구독 취소 헤더와 참여 필터링은 현재 대부분의 구독자 데이터베이스를 구성하는 Gmail 구독자에게 특히 중요합니다.
+배후에서 Adobe 플랫폼은 반송, 컴플레인, 구독 취소 등과 관련된 데이터를 처리하고 있습니다. 이러한 피드백 루프 설정은 전달성에 중요한 측면이다. 컴플레인은 평판을 손상시킬 수 있으므로 타겟 대상의 컴플레인을 등록하는 이메일 주소를 사용해야 합니다. Gmail은 이 데이터를 다시 제공하지 않습니다. 목록 구독 취소 헤더와 참여 필터링은 현재 대부분의 구독자 데이터베이스를 구성하는 Gmail 구독자에게 특히 중요합니다.
 
 ## 인증 {#authentication}
 
-인증은 ISP가 보낸 사람의 ID를 확인하기 위해 사용하는 프로세스입니다. 가장 일반적인 두 인증 프로토콜은 [!DNL Sender Policy Framework] (SPF)과 [!DNL DomainKeys Identified Mail] (DKIM)입니다. 최종 사용자는 볼 수 없지만 ISP가 확인된 발신자의 이메일을 필터링할 수 있도록 지원합니다. [!DNL Domain-based Message Authentication Reporting and Conformance] (DMARC)이(가) 평판 시스템의 모든 ISP에 의해 아직 통합되지 않았지만 인기를 얻고 있습니다.
+인증은 ISP가 보낸 사람의 ID를 확인하기 위해 사용하는 프로세스입니다. 가장 일반적인 두 인증 프로토콜은 [!DNL Sender Policy Framework]&#x200B;(SPF)과 [!DNL DomainKeys Identified Mail]&#x200B;(DKIM)입니다. 최종 사용자는 볼 수 없지만 ISP가 확인된 발신자의 이메일을 필터링할 수 있도록 지원합니다. [!DNL Domain-based Message Authentication Reporting and Conformance] (DMARC)는 아직 모든 ISP가 정책을 평판 시스템에 통합하지 않았지만 인기를 얻고 있습니다.
 
 ### SPF
 
-[!DNL Sender Policy Framework] (SPF)은 도메인 소유자가 해당 도메인에서 메일을 보내는 데 사용하는 메일 서버를 지정할 수 있는 인증 방법입니다.
+[!DNL Sender Policy Framework]&#x200B;(SPF)은 도메인 소유자가 해당 도메인에서 메일을 보내는 데 사용하는 메일 서버를 지정할 수 있는 인증 방법입니다.
 
-### D김
+### DKIM
 
-[!DNL Domain Keys Identified Mail] (DKIM)은 위조된 보낸 사람 주소(일반적으로 스푸핑이라고 함)를 검색하는 데 사용되는 인증 방법입니다. DKIM이 활성화되면 수신자는 보낸 사람이 해당 도메인에서 메일을 보낼 수 있는 권한이 있는지 확인할 수 있습니다.
+[!DNL Domain Keys Identified Mail]&#x200B;(DKIM)은 위조된 보낸 사람 주소(일반적으로 스푸핑이라고 함)를 검색하는 데 사용되는 인증 방법입니다. DKIM이 활성화되면 수신자는 보낸 사람이 해당 도메인에서 메일을 보낼 수 있는 권한이 있는지 확인할 수 있습니다.
 
 ### DMARC
 
-[!DNL Domain-based Message Authentication, Reporting and Conformance] (DMARC)는 도메인 소유자가 도메인을 무단 사용으로부터 보호할 수 있는 인증 방법입니다. DMARC는 도메인 소유자가 게재됨, 격리됨 또는 거부됨 등 인증에 실패한 메일에 대한 상황을 제어할 수 있도록 SPF나 DKIM 또는 두 가지 모두를 사용합니다.
+[!DNL Domain-based Message Authentication, Reporting and Conformance]&#x200B;(DMARC)은 도메인 소유자가 도메인을 무단 사용으로부터 보호할 수 있는 인증 방법입니다. DMARC은 SPF 또는 DKIM 또는 두 가지 모두를 사용하여 도메인 소유자가 인증에 실패한 메일(게재, 격리 또는 거부)의 상황을 제어할 수 있도록 합니다.
 
 ## 제품별 리소스
 
 **Campaign**
 
 * [이 섹션](/help/additional-resources/ac-domain-name-setup.md)에서 하위 도메인을 Adobe Campaign Classic 또는 Standard에 완전히 위임하는 방법을 알아보세요.
-* [Campaign 컨트롤 패널: 전체 하위 도메인 위임(튜토리얼)](https://experienceleague.adobe.com/docs/campaign-classic-learn/control-panel/subdomains-and-certificates/subdomain-delegation.html?lang=ko) - *하위 도메인을 Adobe Campaign Classic에 완전히 위임하는 방법을 알아봅니다.*
-* [Campaign 컨트롤 패널: 전체 하위 도메인 위임(튜토리얼)](https://experienceleague.adobe.com/docs/campaign-standard-learn/control-panel/subdomains-and-certificates/subdomain-delegation.html?lang=ko) - *하위 도메인을 Adobe Campaign Standard에 완전히 위임하는 방법을 알아봅니다.*
+* [Campaign 컨트롤 패널: 전체 하위 도메인 위임(튜토리얼)](https://experienceleague.adobe.com/docs/campaign-classic-learn/control-panel/subdomains-and-certificates/subdomain-delegation.html) - *하위 도메인을 Adobe Campaign Classic에 완전히 위임하는 방법을 알아봅니다.*
+* [Campaign 컨트롤 패널: 전체 하위 도메인 위임(튜토리얼)](https://experienceleague.adobe.com/docs/campaign-standard-learn/control-panel/subdomains-and-certificates/subdomain-delegation.html) - *하위 도메인을 Adobe Campaign Standard에 완전히 위임하는 방법을 알아봅니다.*
 * [이 섹션](/help/additional-resources/acc-technical-recommendations.md#feedback-loop-acc)에서 Campaign Classic 인스턴스에 대한 피드백 루프를 구현하는 방법에 대해 자세히 알아보세요.
 
 ## 추가 리소스

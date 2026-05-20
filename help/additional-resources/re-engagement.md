@@ -6,10 +6,16 @@ doc-type: article
 activity: understand
 team: ACS
 exl-id: 30118706-d4c0-4bd8-8c9b-50c26b8374ef
-source-git-commit: d6094cd2ef0a8a7741e7d8aa4db15499fad08f90
+TQID: https://experienceleague.adobe.com/XbAU6Y0r4Ed8W7t71MMNV02jdp2-og04-v-n2lT5m-4
+product_v2: id: b27e5950-9033-45ac-9f86-eb22e567f615id: d0a3eab4-7b10-4d96-a71e-6c0f8e7b7c87id: dfc56824-e8b9-499e-85d4-21aedb507314
+feature_v2: id: a075b2c1-7748-4328-b7f6-343aa314616aid: c5f60233-d5ea-4453-a799-0ad258b4d399id: e2290edd-b061-4880-9d79-dee306cf5aa9id: ea90ebee-5c84-42d9-8b21-006bdabc95a3id: f71e690b-4480-4b67-9ef5-88f42f9cdfdb
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+level_v2: id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: 75df8537199680e5f1fc4b98cefdb05220fee7bf
 workflow-type: tm+mt
-source-wordcount: '913'
-ht-degree: 0%
+source-wordcount: 973
+ht-degree: 2%
 
 ---
 
@@ -22,13 +28,13 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->재참여 캠페인 전략 및 Adobe의 전달성 서비스에 대한 자세한 내용은 전달성 컨설턴트에게 문의하거나 Adobe 영업 담당자에게 문의하십시오.
+>재참여 캠페인 전략 및 Adobe의 전달성 서비스에 대한 자세한 내용은 전달성 컨설턴트에게 문의하거나 Adobe 판매 담당자에게 문의하십시오.
 
 ## ISP는 비참여 활동을 어떻게 보습니까? {#how-do-isps-view-non-engagement-activity-}
 
 수년간 ISP는 사용자의 참여 피드백 지표를 사용하여 메시지를 배치할 위치나 메시지를 전달해야 하는 사항을 결정해 왔습니다. 사용자 [참여](/help/engagement.md)은(는) 양수 및 음수 피드백으로 구성되며 ISP는 둘 다 지속적으로 모니터링합니다. 약혼을 하지 않는 것은 아마도 부정적 관여의 주요 원인 중 하나일 것이다. 전달성의 관점에서 볼 때, 참여가 없는 사용자에게 캠페인을 일관되게 보내면 IP 주소 및 도메인의 전체 신뢰도가 낮아질 수도 있습니다.
 
-Gmail, Microsoft® 및 OATH와 같은 ISP는 미참여를 원하지 않는 이메일로 보고 메시지를 스팸 폴더로 리디렉션하기 시작합니다. 또한 이러한 구독자는 더 이상 이메일 계정을 소유하지 않을 수 있으며 이를 &quot;재활용된&quot; 스팸 트랩으로 사용할 수 있습니다. 즉, 주소가 잠시 동안 유효하지 않으며 모든 메시지가 거부됩니다. 구독자 관리 시스템이 &quot;하드 바운스된&quot; 주소를 제거하지 않는 경우 심각한 게재 문제를 일으킬 수 있는 스팸 트랩으로 메일링이 전달될 수 있습니다.
+Gmail, ® 및 OATH와 같은 ISP는 미참여를 원하지 않는 이메일로 보고 메시지를 스팸 폴더로 리디렉션하기 시작합니다. 또한 이러한 구독자는 더 이상 이메일 계정을 소유하지 않을 수 있으며 이를 &quot;재활용된&quot; 스팸 트랩으로 사용할 수 있습니다. 즉, 주소가 잠시 동안 유효하지 않으며 모든 메시지가 거부됩니다. 구독자 관리 시스템이 &quot;하드 바운스된&quot; 주소를 제거하지 않는 경우 심각한 게재 문제를 일으킬 수 있는 스팸 트랩으로 메일링이 전달될 수 있습니다.
 
 ## 활동이 없는 경우 어떻게 접근해야 합니까? {#how-should-you-approach-inactivity-}
 
@@ -75,9 +81,9 @@ Adobe 플랫폼을 사용하는 고객은 세그먼트에 따라 열기 및 클�
 
 **Adobe Campaign**
 
-* [Campaign Classic의 추적 로그](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/delivery-dashboard.html?lang=ko#tracking-logs)
-* [Campaign Standard의 추적 로그](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/sending-and-tracking-messages/tracking-messages.html?lang=ko#tracking-logs)
+* [Campaign Classic의 추적 로그](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/delivery-dashboard.html#tracking-logs)
+* [Campaign Standard의 추적 로그](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/sending-and-tracking-messages/tracking-messages.html#tracking-logs)
 
-**고객 여정 관리 Adobe**
+**Adobe 고객 여정 관리**
 
 * [메시지 추적](https://experienceleague.adobe.com/docs/journey-optimizer/using/reporting/message-tracking.html?lang=ko)

@@ -8,9 +8,15 @@ doc-type: article
 activity: understand
 team: ACS
 exl-id: ffacc1b1-bf3f-466e-9a1d-63aad4d2ec45
-source-git-commit: 9444f8601f2f349398ee5deb9d5f4d4f7abb44f5
-workflow-type: ht
-source-wordcount: '495'
+TQID: https://experienceleague.adobe.com/qandgsfuAA4E9uHfZ0jrgpkjs-kt9Izs8k-HvtgDF7A
+product_v2: id: b27e5950-9033-45ac-9f86-eb22e567f615id: d0a3eab4-7b10-4d96-a71e-6c0f8e7b7c87id: dfc56824-e8b9-499e-85d4-21aedb507314
+feature_v2: id: a075b2c1-7748-4328-b7f6-343aa314616aid: b0bb9048-d951-48d8-8232-45cf248a7e27id: e64968b2-4ee5-47f9-8cae-0588f184b9ebid: f71e690b-4480-4b67-9ef5-88f42f9cdfdb
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+level_v2: id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: beb7a3c1-66ab-4786-b879-7621375b3c40
+source-git-commit: 75df8537199680e5f1fc4b98cefdb05220fee7bf
+workflow-type: tm+mt
+source-wordcount: 495
 ht-degree: 100%
 
 ---
@@ -23,7 +29,7 @@ ht-degree: 100%
 
 재활용된 스팸 트랩은 한 번 유효했지만 더 이상 사용되지 않는 주소입니다. 목록을 최대한 깔끔하게 유지하는 중요한 방법은 전체 목록에 이메일을 정기적으로 보내고 바운스된 이메일을 적절히 제거하는 것입니다. 이렇게 하면 중단된 이메일 주소를 격리하고 더 이상 사용하지 못하도록 할 수 있습니다.
 
-어떤 경우에는 주소를 30일 이내에 재활용할 수 있습니다. 규칙적으로 보내는 것은 비활성 사용자를 정기적으로 억제하고 목록 위생을 양호하게 유지하기 위한 핵심 요소입니다. **재참여 캠페인**&#x200B;은 일반적으로 정교한 이메일 마케팅 프로그램의 일부입니다. 이 캠페인 스타일을 사용하면 발신자가 더 이상 이메일로 전송되지 않을 사용자를 다시 확보할 수 있습니다.
+어떤 경우에는 주소를 30일 이내에 재활용할 수 있습니다. 규칙적으로 보내는 것은 비활성 사용자를 정기적으로 억제할 뿐만 아니라, 좋은 목록 예방의 핵심입니다. **재참여 캠페인**&#x200B;은 일반적으로 정교한 이메일 마케팅 프로그램의 일부입니다. 이 캠페인 스타일을 사용하면 발신자가 더 이상 이메일로 전송되지 않을 사용자를 다시 확보할 수 있습니다.
 
 ## 오타
 

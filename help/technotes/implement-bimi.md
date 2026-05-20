@@ -6,16 +6,22 @@ role: Admin
 level: Beginner
 jira: KT-14079
 exl-id: 6b911bcc-a531-466a-8bd3-7fa469b96cc7
-source-git-commit: b96539608acd51ce76ef5bdaf5afd07b5a4208b7
+TQID: https://experienceleague.adobe.com/dPuoipUKH36RSGUfhzOV1Xhu9qQTLYV4zu6Vw0Be-xY
+product_v2: id: b27e5950-9033-45ac-9f86-eb22e567f615id: d0a3eab4-7b10-4d96-a71e-6c0f8e7b7c87id: dfc56824-e8b9-499e-85d4-21aedb507314
+feature_v2: id: b0bb9048-d951-48d8-8232-45cf248a7e27id: e2290edd-b061-4880-9d79-dee306cf5aa9id: ea90ebee-5c84-42d9-8b21-006bdabc95a3id: f71e690b-4480-4b67-9ef5-88f42f9cdfdb
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+level_v2: id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: 75df8537199680e5f1fc4b98cefdb05220fee7bf
 workflow-type: tm+mt
-source-wordcount: '1125'
+source-wordcount: 1162
 ht-degree: 0%
 
 ---
 
 # [!DNL Brand Indicators for Message Identification] 구현(BIMI)
 
-[!DNL Brand Indicators for Message Identification] (BIMI)은 참여 플랫폼에서 보낸 사람의 전자 메일 옆에 승인된 로고가 표시되도록 하는 업계 표준입니다.
+[!DNL Brand Indicators for Message Identification]&#x200B;(BIMI)은 참여 플랫폼에서 보낸 사람의 전자 메일 옆에 승인된 로고가 표시되도록 하는 업계 표준입니다.
 
 이 표준을 사용하면 브랜드는 사서함 공급자의 받은 편지함에 표시해야 하는 로고를 결정할 수 있습니다. BIMI DNS(Domain Name System) 레코드에 게시되면 사서함 공급자는 특정 기준을 충족할 경우 이 로고를 선택하여 받은 편지함에 표시할 수 있습니다.
 
@@ -25,7 +31,7 @@ BIMI는 전달성이나 평판을 직접적으로 향상시키지 않습니다. 
 
 ## 어때 보여?
 
-다른 공급자의 구현 예제와 [BIMI 그룹의 페이지에 로고를 표시하는 공급자에 대한 자세한 정보](https://bimigroup.org/where-is-my-bimi-logo-displayed/){target="_blank"}를 확인할 수 있습니다.
+다른 공급자의 구현 예제와 [BIMI 그룹의 페이지](https://bimigroup.org/where-is-my-bimi-logo-displayed/){target="_blank"}에 로고를 표시하는 공급자에 대한 자세한 정보를 확인할 수 있습니다.
 
 ## BIMI Group이 누구죠?
 
@@ -45,13 +51,13 @@ BIMI를 지원하는 메일박스 공급자들의 명단은 꾸준히 증가하�
 
 BIMI 구현은 몇 가지 단계로 이루어집니다.
 
-1. 보내는 도메인과 해당 조직 도메인 모두에 대한 적용 수준에 DMARC(도메인 기반 메시지 인증, 보고 및 적합성) 구현 - [자세히 알아보기](#dmarc)
+1. 전송 도메인과 해당 조직 도메인 모두에 대한 적용 수준에 대한 DMARC(도메인 기반 메시지 인증, 보고 및 적합성) 구현 - [자세히 알아보기](#dmarc)
 
 1. SVG TinyPS 형식으로 브랜드 로고 만들기 - [자세히 알아보기](#create-brand-logo)
 
 1. 확인된 표시 인증서에 등록(일부 공급자에만 필요) - [자세히 알아보기](#vmc)
 
-1. 로고와 인증서가 있는 Publish a BIMI DNS 레코드 - [자세히 알아보기](#publish-bimi-record)
+1. 로고 및 인증서가 있는 BIMI DNS 레코드를 게시합니다. - [자세히 알아보기](#publish-bimi-record)
 
 1. 평판이 좋습니다. - [자세히 알아보기](#good-reputation)
 
@@ -62,13 +68,13 @@ BIMI 구현은 몇 가지 단계로 이루어집니다.
 
 ### DMARC {#dmarc}
 
-DMARC는 [인증](../additional-resources/authentication.md)에 실패한 전자 메일로 사서함 공급자가 수행해야 하는 작업을 브랜드에서 결정할 수 있는 표준입니다. 소위 정책은 &quot;없음&quot;에서 &quot;격리&quot;(스팸 폴더 배치)부터 &quot;거부&quot;(이메일 전면 차단)까지 다양합니다. 후자의 두 정책만 &quot;시행&quot;이라고 하며 BIMI에 대한 자격이 있습니다. SPF(Sender Policy Framework) 및 DKIM(Domain Keys Identified Mail)이 기본적으로 설정되어 있으므로 Adobe에서 보낸 메일이 인증을 통과하고 있습니다. Adobe이 요청 시 전송 도메인에서 DMARC를 설정하고 있습니다.
+DMARC은 [인증](../additional-resources/authentication.md)에 실패한 전자 메일로 사서함 공급자가 수행해야 하는 작업을 브랜드에서 결정할 수 있는 표준입니다. 소위 정책은 &quot;없음&quot;에서 &quot;격리&quot;(스팸 폴더 배치)부터 &quot;거부&quot;(이메일 전면 차단)까지 다양합니다. 후자의 두 정책만 &quot;시행&quot;이라고 하며 BIMI에 대한 자격이 있습니다. SPF(Sender Policy Framework) 및 DKIM(Domain Keys Identified Mail)가 기본적으로 설정되어 있으므로 Adobe에서 보낸 메일이 인증을 통과하고 있습니다. Adobe이 요청 시 전송 도메인에 DMARC을 설정하고 있습니다.
 
-전송 도메인의 DMARC 외에도 조직 도메인의 적용 수준에도 DMARC를 사용해야 합니다(전송 도메인이 news.example.com인 경우 example.com이 조직 도메인).
+전송 도메인의 DMARC 외에 조직 도메인(전송 도메인이 news.example.com인 경우 example.com이 조직 도메인)의 시행 수준에도 DMARC을 사용해야 합니다.
 
 ### 브랜드 로고 생성 {#create-brand-logo}
 
-로고 생성은 100%에 대한 요구 사항을 준수해야 합니다. [BIMI 그룹의 지침](https://bimigroup.org/creating-bimi-svg-logo-files/){target="_blank"}을(를) 항상 참조하십시오.
+로고 생성은 100%에 대한 요구 사항을 준수해야 합니다. [BIMI 그룹의 지침](https://bimigroup.org/creating-bimi-svg-logo-files/){target="_blank"}을 항상 참조하십시오.
 
 CDN(콘텐츠 전달 네트워크)이 사용되는 경우 사서함 공급자가 로고를 받지 못하게 하는 보호(예: 보트 보호)가 사용되지 않도록 하려면 로고를 보안 위치(HTTPS)에 저장해야 합니다.
 
@@ -97,7 +103,7 @@ default._bimi.[domain] IN TXT "v=BIMI1; l=[SVG URL]; a=[PEM URL]
 
 &quot;PEM URL&quot;은 확인된 표시 인증서의 파일 위치입니다.
 
-전송 도메인의 경우 Adobe으로 수행해야 합니다.
+전송 도메인의 경우 Adobe에서 수행해야 합니다.
 
 ### 좋은 평판 {#good-reputation}
 
@@ -111,6 +117,6 @@ VMC를 위한 노력과 비용을 거쳐도 이 부분은 사라지지 않습니
 
 * VMC 없이 안전하게 시작할 수 있으며, BIMI 레코드에 VMC URL이 포함되어 있지 않은 경우 평판에 해가 없지만 Yahoo에 로고가 이미 표시될 수 있습니다.
 
-* 조직 수준에서 DMARC를 구현하는 것은 큰 작업입니다. 일부 회사는 브랜드가 완전한 DMARC 채택을 달성하는 데 도움이 되도록 전문화되어 있습니다.
+* 조직 수준에서 DMARC을 구현하는 것은 큰 작업입니다. 일부 회사는 브랜드가 완전한 DMARC 채택을 달성하는 데 도움이 되도록 전문화되어 있습니다.
 
-* 광범위한 FAQ 목록이 [여기](https://bimigroup.org/faqs-for-senders-esps/){target="_blank"}에 게시되었습니다.
+* 질문과 대답(FAQ) 목록이 [여기](https://bimigroup.org/faqs-for-senders-esps/){target="_blank"}에 게시되었습니다.

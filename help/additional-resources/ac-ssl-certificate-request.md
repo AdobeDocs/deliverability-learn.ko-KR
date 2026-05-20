@@ -6,10 +6,16 @@ doc-type: article
 activity: understand
 team: ACS
 exl-id: 8a78abd3-afba-49a7-a2ae-8b2c75326749
-source-git-commit: 0be68f5674904aa105985a6e5fc4771c41f7fe48
+TQID: https://experienceleague.adobe.com/zM1boPuxPGJbjlSk1ncR7vTvrhe529sv-OCZwNTCHRE
+product_v2: id: b27e5950-9033-45ac-9f86-eb22e567f615id: d0a3eab4-7b10-4d96-a71e-6c0f8e7b7c87id: dfc56824-e8b9-499e-85d4-21aedb507314
+feature_v2: id: b3b8a63f-51fc-40f6-a7d2-a31c5d49fb45id: c5f60233-d5ea-4453-a799-0ad258b4d399id: f71e690b-4480-4b67-9ef5-88f42f9cdfdb
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+level_v2: id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: d095671a-1355-40aa-8b5f-06c33c68080bid: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+source-git-commit: 75df8537199680e5f1fc4b98cefdb05220fee7bf
 workflow-type: tm+mt
-source-wordcount: '2124'
-ht-degree: 1%
+source-wordcount: 2374
+ht-degree: 4%
 
 ---
 
@@ -47,14 +53,14 @@ SSL(HTTPS)을 통해 **이러한 도메인을 보호하는 것이 좋습니다**
 | 낮은 보증 인증서 | 도메인 확인 인증서라고도 하는 낮은 보증 인증서는 인증서에 도메인 이름만 포함하고 비즈니스/조직 이름은 포함하지 않습니다. |
 | PEM(Privacy Enhanced Mail) | ASCII(Base64) 데이터가 포함된 확장명이 .pem인 인증서입니다. 이러한 인증서는 &quot; - - - - - - - BEGIN CERTIFICATE - - - -&quot; 줄로 시작합니다. |
 | 루트 인증서 | 인증 기관은 트리 구조의 형태로 인증서를 발급합니다. 루트 인증서는 트리의 최상위 인증서입니다. |
-| SAN(주체 대체 이름) | 주체 대체 이름은 단일 SSL 인증서의 일부로 서명해야 하는 추가 호스트 이름(사이트, IP 주소, 일반 이름 등)입니다. |
+| SAN(주체 대체 이름) | 주체 대체 이름은 추가 호스트 이름(사이트, IP 주소, 일반 이름 등)입니다. 단일 SSL 인증서의 일부로 서명해야 합니다. |
 | 자체 서명된 인증서 | 신뢰할 수 있는 인증 기관이 아니라 인증서를 만드는 사람이 서명한 인증서. 자체 서명된 인증서는 CA에서 서명한 인증서와 동일한 수준의 암호화를 활성화할 수 있지만 두 가지 주요 단점이 있습니다.<ul><li>방문자의 연결이 하이재킹될 수 있으므로 공격자는 전송된 모든 데이터를 볼 수 있습니다(따라서 연결 암호화의 목적 상실)</li><li> 신뢰할 수 있는 인증서처럼 인증서를 해지할 수 없습니다.</li></ul> |
 | SSL(보안 소켓 레이어) | 웹 서버와 브라우저 간에 암호화된 링크를 설정하는 표준 보안 기술입니다. |
 | 와일드카드 인증서 | 와일드카드 인증서는 *.adobe.com과 같은 단일 도메인 이름에서 무제한으로 첫 번째 수준 하위 도메인을 보호할 수 있습니다. |
 
 ## 주요 단계
 
-1. CSR(인증서 서명 요청) 파일을 요청하고 필요한 정보(국가, 주, 도시, 조직 이름, 조직 단위 이름 등)를 Adobe에 제공합니다.
+1. CSR(인증서 서명 요청) 파일을 요청하고 필요한 정보(국가, 주, 도시, 조직 이름, 조직 단위 이름 등)를 제공합니다. Adobe으로.
 1. Adobe에서 생성한 CSR 파일의 유효성을 확인하고 제공한 모든 정보가 올바른지 확인하십시오.
 1. CSR 세부 정보를 사용하여 신뢰할 수 있는 인증 기관<!--taking care of asking for using the subjectAltName SSL extension (SAN) if it is for several domain names, and get/purchase the resulting certificate (ideally) in PEM format for Apache server-->에서 서명한 인증서를 생성합니다.
 1. SSL 인증서의 유효성을 검사하고 CSR과 일치하는지 확인합니다.
@@ -67,7 +73,7 @@ SSL(HTTPS)을 통해 **이러한 도메인을 보호하는 것이 좋습니다**
 
 ### 전제 조건
 
-도메인 이름과 보안할 기능(추적, 미러 페이지, 웹 앱 등)을 식별해야 합니다.
+도메인 이름과 함수(추적, 미러 페이지, 웹 앱 등)를 식별해야 합니다. 보안을 위해.
 >[!NOTE]
 >
 >Adobe은 포함할 도메인 이름 및 함수를 정의하는 데 도움이 될 수 있습니다. 자세한 내용은 Adobe 계정 팀에 문의하십시오.
@@ -83,7 +89,7 @@ CSR(인증서 서명 요청) 파일을 가져오려면 아래 단계를 수행�
 다음은 따라야 할 몇 가지 모범 사례입니다.
 
 * 위임된 하위 도메인당 요청을 한 개 발생시킵니다.
-* 여러 하위 도메인을 단일 CSR 요청으로 결합할 수 있지만 동일한 환경 내에서만 가능합니다. 예를 들어 Campaign Classic에서 마케팅 서버, [중간 소싱 서버](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/install-campaign-on-prem/mid-sourcing-server.html?lang=ko) 및 [실행 인스턴스](https://experienceleague.adobe.com/docs/campaign-classic/using/transactional-messaging/configure-transactional-messaging/configuring-instances.html?lang=ko#execution-instance)는 세 개의 개별 환경입니다.
+* 여러 하위 도메인을 단일 CSR 요청으로 결합할 수 있지만 동일한 환경 내에서만 가능합니다. 예를 들어 Campaign Classic에서 마케팅 서버, [중간 소싱 서버](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/install-campaign-on-prem/mid-sourcing-server.html) 및 [실행 인스턴스](https://experienceleague.adobe.com/docs/campaign-classic/using/transactional-messaging/configure-transactional-messaging/configuring-instances.html#execution-instance)는 세 개의 개별 환경입니다.
 * SSL 인증서 갱신 전에 새 CSR을 받아야 합니다. 1년 이상 전의 이전 CSR 파일을 사용하지 마십시오.
 
 다음 정보를 제공해야 합니다.
@@ -107,7 +113,7 @@ CSR(인증서 서명 요청) 파일을 가져오려면 아래 단계를 수행�
 
 | 제공할 정보 | 예제 값 | 메모 |
 |--- |--- |--- |
-| 국가 [C] | 미국 | 두 글자로 된 코드여야 합니다. 전체 국가 목록 [여기](https://www.ssl.com/csrs/country_codes/)에 액세스합니다.</br>*참고: 영국은 GB(영국 아님)를 사용합니다.* |
+| 국가 [C] | 미국 | 두 글자로 된 코드여야 합니다. 전체 국가 목록에 액세스 [여기](https://www.ssl.com/csrs/country_codes/).</br>*참고: 영국은 GB(영국 아님)를 사용합니다.* |
 | 시/도 이름 [ST] | 일리노이 | 해당하는 경우. 값은 약어가 아닌 전체 이름이어야 합니다. |
 | 구/군/시 이름 [L] | 시카고 | |
 | 조직 이름 [O] | ACME | |
@@ -199,7 +205,7 @@ SSL 인증서가 제대로 설치되지 않은 경우 다음 경고가 표시됩
 
 * 인증서 만료일 최소 2주 전에 업데이트된 인증서를 요청하려면 지원 티켓을 만드십시오. CSR 세부 사항이 변경되지 않은 경우에는 추가 CSR을 요청할 필요가 없습니다.
 
-* [Campaign 컨트롤 패널](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=ko)에 대한 액세스 권한이 있고 환경이 AWS 환경에서 Adobe에 의해 호스팅되는 경우 만료되기 전에 Campaign 컨트롤 패널을 사용하여 인증서를 갱신할 수 있습니다. 자세한 내용은 [이 섹션](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/monitoring-ssl-certificates.html?lang=ko#monitoring-certificates)을 참조하십시오.
+* [Campaign 컨트롤 패널](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=ko)에 대한 액세스 권한이 있고 환경이 AWS 환경에서 Adobe에 의해 호스팅되는 경우 만료되기 전에 Campaign 컨트롤 패널을 사용하여 인증서를 갱신할 수 있습니다. 자세한 내용은 [이 섹션](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/monitoring-ssl-certificates.html#monitoring-certificates)을 참조하십시오.
 
 ### 8단계 - 특정 구성 업데이트 {#update-configuration}
 
@@ -207,7 +213,7 @@ SSL 인증서가 제대로 설치되지 않은 경우 다음 경고가 표시됩
 
 >[!NOTE]
 >
->Campaign Classic의 경우 업데이트할 URL은 주로 [배포 마법사](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/initial-configuration/deploying-an-instance.html#deployment-wizard)와 [외부 계정](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/accessing-external-database/external-accounts.html?lang=ko)&#x200B;(추적, 미러 페이지 및 공개 리소스 도메인)에 있습니다. Campaign Standard의 경우 [브랜딩 구성](https://experienceleague.adobe.com/docs/campaign-standard/using/administrating/application-settings/branding.html?lang=ko#about-brand-identity)을 참조하세요.
+>Campaign Classic의 경우 업데이트할 URL은 주로 [배포 마법사](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/initial-configuration/deploying-an-instance.html#deployment-wizard)와 [외부 계정](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/accessing-external-database/external-accounts.html)&#x200B;(추적, 미러 페이지 및 공개 리소스 도메인)에 있습니다. Campaign Standard의 경우 [브랜딩 구성](https://experienceleague.adobe.com/docs/campaign-standard/using/administrating/application-settings/branding.html#about-brand-identity)을 참조하세요.
 
 구성이 업데이트되면 새 이메일이 HTTP가 아닌 HTTPS URL을 통해 전송됩니다. 이제 URL이 안전한지 확인하기 위해 다음 테스트를 빠르게 수행할 수 있습니다.
 
@@ -218,8 +224,8 @@ SSL 인증서가 제대로 설치되지 않은 경우 다음 경고가 표시됩
 
 **Campaign Classic**
 
-* [Campaign 컨트롤 패널: SSL 인증서 추가(튜토리얼)](https://experienceleague.adobe.com/docs/campaign-classic-learn/control-panel/subdomains-and-certificates/adding-ssl-certificates.html?lang=ko) - 하위 도메인 보안을 위해 SSL 인증서를 추가하는 방법에 대해 알아봅니다.
+* [Campaign 컨트롤 패널: SSL 인증서 추가(튜토리얼)](https://experienceleague.adobe.com/docs/campaign-classic-learn/control-panel/subdomains-and-certificates/adding-ssl-certificates.html) - 하위 도메인 보안을 위해 SSL 인증서를 추가하는 방법에 대해 알아봅니다.
 
 **Campaign Standard**
 
-* [Campaign 컨트롤 패널: SSL 인증서 추가(튜토리얼)](https://experienceleague.adobe.com/docs/campaign-standard-learn/control-panel/subdomains-and-certificates/adding-ssl-certificates.html?lang=ko) - 하위 도메인 보안을 위해 SSL 인증서를 추가하는 방법에 대해 알아봅니다.
+* [Campaign 컨트롤 패널: SSL 인증서 추가(튜토리얼)](https://experienceleague.adobe.com/docs/campaign-standard-learn/control-panel/subdomains-and-certificates/adding-ssl-certificates.html) - 하위 도메인 보안을 위해 SSL 인증서를 추가하는 방법에 대해 알아봅니다.

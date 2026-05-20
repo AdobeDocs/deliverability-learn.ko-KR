@@ -6,9 +6,16 @@ doc-type: article
 activity: understand
 team: ACS
 exl-id: 39ed3773-18bf-4653-93b6-ffc64546406b
-source-git-commit: b163628adde1e4d7225a1c2c54d29b24e2b2a352
+TQID: https://experienceleague.adobe.com/Y58eIzSpKUV-B-MiQ-6KNkk31tg1M6Bg27ZqGv-DESc
+product_v2: id: b27e5950-9033-45ac-9f86-eb22e567f615id: d0a3eab4-7b10-4d96-a71e-6c0f8e7b7c87id: dfc56824-e8b9-499e-85d4-21aedb507314
+feature_v2: id: a075b2c1-7748-4328-b7f6-343aa314616aid: b0bb9048-d951-48d8-8232-45cf248a7e27id: b3b8a63f-51fc-40f6-a7d2-a31c5d49fb45id: c5474392-5419-4296-9e41-f6f4ce4f6e9bid: c5f60233-d5ea-4453-a799-0ad258b4d399id: d1d0a9cd-295d-4976-8c39-ddae266f240eid: e2290edd-b061-4880-9d79-dee306cf5aa9id: ea90ebee-5c84-42d9-8b21-006bdabc95a3id: f71e690b-4480-4b67-9ef5-88f42f9cdfdbid: f82558ea-6af5-44eb-a424-5b3389abb0a3id: fdbb8fc9-ffa3-4b86-88fe-aa4c5a3e1bc6
+subfeature_v2: id: b75843fa-0a67-4a44-a6b1-cc627b0481dcid: e656c701-3899-4db3-989c-de0980ddfffaid: eff19c99-440a-4318-b319-444edc4d8d8f
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+level_v2: id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: cdd65e7e-8839-44a2-bc21-0e03623b5dd1id: d095671a-1355-40aa-8b5f-06c33c68080bid: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+source-git-commit: 75df8537199680e5f1fc4b98cefdb05220fee7bf
 workflow-type: tm+mt
-source-wordcount: '2064'
+source-wordcount: 2168
 ht-degree: 1%
 
 ---
@@ -39,7 +46,7 @@ MX 규칙(Mail eXchanger)은 보내는 서버와 받는 서버 간의 통신을 
 
 >[!NOTE]
 >
->Adobe Campaign Classic의 MX 관리에 대한 자세한 내용은 [이 섹션](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/additional-configurations/email-deliverability.html?lang=ko#mx-configuration)을 참조하세요.
+>Adobe Campaign Classic의 MX 관리에 대한 자세한 내용은 [이 섹션](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/additional-configurations/email-deliverability.html#mx-configuration)을 참조하세요.
 
 ### TLS {#tls}
 
@@ -67,9 +74,9 @@ SPF 레코드는 현재 DNS 서버에서 TXT 유형 레코드(코드 16) 또는 
 v=spf1 ip4:12.34.56.78/32 ip4:12.34.56.79/32 ~all
 ```
 
-도메인에 대한 이메일을 보내도록 승인된 두 개의 IP 주소인 12.34.56.78과 12.34.56.79를 정의합니다. **~all**&#x200B;은(는) 다른 주소는 SoftFail로 해석해야 함을 의미합니다.
+도메인에 대한 전자 메일을 보낼 수 있는 권한으로 두 개의 IP 주소 12.34.56.78 및 12.34.56.79을(를) 정의합니다. **~all**&#x200B;은(는) 다른 주소는 SoftFail로 해석해야 함을 의미합니다.
 
-SPF 레코드를 정의하는 Recommendations:
+SPF 레코드 정의에 대한 권장 사항:
 
 * 정의된 서버 이외의 모든 서버를 거부하려면 끝에 **~all**(SoftFail) 또는 **-all**(Fail)을 추가하십시오. 이 기능이 없으면 서버는 중립 평가와 함께 이 도메인을 생성할 수 있습니다.
 * **ptr**&#x200B;을(를) 추가하지 마십시오(비용이 많이 들고 신뢰할 수 없는 경우 openspf.org 권장).
@@ -84,17 +91,17 @@ SPF 레코드를 정의하는 Recommendations:
 >
 >[이 섹션](/help/additional-resources/authentication.md)에서 다양한 전자 메일 인증 양식에 대해 자세히 알아보세요.
 
-### D김 {#dkim-acc}
+### DKIM {#dkim-acc}
 
 >[!NOTE]
 >
->호스팅 또는 하이브리드 설치의 경우 [Enhanced MTA](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-emails/sending-an-email/sending-with-enhanced-mta.html?lang=ko#sending-messages)(으)로 업그레이드하면 모든 도메인이 있는 모든 메시지에 대해 Enhanced MTA에서 DKIM 전자 메일 인증 서명을 수행합니다.
+>호스팅 또는 하이브리드 설치의 경우 [Enhanced MTA](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-emails/sending-an-email/sending-with-enhanced-mta.html#sending-messages)&#x200B;(으)로 업그레이드하면 모든 도메인이 있는 모든 메시지에 대해 Enhanced MTA에서 DKIM 전자 메일 인증 서명을 수행합니다.
 
 Adobe Campaign Classic에서 [DKIM](/help/additional-resources/authentication.md#dkim)을(를) 사용하려면 다음 전제 조건이 필요합니다.
 
 **Adobe Campaign 옵션 선언**: Adobe Campaign에서 DKIM 개인 키는 DKIM 선택기와 도메인을 기반으로 합니다. 현재 선택기가 다른 동일한 도메인/하위 도메인에 대해 여러 개의 개인 키를 만들 수 없습니다. 플랫폼 또는 이메일에서 인증에 사용해야 하는 선택기 도메인/하위 도메인을 정의할 수는 없습니다. 플랫폼은 개인 키 중 하나를 선택할 수 있으며, 이는 인증이 실패할 가능성이 높다는 것을 의미합니다.
 
-* Adobe Campaign 인스턴스에 대해 DomainKeys를 구성한 경우 [도메인 관리 규칙](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/understanding-delivery-failures.html?lang=ko#email-management-rules)에서 **dkim**&#x200B;을(를) 선택하면 됩니다. 그렇지 않으면 DKIM을 대체한 도메인 키와 동일한 구성 단계(개인/공개 키)를 따릅니다.
+* Adobe Campaign 인스턴스에 대해 DomainKeys를 구성한 경우 [도메인 관리 규칙](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/understanding-delivery-failures.html#email-management-rules)에서 **dkim**&#x200B;을(를) 선택하면 됩니다. 그렇지 않으면 DKIM을 대체한 DomainKeys와 동일한 구성 단계(개인/공개 키)를 따릅니다.
 * 향상된 버전의 DomainKeys인 DKIM과 동일한 도메인에 대해 DomainKeys 및 DKIM을 모두 활성화할 필요는 없습니다.
 * 현재 DKIM의 유효성을 검사하는 도메인은 AOL, Gmail입니다.
 
@@ -199,7 +206,7 @@ Campaign에서 **&quot;mailto&quot; List-Unsubscribe**&#x200B;을(를) 구현하
 
 규칙에는 명령줄을 생성하는 스크립트가 포함되어야 하며 이메일 헤더에 포함되어야 합니다.
 
-[이 섹션](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/campaign-optimization/about-campaign-typologies.html?lang=ko#typology-rules)에서 Adobe Campaign v7/v8에 유형화 규칙을 만드는 방법을 알아봅니다.
+[이 섹션](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/campaign-optimization/about-campaign-typologies.html#typology-rules)에서 Adobe Campaign v7/v8에 유형화 규칙을 만드는 방법을 알아봅니다.
 
 >[!NOTE]
 >
@@ -258,9 +265,9 @@ List-Unsubscribe: <https://domain.com/webApp/unsubNoClick?id=<%= recipient.crypt
 
 1. 다음과 같은 새 유형화 규칙을 구성합니다.
 
-   * **[!UICONTROL Rule type]**: **[!UICONTROL Control]**
-   * **[!UICONTROL Phase]**: **[!UICONTROL At the start of targeting]**
-   * **[!UICONTROL Channel]**: **[!UICONTROL Email]**
+   * **[!UICONTROL Rule type]**:**[!UICONTROL Control]**
+   * **[!UICONTROL Phase]**:**[!UICONTROL At the start of targeting]**
+   * **[!UICONTROL Channel]**:**[!UICONTROL Email]**
    * **[!UICONTROL Level]**: 내 선택
    * **[!UICONTROL Active]**
 
@@ -274,7 +281,7 @@ List-Unsubscribe: <https://domain.com/webApp/unsubNoClick?id=<%= recipient.crypt
    >아래에 설명된 코드는 예시로서 참조되어야 한다.
 
    이 예에서는 다음 방법을 자세히 설명합니다.
-   * &quot;mailto&quot; 목록 구독 취소를 구성합니다. 헤더를 추가하거나 기존 &quot;mailto:&quot; 매개 변수를 추가하고 &lt;mailto...로 바꿉니다.>, https://...
+   * &quot;mailto&quot; 목록 구독 취소를 구성합니다. 헤더를 추가하거나 기존 &quot;mailto:&quot; 매개 변수를 추가하고 &lt;mailto..>, https://...로 바꿉니다.
    * One-Click List-Unsubscribe 헤더에 을 추가합니다. `var headerUnsubUrl = "https://campmomentumv7-mkt-prod3.campaign.adobe.com/webApp/unsubNoClick?id=<%= recipient.cryptedId %>"÷` 사용
 
    >[!NOTE]
@@ -415,4 +422,4 @@ SMTP 서버의 피드백을 올바르게 확인하려면 가장 일반적인 오
 
 ### 전용 IP {#dedicated-ips}
 
-Adobe은 명성을 구축하고 게재 성능을 최적화하기 위해 상향 IP를 통해 각 고객을 위한 전용 IP 전략을 제공합니다.
+Adobe은 평판을 구축하고 게재 성능을 최적화하기 위해 램프 업 IP를 통해 각 고객을 위한 전용 IP 전략을 제공합니다.

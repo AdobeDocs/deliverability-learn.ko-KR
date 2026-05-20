@@ -8,10 +8,16 @@ doc-type: article
 activity: understand
 team: TM
 exl-id: 350950dc-4703-402a-8e22-3862f4e21d52
-source-git-commit: 9444f8601f2f349398ee5deb9d5f4d4f7abb44f5
+TQID: https://experienceleague.adobe.com/Pq8XpNwqzMbxggauciqILSUqX6BT4OCiDffc7ZgDhWc
+product_v2: id: b27e5950-9033-45ac-9f86-eb22e567f615id: d0a3eab4-7b10-4d96-a71e-6c0f8e7b7c87id: dfc56824-e8b9-499e-85d4-21aedb507314
+feature_v2: id: b0bb9048-d951-48d8-8232-45cf248a7e27id: f71e690b-4480-4b67-9ef5-88f42f9cdfdb
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+level_v2: id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: b4dd41a7-ccf8-4e9d-918e-acaab534a307id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377id: d095671a-1355-40aa-8b5f-06c33c68080b
+source-git-commit: 75df8537199680e5f1fc4b98cefdb05220fee7bf
 workflow-type: tm+mt
-source-wordcount: '1594'
-ht-degree: 3%
+source-wordcount: 1670
+ht-degree: 5%
 
 ---
 
@@ -49,7 +55,7 @@ ht-degree: 3%
 
 ## 데이터 품질 및 위생
 
-데이터 수집은 과제 중 하나일 뿐입니다. 또한 데이터가 정확하고 사용 가능한지 확인해야 합니다. 기본 형식 필터가 설치되어 있어야 합니다. &quot;@&quot; 또는 &quot;.&quot;가 포함되지 않은 이메일 주소는 올바르지 않습니다. 예. 공통 별칭 주소는 역할 계정(&quot;info&quot;, &quot;admin&quot;, &quot;sales&quot;, &quot;support&quot; 등)이라고도 합니다. 역할 계정은 특성상 수신자가 단일 구독자가 아닌 사용자 그룹을 포함하므로 위험을 초래할 수 있습니다. 기대와 관용은 집단 내에서 다를 수 있으며, 이로 인해 불만, 다양한 참여, 구독 취소 및 일반적인 혼란이 발생할 위험이 있습니다.
+데이터 수집은 과제 중 하나일 뿐입니다. 또한 데이터가 정확하고 사용 가능한지 확인해야 합니다. 기본 형식 필터가 설치되어 있어야 합니다. 예를 들어 &quot;@&quot; 또는 &quot;.&quot;가 포함되지 않은 이메일 주소는 유효하지 않습니다. 공통 별칭 주소는 역할 계정(&quot;info&quot;, &quot;admin&quot;, &quot;sales&quot;, &quot;support&quot; 등)이라고도 합니다. 역할 계정은 특성상 수신자가 단일 구독자가 아닌 사용자 그룹을 포함하므로 위험을 초래할 수 있습니다. 기대와 관용은 집단 내에서 다를 수 있으며, 이로 인해 불만, 다양한 참여, 구독 취소 및 일반적인 혼란이 발생할 위험이 있습니다.
 
 다음은 이메일 주소 데이터로 실행할 수 있는 일반적인 문제에 대한 몇 가지 솔루션입니다.
 
@@ -73,9 +79,9 @@ DOI는 동의를 확인하기 위해 클릭해야 하는 링크가 포함된 이
 
 ## 기타 권장되지 않는 목록 컬렉션 메서드
 
-주소를 수집하는 방법은 여러 가지가 있으며, 각 주소는 고유한 기회, 과제 및 단점이 있습니다. Adobe 일반적으로 이러한 기능은 권장되지 않습니다. 공급자가 허용 가능한 사용 정책을 통해 사용이 제한되기 때문입니다. 몇 가지 일반적인 예를 살펴보고 위험을 제한하거나 피하는 데 도움이 되는 위험을 알아볼 수 있습니다.
+주소를 수집하는 방법은 여러 가지가 있으며, 각 주소는 고유한 기회, 과제 및 단점이 있습니다. Adobe에서는 일반적으로 이러한 기능을 권장하지 않습니다. 공급자가 허용 가능한 사용 정책을 통해 사용이 제한되기 때문입니다. 몇 가지 일반적인 예를 살펴보고 위험을 제한하거나 피하는 데 도움이 되는 위험을 알아볼 수 있습니다.
 
-**목록 구매 또는 임대**
+**목록 구매 또는 대여**
 거기에는 많은 유형의 이메일 주소가 있습니다. 몇 가지 이름을 들자면 기본 이메일, 작업 이메일, 학교 이메일, 보조 이메일 및 비활성 이메일입니다. 구매 또는 임대 목록을 통해 수집 및 공유되는 주소 유형은 거의 모든 참여 및 구매 활동이 이루어지는 기본 이메일 계정이 아닙니다.
 
 운이 좋으면 사람들이 물건을 구매할 준비가 되었을 때 거래와 오퍼를 찾는 보조 계정이 생깁니다. 이는 일반적으로 낮은 참여 수준(있는 경우)을 초래합니다. 운이 좋지 않으면 비활성 이메일이 목록에 가득 차서 이제 스팸 트랩이 될 수 있습니다. 종종 2차 이메일과 비활성 이메일을 혼용하게 됩니다. 일반적으로 이러한 유형의 목록은 이메일 프로그램에 득보다 실이 많습니다. 이 방법은 [Adobe Campaign 사용 제한 가능 정책](https://www.adobe.com/legal/terms/aup.html)에서 금지됩니다.
@@ -94,8 +100,8 @@ DOI는 동의를 확인하기 위해 클릭해야 하는 링크가 포함된 이
 
 **Adobe Campaign Classic**
 
-* [이중 옵트인으로 구독 양식 만들기](https://experienceleague.adobe.com/docs/campaign-classic/using/designing-content/web-forms/use-cases--web-forms.html?lang=ko#create-a-subscription--form-with-double-opt-in)
+* [중복 옵트인으로 구독 양식 만들기](https://experienceleague.adobe.com/docs/campaign-classic/using/designing-content/web-forms/use-cases--web-forms.html?lang=ko#create-a-subscription--form-with-double-opt-in)
 
 **Adobe Campaign Standard**
 
-* [이중 옵트인 프로세스](https://experienceleague.adobe.com/docs/campaign-standard/using/communication-channels/landing-pages/setting-up-a-double-opt-in-process.html?lang=ko#communication-channels)
+* [중복 옵트인 프로세스](https://experienceleague.adobe.com/docs/campaign-standard/using/communication-channels/landing-pages/setting-up-a-double-opt-in-process.html?lang=ko#communication-channels)

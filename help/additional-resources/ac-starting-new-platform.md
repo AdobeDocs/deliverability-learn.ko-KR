@@ -6,10 +6,16 @@ doc-type: article
 activity: understand
 team: ACS
 exl-id: 6c9ade01-3052-4311-af80-888294820024
-source-git-commit: d6094cd2ef0a8a7741e7d8aa4db15499fad08f90
+TQID: https://experienceleague.adobe.com/cQa5nOTSJwxDGX-QkXGez5dpm5N-8I7QZ-LsEW0FRLo
+product_v2: id: b27e5950-9033-45ac-9f86-eb22e567f615id: d0a3eab4-7b10-4d96-a71e-6c0f8e7b7c87id: dfc56824-e8b9-499e-85d4-21aedb507314
+feature_v2: id: a075b2c1-7748-4328-b7f6-343aa314616aid: c5474392-5419-4296-9e41-f6f4ce4f6e9bid: c5f60233-d5ea-4453-a799-0ad258b4d399id: d1d0a9cd-295d-4976-8c39-ddae266f240eid: e2290edd-b061-4880-9d79-dee306cf5aa9id: f71e690b-4480-4b67-9ef5-88f42f9cdfdbid: fdbb8fc9-ffa3-4b86-88fe-aa4c5a3e1bc6
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+level_v2: id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+source-git-commit: 75df8537199680e5f1fc4b98cefdb05220fee7bf
 workflow-type: tm+mt
-source-wordcount: '549'
-ht-degree: 6%
+source-wordcount: 666
+ht-degree: 9%
 
 ---
 
@@ -21,7 +27,7 @@ Adobe Campaign에서 사용할 새 플랫폼을 설정할 때 도메인과 IP �
 
 플랫폼에는 사용 기록이 없고 전송 IP를 이 용도로 사용한 적이 없기 때문에 새 플랫폼에서 이메일을 보내기 시작할 때는 매우 주의해야 합니다.
 
-ISP는 이메일 전송에 사용된 적이 없고 갑자기 대량의 이메일 트래픽을 보내기 시작하는 IP 주소를 의심하게 됩니다. 차단 목록에 추가하다 실제로, 탐지하기 전에 가장 많은 메시지를 전송하기 위해 일반적으로 &quot;알 수 없는&quot; IP 주소(스패머에 저장된 적이 없는 주소)를 사용합니다.
+ISP는 이메일 전송에 사용된 적이 없고 갑자기 대량의 이메일 트래픽을 보내기 시작하는 IP 주소를 의심하게 됩니다. 실제로, 탐지하기 전에 가장 많은 메시지를 전송하기 위해 일반적으로 &quot;알 수 없는&quot; IP 주소(스패머에 저장된 적이 없는 주소)를 사용합니다.
 
 생산 단계의 시작 시점에 출력 측면에서 작동 속도에 도달할 것으로 기대할 수는 없다. 또한 ISP가 전송 주소를 차단하고 나머지 시작 단계를 심각하게 손상시킬 수 있으므로 이 속도로 메시지를 전송하려고 시도해서는 안 됩니다.
 
@@ -31,7 +37,7 @@ ISP는 이메일 전송에 사용된 적이 없고 갑자기 대량의 이메일
 
 * Adobe에서 보낸 이메일 캠페인에 고유한 전용 하위 도메인을 구성합니다.
 
-* 이 정보가 있으면 **잘못된 주소를 격리 테이블로 가져오기**&#x200B;하십시오.
+* 이 정보가 있으면 **잘못된 주소를 격리 테이블로 가져오기**하십시오.
 플랫폼 시작은 종종 처음으로 주소 목록을 사용할 때 발생하며 완전히 정규화되지 않을 수 있습니다. 잘못된 주소나 허니팟 주소로 전송하는 경우 플랫폼의 평판이 떨어집니다.
 
    * 잘못된 주소 목록이 있는 경우 처음 보내기 전에 격리 테이블로 해당 목록을 가져오는 것이 가장 좋습니다. 격리 테이블은 **[!UICONTROL Administration > Campaign Management > Non deliverables Management > Non deliverables and addresses]**(Campaign Classic) 및 **[!UICONTROL Administration > Channels > Quarantines > Addresses]**(Campaign Standard) 메뉴를 통해 사용할 수 있습니다.
@@ -54,13 +60,13 @@ ISP는 이메일 전송에 사용된 적이 없고 갑자기 대량의 이메일
 
 **Adobe Campaign Classic**
 
-* [격리를 통해 게재 최적화](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/understanding-quarantine-management.html?lang=ko#optimizing-your-delivery-through-quarantines)
-* [플랫폼 전체에 대해 격리된 주소 확인](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/understanding-quarantine-management.html?lang=ko#identifying-quarantined-addresses-for-the-entire-platform)
-* [예약된 일괄 처리를 사용하여 보내기](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-sending-the-delivery.html?lang=ko#sending-using-multiple-waves)
+* [격리를 통한 게재 최적화](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/understanding-quarantine-management.html#optimizing-your-delivery-through-quarantines)
+* [플랫폼 전체에 대해 격리된 주소 확인](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/understanding-quarantine-management.html#identifying-quarantined-addresses-for-the-entire-platform)
+* [여러 웨이브를 사용하여 보내기](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-sending-the-delivery.html#sending-using-multiple-waves)
 * [게재 모니터링](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/about-delivery-monitoring.html?lang=ko#sending-messages)
 
 **Adobe Campaign Standard**
 
-* [격리를 통해 게재 최적화](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/monitoring-messages/understanding-quarantine-management.html?lang=ko#optimizing-your-delivery-through-quarantines)
-* [플랫폼 전체에 대해 격리된 주소 확인](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/monitoring-messages/understanding-quarantine-management.html?lang=ko)
+* [격리를 통한 게재 최적화](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/monitoring-messages/understanding-quarantine-management.html#optimizing-your-delivery-through-quarantines)
+* [플랫폼 전체에 대해 격리된 주소 확인](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/monitoring-messages/understanding-quarantine-management.html)
 * [게재 모니터링](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/monitoring-messages/monitoring-a-delivery.html?lang=ko)
