@@ -9,28 +9,37 @@ duration: 0
 last-substantial-update: 2024-02-27T00:00:00.000Z
 jira: KT-15029
 exl-id: d8ca4d48-c6c1-45a9-bf6a-3f58ee161a53
-TQID: https://experienceleague.adobe.com/YRkDn6lXosAOfAtZrWRoNstTK-MGWl8Y3PicB6iDTJY
+TQID: 'https://experienceleague.adobe.com/YRkDn6lXosAOfAtZrWRoNstTK-MGWl8Y3PicB6iDTJY'
 product_v2:
   - id: b27e5950-9033-45ac-9f86-eb22e567f615
+    internal-label: Marketo Engage
   - id: d0a3eab4-7b10-4d96-a71e-6c0f8e7b7c87
+    internal-label: CX Enterprise
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 feature_v2:
   - id: f71e690b-4480-4b67-9ef5-88f42f9cdfdb
+    internal-label: Resources
   - id: f82558ea-6af5-44eb-a424-5b3389abb0a3
+    internal-label: Templates
+  - id: 63876777-85c3-57e1-a2da-81f02956c63c
+    internal-label: Deliverability
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 topic_v2:
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+    internal-label: Insights
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 75df8537199680e5f1fc4b98cefdb05220fee7bf
+    internal-label: Privacy
+source-git-commit: d66463b8c8097e19fd50b9b033e6b21165d7e8c9
 workflow-type: tm+mt
-source-wordcount: 928
+source-wordcount: '928'
 ht-degree: 0%
-
 ---
-
 # do and do nots 구독 취소
 
 구독 취소는 이메일 라이프사이클의 자연스러운 일부입니다. 하지만 마케터들은 가끔 작별인사를 하기가 어렵습니다. 당신은 가장 매력적인 이메일을 만들고 브랜드에서 제공하는 제품 및 서비스에 대한 최고의 거래를 제공하기 위해 열심히 일합니다. 그러나 일부 가입자가 계속 진행하기로 결정하는 것은 완전히 정상이며 예상해야 합니다. 이는 여러 가지 이유 때문일 수 있지만, 결론은 그들이 더 이상 귀하로부터 듣고 싶어하지 않는다는 것입니다.
